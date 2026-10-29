@@ -1,0 +1,201 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+T_opt
+VPLRbD3KH=cjQo3lnC<4gB3
+04 11 4 work tb_a2b_ctl4 fast 0
+=1-04bf1b05a8bd-6ad84b7e-1b2-4bac
+o-quiet -auto_acc_if_foreign -work w_a2b
+n@_opt
+OL;O;10.1c;51
+vfixed_peer_udp
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I3i3PW]]kdG3VeA_UOP[2n3
+VJM2:N9Tg1;CedT7<Y;FEV2
+S1
+Z2 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+Z3 w1792556738
+8../../rtl/fixed_peer_udp.v
+F../../rtl/fixed_peer_udp.v
+L0 11
+Z4 OL;L;10.1c;51
+r1
+31
+Z5 !s108 1792559980.571000
+Z6 !s107 tb_a2b_ctl4.v|../fixed_udp_test_link.v|../../rtl/fixed_peer_udp.v|../../rtl/media_udp_arbiter.v|../../rtl/star_sky_20261020/media_control_star.v|../../rtl/star_sky_20261020/star_motion_engine.v|
+Z7 !s90 -sv|-work|w_a2b|../../rtl/star_sky_20261020/star_motion_engine.v|../../rtl/star_sky_20261020/media_control_star.v|../../rtl/media_udp_arbiter.v|../../rtl/fixed_peer_udp.v|../fixed_udp_test_link.v|tb_a2b_ctl4.v|
+Z8 o-sv -work w_a2b -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 MGOl>7^45YNQl>TPPhIaB0
+!s105 fixed_peer_udp_v_unit
+!i10b 1
+!s85 0
+vfixed_udp_test_link
+R1
+I`WKIG<ZObZRjnEjzg0A[I2
+V4Z01eC:7Uo9K;:zEzjID_3
+S1
+R2
+w1791124993
+8../fixed_udp_test_link.v
+F../fixed_udp_test_link.v
+L0 7
+R4
+r1
+31
+R5
+R6
+R7
+R8
+!s100 hj0^3?7Fe_Q>a7^]V1UFh1
+!s105 fixed_udp_test_link_v_unit
+!i10b 1
+!s85 0
+vmedia_control_star_rx
+R1
+IBR^DKRX@o_bn_WG0YThRl3
+Vn_C73kYnj=92`J=@oKU4h0
+Z9 !s105 media_control_star_v_unit
+S1
+R2
+Z10 w1792557757
+Z11 8../../rtl/star_sky_20261020/media_control_star.v
+Z12 F../../rtl/star_sky_20261020/media_control_star.v
+L0 82
+R4
+r1
+31
+R5
+R6
+R7
+R8
+!s100 Ao0b<4W85>Nf4kbAhRZ3K2
+!i10b 1
+!s85 0
+vmedia_control_star_tx
+R1
+I:=l_lj6Pe=emRoUFMKzi]0
+V`e]jaDSQ[mUWXOLQj:GX30
+R9
+S1
+R2
+R10
+R11
+R12
+L0 12
+R4
+r1
+31
+R5
+R6
+R7
+R8
+!s100 4kd<W68BU`J8l4J8I[9Z@2
+!i10b 1
+!s85 0
+vmedia_udp_arbiter
+R1
+InSjR3<WialbcCVOWRG5:H0
+VWXC^a41UTZV=Wdm2>K2Mb3
+Z13 !s105 media_udp_arbiter_v_unit
+S1
+R2
+R3
+Z14 8../../rtl/media_udp_arbiter.v
+Z15 F../../rtl/media_udp_arbiter.v
+L0 4
+R4
+r1
+31
+R5
+R6
+R7
+R8
+!s100 S9o>LMbZCGX>8D5Y]o42<1
+!i10b 1
+!s85 0
+vmedia_udp_scheduler
+R1
+I3gd:1EA1blgC0;d_M0SU91
+V5_=2gz597>DCi00eRQEzR0
+R13
+S1
+R2
+R3
+R14
+R15
+L0 79
+R4
+r1
+31
+R5
+R6
+R7
+R8
+!s100 Zd`;bod<cm04__20kbmEm3
+!i10b 1
+!s85 0
+vstar_bundle_cdc
+R1
+IoBUQ@CbWaGCB;NYgdgXgk0
+VXkUT_>j336F]nZUnV?_zG1
+Z16 !s105 star_motion_engine_v_unit
+S1
+R2
+R10
+Z17 8../../rtl/star_sky_20261020/star_motion_engine.v
+Z18 F../../rtl/star_sky_20261020/star_motion_engine.v
+L0 130
+R4
+r1
+31
+R5
+R6
+R7
+R8
+!s100 RGE`g=iRFXO7fz27F?0@[2
+!i10b 1
+!s85 0
+vstar_motion_engine
+R1
+ISCbW4Jd?4VMjflFL0^S;63
+VX?S@7ZJmi;J4h5fE2VlJz2
+R16
+S1
+R2
+R10
+R17
+R18
+L0 18
+R4
+r1
+31
+R5
+R6
+R7
+R8
+!s100 HHTSK;SW8DM=zZ1:GSAYO3
+!i10b 1
+!s85 0
+vtb_a2b_ctl4
+R1
+I:A1gB5Ih8:aO6]V8:^hLS1
+V02Y15HPP>;8HCZa2ki:iC2
+S1
+R2
+w1792559996
+8tb_a2b_ctl4.v
+Ftb_a2b_ctl4.v
+L0 8
+R4
+r1
+31
+R8
+!s105 tb_a2b_ctl4_v_unit
+!i10b 1
+!s100 D5?QTDdEO?Rj9H51gWel`3
+!s85 0
+!s108 1792559996.550000
+!s107 tb_a2b_ctl4.v|
+!s90 -sv|-work|w_a2b|tb_a2b_ctl4.v|

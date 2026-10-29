@@ -1,0 +1,22 @@
+{
+  "provenance": "Lyrics supplied directly by the user on 2026-10-05; timing windows estimated from the user's MP3",
+  "source": "C:/Users/28492/Desktop/车载图片/周杰伦 - 一路向北.mp3",
+  "song_samples": 14295040,
+  "groups": {
+    "verse1": ["后视镜里的世界", "越来越远的道别", "你转身向背 侧脸还是很美", "我用眼光去追 竟听见你的泪"],
+    "verse2": ["在车窗外面徘徊", "是我错失的机会", "你站的方位 跟我中间隔着泪", "街景一直在后退", "你的崩溃在窗外零碎"],
+    "chorus": ["我一路向北 离开有你的季节", "你说你好累 已无法再爱上谁", "风在山路吹", "过往的画面全都是我不对", "细数惭愧 我伤你几回"],
+    "final": ["我一路向北 离开有你的季节", "方向盘周围回转着我的后悔", "我加速超越", "却甩不掉紧紧跟随的伤悲", "细数惭愧 我伤你几回"],
+    "outro": ["停止狼狈 就让错纯粹"]
+  },
+  "blocks": [
+    {"start": 34.5, "end": 61.5, "group": "verse1"},
+    {"start": 61.5, "end": 89.0, "group": "verse2"},
+    {"start": 89.0, "end": 117.8, "group": "chorus"},
+    {"start": 137.0, "end": 166.0, "group": "verse1"},
+    {"start": 166.0, "end": 192.7, "group": "verse2"},
+    {"start": 192.7, "end": 221.5, "group": "chorus"},
+    {"start": 221.5, "end": 251.0, "group": "final"},
+    {"start": 251.0, "end": 258.0, "group": "outro"}
+  ]
+}

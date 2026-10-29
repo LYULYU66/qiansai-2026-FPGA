@@ -1,0 +1,85 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vbmp_bilinear_stream
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790944241
+!i10b 1
+!s100 6MNNcVX=]omcAl9nk@lQ_2
+Iez222>_c]]@0?lC?2];j82
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 bmp_bilinear_stream_v_unit
+S1
+R0
+w1790937106
+8src/user_source/hdl_source/SD/bmp_bilinear_stream.v
+Fsrc/user_source/hdl_source/SD/bmp_bilinear_stream.v
+L0 7
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1790944240.000000
+Z6 !s107 sim/tb_bmp_resize_reader.sv|src/user_source/hdl_source/SD/bmp_read.v|src/user_source/hdl_source/SD/bmp_bilinear_stream.v|
+Z7 !s90 -sv|+define+BILINEAR_FAST_SIM|-work|sim/bmp_resize_20261002/reader|src/user_source/hdl_source/SD/bmp_bilinear_stream.v|src/user_source/hdl_source/SD/bmp_read.v|sim/tb_bmp_resize_reader.sv|
+!i113 1
+Z8 o-sv -work sim/bmp_resize_20261002/reader
+Z9 !s92 -sv +define+BILINEAR_FAST_SIM -work sim/bmp_resize_20261002/reader
+Z10 tCvgOpt 0
+vbmp_read
+R1
+R2
+!i10b 1
+!s100 i?fCbgU=G@1k9PYDBcGHd1
+I@IW:V=C8Q`mm>`9FMEJ:n2
+R3
+!s105 bmp_read_v_unit
+S1
+R0
+w1790944158
+8src/user_source/hdl_source/SD/bmp_read.v
+Fsrc/user_source/hdl_source/SD/bmp_read.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vtb_bmp_resize_reader
+R1
+R2
+!i10b 1
+!s100 CQ:<=SN:JnfWzbL=2SV;?3
+I5XV0gE@M8D^XSgkjA2D=M3
+R3
+!s105 tb_bmp_resize_reader_sv_unit
+S1
+R0
+w1790937107
+8sim/tb_bmp_resize_reader.sv
+Fsim/tb_bmp_resize_reader.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10

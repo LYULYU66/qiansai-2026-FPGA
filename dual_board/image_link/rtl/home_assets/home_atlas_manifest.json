@@ -1,0 +1,12 @@
+{
+  "sourceSha256": "eda847f630c84d549e32eb2ac1e9a2fbe02de98ceac062110e25b52f380dc671",
+  "pages": 2,
+  "width": 640,
+  "height": 480,
+  "colors": 152,
+  "uniqueRows": 216,
+  "runWords": 13860,
+  "runBram32K": 7,
+  "rowBits": 14336,
+  "lossless": true
+}

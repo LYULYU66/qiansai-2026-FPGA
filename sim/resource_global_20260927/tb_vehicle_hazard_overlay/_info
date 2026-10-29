@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vtb_vehicle_hazard_overlay
+Z1 !s110 1790583099
+!i10b 1
+!s100 J]@?PkO2YF<BT1zM0R?:N1
+IB]m[YlYZin7fb>?1W27T31
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1790078476
+8sim/tb_vehicle_hazard_overlay.v
+Fsim/tb_vehicle_hazard_overlay.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1790583099.000000
+Z5 !s107 sim/tb_vehicle_hazard_overlay.v|src/user_source/hdl_source/vehicle_hazard_overlay.v|
+Z6 !s90 -work|sim/resource_global_20260927/tb_vehicle_hazard_overlay|src/user_source/hdl_source/vehicle_hazard_overlay.v|sim/tb_vehicle_hazard_overlay.v|
+!i113 1
+Z7 o-work sim/resource_global_20260927/tb_vehicle_hazard_overlay
+Z8 tCvgOpt 0
+vvehicle_hazard_overlay
+R1
+!i10b 1
+!s100 B_jfz2;7EjE2VLamB:R;Y3
+IdOiI0EaiA<ejkz52?=jb12
+R2
+R0
+w1790078586
+8src/user_source/hdl_source/vehicle_hazard_overlay.v
+Fsrc/user_source/hdl_source/vehicle_hazard_overlay.v
+L0 10
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

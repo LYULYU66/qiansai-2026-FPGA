@@ -1,0 +1,1872 @@
+{
+  "stage": "formal-player physical pipeline audit",
+  "generatedAt": "2026-10-05T05:43:38.870Z",
+  "original_single_board_and_diagnostic_bits_unchanged": true,
+  "production_phase10_unchanged": true,
+  "hardware_verified": false,
+  "published_player_bits": [],
+  "modelsim": {
+    "audio_pipeline_full_40": {
+      "file": "dual_board/image_link/sim/hw_20261005/modelsim_all.log",
+      "sha256": "65B22E662406FD6D2A929D5DE18F7FCB2BAABF4DB5D3DDC5FC03385B1C0CB118",
+      "passed": [
+        "PASS image_packet_rx",
+        "PASS image link TX/RX",
+        "PASS image pixel CDC",
+        "PASS reliable image",
+        "PASS image sink guard",
+        "PASS remote display",
+        "PASS audio guard",
+        "PASS media abort",
+        "PASS audio media",
+        "PASS audio status",
+        "PASS visual guard",
+        "PASS remote compute",
+        "PASS audio offload",
+        "PASS home atlas",
+        "PASS home pixels",
+        "PASS tagged image",
+        "PASS home pipeline",
+        "PASS home source",
+        "PASS media control",
+        "PASS control guard",
+        "PASS resolution image",
+        "PASS resolution guard",
+        "PASS resolution display",
+        "PASS link session",
+        "PASS media generation",
+        "PASS cache recovery",
+        "PASS audio session reset",
+        "PASS cache reuse guard",
+        "PASS cache reuse full",
+        "PASS media restart",
+        "PASS flat scheduler A",
+        "PASS flat scheduler B",
+        "PASS flat audio offload",
+        "PASS flat media restart",
+        "PASS fixed UDP unit",
+        "PASS fixed UDP pair",
+        "PASS fixed UDP native FIFO padded",
+        "PASS fixed UDP native FIFO stripped",
+        "PASS fixed UDP audio offload",
+        "PASS fixed UDP media restart"
+      ],
+      "errors": 0,
+      "warnings": 106
+    },
+    "audio_full_rate_guard": {
+      "file": "dual_board/image_link/sim/hw_20261005/modelsim_guard.log",
+      "sha256": "45AB68A2260C078C201A5E472D64B1FCC2D1D114A2211D055B357D47B4AF4035",
+      "passed": [
+        "PASS player pipeline guard:"
+      ],
+      "errors": 0,
+      "warnings": 0
+    },
+    "memory_reset_and_home_pipeline": {
+      "file": "dual_board/image_link/sim/hw_round3_20261005/modelsim_round3.log",
+      "sha256": "806F55533F6C5EFC8CF3234BFFB47ACD19543A8A738EF5DCF53DC596A83F0D84",
+      "passed": [
+        "PASS player frame reset:",
+        "PASS player frame credit:",
+        "PASS home atlas:",
+        "PASS home pixels:",
+        "PASS tagged image:",
+        "PASS home pipeline:",
+        "PASS home source:"
+      ],
+      "errors": 0,
+      "warnings": 31
+    }
+  },
+  "board_a": {
+    "routing_completed": true,
+    "routed": {
+      "file": "dual_board/image_link/prj/media_a/MEDIA_IMAGE_A_R3_HW_20261005_phy.area",
+      "sha256": "00ACE9E53AFEB324C7C3BA122972C3CD0CABF04E32D12E575929CEAF23EAA369",
+      "lut": 14280,
+      "registers": 9241,
+      "bram9k": 50,
+      "bram32k": 7,
+      "dsp": 3,
+      "pll": 4,
+      "lut_percent": 72.86
+    },
+    "gate": {
+      "file": "dual_board/image_link/prj/media_a/MEDIA_IMAGE_A_R3_HW_20261005_gate.area",
+      "sha256": "091159BEBA282B2A4FDA33033183C5ECF2047844C7A756598FB9DBFB7AC38517",
+      "lut": 13840,
+      "registers": 9166,
+      "bram9k": 50,
+      "bram32k": 7,
+      "dsp": 3,
+      "pll": 4,
+      "lut_percent": 70.61
+    },
+    "timing": {
+      "file": "dual_board/image_link/prj/media_a/MEDIA_IMAGE_A_R3_HW_20261005_pr.timing",
+      "sha256": "EB4DA453282FC67E946A5048371EC60078AEF27773F5F789DEBF19F022EC8FD1",
+      "setup_or_recovery_wns": -5.699,
+      "hold_or_removal_wns": -0.052,
+      "confidence": "Routed",
+      "sta_coverage_percent": 99.9,
+      "closed": false,
+      "path_groups": [
+        {
+          "name": "udp_clk -> udp_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": -1.167,
+              "begin": "u_remote_visual/progress_reg[5]_syn_3.clk",
+              "end": "u_remote_visual/visual_state_reg[0]_syn_4.ce",
+              "type": "setup"
+            },
+            {
+              "slack": -1.167,
+              "begin": "u_remote_visual/progress_reg[5]_syn_3.clk",
+              "end": "u_remote_visual/visual_state_reg[43]_syn_3.ce",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> udp_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": -0.02,
+              "begin": "u_audio_pcm_fifo/wr_addr_reg[4]_syn_3.clk",
+              "end": "u_audio_pcm_fifo/ram_inst/ramread0_syn_6.addra[8]",
+              "type": "hold"
+            },
+            {
+              "slack": -0.012,
+              "begin": "u_audio_pcm_fifo/wr_addr_reg[3]_syn_3.clk",
+              "end": "u_audio_pcm_fifo/ram_inst/ramread0_syn_25.addra[7]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> udp_clk",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": 0.035,
+              "begin": "u_net/fixed_peer$u_udp/rx_state_reg[0]_syn_10.clk",
+              "end": "u_net/fixed_peer$u_udp/rx_read_index_reg[5]_syn_4.sr",
+              "type": "removal"
+            },
+            {
+              "slack": 0.035,
+              "begin": "u_net/fixed_peer$u_udp/rx_state_reg[0]_syn_10.clk",
+              "end": "u_net/fixed_peer$u_udp/rx_state_reg[1]_syn_104.sr",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "video_clk -> video_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 3.689,
+              "begin": "u_video_image_adjust/lut_pixels$red_green/I_addr_a[5]_syn_26.clk",
+              "end": "u_video_lyric_overlay/u_font/banks[3]$bank/bank_3$ram.addra[8]",
+              "type": "setup"
+            },
+            {
+              "slack": 5.619,
+              "begin": "u_video_image_adjust/lut_pixels$red_green/I_addr_a[5]_syn_26.clk",
+              "end": "u_video_lyric_overlay/u_font/banks[2]$bank/bank_2$ram.addra[8]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "video_clk -> video_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": -0.02,
+              "begin": "u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/S_packet_body_1d_reg[14]_syn_3.clk",
+              "end": "u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/u_w96_d1024_fifo/u_logic_ramfifo_syn_534.dia[5]",
+              "type": "hold"
+            },
+            {
+              "slack": -0.012,
+              "begin": "video_delay_m0/vout_data_r_reg[14]_syn_4.clk",
+              "end": "u_video_transition_effects/packed_line_buffers$line_a/ramread1_syn_6.dia[5]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "video_clk -> video_clk",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": -0.005,
+              "begin": "u_hdmi_1_4b_transmitter_core_wrapper/u0_reset_sync/O_sync_reset_reg_syn_54.clk",
+              "end": "u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_CH1_D0_shift_reg[25]_syn_4.sr",
+              "type": "removal"
+            },
+            {
+              "slack": -0.005,
+              "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_aSis0jQ9/al102_oXrqzjAP_b3[6]_syn_6.clk",
+              "end": "u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[0]__7_syn_4.sr",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "clk -> udp_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": -1.243,
+              "begin": "u_network_images/u_sink/mux101_syn_117.clk",
+              "end": "u_network_images/u_sink/count_reg[5]_syn_4.ce",
+              "type": "setup"
+            },
+            {
+              "slack": -1.243,
+              "begin": "u_network_images/u_sink/mux101_syn_117.clk",
+              "end": "u_network_images/u_sink/count_reg[17]_syn_4.ce",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "clk -> udp_clk",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": -0.052,
+              "begin": "u_network_images/u_sink/mux101_syn_117.clk",
+              "end": "u_network_images/u_sink/mux113_syn_201.sr",
+              "type": "removal"
+            },
+            {
+              "slack": -0.044,
+              "begin": "u_network_images/u_sink/mux101_syn_117.clk",
+              "end": "u_network_images/u_sink/mux72_syn_943.sr",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "clk -> video_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 14.311,
+              "begin": "rst_all_reg_reg_syn_127.clk",
+              "end": "u_video_lyric_overlay/ramread0_syn_180.e[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 14.311,
+              "begin": "rst_all_reg_reg_syn_127.clk",
+              "end": "u_video_lyric_overlay/ramread0_syn_194.e[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "clk -> video_clk",
+          "type": "recovery",
+          "worst_reported": [
+            {
+              "slack": 14.095,
+              "begin": "u_remote_control/mux17_syn_260.clk",
+              "end": "u_remote_visual_cdc/frame_state_reg[120]_syn_4.sr",
+              "type": "recovery"
+            },
+            {
+              "slack": 14.258,
+              "begin": "u_remote_control/mux17_syn_260.clk",
+              "end": "u_remote_visual_cdc/frame_state_reg[20]_syn_4.sr",
+              "type": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "clk -> video_clk",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": 0.04,
+              "begin": "u_video_rgb_to_axis_640x480/I_rgb[17]_syn_637.clk",
+              "end": "u_video_status_overlay/u_font_rom/I_addr[4]_syn_190.sr",
+              "type": "removal"
+            },
+            {
+              "slack": 0.04,
+              "begin": "u_video_rgb_to_axis_640x480/I_rgb[17]_syn_637.clk",
+              "end": "u_audio_visualizer_overlay/pixel_y_reg[8]_syn_4.sr",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> ext_mem_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 1.498,
+              "begin": "frame_read_write_m0/write_buf/rd_addr_reg[2]_syn_3.clk",
+              "end": "frame_read_write_m0/write_buf/ram_inst/ramread0_syn_25.addrb[5]",
+              "type": "setup"
+            },
+            {
+              "slack": 1.95,
+              "begin": "frame_read_write_m0/write_buf/rd_addr_reg[2]_syn_3.clk",
+              "end": "frame_read_write_m0/write_buf/ram_inst/ramread0_syn_6.addrb[5]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> ext_mem_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.041,
+              "begin": "frame_read_write_m0/read_buf_b/wr_addr_reg[8]_syn_4.clk",
+              "end": "frame_read_write_m0/read_buf_b/ram_inst/ramread0_syn_26.addra[5]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> ext_mem_clk",
+          "type": "recovery",
+          "worst_reported": [
+            {
+              "slack": 2.795,
+              "begin": "u_frame_memory_reset/release_pipe_reg[1]_syn_4.clk",
+              "end": "frame_read_write_m0/frame_fifo_write_m0/flip_latched_reg_syn_8.sr",
+              "type": "recovery"
+            },
+            {
+              "slack": 2.795,
+              "begin": "u_frame_memory_reset/release_pipe_reg[1]_syn_4.clk",
+              "end": "frame_read_write_m0/frame_fifo_write_m0/wr_x_reg[7]_syn_4.sr",
+              "type": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> ext_mem_clk",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": 0.003,
+              "begin": "frame_read_write_m0/read_buf_a/asy_w_rst1_reg_syn_4.clk",
+              "end": "frame_read_write_m0/read_buf_a/rd_to_wr_cross_inst/primary_addr_gray_sync_reg[4]_syn_4.sr",
+              "type": "removal"
+            },
+            {
+              "slack": 0.003,
+              "begin": "frame_read_write_m0/read_buf_a/asy_w_rst1_reg_syn_4.clk",
+              "end": "frame_read_write_m0/read_buf_a/rd_to_wr_cross_inst/secondary_addr_o_reg[0]_syn_4.sr",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "rgmii_rx_90 -> rgmii_rx_90",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 2.456,
+              "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_f4biXjlA/al102_0_I1BBbU/al102_gwCF1dVC_reg_syn_12.clk",
+              "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_f4biXjlA/al102_yKqPCjEw/al102_HP1qu49R_reg[4]_syn_4.sr",
+              "type": "setup"
+            },
+            {
+              "slack": 2.555,
+              "begin": "u_video_rgb_to_axis_640x480/I_rgb[7]_syn_22.clk",
+              "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/addr_filter_top/al102_hxcEIhDE$dynamic_config/al102_49sgR8qI_reg_syn_19.a[1]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "rgmii_rx_90 -> rgmii_rx_90",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.095,
+              "begin": "u_net/u_rx_fifo/wr_addr_reg[11]_syn_4.clk",
+              "end": "u_net/u_rx_fifo/ramgen_l/inst_syn_1.addra[4]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.099,
+              "begin": "u_net/u_rx_fifo/wr_addr_reg[8]_syn_4.clk",
+              "end": "u_net/u_rx_fifo/ramgen_l/inst_syn_11.addra[12]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> video_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.344,
+              "begin": "u_remote_visual_cdc/mailbox_reg[72]_syn_4.clk",
+              "end": "u_vehicle_hazard_overlay/lt27_syn_28.mi[1]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.344,
+              "begin": "u_remote_visual_cdc/mailbox_reg[69]_syn_4.clk",
+              "end": "u_remote_visual_cdc/frame_state_reg[10]_syn_4.mi[1]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> video_clk",
+          "type": "recovery",
+          "worst_reported": [
+            {
+              "slack": 0.769,
+              "begin": "u_link_session/send_event_reg_syn_5.clk",
+              "end": "u_remote_visual_cdc/frame_state_reg[152]_syn_4.sr",
+              "type": "recovery"
+            },
+            {
+              "slack": 0.884,
+              "begin": "u_link_session/send_event_reg_syn_5.clk",
+              "end": "u_video_lyric_overlay/lt3_syn_36.sr",
+              "type": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> mac_tx_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 0.671,
+              "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_gR4MUiLa_reg[14]_syn_28.clk",
+              "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_gR4MUiLa_reg[14]_syn_24.a[1]",
+              "type": "setup"
+            },
+            {
+              "slack": 1.089,
+              "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_gR4MUiLa_reg[14]_syn_28.clk",
+              "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_gR4MUiLa_reg[12]_syn_7.d[1]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> mac_tx_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": -0.011,
+              "begin": "u_net/u_tx_fifo/rd_addr_reg[9]_syn_4.clk",
+              "end": "u_net/u_tx_fifo/ramgen_u/inst_syn_1.addrb[12]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.149,
+              "begin": "u_net/u_tx_fifo/rd_addr_reg[7]_syn_4.clk",
+              "end": "u_net/u_tx_fifo/ramgen_u/inst_syn_11.addrb[10]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "audio_mclk -> audio_mclk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 68.908,
+              "begin": "u_audio_pcm_fifo/ram_inst/ramread0_syn_25.clkb",
+              "end": "u_hdmi_audio_pcm_i2s_64fs/right_sample_reg[18]_syn_4.a[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 69.021,
+              "begin": "u_audio_pcm_fifo/rd_addr_reg[6]_syn_3.clk",
+              "end": "u_hdmi_audio_pcm_i2s_64fs/shift_reg_reg[58]_syn_4.a[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "audio_mclk -> audio_mclk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.295,
+              "begin": "u_hdmi_audio_pcm_i2s_64fs/O_i2s_BCLK_reg_syn_5.clk",
+              "end": "u_hdmi_audio_pcm_i2s_64fs/bit_cnt_reg[2]_syn_4.ce",
+              "type": "hold"
+            },
+            {
+              "slack": 0.32,
+              "begin": "u_audio_pcm_fifo/wr_to_rd_cross_inst/sync_r1_reg[0]_syn_3.clk",
+              "end": "u_audio_pcm_fifo/wr_to_rd_cross_inst/primary_addr_gray_sync_reg[0]_syn_3.mi[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "audio_mclk -> audio_mclk",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": 0.217,
+              "begin": "u_audio_enable_sync/enable_sync_reg[1]_syn_4.clk",
+              "end": "u_audio_pcm_fifo/rd_addr_reg[6]_syn_3.sr",
+              "type": "removal"
+            },
+            {
+              "slack": 0.285,
+              "begin": "u_audio_enable_sync/enable_sync_reg[1]_syn_4.clk",
+              "end": "u_audio_pcm_fifo/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[6]_syn_4.sr",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "clk -> clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 8.568,
+              "begin": "rst_cnt_reg[10]_syn_3.clk",
+              "end": "u_audio_visualizer_overlay/lt3_syn_30.mi[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 8.691,
+              "begin": "rst_cnt_reg[10]_syn_3.clk",
+              "end": "rst_all_reg_reg_syn_179.mi[1]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "clk -> clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.381,
+              "begin": "seg_scan_m0/scan_sel_reg[2]_syn_10.clk",
+              "end": "seg_scan_m0/scan_sel_reg[2]_syn_10.d[1]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.603,
+              "begin": "seg_scan_m0/scan_sel_reg[2]_syn_10.clk",
+              "end": "seg_scan_m0/scan_sel_reg[2]_syn_10.d[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "clk -> ext_mem_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 6.361,
+              "begin": "rst_all_reg_reg_syn_158.clk",
+              "end": "U3/u2_ram/u2_wrrd/app_wr_addr_1d_reg[19]_syn_3.a[1]",
+              "type": "setup"
+            },
+            {
+              "slack": 6.928,
+              "begin": "rst_all_reg_reg_syn_158.clk",
+              "end": "U3/u2_ram/u2_wrrd/cas_reg_syn_8.d[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "clk -> ext_mem_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.248,
+              "begin": "rst_all_reg_reg_syn_143.clk",
+              "end": "U3/u2_ram/u1_init_ref/pwr_200ms_cnt_reg[12]_syn_3.sr",
+              "type": "hold"
+            },
+            {
+              "slack": 0.264,
+              "begin": "u_audio_alarm_mixer/add1_syn_92.clk",
+              "end": "u_audio_alarm_mixer/tone_mode[2]_syn_80.sr",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "video_clk -> udp_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 2.595,
+              "begin": "u_video_transition_effects/effect_step_reg[2]_syn_25.clk",
+              "end": "protected_video0_reg[2]_syn_4.a[1]",
+              "type": "setup"
+            },
+            {
+              "slack": 2.595,
+              "begin": "u_video_transition_effects/effect_step_reg[2]_syn_25.clk",
+              "end": "protected_video0_reg[3]_syn_4.a[1]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "video_clk -> udp_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.153,
+              "begin": "u_control_snapshot/frame_state_reg[5]_syn_3.clk",
+              "end": "u_control_snapshot/ack_sync_reg[1]_syn_3.mi[0]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.269,
+              "begin": "u_control_snapshot/frame_state_reg[2]_syn_3.clk",
+              "end": "volume_meta_udp_reg[1]_syn_3.mi[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> mac_tx_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 6.197,
+              "begin": "u_net/u_tx_fifo/rd_txfer_tog_reg1_syn_11.clk",
+              "end": "u_audio_visualizer_overlay/lt22_syn_35.sr",
+              "type": "setup"
+            },
+            {
+              "slack": 6.263,
+              "begin": "u_net/u_tx_fifo/rd_txfer_tog_reg1_syn_11.clk",
+              "end": "u_net/u_tx_fifo/sub1_syn_76.sr",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> mac_tx_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.313,
+              "begin": "u_net/reset_pipe_reg[2]_syn_40.clk",
+              "end": "u_net/u_tx_fifo/rd_start_addr_reg[11]_syn_4.sr",
+              "type": "hold"
+            },
+            {
+              "slack": 0.438,
+              "begin": "u_net/reset_pipe_reg[2]_syn_40.clk",
+              "end": "u_video_rgb_to_axis_640x480/I_rgb[10]_syn_57.sr",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "video_clk -> ext_mem_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 6.582,
+              "begin": "u_video_transition_effects/effect_step_reg[2]_syn_25.clk",
+              "end": "frame_read_write_m0/frame_fifo_read_a/read_addr_index_d0_reg[0]_syn_4.a[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 6.582,
+              "begin": "u_video_transition_effects/effect_step_reg[2]_syn_25.clk",
+              "end": "frame_read_write_m0/frame_fifo_read_a/read_addr_index_d0_reg[0]_syn_4.a[1]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "video_clk -> ext_mem_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.132,
+              "begin": "frame_read_write_m0/read_buf_a/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.clk",
+              "end": "frame_read_write_m0/read_buf_a/rd_to_wr_cross_inst/primary_addr_gray_sync_reg[0]_syn_3.mi[0]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.132,
+              "begin": "frame_read_write_m0/read_buf_b/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.clk",
+              "end": "frame_read_write_m0/read_buf_b/rd_to_wr_cross_inst/sync_r1_reg[2]_syn_3.mi[1]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> video_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 6.859,
+              "begin": "frame_read_write_m0/frame_fifo_read_b/fifo_aclr_reg_syn_8.clk",
+              "end": "video_timing_data_m0/read_req_reg_syn_11.d[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 8.414,
+              "begin": "frame_read_write_m0/read_buf_b/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk",
+              "end": "frame_read_write_m0/read_buf_b/sub1_syn_49.mi[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> video_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.323,
+              "begin": "frame_read_write_m0/read_buf_a/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[6]_syn_4.clk",
+              "end": "frame_read_write_m0/read_buf_a/wr_to_rd_cross_inst/sync_r1_reg[6]_syn_4.mi[1]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.42,
+              "begin": "frame_read_write_m0/read_buf_a/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk",
+              "end": "frame_read_write_m0/read_buf_a/sub1_syn_49.mi[1]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> video_clk",
+          "type": "recovery",
+          "worst_reported": [
+            {
+              "slack": 8.397,
+              "begin": "frame_read_write_m0/frame_fifo_read_b/fifo_aclr_reg_syn_8.clk",
+              "end": "frame_read_write_m0/read_buf_b/asy_r_rst1_reg_syn_5.sr",
+              "type": "recovery"
+            },
+            {
+              "slack": 8.505,
+              "begin": "frame_read_write_m0/frame_fifo_read_a/fifo_aclr_reg_syn_8.clk",
+              "end": "frame_read_write_m0/read_buf_a/asy_r_rst1_reg_syn_4.sr",
+              "type": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> video_clk",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": 0.348,
+              "begin": "frame_read_write_m0/frame_fifo_read_a/fifo_aclr_reg_syn_8.clk",
+              "end": "frame_read_write_m0/read_buf_a/asy_r_rst1_reg_syn_4.sr",
+              "type": "removal"
+            },
+            {
+              "slack": 0.421,
+              "begin": "frame_read_write_m0/frame_fifo_read_b/fifo_aclr_reg_syn_8.clk",
+              "end": "frame_read_write_m0/read_buf_b/asy_r_rst1_reg_syn_5.sr",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> ext_mem_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 0.321,
+              "begin": "u_network_images/u_sink/write_req_reg_syn_10.clk",
+              "end": "u_network_images/u_sink/mux113_syn_213.mi[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 0.682,
+              "begin": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.clk",
+              "end": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[1]_syn_3.mi[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> ext_mem_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.214,
+              "begin": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[8]_syn_3.clk",
+              "end": "frame_read_write_m0/write_buf/lt0_syn_35.mi[0]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.214,
+              "begin": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[5]_syn_4.clk",
+              "end": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_sync_reg[0]_syn_4.mi[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> ext_mem_clk",
+          "type": "recovery",
+          "worst_reported": [
+            {
+              "slack": -0.136,
+              "begin": "u_network_images/u_sink/timeout_count_b[5]_syn_9.clk",
+              "end": "u_network_images/u_sink/lt0_syn_104.sr",
+              "type": "recovery"
+            },
+            {
+              "slack": 0.206,
+              "begin": "u_network_images/u_sink/timeout_count_b[5]_syn_9.clk",
+              "end": "u_network_images/u_sink/mux102_syn_128.sr",
+              "type": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> udp_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 6.614,
+              "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[8]_syn_4.clk",
+              "end": "u_audio_visualizer_overlay/lt23_syn_38.mi[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 6.737,
+              "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[3]_syn_3.clk",
+              "end": "u_net/u_tx_fifo/wr_rd_addr_reg[1]_syn_3.mi[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> udp_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.244,
+              "begin": "u_video_rgb_to_axis_640x480/I_rgb[3]_syn_67.clk",
+              "end": "u_video_rgb_to_axis_640x480/I_rgb[4]_syn_45.mi[0]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.244,
+              "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[1]_syn_3.clk",
+              "end": "u_net/u_tx_fifo/wr_rd_addr_reg[0]_syn_3.mi[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> udp_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 0.802,
+              "begin": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/secondary_addr_o_reg[6]_syn_4.clk",
+              "end": "frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[0]_syn_3.mi[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 0.805,
+              "begin": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_sync_reg[8]_syn_3.clk",
+              "end": "frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[8]_syn_4.mi[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> udp_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.214,
+              "begin": "frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk",
+              "end": "frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[5]_syn_4.mi[0]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.223,
+              "begin": "frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.clk",
+              "end": "frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[2]_syn_4.mi[1]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> udp_clk",
+          "type": "recovery",
+          "worst_reported": [
+            {
+              "slack": -0.142,
+              "begin": "u_network_images/u_sink/timeout_count_b[7]_syn_11.clk",
+              "end": "u_network_images/u_sink/add2_syn_116.sr",
+              "type": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> udp_clk",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": 0.382,
+              "begin": "frame_read_write_m0/frame_fifo_write_m0/write_req_d1_reg_syn_5.clk",
+              "end": "u_network_images/u_sink/add2_syn_116.sr",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "video_clk -> clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 16.795,
+              "begin": "u_video_transition_effects/direct_force_reg_syn_8.clk",
+              "end": "image_number_sync0_reg[2]_syn_4.b[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 17.121,
+              "begin": "u_video_transition_effects/direct_force_reg_syn_8.clk",
+              "end": "image_number_sync0_reg[0]_syn_4.b[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "video_clk -> clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.687,
+              "begin": "u_video_frame_valid_gate/frame_vs_d_reg_syn_8.clk",
+              "end": "image_number_sync0_reg[0]_syn_4.d[0]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.687,
+              "begin": "u_video_frame_valid_gate/frame_vs_d_reg_syn_8.clk",
+              "end": "image_number_sync0_reg[0]_syn_4.d[1]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 0.884,
+              "begin": "u_video_lyric_overlay/load_index_reg[5]_syn_11.clk",
+              "end": "phy1_rgmii_tx_clk_syn_2.do[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 6.594,
+              "begin": "u_video_lyric_overlay/load_index_reg[5]_syn_11.clk",
+              "end": "phy1_rgmii_tx_clk_syn_2.do[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+          "type": "recovery",
+          "worst_reported": [
+            {
+              "slack": 0.95,
+              "begin": "u_net/u_temac/reset_reg2_reg[1]_syn_4.clk",
+              "end": "phy1_rgmii_tx_clk_syn_2.rst",
+              "type": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": 6.379,
+              "begin": "u_net/u_temac/reset_reg2_reg[1]_syn_4.clk",
+              "end": "phy1_rgmii_tx_clk_syn_2.rst",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> ext_mem_clk_sft",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": -1.973,
+              "begin": "U3/u2_ram/u2_wrrd/app_wr_addr_1d_reg[19]_syn_3.clk",
+              "end": "U3/sdram.dq[17]",
+              "type": "setup"
+            },
+            {
+              "slack": -1.973,
+              "begin": "U3/u2_ram/u2_wrrd/app_wr_addr_1d_reg[19]_syn_3.clk",
+              "end": "U3/sdram.dq[16]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk -> ext_mem_clk_sft",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 4.867,
+              "begin": "U3/sdram_syn_1.osclk",
+              "end": "U3/sdram.dq[0]",
+              "type": "hold"
+            },
+            {
+              "slack": 4.867,
+              "begin": "U3/sdram_syn_2.osclk",
+              "end": "U3/sdram.dq[6]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk_sft -> ext_mem_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": -5.699,
+              "begin": "U3/sdram.dq[0]",
+              "end": "U3/sdram_syn_1.bpad",
+              "type": "setup"
+            },
+            {
+              "slack": -5.699,
+              "begin": "U3/sdram.dq[6]",
+              "end": "U3/sdram_syn_2.bpad",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "ext_mem_clk_sft -> ext_mem_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 9.521,
+              "begin": "U3/sdram.dq[0]",
+              "end": "U3/sdram_syn_1.bpad",
+              "type": "hold"
+            },
+            {
+              "slack": 9.521,
+              "begin": "U3/sdram.dq[6]",
+              "end": "U3/sdram_syn_2.bpad",
+              "type": "hold"
+            }
+          ]
+        }
+      ]
+    },
+    "td_log": {
+      "file": "dual_board/image_link/prj/media_a/td_20261005_133609.log",
+      "sha256": "C1E3CD9601D893FF429ED88BAE562E6B55917DE3460A866C06058268AC33D868"
+    }
+  },
+  "board_b": {
+    "routing_completed": true,
+    "routed": {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B_R2_HW_20261005_phy.area",
+      "sha256": "5E9D4D6B8D10A645C997DB68F90D8E72DE9F4FDA0713AB74A2CE551C9E7D1D9B",
+      "lut": 11882,
+      "registers": 7699,
+      "bram9k": 28,
+      "bram32k": 9,
+      "dsp": 3,
+      "pll": 3,
+      "lut_percent": 60.62
+    },
+    "gate": {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B_R2_HW_20261005_gate.area",
+      "sha256": "EFBDDD283D53C2C6ECEBE4A34660920F0011F21376FFF080A762E84FB5BC0187",
+      "lut": 11218,
+      "registers": 7618,
+      "bram9k": 28,
+      "bram32k": 9,
+      "dsp": 3,
+      "pll": 3,
+      "lut_percent": 57.23
+    },
+    "timing": {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B_R2_HW_20261005_pr.timing",
+      "sha256": "A289D5A8A409567C09FC48CC9EF45A4C526677C40548BEF6B36DC11BFDFB0370",
+      "setup_or_recovery_wns": -3.907,
+      "hold_or_removal_wns": -1.54,
+      "confidence": "Routed",
+      "sta_coverage_percent": 99.82,
+      "closed": false,
+      "path_groups": [
+        {
+          "name": "udp_clk -> udp_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": -2.41,
+              "begin": "u_media/u_packets/ramread0_syn_26.clkb",
+              "end": "u_net/fixed_peer$u_udp/ramread1_syn_6.dia[3]",
+              "type": "setup"
+            },
+            {
+              "slack": -2.397,
+              "begin": "u_net/fixed_peer$u_udp/ramread0_syn_6.clkb",
+              "end": "u_media/u_receipt/receipt_valid_n1_syn_39.a[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> udp_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.03,
+              "begin": "u_net/u_tx_fifo/wr_data_bram_reg[6]_syn_4.clk",
+              "end": "u_net/u_tx_fifo/ramgen_u/inst_syn_1.dia[6]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.03,
+              "begin": "u_remote_compute/written_reg[3]_syn_3.clk",
+              "end": "u_remote_compute/ramread0_syn_6.addra[8]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> udp_clk",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": 0.011,
+              "begin": "u_net/fixed_peer$u_udp/header_ok_reg_syn_156.clk",
+              "end": "u_net/fixed_peer$u_udp/header_ok_reg_syn_152.sr",
+              "type": "removal"
+            },
+            {
+              "slack": 0.019,
+              "begin": "u_net/reset_pipe_reg[2]_syn_34.clk",
+              "end": "u_net/fixed_peer$u_udp/rx_ip_sum_reg[12]_syn_4.sr",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "sd_clk -> sd_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": -1.622,
+              "begin": "u_media/u_tf/bmp_read_m0/bmp_len_cnt_reg[14]_syn_4.clk",
+              "end": "u_media/u_tf/bmp_read_m0/state_reg[1]_syn_31.mi[1]",
+              "type": "setup"
+            },
+            {
+              "slack": -1.414,
+              "begin": "u_media/u_tf/bmp_read_m0/bmp_len_cnt_reg[14]_syn_4.clk",
+              "end": "u_media/u_tf/bmp_read_m0/state_reg[1]_syn_21.mi[1]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "sd_clk -> sd_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.096,
+              "begin": "u_media/u_tf/audio_pcm_data_reg[13]_syn_4.clk",
+              "end": "u_pcm_source_fifo/ram_inst/ramread0_syn_6.dia[5]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.136,
+              "begin": "u_media/u_tf/audio_pcm_data_reg[12]_syn_4.clk",
+              "end": "u_pcm_source_fifo/ram_inst/ramread0_syn_6.dib[3]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "sd_clk -> sd_clk",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": 0.102,
+              "begin": "u_pcm_source_fifo/asy_w_rst1_reg_syn_5.clk",
+              "end": "u_pcm_source_fifo/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_4.sr",
+              "type": "removal"
+            },
+            {
+              "slack": 0.197,
+              "begin": "u_pcm_source_fifo/asy_w_rst1_reg_syn_5.clk",
+              "end": "u_pcm_source_fifo/rd_to_wr_cross_inst/sync_r1_reg[5]_syn_4.sr",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "compute_clk -> compute_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 18.1,
+              "begin": "u_remote_compute/u_spectrum/eval_real_reg[5]_syn_4.clk",
+              "end": "u_media/u_tf/bmp_read_m0/g_resample$u_scaler/mul_delta_b1[9]_syn_4.mi[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 18.297,
+              "begin": "u_remote_compute/u_spectrum/eval_real_reg[5]_syn_4.clk",
+              "end": "u_media/u_tf/bmp_read_m0/g_resample$u_scaler/sub6_syn_88.mi[1]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "compute_clk -> compute_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.214,
+              "begin": "u_remote_compute/u_spectrum/O_band_levels_reg[6]_syn_4.clk",
+              "end": "u_compute_snapshot/mailbox_reg[19]_syn_4.mi[0]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.214,
+              "begin": "u_remote_compute/u_spectrum/O_band_levels_reg[5]_syn_4.clk",
+              "end": "u_compute_snapshot/mailbox_reg[19]_syn_4.mi[1]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> sd_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 1.85,
+              "begin": "u_media/u_pixels/rd_gray_reg[2]_syn_4.clk",
+              "end": "u_media/u_pixels/rd_sync0_reg[2]_syn_3.mi[1]",
+              "type": "hold"
+            },
+            {
+              "slack": 1.85,
+              "begin": "u_media/u_pixels/rd_gray_reg[6]_syn_4.clk",
+              "end": "u_media/u_pixels/rd_sync0_reg[3]_syn_3.mi[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> sd_clk",
+          "type": "recovery",
+          "worst_reported": [
+            {
+              "slack": -3.907,
+              "begin": "u_net/fixed_peer$u_udp/payload_ok_reg_syn_60.clk",
+              "end": "u_remote_compute/u_wave/wave_bank_ram_n_syn_337.sr",
+              "type": "recovery"
+            },
+            {
+              "slack": -3.899,
+              "begin": "u_net/fixed_peer$u_udp/payload_ok_reg_syn_60.clk",
+              "end": "u_media/u_tf/bmp_read_m0/g_resample$u_scaler/x_pos_reg[12]_syn_4.sr",
+              "type": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> compute_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.25,
+              "begin": "u_remote_compute/written_gray_reg[1]_syn_4.clk",
+              "end": "u_remote_compute/written_g0_reg[1]_syn_3.mi[1]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.25,
+              "begin": "u_remote_compute/written_gray_reg[31]_syn_3.clk",
+              "end": "u_remote_compute/written_g0_reg[31]_syn_4.mi[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> compute_clk",
+          "type": "recovery",
+          "worst_reported": [
+            {
+              "slack": 0.292,
+              "begin": "u_net/fixed_peer$u_udp/tx_frame_end_b[4]_syn_12.clk",
+              "end": "u_remote_compute/u_wave/O_wave_samples_reg[103]_syn_4.sr",
+              "type": "recovery"
+            },
+            {
+              "slack": 0.292,
+              "begin": "u_net/fixed_peer$u_udp/tx_frame_end_b[4]_syn_12.clk",
+              "end": "u_remote_compute/u_wave/O_wave_samples_reg[104]_syn_4.sr",
+              "type": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "rgmii_rx_90 -> rgmii_rx_90",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 2.487,
+              "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_f4biXjlA/al102_0_I1BBbU/al102_qrpH6pV1_reg_syn_5.clk",
+              "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_f4biXjlA/al102_yKqPCjEw/al102_HP1qu49R_reg[0]_syn_4.sr",
+              "type": "setup"
+            },
+            {
+              "slack": 2.622,
+              "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_f4biXjlA/al102_0_I1BBbU/al102_qrpH6pV1_reg_syn_5.clk",
+              "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_f4biXjlA/al102_yKqPCjEw/al102_HP1qu49R_reg[2]_syn_4.sr",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "rgmii_rx_90 -> rgmii_rx_90",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": -0.004,
+              "begin": "u_net/u_rx_fifo/wr_addr_reg[7]_syn_4.clk",
+              "end": "u_net/u_rx_fifo/ramgen_l/inst_syn_1.addra[11]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.095,
+              "begin": "u_net/u_rx_fifo/wr_data_bram_reg[6]_syn_4.clk",
+              "end": "u_net/u_rx_fifo/ramgen_l/inst_syn_1.dia[7]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> mac_tx_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 1.612,
+              "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_jlblKL3I/al102_LOhHHNug_aead6cd6dadd/al102_6BknlmWX_reg_syn_11.clk",
+              "end": "u_pc_control/mux134_syn_329.ce",
+              "type": "setup"
+            },
+            {
+              "slack": 1.612,
+              "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_jlblKL3I/al102_LOhHHNug_aead6cd6dadd/al102_6BknlmWX_reg_syn_11.clk",
+              "end": "u_net/u_tx_fifo/rd_addr_reg[11]_syn_4.ce",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> mac_tx_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.13,
+              "begin": "u_net/u_tx_fifo/rd_addr_reg[7]_syn_4.clk",
+              "end": "u_net/u_tx_fifo/ramgen_u/inst_syn_11.addrb[11]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.223,
+              "begin": "u_net/u_temac/u_tx_clk_en_gen/client_txc_en_reg_syn_22.clk",
+              "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_h3sVGed__reg_syn_5.ce",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "sd_clk -> udp_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": -1.54,
+              "begin": "u_media/u_pixels/wr_gray_reg[6]_syn_4.clk",
+              "end": "u_media/u_pixels/sub0_syn_73.mi[0]",
+              "type": "hold"
+            },
+            {
+              "slack": -1.54,
+              "begin": "u_media/u_tf/bmp_read_m0/audio_file_size_reg[17]_syn_4.clk",
+              "end": "u_audio_packets/samples_reg[14]_syn_4.mi[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "sd_clk -> udp_clk",
+          "type": "recovery",
+          "worst_reported": [
+            {
+              "slack": -0.452,
+              "begin": "u_packet_scheduler/crc_b[12]_syn_421.clk",
+              "end": "u_media/u_receipt/receipt_sequence_reg[2]_syn_4.sr",
+              "type": "recovery"
+            },
+            {
+              "slack": -0.233,
+              "begin": "u_packet_scheduler/crc_b[12]_syn_421.clk",
+              "end": "u_media/u_packets/mux36_syn_454.sr",
+              "type": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "compute_clk -> udp_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 5.755,
+              "begin": "u_compute_snapshot/mailbox_reg[234]_syn_4.clk",
+              "end": "u_remote_compute/u_spectrum/sub0_syn_54.mi[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 5.895,
+              "begin": "u_compute_snapshot/mailbox_reg[102]_syn_4.clk",
+              "end": "u_compute_snapshot/frame_state_reg[102]_syn_3.mi[1]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "compute_clk -> udp_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.335,
+              "begin": "u_compute_snapshot/mailbox_reg[15]_syn_3.clk",
+              "end": "u_compute_snapshot/frame_state_reg[15]_syn_3.mi[0]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.335,
+              "begin": "u_compute_snapshot/mailbox_reg[19]_syn_4.clk",
+              "end": "u_compute_snapshot/frame_state_reg[19]_syn_3.mi[1]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "clk_50 -> clk_50",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 10.941,
+              "begin": "u_pc_control/command_buffer_reg[92]_syn_4.clk",
+              "end": "u_pc_control/O_volume_level_b4[3]_syn_16.a[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 10.966,
+              "begin": "u_pc_control/u_uart_rx/data_reg[6]_syn_4.clk",
+              "end": "u_pc_control/O_volume_level_b4[1]_syn_15.a[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "clk_50 -> clk_50",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.23,
+              "begin": "u_pc_control/tx_data_reg[2]_syn_38.clk",
+              "end": "u_control_source/source_release_reg[1]_syn_4.mi[1]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.231,
+              "begin": "u_pc_control/u_uart_rx/data_reg[6]_syn_4.clk",
+              "end": "u_pc_control/response_count_b[0]_syn_234.mi[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> clk_50",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 0.212,
+              "begin": "u_pc_control/lt4_syn_32.clk",
+              "end": "u_pc_control/command_buffer_reg[92]_syn_4.ce",
+              "type": "setup"
+            },
+            {
+              "slack": 0.299,
+              "begin": "u_pc_control/lt4_syn_32.clk",
+              "end": "u_pc_control/command_buffer_reg[91]_syn_4.ce",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> clk_50",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.342,
+              "begin": "u_control_source/acknowledge_toggle_reg_syn_4.clk",
+              "end": "u_control_source/ack_sync_reg[0]_syn_4.mi[1]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> clk_50",
+          "type": "recovery",
+          "worst_reported": [
+            {
+              "slack": 0.481,
+              "begin": "u_pc_control/mux134_syn_323.clk",
+              "end": "uart_rx_syn_4.rst",
+              "type": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> clk_50",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": 0.409,
+              "begin": "u_net/reset_pipe_reg[2]_syn_43.clk",
+              "end": "u_pc_control/u_uart_baud_tick/baud_cnt_reg[16]_syn_4.sr",
+              "type": "removal"
+            },
+            {
+              "slack": 0.409,
+              "begin": "u_net/reset_pipe_reg[2]_syn_43.clk",
+              "end": "u_pc_control/u_uart_baud_tick/baud_cnt_reg[26]_syn_4.sr",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> mac_tx_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 6.186,
+              "begin": "u_net/reset_pipe_reg[2]_syn_34.clk",
+              "end": "u_net/u_tx_fifo/rd_state_reg[0]_syn_4.sr",
+              "type": "setup"
+            },
+            {
+              "slack": 6.186,
+              "begin": "u_net/reset_pipe_reg[2]_syn_34.clk",
+              "end": "u_net/u_tx_fifo/rd_state_reg[5]_syn_4.sr",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "udp_clk -> mac_tx_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.27,
+              "begin": "u_net/fixed_peer$u_udp/lt3_syn_56.clk",
+              "end": "u_net/u_tx_fifo/rd_addr_reg[9]_syn_4.sr",
+              "type": "hold"
+            },
+            {
+              "slack": 0.278,
+              "begin": "u_net/fixed_peer$u_udp/lt3_syn_56.clk",
+              "end": "u_pc_control/mux134_syn_329.sr",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> udp_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 6.671,
+              "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[5]_syn_3.clk",
+              "end": "u_net/u_tx_fifo/wr_rd_addr_reg[5]_syn_4.mi[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 6.725,
+              "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[3]_syn_3.clk",
+              "end": "u_net/u_tx_fifo/wr_rd_addr_reg[3]_syn_4.mi[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> udp_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.356,
+              "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[8]_syn_4.clk",
+              "end": "u_net/u_tx_fifo/wr_rd_addr_reg[8]_syn_4.mi[1]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.359,
+              "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[0]_syn_3.clk",
+              "end": "u_net/fixed_peer$u_udp/add3_syn_89.mi[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "clk_50 -> udp_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 2.757,
+              "begin": "u_control_source/mailbox_reg[5]_syn_4.clk",
+              "end": "u_control_source/frame_state_reg[1]_syn_3.mi[0]",
+              "type": "setup"
+            },
+            {
+              "slack": 2.757,
+              "begin": "u_control_source/mailbox_reg[3]_syn_4.clk",
+              "end": "u_control_source/frame_state_reg[3]_syn_3.mi[1]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "clk_50 -> udp_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.151,
+              "begin": "u_control_source/request_toggle_reg_syn_5.clk",
+              "end": "u_control_source/frame_state_reg[0]_syn_3.mi[0]",
+              "type": "hold"
+            },
+            {
+              "slack": 0.151,
+              "begin": "u_control_source/request_toggle_reg_syn_5.clk",
+              "end": "u_control_source/req_sync_reg[1]_syn_4.mi[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 1.129,
+              "begin": "u_net/u_temac/u_tx_clk_en_gen/rgmii_txc_en_shift_reg_syn_8.clk",
+              "end": "phy1_rgmii_tx_clk_syn_2.do[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 6.393,
+              "begin": "u_net/u_temac/u_tx_clk_en_gen/rgmii_txc_en_shift_reg_syn_8.clk",
+              "end": "phy1_rgmii_tx_clk_syn_2.do[0]",
+              "type": "hold"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+          "type": "recovery",
+          "worst_reported": [
+            {
+              "slack": 0.758,
+              "begin": "u_net/u_temac/u_tx_clk_en_gen/client_txc_en_reg_syn_30.clk",
+              "end": "phy1_rgmii_tx_clk_syn_2.rst",
+              "type": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+          "type": "removal",
+          "worst_reported": [
+            {
+              "slack": 6.466,
+              "begin": "u_net/u_temac/u_tx_clk_en_gen/client_txc_en_reg_syn_30.clk",
+              "end": "phy1_rgmii_tx_clk_syn_2.rst",
+              "type": "removal"
+            }
+          ]
+        },
+        {
+          "name": "sd_clk -> compute_clk",
+          "type": "setup",
+          "worst_reported": [
+            {
+              "slack": 5.837,
+              "begin": "u_media/u_tf/bmp_read_m0/audio_file_size_reg[11]_syn_4.clk",
+              "end": "u_remote_compute/song_match_sync_reg[0]_syn_4.a[0]",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "name": "sd_clk -> compute_clk",
+          "type": "hold",
+          "worst_reported": [
+            {
+              "slack": 0.068,
+              "begin": "u_media/u_tf/bmp_read_m0/audio_file_size_reg[29]_syn_4.clk",
+              "end": "u_remote_compute/song_match_sync_reg[0]_syn_4.b[0]",
+              "type": "hold"
+            }
+          ]
+        }
+      ]
+    },
+    "td_log": {
+      "file": "dual_board/image_link/prj/media_b/td_20261005_132323.log",
+      "sha256": "D084D69E89C0CB3D6459E58CDFC2227840AAC28384A30F717954A0BA42EA3B21"
+    }
+  },
+  "source_manifest": [
+    {
+      "file": "dual_board/image_link/rtl/hw_20261005/audio_receipt_hw.v",
+      "sha256": "372F7166E55F118B2C1DF3DCB85BE99C6C49DB1A24DB9B2856A439EC3C6CA9F0"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_20261005/remote_audio_compute_hw.v",
+      "sha256": "EB6016D9DD865DAF9D64EADE8E10F3ED2D32C0A11480B416F8E65C08785A4EC1"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round2_20261005/home_index_stream_hw.v",
+      "sha256": "EF17E105BABA053CD767E4B76EDBB963CC3109A93B54173549F2FA5D81B8CA91"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round3_20261005/top_dual_image_hw.v",
+      "sha256": "A1FC45219CE0116EB68739E4465DBCEC5090364DCCB1623E03AE4EF408B4DFCB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round3_20261005/frame_read_write_hw.v",
+      "sha256": "0CCA89D50A738E066F55937A701247A0410E0764C02F3539E9AD18541AF3931F"
+    },
+    {
+      "file": "dual_board/image_link/constraints/media_a.adc",
+      "sha256": "6CA99CE263324AA8E658C45D4079CADD0DCBC6B1C206F82F9485099EE781D71B"
+    },
+    {
+      "file": "dual_board/image_link/constraints/media_a.sdc",
+      "sha256": "CB2FD0E01B1D5FE3D250FFACFDBFE2B23AD3E2E52580F5DB5AE8F33D56BEA074"
+    },
+    {
+      "file": "dual_board/image_link/constraints/media_b.adc",
+      "sha256": "7C0047FBE7E8073AFA858A785F736E3B86A6E52518FB32ABEC451370A17935F0"
+    },
+    {
+      "file": "dual_board/image_link/constraints/media_b.sdc",
+      "sha256": "267F01FE91C64C1427B53996E471C3BD8528B6E8FCCCE63F9226B98C877C43D7"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_a/MEDIA_IMAGE_A_R3_HW_20261005.al",
+      "sha256": "79CE6305AB15AF80F81A42191232F4D19E69A0CC908A7E89F3F3E34A81F5BE0C"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_a/build_round3_a_seed3.tcl",
+      "sha256": "6D607067DCBD57DBC5FA6DCADBBBD9891C6023942CB53F769DF6EA045BBAAEC5"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B_R2_HW_20261005.al",
+      "sha256": "524E58C41A07F738816A598A7A52456E2CB9CD9C37F5AAA01FFA704A55563280"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/build_round2_b.tcl",
+      "sha256": "F334C856FAD33E91E4BB14DA950E7319EBD56452A63398236C6E3465501D8B04"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_player_pipeline_guard.v",
+      "sha256": "FFD294E0A5D9C760A45797AD1699468A3728CC838EB5725FC7CBBC26427868DA"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_player_frame_reset.v",
+      "sha256": "A570D88DDCB2767BD62AB270BB54B88CF0AF5546351A23035B63652C18AAA5CB"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_player_frame_credit.v",
+      "sha256": "96C5D4C6C83372D7C3492F313566F9D044AD31FEB319A3D6C2C282335C58DFC3"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_player_pipeline.ps1",
+      "sha256": "58B3567C3A47268CCCA57364538AB9E53F54E9C2D369A8FE4F7EF8EF1C824631"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_player_round3.ps1",
+      "sha256": "9FA7B99C0677E858834F95908BF8E85602452B7607FD7D40F8DD5AE9A959237F"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_player_round3.do",
+      "sha256": "5DAF045F0D639F2FD39AEA01E5C9F3B18894F17C5B58EED00A1FE65C2ED8E2AD"
+    },
+    {
+      "file": "dual_board/image_link/sim/hw_round2_20261005/run_home_modelsim.do",
+      "sha256": "67EF0688DE79A97159541D67F7D96C78047B9CBE779EED86A163287671B2914B"
+    }
+  ],
+  "timing_closed": false,
+  "caveats": [
+    "No complete physical PHY/HDMI/SDRAM simulation or board-player verification.",
+    "Only asynchronous PHY RX and audio clock groups are cut; related pixel/UDP/SDRAM clocks remain timed.",
+    "External IO delay specification audit remains incomplete; coverage is not full constraint certification.",
+    "Negative timing candidates are not automatically bit-generated.",
+    "40 tests cover audio pipeline; 7 additional tests cover later memory/home changes, not a new full 40 on that exact top."
+  ]
+}

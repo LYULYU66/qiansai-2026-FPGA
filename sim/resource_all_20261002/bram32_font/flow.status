@@ -1,0 +1,21 @@
+Location         : C:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\sim\resource_all_20261002\bram32_font
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : lyric_font_bram32_rom
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : basic
+Setup            : WNS 2147483647ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS 2147483647ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+--------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+--------------------------------------------------------------------------------------------------
+  import_device  |    1     |   0s(0%)    |     0(0%)     |        83         |        83         
+  optimize_gate  |    1     |   0s(0%)    |     0(0%)     |        102        |        102        
+  optimize_rtl   |    1     |   0s(0%)    |     0(0%)     |        98         |        98         
+--------------------------------------------------------------------------------------------------
+      total      |    3     |     0s      |       0       |        102        |        102        
+--------------------------------------------------------------------------------------------------

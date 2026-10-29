@@ -1,0 +1,28 @@
+const fs=require('fs');
+const path=require('path');
+const base=path.resolve(__dirname,'..');
+const dir=path.join(base,'prj/media_a');
+const old='MEDIA_SRAM_TEST_A_MAIN_20261005';
+const fresh='MEDIA_SRAM_TEST_A_IMAGEFIX_R7_20261005';
+let project=fs.readFileSync(path.join(dir,old+'.al'),'utf8');
+project=project.split(old).join(fresh);
+const needle='hw_round3_20261005/frame_read_write_hw.v';
+if(!project.includes(needle))throw Error('Missing expected source path');
+project=project.replace(needle,'hw_round7_20261005/frame_read_write_hw.v');
+fs.writeFileSync(path.join(dir,fresh+'.al'),project);
+const script=fs.readFileSync(path.join(dir,'build_sram_test.tcl'),'utf8').split(old).join(fresh);
+fs.writeFileSync(path.join(dir,'build_imagefix_r7.tcl'),script);
+console.log('Prepared isolated A R7 image FIFO reset fix; B and old bits unchanged.');
+let full=fs.readFileSync(path.join(__dirname,'tb_image_writer_reset_window.v'),'utf8');
+full=full.replace(/1024/g,'307200').replace(/8192/g,'307200').replace(/16384/g,'614400').replace(/24576/g,'921600');
+full=full.replace('.FRAME_PACKETS(4)','.FRAME_PACKETS(1200)').replace(/i==1023/g,'i==307199');
+full=full.replace('FRAME_WIDTH(64),.FRAME_HEIGHT(16)','FRAME_WIDTH(640),.FRAME_HEIGHT(480)');
+full=full.replace('GOLDEN ? 1 : 3','GOLDEN ? 1 : 1');
+full=full.replace('#900000','#9000000').replace('#100000;','$PLACEHOLDER;').replace('$PLACEHOLDER;','#1000000;');
+full=full.replace('3 committed frames, 3072 exact words','1 committed 640x480 frame, 307200 exact words');
+full=full.slice(0,full.indexOf('module tb_image_writer_reset_window;'))+
+ 'module tb_image_writer_full_frame; wire done; writer_window_case #(.PHASE(3)) full0(done); initial begin wait(done); $display("PASS full 640x480 native FIFO writer: 307200 exact RGB/tag words committed"); $finish; end endmodule\n';
+fs.writeFileSync(path.join(__dirname,'tb_image_writer_full_frame.v'),full);
+let run=fs.readFileSync(path.join(__dirname,'run_writer_reset_window.do'),'utf8');
+run=run.replace(/work_writer_window7/g,'work_writer_full7').replace(/tb_image_writer_reset_window/g,'tb_image_writer_full_frame');
+fs.writeFileSync(path.join(__dirname,'run_writer_full_frame.do'),run);

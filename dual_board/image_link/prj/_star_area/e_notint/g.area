@@ -1,0 +1,44 @@
+standard
+***Report Model: star_area_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        74   out of    188   39.36%
+  #input                   40
+  #output                  34
+  #inout                    0
+
+LUT Statistics
+#Total_luts              1361
+  #lut4                  1189
+  #lut5                   172
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                     2125   out of  19600   10.84%
+#reg                     1160   out of  19600    5.92%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                        5   out of     29   17.24%
+#pad                       74   out of    188   39.36%
+  #ireg                    11
+  #oreg                     2
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Report Hierarchy Area:
++-------------------------------------------------------------------------------+
+|Instance   |Module                |lut     |ripple  |seq     |bram    |dsp     |
++-------------------------------------------------------------------------------+
+|top        |star_area_top         |1767    |358     |1173    |0       |5       |
+|  eng      |star_motion_engine    |252     |82      |288     |0       |0       |
+|  rx       |media_control_star_rx |131     |16      |274     |0       |0       |
+|  sky      |video_star_sky        |1088    |247     |389     |0       |5       |
+|    u_far  |star_sky_layer        |317     |59      |139     |0       |1       |
+|    u_near |star_sky_layer        |428     |61      |149     |0       |1       |
+|  tx       |media_control_star_tx |271     |13      |137     |0       |0       |
++-------------------------------------------------------------------------------+

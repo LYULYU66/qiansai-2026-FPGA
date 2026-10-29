@@ -1,0 +1,50 @@
+standard
+***Report Model: image_tf_source Device: EG4S20BG256***
+
+IO Statistics
+#IO                       199   out of    188  105.85%
+  #input                   33
+  #output                 166
+  #inout                    0
+
+LUT Statistics
+#Total_luts              3078
+  #lut4                  2645
+  #lut5                   433
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                     4296   out of  19600   21.92%
+#reg                     2827   out of  19600   14.42%
+#bram                       6   out of     64    9.38%
+  #bram9k                   6
+  #fifo9k                   0
+#bram32k                    2   out of     16   12.50%
+#dsp                        1   out of     29    3.45%
+#pad                      199   out of    188  105.85%
+  #ireg                    11
+  #oreg                   137
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------------------------+
+|Instance                        |Module                 |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------------------------------+
+|top                             |image_tf_source        |3687    |609     |2975    |8       |1       |
+|  u_packets                     |image_packet_tx        |403     |40      |135     |2       |0       |
+|  u_pixels                      |image_pixel_cdc        |67      |22      |90      |3       |0       |
+|  u_receipt                     |image_receipt_rx       |84      |0       |127     |0       |0       |
+|  u_tf                          |sd_card_bmp            |3081    |533     |2407    |3       |1       |
+|    bmp_read_m0                 |bmp_read               |2286    |413     |1731    |3       |1       |
+|      g_resample$u_scaler       |bmp_bilinear_stream    |815     |211     |488     |3       |1       |
+|    sd_card_top_m0              |sd_card_top            |301     |24      |180     |0       |0       |
+|      sd_card_cmd_m0            |sd_card_cmd            |136     |19      |47      |0       |0       |
+|      sd_card_sec_read_write_m0 |sd_card_sec_read_write |102     |0       |89      |0       |0       |
+|      spi_master_m0             |spi_master             |63      |5       |44      |0       |0       |
+|    u_key_auto                  |key_press_debounce     |41      |18      |24      |0       |0       |
+|    u_key_next                  |key_press_debounce     |41      |18      |24      |0       |0       |
++-----------------------------------------------------------------------------------------------------+

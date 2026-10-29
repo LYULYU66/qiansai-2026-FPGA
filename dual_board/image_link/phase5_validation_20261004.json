@@ -1,0 +1,262 @@
+{
+  "phase": 5,
+  "date": "2026-10-04",
+  "generatedAt": "2026-10-04T08:17:19.015Z",
+  "modelsim": "Starter 10.5b",
+  "simulation_cases_passed": 18,
+  "simulation_errors": 0,
+  "simulation_warnings": 24,
+  "warning_note": "Original FIFO unused ports and unused tag ports in legacy UI_TAG=0 tests; no warning suppression.",
+  "passed": [
+    "PASS image_packet_rx",
+    "PASS image link TX/RX",
+    "PASS image pixel CDC",
+    "PASS reliable image",
+    "PASS image sink guard",
+    "PASS remote display",
+    "PASS audio guard",
+    "PASS media abort",
+    "PASS audio media",
+    "PASS audio status",
+    "PASS visual guard",
+    "PASS remote compute",
+    "PASS audio offload",
+    "PASS home atlas",
+    "PASS home pixels",
+    "PASS tagged image",
+    "PASS home pipeline",
+    "PASS home source"
+  ],
+  "resource_stage": "gate synthesis, not placed/routed",
+  "rom_initialization": "gate eram_init on",
+  "board_a": {
+    "lut": 14919,
+    "registers": 10442,
+    "bram9k": 49,
+    "bram32k": 7,
+    "dsp": 3,
+    "pll": 4
+  },
+  "board_b": {
+    "lut": 12227,
+    "registers": 9347,
+    "bram9k": 27,
+    "bram32k": 9,
+    "dsp": 3,
+    "pll": 3
+  },
+  "atlas": {
+    "sourceSha256": "eda847f630c84d549e32eb2ac1e9a2fbe02de98ceac062110e25b52f380dc671",
+    "pages": 2,
+    "width": 640,
+    "height": 480,
+    "colors": 152,
+    "uniqueRows": 216,
+    "runWords": 13860,
+    "runBram32K": 7,
+    "rowBits": 14336,
+    "lossless": true
+  },
+  "player_bit_generated": false,
+  "placed_and_routed": false,
+  "timing_closed": false,
+  "hardware_validated": false,
+  "files": [
+    {
+      "file": "best_result/lab_ex5_i2s_v1.0_logic_round3_20261003.bit",
+      "sha256": "94744392DEC4010D38261036AB360AB6E01BC4C718B34167E821302A15297C88"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_a/MEDIA_IMAGE_A.al",
+      "sha256": "47848543A07044C455366D2EF92947103F51F0BFE0FFE037CE8FC2D00F69E69C"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_a/MEDIA_IMAGE_A_gate.area",
+      "sha256": "17EF04B2B9928C46FD2B38E20B6345CC1482C76344C95D16832FC670CF884861"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_a/td_20261004_161049.log",
+      "sha256": "F806CF92057B24AEFFB001C9D9766B836B2BCCC307148D2C7B7924AD831159FE"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B.al",
+      "sha256": "A2DAA8DC4F1E54866F172A186D1D82FF081AF64DA7027973A1F672160F1187D2"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B_gate.area",
+      "sha256": "5983DF310B45C6447303B27A2CA0C7CBF19B3A0C22EF41684A54226B8E90A1D7"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/td_20261004_155854.log",
+      "sha256": "3A43FE1F870AD92A909A88A2D90E8EAE421853E472CD888C032713D01F9BFDB6"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_packet_rx.v",
+      "sha256": "FCAA85389B8B6A3933C2D0CE7157A8D9A6D2A51BF5C484996ED007B958667626"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_packet_tx.v",
+      "sha256": "AC313135E5FFF0ADE85C4C3AF14CF649CDA15B2FD7DD07628AA783113A442E63"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_receipt.v",
+      "sha256": "4B08AB1BA3B2E8734C59D9B199EDE164D20AF0A0A5F569A65D437C3DE26AD4DC"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_visual_packet.v",
+      "sha256": "76CFDB3624A6DEC5DF71A9F13793351A45C1DD32EF336FAB4F417F908B72ADBD"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_board_eth_transport.v",
+      "sha256": "98790E233BFFD8E9C5D75655BE2CD9F5FE375696ACB1D4CBCAAAE112110B108E"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_atlas_manifest.json",
+      "sha256": "61E86C5ABEA3616890604FE91929468CA38FFFB3B875EC63ABA6228D34F270BB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_atlas_rom.v",
+      "sha256": "71BF04D37659960F9CBE6877EDC8DB876FB4B495919DDB272F2F80EEB128666B"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_palette_rom.v",
+      "sha256": "C62234D30000DB3CE2531A442F95B43A6688A2C3D7302136526BDEDD4EC10EBB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_index_stream.v",
+      "sha256": "1F66BCFC9581141A5387CBEA7FE0560B8DE541EFA4319DFFAEEB52F4B26C29D5"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_link_board_a.v",
+      "sha256": "C0C9E2CBC777247AEF96ADC7F22BD83BC09CC6BF66A5844C646B23CACF6A89F2"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_link_board_b.v",
+      "sha256": "3CF2D132208EA5EFA62FA796E23DB372B17FFEB679EBC0A637E527B675BEC744"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_main_ingress.v",
+      "sha256": "95ACB9CF08540FB5A36D3BF0D24BEDF8F5A3E3EA790F5D8F8D9EEB44509549C3"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_media_board_b.v",
+      "sha256": "773DB919CB03A9DCDC8C12CAD0D4AC58DACEAC65252107FAE522E80211492DA7"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_packet_rx.v",
+      "sha256": "FBF278B29076160C5258A23580111231342F3FDF095B890551171095A6BFBA3D"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_packet_tx.v",
+      "sha256": "C146D81B1A1F314CA5C21031D316284FB48E7F0316BAB42B72CEB427FDF69D79"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_pixel_cdc.v",
+      "sha256": "6198853A79080DDD1EA4FA77FF8356B8F7ABDF27B899F73B8C4FE5B98DEF061C"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_receipt.v",
+      "sha256": "50DD6B5C718DD26DB6694923F5E42299C3CE588FB95107D4D45CEF91D37FC0FD"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_remote_display_control.v",
+      "sha256": "D95E340189E81796A31E50A1CA28BA72C2148348F7ECBA7C1A1912E2C05C2104"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_sdram_sink.v",
+      "sha256": "0F33F1F8B72DCCA3279881D5D26EA936B679169E76BAA400737B5FDA889DC80B"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_tf_source.v",
+      "sha256": "29DAFB5EC17116CA883542D4DE04FFDAFC509AAC2E69056B69356CB494ADAF1B"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_udp_arbiter.v",
+      "sha256": "DBCC98A9D0249157935240B8F6437CE314E5202766D9E048E10C6FEF18BB03E1"
+    },
+    {
+      "file": "dual_board/image_link/rtl/remote_audio_compute.v",
+      "sha256": "2CECCA2356611026FC82E030D45F56B597F823CC49E8BEFECD534FF1D3720020"
+    },
+    {
+      "file": "dual_board/image_link/rtl/top_dual_image.v",
+      "sha256": "E5A2CA780ACCBF7E00AF1D7456C9FF01515A6104D9637F18C2A7698B9ED84350"
+    },
+    {
+      "file": "dual_board/image_link/rtl/video_remote_home_overlay.v",
+      "sha256": "D52B1EDFADFD3CBBDF2940436E7932EC106273632A5CB69C13F6166CF5050BEB"
+    },
+    {
+      "file": "dual_board/image_link/sim/generate_home_atlas.js",
+      "sha256": "FA82E974CFAAC8B57FC7819CAEF0ABDC9B01B40CB8EA7D2D6FD881CF1D9E3ACF"
+    },
+    {
+      "file": "dual_board/image_link/sim/modelsim_regression.log",
+      "sha256": "78351F163DE6C284078FFDE32C38982F767A14CC53A7C98C3DC133F898087ED8"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_audio_modelsim.do",
+      "sha256": "B23EF0247D0666493AA21535C7E5B323A40180EEF7CFBFFFF37E2602FA0A10F4"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_home_capture.do",
+      "sha256": "99E807275A1E9B3B257BAB24BDBD07F6CD53268D5355E3F0401B62A7099FCD9E"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_home_modelsim.do",
+      "sha256": "DE68AD5DC1AE542DF91FCB3B9AED17B6305E3C6D92536B285CD3AB79255D02BF"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_metadata_guard.do",
+      "sha256": "E34C87D97B0B1B08F0CF2D3B0A50A877D3CDFA3F16921429B1C060E6AB2D36E9"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_modelsim.do",
+      "sha256": "C7A7FB6B8354D9B99EA7B56E815906793DB9C4985641A7CB2CA3036E653E502F"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_modelsim.ps1",
+      "sha256": "8EAFD196FDA6B9774BBC4109AFFD68E374EDF3799D41F714136836918C06248A"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_offload_modelsim.do",
+      "sha256": "3A4EE0C965EF208CC5830727E47ED819D01E7EADD4C11C1BF6FDDAFB0D77C9DC"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_protocol_modelsim.do",
+      "sha256": "DCCD84625277E4DA5B9E55DC9B0C78C7096B03C4BA292FFAF52220E73D6A8002"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_audio_offload.v",
+      "sha256": "DCA6799FC5B68A95A1C244848590B6D9F8B66D26B08CBA18DCBD42A21BE5029E"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_home_atlas.v",
+      "sha256": "280BED8AD682C5DC58529176B3980E0FF436A65327243A25BEF86425F6CDECFA"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_home_capture.v",
+      "sha256": "2D868B94CE288AECB8F932BC7EEC40C1BA7513DCADCA7DBE5E69F75D8B620CD1"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_home_pipeline.v",
+      "sha256": "485E703F16F58C6C2C2370640A5593ADFA4BF697BBCCC8AFC84AE49B108B97EA"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_home_pixels.v",
+      "sha256": "A48324F1C1FF5F5FBB704C7377C82AE35188967512EE26F0F3D893CC3C9927E2"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_home_source.v",
+      "sha256": "975DE27AFE8CA1C5FA606A0E675A65163E961F6DFAF518CCA5537FA6CA1C1F46"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_image_reliable.v",
+      "sha256": "9B6E8A594F26080FE5D45B153184A210C0280A1FDE88B92C152FCF18995129ED"
+    },
+    {
+      "file": "src/user_source/hdl_source/top_tf_hdmi_audio.v",
+      "sha256": "561394111CB599D811AA3408B25C6AABCC420D32111BC03D3B3EE87AB2D8E0E8"
+    }
+  ]
+}

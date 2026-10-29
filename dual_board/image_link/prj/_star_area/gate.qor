@@ -1,0 +1,79 @@
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |        -8547                |
+|     Setup TNS             |      -179616                |
+|     Num of violated S-EP  |           24                |
+|     Hold WNS              |          694                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |         1130                |
+|     #luts                 |         1299                |
+|     #lut1                 |           49                |
+|     #lut1(~A)             |           49                |
+|     #slices               |          382                |
+|     slices percentage     |        3.90%                |
+|     #RAMs                 |            0                |
+|     #DSPs                 |           10                |
+|     #f7mux                |        0.00%                |
+|     #MACROs               |           79                |
+|     #insts in MACRO       |          382                |
+-----------------------------------------------------------
+| kept_net                  |                             |
+|     #syn_keep             |            0                |
+|     #keep_hier            |            0                |
+|     #dont_touch           |            0                |
+|     #mark_debug           |            0                |
+|     #max_fanout_keep      |            0                |
+|     #async_reg            |            3                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |        23.97                |
+| dff(single fanout)->dff   |           39                |
+| dff(single fanout)->dram  |            0                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     DeriveClock           |           16                |
+|     Total                 |           16                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Note*: Over-quota path shows the over-path-level-threshold path number of each clock.
+       The clock will not be shown if no path is with path level over the threshold.
+       The threshold is defined as worst path_margin / 800ps.
+Note**: Rent shows the rent exponent value of the modules whose rent value exceeds the threshold.
+        Only modules under top are reported, and the threshold is defined as 0.7.
+
+Over-quota Path Details
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     Clock     |  Index  |  Budget(Period)  |  Level(Quota)  |                                                                     Cell Type List                                                                      |     Reason      |  Slack  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  DeriveClock  |    1    |   19854(20000)   |     25(25)     |  SEQ,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT5,LUT4,LUT2,LUT4,ADDER,ADDER,LUT2,MULT18,ADDER,ADDER,ADDER,ADDER,ADDER,ADDER,LUT3,SEQ  |  uncategorized  |  -7484  
+               |    2    |   19854(20000)   |     25(25)     |  SEQ,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT5,LUT4,LUT2,LUT4,ADDER,ADDER,LUT2,MULT18,ADDER,ADDER,ADDER,ADDER,ADDER,ADDER,LUT3,SEQ  |  uncategorized  |  -7484  
+               |    3    |   19854(20000)   |     25(25)     |  SEQ,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT5,LUT4,LUT2,LUT4,ADDER,ADDER,LUT2,MULT18,ADDER,ADDER,ADDER,ADDER,ADDER,ADDER,LUT3,SEQ  |  uncategorized  |  -7484  
+               |    4    |   19854(20000)   |     25(25)     |  SEQ,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT5,LUT4,LUT2,LUT4,ADDER,ADDER,LUT2,MULT18,ADDER,ADDER,ADDER,ADDER,ADDER,ADDER,LUT3,SEQ  |  uncategorized  |  -7484  
+               |    5    |   19854(20000)   |     25(25)     |  SEQ,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT3,ADDER,ADDER,LUT5,LUT4,LUT2,LUT4,ADDER,ADDER,LUT2,MULT18,ADDER,ADDER,ADDER,ADDER,ADDER,ADDER,LUT3,SEQ  |  uncategorized  |  -7484  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Note: Table only show top 5 paths for each clock group in default
+
+Logic Level Distribution
+---------------------------------------------------------------------------------------------------------------------------
+  Clock        |  Period            |  0    |  1    |  2    |  3    |  4    |  5    |  6   |  7  |  8  |  9  |  21  |  25
+---------------------------------------------------------------------------------------------------------------------------
+  DeriveClock  |  20.000ns (50MHz)  |  452  |  402  |  231  |  493  |  315  |  193  |  14  |  1  |  1  |  8  |  8   |  16
+---------------------------------------------------------------------------------------------------------------------------
+Hierarchical Rent Exponent Report
++------------------------------------------------------------------+
+|Inst     |Model            |Rent     |Cell     |Pin     |Term     |
++------------------------------------------------------------------+
+|top      |star_area_top    |0.14     |2901     |12921   |14       |
+|  sky    |video_star_sky_4 |0.46     |1284     |6064    |131      |
++------------------------------------------------------------------+
+Note: Cell represents total number of cells inside module; Pin represents total number of pins
+      which have net connection inside module; Term represents total number of PIs and POs of module.
+      Rent represents the relationship between number of terms and number of cells in module.
+      A module with higher rent corresponds to highly connected logic and strong connectivity with others.
+Report gate stage QoR done.
+

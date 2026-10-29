@@ -1,0 +1,131 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\musicsw_20261022
+vaudio_visual_cdc
+IZ8ITMQKQEHMCM]ZTf=8eT2
+Vj7Va2@3SlTLOdFdkcCeQU0
+Z1 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\musicsw_20261022
+Z2 w1792556900
+Z3 8../../rtl/hw_round4_20261005/audio_visual_packet_hw.v
+Z4 F../../rtl/hw_round4_20261005/audio_visual_packet_hw.v
+L0 140
+Z5 OL;L;10.1c;51
+r1
+31
+Z6 !s108 1792660698.637000
+Z7 !s107 tb_viz_music_flag.v|a_visual_rx_copy.v|../../rtl/hw_round4_20261005/audio_visual_packet_hw.v|
+Z8 !s90 -work|w_viz|../../rtl/hw_round4_20261005/audio_visual_packet_hw.v|a_visual_rx_copy.v|tb_viz_music_flag.v|
+Z9 o-work w_viz -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 [A@j8z4e<LcG8gaGcchmQ3
+!i10b 1
+!s85 0
+vaudio_visual_cdc_a
+IbTUY3LKLO6XZQPJ6OMA=:2
+VP4BLbTj71_Vi;9d?TmS9U1
+R1
+Z10 w1792660698
+Z11 8a_visual_rx_copy.v
+Z12 Fa_visual_rx_copy.v
+L0 154
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!s100 I3bZ]LcOL4<`@jndQPazi0
+!i10b 1
+!s85 0
+vaudio_visual_rx
+IFh`1HFWk=eRad=@R6l:IR3
+V:c[kf:<LZNLZWQVc8H:4F2
+R1
+R2
+R3
+R4
+L0 78
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!s100 7VN@BznBFE2kYUcKMcX=A1
+!i10b 1
+!s85 0
+vaudio_visual_rx_a
+V2nLo^e7nbCJ7N;?>6V[Uk2
+r1
+31
+I<7=LO>4h0EHFU[edO8]=L1
+R1
+R10
+R11
+R12
+L0 71
+R5
+R6
+R7
+R8
+R9
+!s100 =P]lfGmj@b:895OiHF9k50
+!s85 0
+!i10b 1
+vaudio_visual_tx
+VUoZ@TfE0b7@[4FEFXz:Va2
+r1
+31
+Ih08ImmMH^dRkO=Yz3gzZd1
+R1
+R2
+R3
+R4
+L0 5
+R5
+R6
+R7
+R8
+R9
+!s100 HF6^gEDZD=k<S=Zg1ODH`0
+!s85 0
+!i10b 1
+vaudio_visual_tx_a_unused
+I2ljLb:1ReDKIga`5QG63T0
+VA:=?Tf4AYEizZSJ6H1l740
+R1
+R10
+R11
+R12
+L0 5
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!s100 T@XCbH80AQWJ41cIJPQnE2
+!i10b 1
+!s85 0
+vtb_viz_music_flag
+V3nSW0>J13OJg_H0nS3Eg_0
+r1
+!s85 0
+31
+ITeGJ^ZK9@C]=Zji^=AG[>2
+R1
+w1792660718
+8tb_viz_music_flag.v
+Ftb_viz_music_flag.v
+L0 4
+R5
+R9
+!i10b 1
+!s100 F1:nLl2;SCzPV^J1`25Si1
+!s108 1792660718.333000
+!s107 tb_viz_music_flag.v|
+!s90 -work|w_viz|tb_viz_music_flag.v|

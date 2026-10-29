@@ -1,0 +1,13 @@
+{
+  "baseline_sources_unchanged": 122,
+  "baseline_bits_unchanged": 2,
+  "gaobai_events_unchanged": 373,
+  "char_and_font_roms_byte_identical": true,
+  "user_lyric_rows_preserved": 34,
+  "replacement_events": 360,
+  "pcm_exact_source_decode": true,
+  "padding_ms": 1.5208333333333333,
+  "cover_native_pixels": 4096,
+  "cover_distinct_colors": 549,
+  "alignment_status": "Estimated local word alignment, syllables need on-board audition"
+}

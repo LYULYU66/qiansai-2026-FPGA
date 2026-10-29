@@ -1,0 +1,154 @@
+{
+  "run": "phy_lut_opt_s3_20261002",
+  "synthesis_run": "syn_lut_opt_20261002",
+  "place_seed": 3,
+  "bit": "src/td_project/resopt_Runs/phy_lut_opt_s3_20261002/lab_ex5_i2s_v1.0.bit",
+  "bit_bytes": 669200,
+  "bit_sha256": "AA7AC009CE23FB89151439C7DADB66ABE680780C304D9F0170D634D1849AD32E",
+  "resources": {
+    "lut": {
+      "used": 15199,
+      "total": 19600,
+      "percent": 77.55
+    },
+    "reg": {
+      "used": 7565,
+      "total": 19600,
+      "percent": 38.6
+    },
+    "bram": {
+      "used": 45,
+      "total": 64,
+      "percent": 70.31
+    },
+    "bram32k": {
+      "used": 5,
+      "total": 16,
+      "percent": 31.25
+    },
+    "dsp": {
+      "used": 5,
+      "total": 29,
+      "percent": 17.24
+    },
+    "pll": {
+      "used": 3,
+      "total": 4,
+      "percent": 75.0
+    }
+  },
+  "timing": {
+    "setup_wns_ns": -5.699,
+    "setup_tns_ns": -232.671,
+    "hold_wns_ns": -1.141,
+    "hold_tns_ns": -8.712
+  },
+  "clock_summary": [
+    "clk0           local            0.000     20.000                40.000          25.000                33.598          29.764            5.207      0.000           -0.020     -0.040            0.326             2399               32             no       no",
+    "clk1           local            0.000      5.000                10.000         100.000                10.072          99.285           -0.072     -0.216           -0.011     -0.023            0.254             1284                8             no       no",
+    "clk2           local            0.000      5.000                10.000         100.000                21.398          46.733           -5.699   -182.368           -1.141     -5.674            0.480              574                8             no       no",
+    "clk3           local            0.000     40.667                81.334          12.295                14.615          68.423           66.719      0.000            0.110      0.000            0.138              328               10             no       no",
+    "clk4           local            0.000     10.000                20.000          50.000                11.086          90.204            8.914      0.000           -1.042     -2.975            0.326              288               11             no       no",
+    "clk5           local            0.000      4.000                 8.000         125.000                 6.732         148.544            0.634      0.000            0.329      0.000            0.326               31                1             no       no",
+    "clk6           local            5.000      0.000                10.000         100.000                13.758          72.685           -1.879    -50.087            4.740      0.000            0.000                1                1             no       no",
+    "clk7           local            0.000      6.666                13.333          75.002                13.333          75.002            0.000      0.000            0.000      0.000            0.000                0                0             no       no"
+  ],
+  "changed_sources_vs_global_resource_opt_20261002": [
+    "src/user_source/hdl_source/SD/bmp_read.v",
+    "src/user_source/hdl_source/SD/sd_card_bmp.v",
+    "src/user_source/hdl_source/audio_spectrum_analyzer.v",
+    "src/user_source/hdl_source/audio_visualizer_overlay.v",
+    "src/user_source/hdl_source/audio_waveform_analyzer.v",
+    "src/user_source/hdl_source/video_lyric_overlay.v"
+  ],
+  "bmp_read_stress_equivalence": [
+    "PASS BMP_LUTOPT_STRESS 2000000 cycles: rescans=269 aborts=388 reinits=108 loads=2779 pixels=64388 pcm=127230, all outputs identical every cycle"
+  ],
+  "source_hashes": {
+    "src/td_project/al_ip/PLL.v": "4E873EEF9499FA93508D8CF2CAC90EEA0E16C6F649AE29502CDC4C5886CD32AA",
+    "src/td_project/al_ip/PLL.vhd": "E46792BB3D2B72621B18B323C472213FD5880EB29E5E85F0B7D50E5117E47494",
+    "src/td_project/al_ip/PLL_HDMI_AUDIO.v": "4152904C9FE0A01DFB9B5E47FDBE9FDF2F02EBCCEF66B9E81451D3E88D4AB5A2",
+    "src/user_source/constraints_source/pin.adc": "93368635C9A1347FAC4CB8F79944D809D8AEDB2FA3AEACEC276F96F4BDB47813",
+    "src/user_source/constraints_source/timing.sdc": "ADDC88D719039514D6B5B70CC6B780CD5E77E938C0D0F1D5363D32AD8E75329B",
+    "src/user_source/hdl_source/I2S_receiver.v": "327271F25B3CE4348885569F544D33D8BD02C80CC2FD4524D2EEBEC814781416",
+    "src/user_source/hdl_source/IP/afifo_16_256.tcl": "5807155B00F2F749328339E01A85B4BB836F91598286DD167513836B60AF33DB",
+    "src/user_source/hdl_source/IP/afifo_16_256.v": "DAB43A76A35E21DF4064A25EDB940699B041427D70BAE89CC03C5280B7BF4BF8",
+    "src/user_source/hdl_source/IP/afifo_16_256.vhd": "50D6D10017B63E1CE5A77BAD4A80E9A3DE81402909D30CA0818674A1887EB46D",
+    "src/user_source/hdl_source/IP/afifo_16_256_sim.v": "55B81AB3AA699902B6F11FE766658B852E0740844879A942DCA81CD57B40F729",
+    "src/user_source/hdl_source/IP/afifo_16_32_256.tcl": "5807155B00F2F749328339E01A85B4BB836F91598286DD167513836B60AF33DB",
+    "src/user_source/hdl_source/IP/afifo_16_32_256.v": "3D29B06655482184A9AD157B9BD71B79032DEBE3199168D3B4D9570FDAC31835",
+    "src/user_source/hdl_source/IP/afifo_32_16_256.tcl": "5807155B00F2F749328339E01A85B4BB836F91598286DD167513836B60AF33DB",
+    "src/user_source/hdl_source/IP/afifo_32_16_256.v": "7C3EE41F30BE75AE686C9ABFF3A840FC5439209CDA077E4AA275EAC0DAB9F564",
+    "src/user_source/hdl_source/IP/sdram.v": "1487E8583BBF52FE6D079A2854C10EBFF2E569A3872A9088C1C9717BA14D17FE",
+    "src/user_source/hdl_source/IP/sdram.vhd": "853170E99291FB6B2B1BF3F5F20CD1DD0CC723052864147810B674E18CD70705",
+    "src/user_source/hdl_source/IP/sys_pll.v": "8F3017A8A0DCAABCBE6DECD36F3BFEF944C6B08CEC867C845D18DE46C6879689",
+    "src/user_source/hdl_source/IP/sys_pll.vhd": "DE786886D135E4884AF0CA5D62BC8463983C174E48D37A9D9C3DB2484D5C504C",
+    "src/user_source/hdl_source/IP/video_pll.v": "57E45A062814673E97773CF6C58FF1629FA45895E30DE9D2C2B6BDD30BD9BB13",
+    "src/user_source/hdl_source/IP/video_pll.vhd": "4C23A8A81B28C81BED4834E1E9A757DB01EEBD360C7FE3A7066F8F8F7B6A36C4",
+    "src/user_source/hdl_source/SD/ax_debounce.v": "93AA6DD38051250CC7F777C88466AC180AFE9BCDCE7838B9EA506455D8CBC9B8",
+    "src/user_source/hdl_source/SD/bmp_read.v": "F1E4AEBDB8E5C0C712E74D1E9997AC832B6237BF01944A27FAD8B8C9BC259F4F",
+    "src/user_source/hdl_source/SD/color_bar.v": "AFE1F56714EC58D2477BA1717E5A36C5A0DA5FE5C07D70D11AA5ACE710C4B152",
+    "src/user_source/hdl_source/SD/frame_fifo_read.v": "AA456AFB9C01F6BC4D976DF1F5D1A0DB39885FDECA2CFAAB71A5C6087C4B172C",
+    "src/user_source/hdl_source/SD/frame_fifo_write.v": "570D6EB3EFDFFB5648AC68E18A7C706322BBA8B6C3119A45B7A6D9EC2742783C",
+    "src/user_source/hdl_source/SD/frame_read_write.v": "DDFDBDAB8162BFDCA41197A33BA33A8952095E59BBB9588157DB547DA616AC42",
+    "src/user_source/hdl_source/SD/sd_card_bmp.v": "D37005D06D2A7AC667C478B420DBBDECDA0E75E86A3146E509F007BE1A438145",
+    "src/user_source/hdl_source/SD/sd_card_cmd.v": "A1A50502AFD4E8B238B0627CD5F204C04738E761D49AB48F33DA35E22BA4A5FA",
+    "src/user_source/hdl_source/SD/sd_card_sec_read_write.v": "AA73E64F7A8EDF767BEF0D7205702BB697AB4080E3FF012DE0C29BE2EE0A9FCC",
+    "src/user_source/hdl_source/SD/sd_card_top.v": "00AC5EB15CE2D5B1D3FF87D6CB5BE44AF50106A96327FBC8A580B831274CB123",
+    "src/user_source/hdl_source/SD/sdram.v": "2D985C2477384E677C25714241E1A50206DEF8916AA03189A5B313B2D22DFC99",
+    "src/user_source/hdl_source/SD/seg_decoder.v": "62A2664BE7DB6D0DACE31FC97A8FAEF0C43F44B639B1D5A6A2C49773812A3B5E",
+    "src/user_source/hdl_source/SD/seg_scan.v": "C61D6B6808E06DD0EDC6DB2D8F214426A1FB96D546556ECD1F74EA9CA6889F52",
+    "src/user_source/hdl_source/SD/spi_master.v": "37F7A21144FA5CCA3CC5C3B5F68A5AD40B3108336B600E45A1367734AC61403C",
+    "src/user_source/hdl_source/SD/video_define.v": "77748966850A8F5AF0D77F2CDB08006088BA5E1A31B98391FBA6CC61C5247DA2",
+    "src/user_source/hdl_source/SD/video_delay.v": "F47C4B63F8BAA6D8874C87DCA5B72DFDADD19F4A107403DA98752BCE98936433",
+    "src/user_source/hdl_source/SD/video_timing_data.v": "C6F75501E98DD5995F687AAFB40455BEFFE45B426137B5089A73AC3A036F7282",
+    "src/user_source/hdl_source/alarm_switch_control.v": "4503863C7AACACC8F5B5489690C2185DF12E0B09275EF0FC25F38848D5C97E64",
+    "src/user_source/hdl_source/audio_alarm_mixer.v": "73C2309D1434D291EB8661AF0B1CFA024BD48354314DB138E71FA148100C5542",
+    "src/user_source/hdl_source/audio_arc_calculate.v": "81D282E3D8BCFC56567F252BD214866AC66FA30F0C0B126845C92E149C15933A",
+    "src/user_source/hdl_source/audio_lyric_timeline.v": "4A2A493899850EE22F3F4B084B070F705F235CB5B97A68D90A954D94328EFD5B",
+    "src/user_source/hdl_source/audio_spectrum_analyzer.v": "1105978B059A974F529D6C729A3D41A34FABBC1E7005641895605942C1CCFC14",
+    "src/user_source/hdl_source/audio_visualizer_overlay.v": "9B55E4CC71A255615A7FD3D21CE761E9C6982CBD76ABEB67C7F0A4CFC930FDC5",
+    "src/user_source/hdl_source/audio_waveform_analyzer.v": "F9AACDA9C73E47EE84E490E4C115ABD77845AFF3E8CDCC9898679773E6939BC4",
+    "src/user_source/hdl_source/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v": "867E0B0BDD874BC383D00918C9E1BE3FE01EDF41F343B6A0D73E262776596A63",
+    "src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v": "2617E785BC8D6563C3AB1CE94431314FEBF6A11B7B00A1DE4942EF7AE4FFA199",
+    "src/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v": "1A946821E904C411F4DBF8F6D839B59622CBF9E5EA0844CCEC6769EBE07F769E",
+    "src/user_source/hdl_source/hdmi_phy_warpper.v": "416B082B0987001BDBC0A7E20A557CB8FB1DCA34E25DC881E6D28A8CB3CF4300",
+    "src/user_source/hdl_source/include/global_def.v": "433240EC48021DBB559D3532C67526F1338C6CC6CE15D26E1D987FE89E61DA42",
+    "src/user_source/hdl_source/include/sdr_as_ram.enc.v": "767DBDFBD83D42223B77DFA7DEAB42CE8216A8FD6F6CB41B7E7593D9A345BA57",
+    "src/user_source/hdl_source/include/sdr_init_ref.enc.v": "3DA1D34D3FB8A5108A74185EDF7FE6836B28807B31F47F74EAB87DE4F23186B8",
+    "src/user_source/hdl_source/include/sdr_wrrd.enc.v": "C7D7FE07D75F66AA88D9F986B3006319C995162434F104F9990664B374CDFDD2",
+    "src/user_source/hdl_source/key_remove_shakes.v": "8832F59E7BA94BFB8CF31E4F5A772EF7177D5257A5A2532D53CBFA1D9B7F5CD9",
+    "src/user_source/hdl_source/lane_lvds_10_1.v": "DE9529321354F04837E051D0EC1681CF44783D4BE3284703A788E081147500BC",
+    "src/user_source/hdl_source/lyric_song_data.v": "C9C83B5BCA1690FEEE3489BBF16C11946275CF9FBEEE5BB8C01E1899D9631C1D",
+    "src/user_source/hdl_source/osd_alpha_overlay.v": "17AD2C2F3A7BA2601CA6173FCF73EDE9499A74701D43E877A8DB07971745A115",
+    "src/user_source/hdl_source/startup_pulse.v": "396E1E56FEBB8028339E646BC2F06B83E07AB11EF840E447422FB941956741C9",
+    "src/user_source/hdl_source/top_tf_hdmi_audio.v": "402D20E841907C6F87C7C5F6D61134858DAD71A57722C3D9A1D9D38A2E325B85",
+    "src/user_source/hdl_source/uart_audio_control.v": "82F4BAE8C513B5B1B0C71419C38842191B3EBF795408A50B0E65BFFAEDEDB35F",
+    "src/user_source/hdl_source/uart_baud_tick.v": "86701937B016AB297B46BBBA8A7ACC00B03F7F9E636C3EFC34ED176E1FF2809F",
+    "src/user_source/hdl_source/uart_rx.v": "D75F9978C9D55D8516DAA5BCD6C9102E670D7508FA113E8C31B5A85C59232ECB",
+    "src/user_source/hdl_source/uart_tx.v": "6E607568AFBFE2CF1EC019CF7E5ECDE36DABA630F20568F5D8A5527A9B4B25B3",
+    "src/user_source/hdl_source/vehicle_hazard_overlay.v": "CDAFBC0AFF61000F72CF309769CBAEDD6A9A6DA61E292BA2FD65AC327BF63CF9",
+    "src/user_source/hdl_source/video_album_cover_rom.v": "3D7411B079B2CE5981ECDFD9ED7AE41E200A149ECA9583928F58E60473167FCF",
+    "src/user_source/hdl_source/video_app_icons_rom.v": "F1D460B691449680F492390CB021A8A3B0EAEA146C4FFD57F615205CDD95F6C9",
+    "src/user_source/hdl_source/video_frame_valid_gate.v": "AA4962A5B2339EC8691692DFF611B2F4E9474D9A6D7F95EF1273705F471403C6",
+    "src/user_source/hdl_source/video_home_overlay.v": "43A75B10E4E3A95D2BC057C99231A79D5530A5486A0BD21C72036F042308C69D",
+    "src/user_source/hdl_source/video_image_adjust.v": "CB6C1301EDB45B68CCF30F06FBAF14356017A42B407E7698FA99969F24632C29",
+    "src/user_source/hdl_source/video_lyric_overlay.v": "562838F38E0FD080865CFA6CA03635572546DBF525BF5DEE898A209C441691A3",
+    "src/user_source/hdl_source/video_pixel_diagnostics.v": "F48BDF1619FA0297DA025A61957FBF418D9BB65F09AD7923839E6353BE54BB84",
+    "src/user_source/hdl_source/video_rgb_to_axis_640x480.v": "82DA3DF6220842F072654800453ADB860DAF22126E81873F96E6769AE964E57F",
+    "src/user_source/hdl_source/video_source_test.v": "39CC05C9684A594D4254D11E66E97344053AB75BDB00F3F5A301643FD7AADBFC",
+    "src/user_source/hdl_source/video_status_overlay.v": "592A453D84B952204C02D444BD053D223BD293B0160E4987E51366D08071817D",
+    "src/user_source/hdl_source/video_transition_effects.v": "654018C079E9EA252F01C5383E617CCDCE6DF6E98CB7BF6AF349C88E3D5AEE01",
+    "src/user_source/ip_source/pll.v": "202799F886F12CFC1D837AFA932328B636C6C3DEE70167BE68C084133647B39C",
+    "src/user_source/ip_source/pll.vhd": "A8166865B5AEF9CAAEE525D4633AA1DEC4172244A7BBFF239E0D658C0CA775E4"
+  },
+  "preserved_old_bit": {
+    "path": "best_result/lab_ex5_i2s_v1.0_global_resource_opt_20261002.bit",
+    "sha256": "F88A7CA8F4937540887E29EA646D5E8FE9CD0921143C82EC7E636BEEB67F1D81",
+    "matches_previous_manifest": true
+  },
+  "preserved_music_pcm": {
+    "path": "best_result/gaobai_qiqiu_full_20261001/MUSIC.PCM",
+    "sha256": "8512A513C526C26A4F5E4C7BFD0A4DFB449F97FAED4FAE4C1016FB99CB3A1831"
+  }
+}

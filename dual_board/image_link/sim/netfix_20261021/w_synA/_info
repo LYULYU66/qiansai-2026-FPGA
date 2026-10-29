@@ -1,0 +1,113 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+vdual_board_eth_transport
+!i10b 1
+!s100 4Wk1:hSjK4jnYlESKBkWW1
+I1<V6H=f^WfZT=EIdYS0I>2
+V4iTLn>d<^_GQOZ_T]E@JN0
+Z1 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+w1792558570
+8../../rtl/dual_board_eth_transport.v
+F../../rtl/dual_board_eth_transport.v
+L0 6
+Z2 OL;L;10.1c;51
+r1
+!s85 0
+31
+Z3 !s108 1792559539.459000
+Z4 !s107 ../../rtl/star_sky_20261020/star_motion_engine.v|../../rtl/dual_board_eth_transport.v|../../rtl/pll_gen_62p5.v|../../rtl/dualsong_20261005/top_dual_image_hw.v|
+Z5 !s90 -work|w_synA|../../rtl/dualsong_20261005/top_dual_image_hw.v|../../rtl/pll_gen_62p5.v|../../rtl/dual_board_eth_transport.v|../../rtl/star_sky_20261020/star_motion_engine.v|
+Z6 o-work w_synA -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vplayer_frame_reset
+!i10b 1
+!s100 _WT[k2X[1P4PK<okNo;[N0
+ISi1RIC>5aUg=db5>HDa9]0
+V:9O1hF]FDa4GIfjOf=Yzj1
+R1
+Z7 w1792559497
+Z8 8../../rtl/dualsong_20261005/top_dual_image_hw.v
+Z9 F../../rtl/dualsong_20261005/top_dual_image_hw.v
+L0 1154
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+R6
+vpll_gen
+!i10b 1
+!s100 R`T22]o_VBEUFSi8MlIVe1
+I_cBTNmZ]ERWgO6?3nmE]A0
+Vf4c0e0Q@TX7DkziZe7LSD2
+R1
+R7
+8../../rtl/pll_gen_62p5.v
+F../../rtl/pll_gen_62p5.v
+L0 11
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+R6
+vstar_bundle_cdc
+!i10b 1
+!s100 e04>j@Y3ga`Pj_]J]a5P40
+ICARK:Af=LD3cAQ1eZ=VJE2
+VXkUT_>j336F]nZUnV?_zG1
+R1
+Z10 w1792557757
+Z11 8../../rtl/star_sky_20261020/star_motion_engine.v
+Z12 F../../rtl/star_sky_20261020/star_motion_engine.v
+L0 130
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+R6
+vstar_motion_engine
+!i10b 1
+!s100 6<L1`jec^_o<?92_c_b<C0
+IU@HO@@kFCjZeg;nQdEIlE3
+VX?S@7ZJmi;J4h5fE2VlJz2
+R1
+R10
+R11
+R12
+L0 18
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+R6
+vtop_dual_image
+!i10b 1
+!s100 lChWJOYg[lENfD:nni]LX1
+I[>Od57N3FSLW;1@IIz]0O1
+ViQ9EGb:WL_49ZH[>fWco23
+R1
+R7
+R8
+R9
+L0 3
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+R6

@@ -1,0 +1,23 @@
+== a2 bit=1 errors=0
+#lut 16332 out of 19600 83.33%;#reg 10224 out of 19600 52.16%;#bram 63 out of 64 98.44%;#bram32k 16 out of 16 100.00%;#dsp 14 out of 29 48.28%;
+   udp_clk -> udp_clk                 S -1.350ns, (100 viol)  H -0.011ns, (4 viol)
+   video_clk -> video_clk             S  0.019ns, (0 viol)  H -0.004ns, (1 viol)
+   rgmii_rx_90 -> rgmii_rx_90         S  1.003ns, (0 viol)  H -0.004ns, (1 viol)
+== b2 bit=1 errors=0
+#lut 16575 out of 19600 84.57%;#reg 11608 out of 19600 59.22%;#bram 51 out of 64 79.69%;#bram32k 14 out of 16 87.50%;#dsp 21 out of 29 72.41%;
+   sd_clk -> sd_clk                   S  0.921ns, (0 viol)  H -0.005ns, (2 viol)
+   compute_clk -> compute_clk         S  2.432ns, (0 viol)  H -0.011ns, (2 viol)
+   udp_clk -> udp_clk                 S -1.815ns, (179 viol)  H -0.012ns, (1 viol)
+   mac_tx_clk -> mac_tx_clk           S -1.353ns, (6 viol)  H  0.037ns, (0 viol)
+== a3 bit=1 errors=0
+#lut 16333 out of 19600 83.33%;#reg 10219 out of 19600 52.14%;#bram 63 out of 64 98.44%;#bram32k 16 out of 16 100.00%;#dsp 14 out of 29 48.28%;
+   udp_clk -> udp_clk                 S -0.680ns, (17 viol)  H -0.025ns, (2 viol)
+   video_clk -> video_clk             S  0.455ns, (0 viol)  H -0.011ns, (4 viol)
+   rgmii_rx_90 -> rgmii_rx_90         S  1.456ns, (0 viol)  H -0.011ns, (1 viol)
+== b5 bit=1 errors=0
+#lut 16531 out of 19600 84.34%;#reg 11603 out of 19600 59.20%;#bram 51 out of 64 79.69%;#bram32k 14 out of 16 87.50%;#dsp 21 out of 29 72.41%;
+   sd_clk -> sd_clk                   S -0.241ns, (3 viol)  H -0.005ns, (1 viol)
+   udp_clk -> udp_clk                 S -2.191ns, (162 viol)  H -0.011ns, (3 viol)
+   rgmii_rx_90 -> rgmii_rx_90         S  2.780ns, (0 viol)  H -0.004ns, (1 viol)
+   mac_tx_clk -> mac_tx_clk           S  1.011ns, (0 viol)  H -0.011ns, (1 viol)
+ALL DONE

@@ -1,0 +1,46 @@
+standard
+***Report Model: star_area_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        65   out of    188   34.57%
+  #input                   31
+  #output                  34
+  #inout                    0
+
+LUT Statistics
+#Total_luts               953
+  #lut4                   829
+  #lut5                   124
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                     1639   out of  19600    8.36%
+#reg                      769   out of  19600    3.92%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                       10   out of     29   34.48%
+#pad                       65   out of    188   34.57%
+  #ireg                     2
+  #oreg                     2
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------------+
+|Instance     |Module                |lut     |ripple  |seq     |bram    |dsp     |
++---------------------------------------------------------------------------------+
+|top          |star_area_top         |1308    |331     |773     |0       |10      |
+|  cdc        |star_bundle_cdc       |2       |0       |64      |0       |0       |
+|  eng        |star_motion_engine    |230     |80      |225     |0       |0       |
+|  sky        |video_star_sky        |906     |247     |376     |0       |10      |
+|    u_far    |star_far_layer        |182     |44      |155     |0       |3       |
+|      u_hash |star_cell_hash        |23      |0       |0       |0       |3       |
+|    u_near   |star_near_layer       |322     |53      |120     |0       |4       |
+|      u_hash |star_cell_hash        |31      |0       |0       |0       |3       |
+|  tx         |media_control_star_tx |124     |4       |104     |0       |0       |
++---------------------------------------------------------------------------------+

@@ -1,0 +1,154 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vtb_home_navigation_card
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790666627
+!i10b 1
+!s100 hQ[ka5CGT7@>OBjhN^?AR0
+I;6k`48aQDo[VKMLNoA`LI3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 tb_home_navigation_card_sv_unit
+S1
+R0
+w1790664203
+8sim/tb_home_navigation_card.sv
+Fsim/tb_home_navigation_card.sv
+L0 2
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1790666627.000000
+Z6 !s107 sim/tb_home_navigation_card.sv|sim/resource_opt_20260928/baseline/video_home_overlay.v|src/user_source/hdl_source/video_home_overlay.v|src/user_source/hdl_source/video_app_icons_rom.v|src/user_source/hdl_source/video_album_cover_rom.v|
+Z7 !s90 -sv|-work|sim/resource_global_20260927/tb_home_navigation_card|src/user_source/hdl_source/video_album_cover_rom.v|src/user_source/hdl_source/video_app_icons_rom.v|src/user_source/hdl_source/video_home_overlay.v|sim/resource_opt_20260928/baseline/video_home_overlay.v|sim/tb_home_navigation_card.sv|
+!i113 1
+Z8 o-sv -work sim/resource_global_20260927/tb_home_navigation_card
+Z9 tCvgOpt 0
+vvideo_album_cover_rom
+R1
+R2
+!i10b 1
+!s100 ]E888aY>^O1GY36UY_5g^3
+I8mF^f;HF;lTA4UCSl:XY<3
+R3
+!s105 video_album_cover_rom_v_unit
+S1
+R0
+w1790604387
+8src/user_source/hdl_source/video_album_cover_rom.v
+Fsrc/user_source/hdl_source/video_album_cover_rom.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vvideo_app_icons_rom
+R1
+R2
+!i10b 1
+!s100 f>In53dMEV:`:MXk==Y@L2
+I:D<I5Tn332Uf`_9[AVc0N0
+R3
+!s105 video_app_icons_rom_v_unit
+S1
+R0
+w1790666587
+8src/user_source/hdl_source/video_app_icons_rom.v
+Fsrc/user_source/hdl_source/video_app_icons_rom.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vvideo_home_glyph_rom
+R1
+R2
+!i10b 1
+!s100 7C[e[El]Ye7C4ZLfC^zW>2
+I3mLXCZlz0hOgSSL1;DW0U1
+R3
+Z10 !s105 video_home_overlay_v_unit
+S1
+R0
+Z11 w1790664336
+Z12 8src/user_source/hdl_source/video_home_overlay.v
+Z13 Fsrc/user_source/hdl_source/video_home_overlay.v
+L0 411
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vvideo_home_overlay
+R1
+R2
+!i10b 1
+!s100 bOOEhbO>[G;[3mho6eCeh3
+IDTDa?;FMfk[NGa=VPC?NY3
+R3
+R10
+S1
+R0
+R11
+R12
+R13
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vvideo_home_overlay_baseline_ref
+R1
+R2
+!i10b 1
+!s100 8`BX4`6?VW<KdW3UMU:9H0
+Ik6zPn<V3f<5E3f2Z>kKOF2
+R3
+R10
+S1
+R0
+w1790591627
+8sim/resource_opt_20260928/baseline/video_home_overlay.v
+Fsim/resource_opt_20260928/baseline/video_home_overlay.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vbmp_read
+Z1 !s110 1790583115
+!i10b 1
+!s100 7PP7]h@AD@c`3dEIb@=<R2
+IcQ>6>hY0=eYIand8@loz02
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1789549923
+Z4 8sim/tb_sd_card_bmp_playback.v
+Z5 Fsim/tb_sd_card_bmp_playback.v
+L0 164
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1790583115.000000
+Z8 !s107 sim/tb_sd_card_bmp_playback.v|src/user_source/hdl_source/SD/sd_card_bmp.v|
+Z9 !s90 -work|sim/resource_global_20260927/tb_sd_card_bmp_playback|src/user_source/hdl_source/SD/sd_card_bmp.v|sim/tb_sd_card_bmp_playback.v|
+!i113 1
+Z10 o-work sim/resource_global_20260927/tb_sd_card_bmp_playback
+Z11 tCvgOpt 0
+vkey_press_debounce
+R1
+!i10b 1
+!s100 O0^WTDZm6I;F9U8Jnfzzi1
+IRDI3<;@ah;3ja0?AdNMKo2
+R2
+R0
+Z12 w1789549859
+Z13 8src/user_source/hdl_source/SD/sd_card_bmp.v
+Z14 Fsrc/user_source/hdl_source/SD/sd_card_bmp.v
+L0 574
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsd_card_bmp
+R1
+!i10b 1
+!s100 1]]PIM3AnFZB8S04Ic2L>2
+I6:?;Vz[oJQUbOYhLMDK1S1
+R2
+R0
+R12
+R13
+R14
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsd_card_top
+R1
+!i10b 1
+!s100 >AO87DoEPhDUK_bPI>YcZ3
+IdAzzDBdjh4nCFBZcI]k@A3
+R2
+R0
+R3
+R4
+R5
+L0 209
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtb_sd_card_bmp_playback
+R1
+!i10b 1
+!s100 aQTP;hSbA=MHMi3zBY0:P0
+I]K7B<RijV_H1I5@=_Fo5G0
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

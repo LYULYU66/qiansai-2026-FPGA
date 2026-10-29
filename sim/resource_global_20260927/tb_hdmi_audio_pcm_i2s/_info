@@ -1,0 +1,83 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vhdmi_audio_pcm_i2s_64fs
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790854144
+!i10b 1
+!s100 bNG>V;07Z7^V=I[Akb@DC1
+IG<]>?RGg0@W4622HDO_[F2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 hdmi_audio_pcm_i2s_64fs_v_unit
+S1
+R0
+w1789554545
+8src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v
+Fsrc/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1790854144.000000
+Z6 !s107 sim/tb_hdmi_audio_pcm_i2s.v|src/user_source/hdl_source/I2S_receiver.v|src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v|
+Z7 !s90 -sv|-work|sim/resource_global_20260927/tb_hdmi_audio_pcm_i2s|src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v|src/user_source/hdl_source/I2S_receiver.v|sim/tb_hdmi_audio_pcm_i2s.v|
+!i113 1
+Z8 o-sv -work sim/resource_global_20260927/tb_hdmi_audio_pcm_i2s
+Z9 tCvgOpt 0
+vI2S_receiver
+R1
+R2
+!i10b 1
+!s100 7=kiA[i^W0=7C5nSGWbgE0
+In`Ok0C3h>ZF?6P[?Rdh511
+R3
+!s105 I2S_receiver_v_unit
+S1
+R0
+w1789127046
+8src/user_source/hdl_source/I2S_receiver.v
+Fsrc/user_source/hdl_source/I2S_receiver.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+n@i2@s_receiver
+vtb_hdmi_audio_pcm_i2s
+R1
+R2
+!i10b 1
+!s100 1?JW[cNM6kLCV`NV]9<Qz3
+I3b:A4ElR5?M9f@9bVNEXS3
+R3
+!s105 tb_hdmi_audio_pcm_i2s_v_unit
+S1
+R0
+w1789554547
+8sim/tb_hdmi_audio_pcm_i2s.v
+Fsim/tb_hdmi_audio_pcm_i2s.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

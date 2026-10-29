@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-10-08T13:30:17.568Z",
+  "base_manifest_sha256": "7C397B5A389C804E2BE9731A16F2AD14895F9D4B4BFCF30C0059FC8276F36C07",
+  "added_pass_count": 1,
+  "total_pass_count": 5,
+  "pass_lines": [
+    "# PASS scheduler locked request: port-only delayed ACK, late high priority, withdrawn request, changing lengths, exact 1042+14 byte payloads and CRC"
+  ],
+  "evidence": [
+    {
+      "file": "evidence/lock.log",
+      "sha256": "E57B3F26894FF2E6B30B88E22CD647FCCF7C1DF05E6788C71917912395091DCF"
+    },
+    {
+      "file": "tests/tb_scheduler_lock.v",
+      "sha256": "5AE75EB5CC00EB72BC1877C6F5869B151539F4D7FD24AF7891AAEB837F1F8682"
+    },
+    {
+      "file": "tests/run_lock.do",
+      "sha256": "921AF4C55E2026D60AD597B6A563F14434982DF148B0029338A9AEA7910CB3E6"
+    }
+  ],
+  "review": "Independent read-only review found no new scheduler protocol bug. Added a port-only delayed-ACK test after a coverage gap was identified. Five reboot tests do not constitute exhaustive reset-phase coverage.",
+  "hardware_verified": false,
+  "timing_closed": false
+}

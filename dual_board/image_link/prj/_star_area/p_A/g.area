@@ -1,0 +1,45 @@
+standard
+***Report Model: star_area_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        62   out of    188   32.98%
+  #input                   38
+  #output                  24
+  #inout                    0
+
+LUT Statistics
+#Total_luts               667
+  #lut4                   591
+  #lut5                    76
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                     1145   out of  19600    5.84%
+#reg                      528   out of  19600    2.69%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                       10   out of     29   34.48%
+#pad                       62   out of    188   32.98%
+  #ireg                    11
+  #oreg                     0
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------------+
+|Instance     |Module                |lut     |ripple  |seq     |bram    |dsp     |
++---------------------------------------------------------------------------------+
+|top          |star_area_top         |918     |227     |539     |0       |10      |
+|  cdc        |star_bundle_cdc       |1       |0       |75      |0       |0       |
+|  rx         |media_control_star_rx |10      |0       |77      |0       |0       |
+|  sky        |video_star_sky        |882     |227     |376     |0       |10      |
+|    u_far    |star_far_layer        |179     |42      |155     |0       |3       |
+|      u_hash |star_cell_hash        |23      |0       |0       |0       |3       |
+|    u_near   |star_near_layer       |316     |49      |120     |0       |4       |
+|      u_hash |star_cell_hash        |31      |0       |0       |0       |3       |
++---------------------------------------------------------------------------------+

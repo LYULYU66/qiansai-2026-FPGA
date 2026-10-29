@@ -1,0 +1,31 @@
+Reading C:/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# vsim -do {run -all; quit -f} -lib w_tb -c tb_swflags_before_music 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.tb_swflags_before_music(fast)
+# run -all 
+# ok   power-up, SW1=0 SW2=0 (VIZF) flags=2 m=0 p=0 visual=0
+# ok   SW2 on before SW1 ever on flags=2 m=0 p=1 visual=0
+# ok   SW2 off again flags=2 m=0 p=0 visual=0
+# ok   SW1 on, song not streaming yet flags=2 m=1 p=1 visual=0
+# ok   streaming: VIZ2 visual + flags flags=2 m=1 p=1 visual=2
+# ok   paused, SW2 off (VIZ2) flags=2 m=0 p=0 visual=2
+# ok   between songs, SW2 on (VIZF) flags=2 m=0 p=1 visual=0
+# ok   VIZF with A streaming: no visual flags=2 m=0 p=1 visual=0
+# ok   bad CRC: flags held flags=0 m=0 p=1 visual=0
+# ok   good CRC again flags=2 m=0 p=0 visual=0
+# PASS tb_swflags_before_music
+# ** Note: $finish    : tb_swflags_before_music.v(53)
+#    Time: 128056 ns  Iteration: 1  Instance: /tb_swflags_before_music

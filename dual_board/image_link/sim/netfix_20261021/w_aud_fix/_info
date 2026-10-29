@@ -1,0 +1,406 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+T_opt
+V1SPY2f6AL]Gb<Xc:nWo`c1
+04 14 4 work tb_audio_media fast 0
+=1-04bf1b05a8bd-6ad846cc-22-8834
+Z1 o-quiet -auto_acc_if_foreign -work w_aud_fix
+n@_opt
+Z2 OL;O;10.1c;51
+Z3 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+T_opt1
+VNemaW4dWW=W7Llh2m21kO0
+04 14 4 work tb_audio_guard fast 0
+=1-04bf1b05a8bd-6ad846d1-3d9-5bd4
+R1
+n@_opt1
+R2
+R3
+T_opt2
+Vo_`7zkoo34I@>QE^mA7M62
+04 14 4 work tb_media_abort fast 0
+=1-04bf1b05a8bd-6ad846d4-18b-2e40
+R1
+n@_opt2
+R2
+vaudio_packet_rx
+Z4 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IHKR?BYWnNjAYXOd>F0=bW2
+VTdJeMEXOH=i6V]NRa9<^42
+S1
+R3
+w1792558771
+8../../rtl/audio_packet_rx.v
+F../../rtl/audio_packet_rx.v
+L0 5
+Z5 OL;L;10.1c;51
+r1
+31
+Z6 !s108 1792558794.598000
+Z7 !s107 ../tb_audio_guard.v|../tb_audio_media.v|../../../../src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v|../../../../src/user_source/hdl_source/IP/afifo_32_16_256.v|../../rtl/media_udp_arbiter.v|../../rtl/audio_receipt.v|../../rtl/audio_packet_rx.v|../../rtl/audio_packet_tx.v|../../rtl/image_receipt.v|../../rtl/backup_before_netfix_20261021/image_packet_tx_hw.v|../../rtl/image_packet_rx.v|
+Z8 !s90 -sv|-work|w_aud_fix|../../rtl/image_packet_rx.v|../../rtl/backup_before_netfix_20261021/image_packet_tx_hw.v|../../rtl/image_receipt.v|../../rtl/audio_packet_tx.v|../../rtl/audio_packet_rx.v|../../rtl/audio_receipt.v|../../rtl/media_udp_arbiter.v|../../../../src/user_source/hdl_source/IP/afifo_32_16_256.v|../../../../src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v|../tb_audio_media.v|../tb_audio_guard.v|
+Z9 o-sv -work w_aud_fix -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 ^HReZ[T:3[BVgo0loP7GA3
+!s105 audio_packet_rx_v_unit
+!s85 0
+vaudio_packet_tx
+R4
+IB6DBd6TgWQ]=R`S:j@DO90
+V`6hJZ15V@[YWn@kd2Z9JX0
+S1
+R3
+w1792500452
+8../../rtl/audio_packet_tx.v
+F../../rtl/audio_packet_tx.v
+L0 5
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 jlhSh=Rze6=1OcDoT@nE[3
+!s105 audio_packet_tx_v_unit
+!s85 0
+vaudio_playback_progress
+R4
+ID<m<NazIAE<XDo[1<_UCI3
+VYOC;<O=eY7V[a:[XF:WP33
+Z10 !s105 audio_receipt_v_unit
+S1
+R3
+Z11 w1791082888
+Z12 8../../rtl/audio_receipt.v
+Z13 F../../rtl/audio_receipt.v
+L0 144
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 0=2joYE2Y7nJRf:j[7R@[3
+!s85 0
+vaudio_receipt_rx
+R4
+IbzM:9cl4OZ7zQQbG3TJ9c2
+VRT7LN<9M]2jgnSHhkSm4m1
+R10
+S1
+R3
+R11
+R12
+R13
+L0 77
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 cZjF;dkP_oo=750WcROAH0
+!s85 0
+vaudio_receipt_tx
+R4
+IQPm2lj7:KRmmJI]_nS9[C0
+V?U7X50hB6a73:?HliA6lK2
+R10
+S1
+R3
+R11
+R12
+R13
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 PnhI80@ZRbPK8`fITkNVl2
+!s85 0
+vfifo_cross_domain_addr_process_al_rfifo_32_32_512
+R4
+ITcRNackT:;>;Fc<1o_EQ;0
+VKM1_4kLamYkEzJI>K_ec33
+Z14 !s105 afifo_32_16_256_v_unit
+S1
+R3
+Z15 w1749457582
+Z16 8../../../../src/user_source/hdl_source/IP/afifo_32_16_256.v
+Z17 F../../../../src/user_source/hdl_source/IP/afifo_32_16_256.v
+L0 250
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 _DTk[^jOfcN3hhLjIWQ=b1
+!s85 0
+vhdmi_audio_pcm_i2s_64fs
+R4
+Iz2lM:1F9m@EM6^92CO1iH1
+VZfB2A^iojBaE[2XF3P9LA1
+S1
+R3
+w1789554545
+8../../../../src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v
+F../../../../src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v
+L0 1
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 IzenTkM8>]Inf366120lf2
+!s105 hdmi_audio_pcm_i2s_64fs_v_unit
+!s85 0
+vimage_packet_rx
+R4
+InIkXl^dAaPOeoJHD[SIM;0
+VKn5TH=e;:TQDTjo?[@i@Y0
+S1
+R3
+w1792557932
+8../../rtl/image_packet_rx.v
+F../../rtl/image_packet_rx.v
+L0 7
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 6e]A=PAAVg5d@Y6`a[XC82
+!s105 image_packet_rx_v_unit
+!s85 0
+vimage_packet_tx
+R4
+Io96ec6cPaWfOL=^zTP6kP0
+VGaBA3:i_R8dkQVEHG^I[G2
+S1
+R3
+w1791182383
+8../../rtl/backup_before_netfix_20261021/image_packet_tx_hw.v
+F../../rtl/backup_before_netfix_20261021/image_packet_tx_hw.v
+L0 6
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 Mo8SC2QEW`LWK<>2JU=QV2
+!s105 image_packet_tx_hw_v_unit
+!s85 0
+vimage_receipt_rx
+R4
+IE4Tdo5fG<=?1ZIZGnoP6=0
+V`h^6kbFfHS:B]^a=HHhJm1
+Z18 !s105 image_receipt_v_unit
+S1
+R3
+Z19 w1792545872
+Z20 8../../rtl/image_receipt.v
+Z21 F../../rtl/image_receipt.v
+L0 54
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 8P^mP`>UT`h[SINIV1CfK0
+!s85 0
+vimage_receipt_tx
+R4
+IS;NLmI52WIn015ERWkmh`2
+Vb5E^eDRDA;8P>XefVQmV41
+R18
+S1
+R3
+R19
+R20
+R21
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 >R1J1[NhzAB>]PTLOb5UL2
+!s85 0
+vmedia_udp_arbiter
+R4
+IKXmO?c6N=cNXX1<n6VUJl2
+VWXC^a41UTZV=Wdm2>K2Mb3
+Z22 !s105 media_udp_arbiter_v_unit
+S1
+R3
+Z23 w1792556738
+Z24 8../../rtl/media_udp_arbiter.v
+Z25 F../../rtl/media_udp_arbiter.v
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 S9o>LMbZCGX>8D5Y]o42<1
+!s85 0
+vmedia_udp_scheduler
+R4
+IN:=hJfTCz]mE5jAFm_WXe0
+V5_=2gz597>DCi00eRQEzR0
+R22
+S1
+R3
+R23
+R24
+R25
+L0 79
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 Zd`;bod<cm04__20kbmEm3
+!s85 0
+vram_infer_rfifo_32_32_512
+R4
+IjN09e>z4IL6C0iTY8YN:@2
+VZ1dlIggi3`3A1foWEU5S10
+R14
+S1
+R3
+R15
+R16
+R17
+L0 333
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 OQDXKP3RMa@jZ?Q8Ad6j`3
+!s85 0
+vrfifo_32_32_512
+R4
+INAn3@6[N=g7Gl4LI`eikL0
+V7V9L<3dUhe:zLUFZ6h89d0
+R14
+S1
+R3
+R15
+R16
+R17
+L0 13
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 G^=a91H;6lP<1JChhc[:]0
+!s85 0
+vtb_audio_guard
+R4
+Ile_bYLZ31X=NXC5`1H3Uf1
+V8VSSgf0XXi4>CF6?fRPSZ1
+Z26 !s105 tb_audio_guard_v_unit
+S1
+R3
+Z27 w1791083987
+Z28 8../tb_audio_guard.v
+Z29 F../tb_audio_guard.v
+L0 2
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 B5VYR9fk[Gaz5F<>mJ5mZ3
+!s85 0
+vtb_audio_media
+R4
+ICD;YF>:Aj<VPFQ;dZa98L2
+VU6aT:318F^NQZO[gjIdCS2
+S1
+R3
+w1791083796
+8../tb_audio_media.v
+F../tb_audio_media.v
+L0 2
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 ^3mf14e^bb<lE@@O1Tj^N3
+!s105 tb_audio_media_v_unit
+!s85 0
+vtb_media_abort
+R4
+IS:f_7FlziW0]AdGVl<4Tb0
+Vzk@[ed>LmUjme[GC<JcU[1
+R26
+S1
+R3
+R27
+R28
+R29
+L0 100
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 S[7NYF<[cDfCmYdJ<Zmbo2
+!s85 0

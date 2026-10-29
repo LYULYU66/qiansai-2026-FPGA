@@ -1,0 +1,133 @@
+standard
+***Report Model: image_media_board_b Device: EG4S20BG256***
+
+IO Statistics
+#IO                        24   out of    188   12.77%
+  #input                   10
+  #output                  14
+  #inout                    0
+
+LUT Statistics
+#Total_luts              9008
+  #lut4                  7771
+  #lut5                  1207
+  #lut6                    30
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                    12064   out of  19600   61.55%
+#reg                     8275   out of  19600   42.22%
+#bram                      34   out of     64   53.12%
+  #bram9k                  34
+  #fifo9k                   0
+#bram32k                    9   out of     16   56.25%
+#dsp                        3   out of     29   10.34%
+#pad                       24   out of    188   12.77%
+  #ireg                     6
+  #oreg                    14
+  #treg                     0
+#pll                        3   out of      4   75.00%
+#gclk                       4   out of     16   25.00%
+
+Report Hierarchy Area:
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance                                                        |Module                                            |lut     |ripple  |seq     |bram    |dsp     |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|top                                                             |image_media_board_b                               |10569   |1495    |8295    |43      |3       |
+|  u_audio_packets                                               |audio_packet_tx                                   |274     |40      |159     |1       |0       |
+|  u_audio_receipts                                              |audio_receipt_rx                                  |101     |0       |209     |0       |0       |
+|  u_audio_session                                               |player_audio_session                              |6       |5       |65      |0       |0       |
+|  u_base_reset                                                  |player_domain_reset                               |0       |0       |2       |0       |0       |
+|  u_compute_snapshot                                            |audio_visual_cdc                                  |201     |0       |603     |0       |0       |
+|  u_control_packets                                             |media_control_tx                                  |126     |15      |85      |0       |0       |
+|  u_control_source                                              |audio_visual_cdc                                  |7       |0       |26      |0       |0       |
+|  u_link_session                                                |media_link_session                                |355     |54      |194     |0       |0       |
+|  u_media                                                       |image_tf_source                                   |4407    |633     |3603    |17      |1       |
+|    u_bridge_sd_reset                                           |player_domain_reset                               |0       |0       |2       |0       |0       |
+|    u_bridge_udp_reset                                          |player_domain_reset                               |0       |0       |2       |0       |0       |
+|    u_home_indices                                              |home_index_stream                                 |184     |30      |70      |9       |0       |
+|      rows                                                      |home_row_rom                                      |1       |0       |0       |2       |0       |
+|      runs                                                      |home_run_rom                                      |11      |0       |3       |7       |0       |
+|    u_packets                                                   |image_packet_tx                                   |366     |40      |200     |2       |0       |
+|    u_pixels                                                    |image_pixel_cdc                                   |69      |22      |91      |3       |0       |
+|    u_receipt                                                   |image_receipt_rx                                  |65      |0       |136     |0       |0       |
+|    u_source_sd_reset                                           |player_domain_reset                               |0       |0       |2       |0       |0       |
+|    u_source_udp_reset                                          |player_domain_reset                               |0       |0       |2       |0       |0       |
+|    u_tf                                                        |sd_card_bmp_remote                                |3676    |531     |2949    |3       |1       |
+|      bmp_read_m0                                               |bmp_read                                          |2887    |456     |2222    |3       |1       |
+|        g_resample$u_scaler                                     |bmp_bilinear_stream                               |824     |211     |488     |3       |1       |
+|      sd_card_top_m0                                            |sd_card_top                                       |298     |24      |180     |0       |0       |
+|        sd_card_cmd_m0                                          |sd_card_cmd                                       |134     |19      |47      |0       |0       |
+|        sd_card_sec_read_write_m0                               |sd_card_sec_read_write                            |101     |0       |89      |0       |0       |
+|        spi_master_m0                                           |spi_master                                        |63      |5       |44      |0       |0       |
+|      u_song_switch                                             |song_stream_control                               |22      |0       |10      |0       |0       |
+|  u_media_reset                                                 |player_domain_reset                               |0       |0       |2       |0       |0       |
+|  u_media_sd_reset                                              |player_domain_reset                               |0       |0       |2       |0       |0       |
+|  u_net                                                         |dual_board_eth_transport                          |1246    |216     |968     |11      |0       |
+|    fixed_peer$u_udp                                            |fixed_peer_udp                                    |445     |117     |154     |3       |0       |
+|    u_clk_gen                                                   |clk_gen_rst_gen                                   |0       |0       |0       |0       |0       |
+|      u_pll_0                                                   |pll_gen                                           |0       |0       |0       |0       |0       |
+|    u_rx_fifo                                                   |rx_client_fifo                                    |148     |38      |162     |4       |0       |
+|      ramgen_l                                                  |RAMB16_S9_S9                                      |1       |0       |0       |2       |0       |
+|      ramgen_u                                                  |RAMB16_S9_S9                                      |1       |0       |0       |2       |0       |
+|    u_rx_pll                                                    |rx_pll                                            |0       |0       |0       |0       |0       |
+|    u_temac                                                     |temac_block                                       |429     |23      |446     |0       |0       |
+|      trimac_core                                               |TEMAC_CORE                                        |424     |23      |439     |0       |0       |
+|        mac_core_aead6cd6dadd_Inst                              |mac_core_aead6cd6dadd                             |424     |23      |439     |0       |0       |
+|          TEMAC_CORE_INST                                       |TEMAC_CORE_aead6cd6dadd                           |424     |23      |439     |0       |0       |
+|            al102_vfhtA8Nz                                      |al102_nTnczhDj_aead6cd6dadd                       |424     |23      |439     |0       |0       |
+|              addr_filter_top                                   |al102_TNLVOd0g_aead6cd6dadd                       |37      |0       |32      |0       |0       |
+|                al102_hxcEIhDE$dynamic_config                   |al102_jzYAprLM_aead6cd6dadd                       |37      |0       |32      |0       |0       |
+|                  al102_rBT2HiW3                                |al102_GJdu7z0F_aead6cd6dadd                       |7       |0       |1       |0       |0       |
+|              al102_0zphc5uy                                    |al102_ofxvusEN_aead6cd6dadd                       |1       |0       |4       |0       |0       |
+|              al102_6KjBLuws                                    |al102_LOhHHNug_aead6cd6dadd                       |180     |6       |128     |0       |0       |
+|                al102_BrbRRXKu                                  |al102_pY1FTerE_aead6cd6dadd                       |180     |6       |127     |0       |0       |
+|                  al102_aSis0jQ9                                |al102_aJclEuUV_aead6cd6dadd                       |48      |0       |32      |0       |0       |
+|              al102_F3nxfdNo$al102_Ba3Y7fv8                     |al102_ofxvusEN_aead6cd6dadd                       |1       |0       |4       |0       |0       |
+|              al102_f4biXjlA                                    |al102_3J80Reqk_aead6cd6dadd                       |181     |17      |214     |0       |0       |
+|                al102_0_I1BBbU                                  |al102_jpVxQ2cS_aead6cd6dadd                       |27      |0       |17      |0       |0       |
+|                al102_idhI9aZL                                  |al102_aJclEuUV_aead6cd6dadd                       |52      |0       |32      |0       |0       |
+|                al102_tubZOSG6                                  |al102_dQOqX6Hm_aead6cd6dadd                       |50      |11      |34      |0       |0       |
+|                al102_yKqPCjEw                                  |al102_2SPbf3Jy_aead6cd6dadd                       |37      |6       |24      |0       |0       |
+|                al102_NWvBaxDl$al102_nDUUxN4p[0]$al102_0W8IXuYR |al102_nTnceH5P_aead6cd6dadd                       |0       |0       |4       |0       |0       |
+|                al102_NWvBaxDl$al102_nDUUxN4p[1]$al102_0W8IXuYR |al102_nTnceH5P_aead6cd6dadd                       |0       |0       |4       |0       |0       |
+|                al102_NWvBaxDl$al102_nDUUxN4p[2]$al102_0W8IXuYR |al102_nTnceH5P_aead6cd6dadd                       |0       |0       |4       |0       |0       |
+|                al102_NWvBaxDl$al102_nDUUxN4p[3]$al102_0W8IXuYR |al102_nTnceH5P_aead6cd6dadd                       |0       |0       |4       |0       |0       |
+|                al102_NWvBaxDl$al102_nDUUxN4p[4]$al102_0W8IXuYR |al102_nTnceH5P_aead6cd6dadd                       |0       |0       |4       |0       |0       |
+|                al102_NWvBaxDl$al102_nDUUxN4p[5]$al102_0W8IXuYR |al102_nTnceH5P_aead6cd6dadd                       |0       |0       |4       |0       |0       |
+|                al102_NWvBaxDl$al102_nDUUxN4p[6]$al102_0W8IXuYR |al102_nTnceH5P_aead6cd6dadd                       |0       |0       |4       |0       |0       |
+|                al102_NWvBaxDl$al102_nDUUxN4p[7]$al102_0W8IXuYR |al102_nTnceH5P_aead6cd6dadd                       |0       |0       |4       |0       |0       |
+|                al102_UYd_BhtE                                  |al102_nTnceH5P_aead6cd6dadd                       |0       |0       |3       |0       |0       |
+|                al102_gR2N1e7t                                  |al102_nTnceH5P_aead6cd6dadd                       |0       |0       |4       |0       |0       |
+|              al102_gfc619z4                                    |al102_9c8Z7BxD_aead6cd6dadd                       |0       |0       |20      |0       |0       |
+|              al102_jlblKL3I                                    |al102_nZfRKD5m_aead6cd6dadd                       |16      |0       |27      |0       |0       |
+|                al102_LOhHHNug_aead6cd6dadd                     |al102_yQt6hWFf_aead6cd6dadd                       |16      |0       |8       |0       |0       |
+|              al102_qNes26Dr                                    |al102__OtSFRd6_aead6cd6dadd                       |0       |0       |10      |0       |0       |
+|      u1_rgmii_interface                                        |rgmii_interface                                   |3       |0       |0       |0       |0       |
+|        ctl_output                                              |ODDR                                              |1       |0       |0       |0       |0       |
+|      u_tx_clk_en_gen                                           |tx_clk_en_gen                                     |2       |0       |2       |0       |0       |
+|    u_tx_fifo                                                   |tx_client_fifo                                    |224     |38      |203     |4       |0       |
+|      ramgen_l                                                  |RAMB16_S9_S9                                      |1       |0       |0       |2       |0       |
+|      ramgen_u                                                  |RAMB16_S9_S9                                      |1       |0       |0       |2       |0       |
+|  u_packet_scheduler                                            |media_udp_scheduler                               |481     |13      |42      |0       |0       |
+|  u_pc_control                                                  |uart_audio_control                                |410     |33      |198     |0       |0       |
+|    u_uart_baud_tick                                            |uart_baud_tick                                    |25      |9       |33      |0       |0       |
+|    u_uart_rx                                                   |uart_rx                                           |99      |9       |58      |0       |0       |
+|    u_uart_tx                                                   |uart_tx                                           |24      |0       |13      |0       |0       |
+|  u_pc_reset                                                    |player_domain_reset                               |0       |0       |2       |0       |0       |
+|  u_pcm_source_fifo                                             |rfifo_32_32_512                                   |74      |26      |94      |2       |0       |
+|    ram_inst                                                    |ram_infer_rfifo_32_32_512                         |0       |0       |0       |2       |0       |
+|    rd_to_wr_cross_inst                                         |fifo_cross_domain_addr_process_al_rfifo_32_32_512 |16      |0       |36      |0       |0       |
+|    wr_to_rd_cross_inst                                         |fifo_cross_domain_addr_process_al_rfifo_32_32_512 |16      |0       |36      |0       |0       |
+|  u_remote_compute                                              |remote_audio_compute                              |2415    |433     |1605    |12      |2       |
+|    u_controls_cdc                                              |audio_visual_cdc                                  |26      |0       |84      |0       |0       |
+|    u_lyrics                                                    |audio_lyric_timeline                              |737     |117     |388     |7       |0       |
+|      u_boundaries                                              |lyric_boundary_map                                |60      |0       |0       |0       |0       |
+|      u_events                                                  |lyric_event_rom                                   |43      |5       |23      |7       |0       |
+|    u_spectrum                                                  |audio_spectrum_analyzer                           |722     |109     |389     |1       |2       |
+|    u_wave                                                      |audio_waveform_analyzer                           |417     |106     |300     |0       |0       |
+|  u_sd_clock                                                    |sys_pll                                           |1       |0       |0       |0       |0       |
+|  u_stream_reset                                                |player_domain_reset                               |0       |0       |2       |0       |0       |
+|  u_visual_packets                                              |audio_visual_tx                                   |422     |14      |375     |0       |0       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+

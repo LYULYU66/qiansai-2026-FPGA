@@ -1,0 +1,126 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/sim
+vbmp_read
+Z1 !s110 1789377227
+!i10b 1
+!s100 n0kE`YIR[O2E;M:EbBJkC0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IfjJaXJR94aeBhHZHih=Z03
+R0
+Z3 w1789377181
+Z4 8tb_sd_card_bmp_playback.v
+Z5 Ftb_sd_card_bmp_playback.v
+!i122 0
+L0 157 44
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z8 !s108 1789377226.000000
+!s107 tb_sd_card_bmp_playback.v|..\src\user_source\hdl_source\SD\sd_card_bmp.v|
+Z9 !s90 -work|playback_work_fix|..\src\user_source\hdl_source\SD\sd_card_bmp.v|tb_sd_card_bmp_playback.v|
+!i113 0
+Z10 o-work playback_work_fix
+Z11 tCvgOpt 0
+vkey_press_debounce
+R1
+!i10b 1
+!s100 KTRY;SE6h8U0hN1E2HDNj2
+R2
+IbR74TNNTWB0h:VF84f0^T3
+R0
+Z12 w1789377180
+Z13 8..\src\user_source\hdl_source\SD\sd_card_bmp.v
+Z14 F..\src\user_source\hdl_source\SD\sd_card_bmp.v
+!i122 0
+L0 570 45
+R6
+R7
+r1
+!s85 0
+31
+R8
+Z15 !s107 tb_sd_card_bmp_playback.v|..\src\user_source\hdl_source\SD\sd_card_bmp.v|
+R9
+!i113 0
+R10
+R11
+vsd_card_bmp
+R1
+!i10b 1
+!s100 ?fLE>1Ld=g6fTPW3K:EUY1
+R2
+IAA88RAI]0^mg<lWe@NF[H2
+R0
+R12
+R13
+R14
+!i122 0
+L0 2 567
+R6
+R7
+r1
+!s85 0
+31
+R8
+R15
+R9
+!i113 0
+R10
+R11
+vsd_card_top
+R1
+!i10b 1
+!s100 <<m@TzokYl;ClOHb`m89a0
+R2
+IWPi7cL>Dk5WAZGGm]cTV52
+R0
+R3
+R4
+R5
+!i122 0
+L0 202 29
+R6
+R7
+r1
+!s85 0
+31
+R8
+R15
+R9
+!i113 0
+R10
+R11
+vtb_sd_card_bmp_playback
+R1
+!i10b 1
+!s100 hAFHZXkj0SL`883_Jhzf:3
+R2
+Ii5GYZojf3RQJgk`ObL8cJ3
+R0
+R3
+R4
+R5
+!i122 0
+L0 3 152
+R6
+R7
+r1
+!s85 0
+31
+R8
+R15
+R9
+!i113 0
+R10
+R11

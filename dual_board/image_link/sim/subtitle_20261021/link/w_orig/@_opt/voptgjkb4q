@@ -1,0 +1,84 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\subtitle_20261021\link
+T_opt
+VhKAX_oXN=[a=ICNol`Fl60
+04 15 4 work tb_link_session fast 0
+=1-04bf1b05a8bd-6ad825f6-33a-7054
+o-quiet -auto_acc_if_foreign -work w_orig
+n@_opt
+OL;O;10.1c;51
+vmedia_link_session
+I01=Q<iA4=HC<0_C^VKLSV2
+V3a=W?EH3hLmF3WCW>m_AN1
+Z1 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\subtitle_20261021\link
+w1792550346
+8../../../rtl/media_link_session.v
+F../../../rtl/media_link_session.v
+L0 5
+Z2 OL;L;10.1c;51
+r1
+31
+Z3 !s108 1792550389.255000
+Z4 !s107 ../../tb_link_session.v|../../../rtl/media_udp_arbiter.v|../../../rtl/media_link_session.v|
+Z5 !s90 -work|w_orig|../../../rtl/media_link_session.v|../../../rtl/media_udp_arbiter.v|../../tb_link_session.v|
+Z6 o-work w_orig -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 S7@f2aZ5lNhiT4Gi5j4S^1
+!s85 0
+vmedia_udp_arbiter
+I1I0a^S3j9_=38d9Ek0`021
+VWXC^a41UTZV=Wdm2>K2Mb3
+R1
+Z7 w1792422480
+Z8 8../../../rtl/media_udp_arbiter.v
+Z9 F../../../rtl/media_udp_arbiter.v
+L0 4
+R2
+r1
+31
+R3
+R4
+R5
+R6
+!i10b 1
+!s100 COYj?ZQWZlH5HEGl=UF;^0
+!s85 0
+vmedia_udp_scheduler
+I@PEhbGk_jI13f`fzNhU>13
+V5_=2gz597>DCi00eRQEzR0
+R1
+R7
+R8
+R9
+L0 79
+R2
+r1
+31
+R3
+R4
+R5
+R6
+!i10b 1
+!s100 DXXzaXKdoVg`0BLPT`@R12
+!s85 0
+vtb_link_session
+Ii=IKY:[fLQC_gAzmF3I980
+VN7:o5>ezTg0STe]5bLg[c1
+R1
+w1791106928
+8../../tb_link_session.v
+F../../tb_link_session.v
+L0 2
+R2
+r1
+31
+R3
+R4
+R5
+R6
+!i10b 1
+!s100 46RfFb?@>?cQ;NKCaQBM20
+!s85 0

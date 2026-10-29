@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vbmp_read
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790936836
+!i10b 1
+!s100 R4W2onGzN=X2^Vo^H:TWK2
+Iz:4IZDJQ1NXfdfUL7I6fY0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 bmp_read_v_unit
+S1
+R0
+w1790936491
+8src/user_source/hdl_source/SD/bmp_read.v
+Fsrc/user_source/hdl_source/SD/bmp_read.v
+L0 1
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1790936836.000000
+Z7 !s107 sim/lut_opt_20261002/tb_bmp_lutopt_stress.sv|sim/lut_opt_20261002/baseline/bmp_read.v|src/user_source/hdl_source/SD/bmp_read.v|
+Z8 !s90 -sv|-work|sim/bmp_resize_20261002/lut_stress|src/user_source/hdl_source/SD/bmp_read.v|sim/lut_opt_20261002/baseline/bmp_read.v|sim/lut_opt_20261002/tb_bmp_lutopt_stress.sv|
+!i113 1
+Z9 o-sv -work sim/bmp_resize_20261002/lut_stress
+Z10 tCvgOpt 0
+vbmp_read_pre_lutopt
+R1
+R2
+!i10b 1
+!s100 O?c2:iPjTOI0HJQbMY>J:0
+INF82F2AVQT6b2f:;80>5n0
+R3
+R4
+S1
+R0
+w1790929340
+8sim/lut_opt_20261002/baseline/bmp_read.v
+Fsim/lut_opt_20261002/baseline/bmp_read.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vtb_bmp_lutopt_stress
+R1
+R2
+!i10b 1
+!s100 IVldGGLVe6l4[QL6gEM8j3
+Ioo_TT?0BPgg5Ld6j>:H`:3
+R3
+!s105 tb_bmp_lutopt_stress_sv_unit
+S1
+R0
+w1790929528
+8sim/lut_opt_20261002/tb_bmp_lutopt_stress.sv
+Fsim/lut_opt_20261002/tb_bmp_lutopt_stress.sv
+L0 5
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10

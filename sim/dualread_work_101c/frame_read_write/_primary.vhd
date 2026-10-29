@@ -1,0 +1,68 @@
+library verilog;
+use verilog.vl_types.all;
+entity frame_read_write is
+    generic(
+        MEM_DATA_BITS   : integer := 32;
+        READ_DATA_BITS  : integer := 32;
+        WRITE_DATA_BITS : integer := 32;
+        ADDR_BITS       : integer := 21;
+        BURST_BITS      : integer := 9;
+        BURST_SIZE      : integer := 256;
+        WRITE_V_FLIP    : integer := 1;
+        FRAME_WIDTH     : integer := 640;
+        FRAME_HEIGHT    : integer := 480
+    );
+    port(
+        rst             : in     vl_logic;
+        mem_clk         : in     vl_logic;
+        Sdr_init_done   : in     vl_logic;
+        Sdr_init_ref_vld: in     vl_logic;
+        Sdr_busy        : in     vl_logic;
+        App_rd_en       : out    vl_logic;
+        App_rd_addr     : out    vl_logic_vector;
+        Sdr_rd_en       : in     vl_logic;
+        Sdr_rd_dout     : in     vl_logic_vector;
+        read_clk        : in     vl_logic;
+        read_req        : in     vl_logic;
+        read_req_ack    : out    vl_logic;
+        read_finish     : out    vl_logic;
+        read_b_enable   : in     vl_logic;
+        read_addr_0     : in     vl_logic_vector;
+        read_addr_1     : in     vl_logic_vector;
+        read_addr_2     : in     vl_logic_vector;
+        read_addr_3     : in     vl_logic_vector;
+        read_addr_index : in     vl_logic_vector(1 downto 0);
+        read_addr_index_b: in     vl_logic_vector(1 downto 0);
+        read_len        : in     vl_logic_vector;
+        read_en         : in     vl_logic;
+        read_data       : out    vl_logic_vector;
+        read_data_b     : out    vl_logic_vector;
+        App_wr_en       : out    vl_logic;
+        App_wr_addr     : out    vl_logic_vector;
+        App_wr_din      : out    vl_logic_vector;
+        App_wr_dm       : out    vl_logic_vector(3 downto 0);
+        write_clk       : in     vl_logic;
+        write_abort     : in     vl_logic;
+        write_req       : in     vl_logic;
+        write_req_ack   : out    vl_logic;
+        write_finish    : out    vl_logic;
+        write_addr_0    : in     vl_logic_vector;
+        write_addr_1    : in     vl_logic_vector;
+        write_addr_2    : in     vl_logic_vector;
+        write_addr_3    : in     vl_logic_vector;
+        write_addr_index: in     vl_logic_vector(1 downto 0);
+        write_len       : in     vl_logic_vector;
+        write_en        : in     vl_logic;
+        write_data      : in     vl_logic_vector
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of MEM_DATA_BITS : constant is 1;
+    attribute mti_svvh_generic_type of READ_DATA_BITS : constant is 1;
+    attribute mti_svvh_generic_type of WRITE_DATA_BITS : constant is 1;
+    attribute mti_svvh_generic_type of ADDR_BITS : constant is 1;
+    attribute mti_svvh_generic_type of BURST_BITS : constant is 1;
+    attribute mti_svvh_generic_type of BURST_SIZE : constant is 1;
+    attribute mti_svvh_generic_type of WRITE_V_FLIP : constant is 1;
+    attribute mti_svvh_generic_type of FRAME_WIDTH : constant is 1;
+    attribute mti_svvh_generic_type of FRAME_HEIGHT : constant is 1;
+end frame_read_write;

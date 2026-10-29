@@ -1,0 +1,74 @@
+{
+  "phase": 4,
+  "date": "2026-10-04",
+  "simulation_cases_passed": 13,
+  "simulation_errors": 0,
+  "native_fifo_unused_port_warnings": 12,
+  "modelsim": "Starter 10.5b",
+  "resource_stage": "gate synthesis, not placed/routed",
+  "rom_initialization": "gate eram_init on",
+  "board_a": {
+    "dsp": 3,
+    "pll": 4,
+    "bram9k": 57,
+    "bram32k": 7,
+    "lut": 16700,
+    "registers": 10441
+  },
+  "board_b": {
+    "dsp": 3,
+    "pll": 3,
+    "bram9k": 25,
+    "bram32k": 2,
+    "lut": 12082,
+    "registers": 9285
+  },
+  "new_player_bit_generated": false,
+  "hardware_validated": false,
+  "files": [
+    {
+      "file": "dual_board/image_link/rtl/audio_receipt.v",
+      "sha256": "4B08AB1BA3B2E8734C59D9B199EDE164D20AF0A0A5F569A65D437C3DE26AD4DC"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_packet_rx.v",
+      "sha256": "FCAA85389B8B6A3933C2D0CE7157A8D9A6D2A51BF5C484996ED007B958667626"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_visual_packet.v",
+      "sha256": "76CFDB3624A6DEC5DF71A9F13793351A45C1DD32EF336FAB4F417F908B72ADBD"
+    },
+    {
+      "file": "dual_board/image_link/rtl/remote_audio_compute.v",
+      "sha256": "2CECCA2356611026FC82E030D45F56B597F823CC49E8BEFECD534FF1D3720020"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_media_board_b.v",
+      "sha256": "773DB919CB03A9DCDC8C12CAD0D4AC58DACEAC65252107FAE522E80211492DA7"
+    },
+    {
+      "file": "dual_board/image_link/rtl/top_dual_image.v",
+      "sha256": "35B5DF83087E8FF49851C245C07860976EB37FA099770D6A706D512087342CBD"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_a/MEDIA_IMAGE_A_gate.area",
+      "sha256": "BCDCAD6E2FC3FE2F4CEC9BFB4FB7B6278C3A30B0A590BA8E2512DF36DAB2B966"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B_gate.area",
+      "sha256": "95ABF9ABC7A2567B5DFF89DCD48A43E19D3E8BBD80A7DEEE11E3641E1F71AA69"
+    },
+    {
+      "file": "dual_board/image_link/sim/modelsim_regression.log",
+      "sha256": "997EF7A2B4E6AFE76ED9A4C452C7E243DD49576E82B9C4CB72A9A09C045F16AC"
+    },
+    {
+      "file": "src/user_source/hdl_source/top_tf_hdmi_audio.v",
+      "sha256": "561394111CB599D811AA3408B25C6AABCC420D32111BC03D3B3EE87AB2D8E0E8"
+    },
+    {
+      "file": "best_result/lab_ex5_i2s_v1.0_logic_round3_20261003.bit",
+      "sha256": "94744392DEC4010D38261036AB360AB6E01BC4C718B34167E821302A15297C88"
+    }
+  ]
+}

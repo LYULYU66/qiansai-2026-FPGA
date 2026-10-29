@@ -1,0 +1,308 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021\clk
+T_opt
+V`c4_BJW5>?WSgAAdInN5G0
+04 8 4 work tb_pll_b fast 0
+04 4 4 work glbl fast 0
+=1-04bf1b05a8bd-6ad84635-125-85d0
+o-quiet -auto_acc_if_foreign -work w_b
+n@_opt
+OL;O;10.1c;51
+veg_clko_ctrl
+Id1af69HRUUN7We2`0MF9@0
+VhnRglfViEJZlBPlj0V_cL0
+Z1 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021\clk
+Z2 w1752052136
+Z3 8C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_pll.v
+Z4 FC:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_pll.v
+L0 1014
+Z5 OL;L;10.1c;51
+r1
+31
+Z6 !s108 1792558643.308000
+Z7 !s107 tb_pll_b.v|../../../rtl/b_hdmi_image3_20261006/pll_gen_b.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_clk.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_logic_clk.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_glbl.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_pll.v|
+Z8 !s90 -work|w_b|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_pll.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_glbl.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_logic_clk.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_clk.v|../../../rtl/b_hdmi_image3_20261006/pll_gen_b.v|tb_pll_b.v|
+Z9 o-work w_b -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 YaW^5F<GkSMi<6T?fhnTe0
+!s85 0
+veg_clko_premux
+ICe0PQ0zz68oY0ia@U^_Fg1
+V52AnmIDhzcP^Ra[RRDgRi1
+R1
+R2
+R3
+R4
+L0 995
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 12SCS`bA50CJmVJJM5HMW0
+!s85 0
+veg_dphase_sel
+I[Nl_HRV^z`NgaReeEz=k=1
+V=f4j<:I1hnHU:Zm>2X5`?2
+R1
+R2
+R3
+R4
+L0 925
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 @_9h1b@^M^<5]VToMh`L03
+!s85 0
+vEG_LOGIC_BUFG
+I4nW;mh:fC1IVR3be;8OHo3
+VeOZ9I`DDDEkLidTYd^XNI0
+R1
+R2
+Z10 8C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_logic_clk.v
+Z11 FC:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_logic_clk.v
+L0 24
+R5
+r1
+31
+R6
+R7
+R8
+R9
+n@e@g_@l@o@g@i@c_@b@u@f@g
+!i10b 1
+!s100 O6znF<]OCV<0MnMZ3oF[Y2
+!s85 0
+vEG_LOGIC_BUFGMUX
+IA0LTIz>bhQ@F=koaU<0H43
+VC:ImGhk:MOl=ZWY911SYY2
+R1
+R2
+R10
+R11
+L0 53
+R5
+r1
+31
+R6
+R7
+R8
+R9
+n@e@g_@l@o@g@i@c_@b@u@f@g@m@u@x
+!i10b 1
+!s100 8meT5B:_C]Z^4[^YCzDza3
+!s85 0
+vEG_LOGIC_BUFIO
+ImE7Q@K0?H[Ph1jOi`^oJ33
+V<3VJ8^C6;[N4A`dGYkgLM1
+R1
+R2
+R10
+R11
+L0 32
+R5
+r1
+31
+R6
+R7
+R8
+R9
+n@e@g_@l@o@g@i@c_@b@u@f@i@o
+!i10b 1
+!s100 aQ1dQeNO>4Q]N:4FBNT6E0
+!s85 0
+vEG_PHY_CLKDIV
+I;We`gO8V0Oefe9HlfH]1J3
+V]ic`Sf3Eh:mgVPdj3Lf820
+R1
+R2
+Z12 8C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_clk.v
+Z13 FC:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_clk.v
+L0 80
+R5
+r1
+31
+R6
+R7
+R8
+R9
+n@e@g_@p@h@y_@c@l@k@d@i@v
+!i10b 1
+!s100 eWUD3iFzO`J_KnH^o]1K03
+!s85 0
+vEG_PHY_GCLK
+IFmlh:]3zZ2KfgnM2b9Zm52
+VP3zdEFMlb5RbBP9BV:7kA1
+R1
+R2
+R12
+R13
+L0 21
+R5
+r1
+31
+R6
+R7
+R8
+R9
+n@e@g_@p@h@y_@g@c@l@k
+!i10b 1
+!s100 Z0;dGdR>F7iR6HZ3RO1Oh1
+!s85 0
+vEG_PHY_IOCLK
+I6JmGaf<AQGeV:D;>OGd?g3
+V:e3eT4acPgiV2I5o9<Bz<1
+R1
+R2
+R12
+R13
+L0 32
+R5
+r1
+31
+R6
+R7
+R8
+R9
+n@e@g_@p@h@y_@i@o@c@l@k
+!i10b 1
+!s100 ;;S[f2jPPB8EM53mz<K7G0
+!s85 0
+vEG_PHY_PLL
+I<9]ZSk2DlAWe_9Po_d_Cg2
+V2zXWKiia<^[;RJ8@W1hY;3
+R1
+R2
+R3
+R4
+L0 25
+R5
+r1
+31
+R6
+R7
+R8
+R9
+n@e@g_@p@h@y_@p@l@l
+!i10b 1
+!s100 _QYeQ78M8dAQ1jMgnHiHA0
+!s85 0
+veg_pll_div128
+IBJdiT>0LM_P]z`8VTlUZj0
+Vb5QzRG`KfJLVH9fUAVnW>0
+R1
+R2
+R3
+R4
+L0 1033
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 Mn?>Ill6E7oX]W:LDJZ=j3
+!s85 0
+veg_pll_div2
+IiP9?HM?A@DN:hSAB6TIld3
+V2TYOK0RJYC;DMPnX5EVON3
+R1
+R2
+R3
+R4
+L0 1105
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 iKDR[Nh57P[l6RG_3KOb63
+!s85 0
+vglbl
+ICz5;XFIl`CWZdXXD][`La2
+VDbL]YG2GFhLmAAcPD`b9d2
+R1
+R2
+8C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_glbl.v
+FC:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_glbl.v
+L0 23
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 P2G@QgmzIfH:OF`8?ozj81
+!s85 0
+vpll_gen
+IIRoN^22XfA;d;TGYd2Vjn1
+Vf4c0e0Q@TX7DkziZe7LSD2
+R1
+w1792558538
+8../../../rtl/b_hdmi_image3_20261006/pll_gen_b.v
+F../../../rtl/b_hdmi_image3_20261006/pll_gen_b.v
+L0 10
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 gO2LWj2hzDPoJ>cA]0cNM2
+!s85 0
+vprediv_mux
+Io?El<;9[bcnP>>S5KJD@92
+VZld2?6lXV=Cez5IW`XB]Z3
+R1
+R2
+R3
+R4
+L0 904
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 :fR<hTZzJWZZ@Y^4P8FLK3
+!s85 0
+vtb_pll_b
+IOHl@J=Khh]7Q]2VY<NfjA2
+VSLACI?eU3mm[Pnm8jCKYB3
+R1
+w1792558598
+8tb_pll_b.v
+Ftb_pll_b.v
+L0 3
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 PaZbbA[bRdMV_olAzHn?43
+!s85 0

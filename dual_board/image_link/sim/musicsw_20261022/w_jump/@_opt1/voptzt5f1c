@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\musicsw_20261022
+T_opt
+Vbk=_YDJ1hNOA0mVeD2OJE0
+Z1 04 18 4 work tb_music_page_jump fast 0
+=1-000ae431a4f1-6ad9d38b-2b-5e48
+Z2 o-quiet -auto_acc_if_foreign -work w_jump
+n@_opt
+Z3 OL;O;10.1c;51
+Z4 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\musicsw_20261022
+T_opt1
+V>Y4JdGoQBXB[?:`Jf7A@81
+R1
+=1-000ae431a4f1-6ad9d446-388-7890
+R2
+n@_opt1
+R3
+vimage_remote_display_control
+IbK;bI^og^YlGaR24HOO>b1
+VXf`z=T80UO3nVKc:]M@Qz1
+R4
+w1792660018
+8../../rtl/image_remote_display_control.v
+F../../rtl/image_remote_display_control.v
+L0 4
+Z5 OL;L;10.1c;51
+r1
+31
+Z6 !s108 1792660064.217000
+Z7 !s107 tb_music_page_jump.v|../../rtl/dualsong_20261005/sd_card_bmp_remote.v|../../rtl/image_remote_display_control.v|
+Z8 !s90 -work|w_jump|../../rtl/image_remote_display_control.v|../../rtl/dualsong_20261005/sd_card_bmp_remote.v|tb_music_page_jump.v|
+Z9 o-work w_jump -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 lh@ha7Gm^OKgSJMbgR4:f0
+!s85 0
+vkey_press_debounce
+IaoRWzW>7Q^OS7JOJWg<ag2
+VFhkc<PRIIC7<S8WGnX8Cf2
+R4
+Z10 w1792556963
+Z11 8../../rtl/dualsong_20261005/sd_card_bmp_remote.v
+Z12 F../../rtl/dualsong_20261005/sd_card_bmp_remote.v
+L0 762
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 S:nen9>B[SDnf=THk@?K[3
+!s85 0
+vsd_card_bmp_remote
+I3DK2>XPRHZJgCjfBBdk4O3
+V]Rnj=WGkFLPIdBUl6COQW2
+R4
+R10
+R11
+R12
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 ajdDP@@1gY=A9<fkD<;3W3
+!s85 0
+vsong_stream_control
+ILXY?7V<fAGN5<=zQzZZEe2
+VcA@EA]S1GX;J_H[F4mkY`2
+R4
+R10
+R11
+R12
+L0 735
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 Ygh4JVI1l82V>m8dM`2IM0
+!s85 0
+vtb_music_page_jump
+IQX;@@2z^o_im4H>6OVS[W0
+VYi[A6OiWkP6lOYKHHZCU23
+R4
+w1792660063
+8tb_music_page_jump.v
+Ftb_music_page_jump.v
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 giF?nc?aifIRSd[]@bbc92
+!s85 0

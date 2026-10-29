@@ -1,0 +1,42 @@
+{
+  "provenance": "Corrected transcript of the complete user-supplied MP3; timestamps are aligned against that recording, not a downloaded recording.",
+  "verse": [
+    "塞纳河畔 左岸的咖啡",
+    "我手一杯 品尝你的美",
+    "留下唇印的嘴",
+    "花店玫瑰 名字写错谁",
+    "告白气球 风吹到对街",
+    "微笑在天上飞"
+  ],
+  "bridge": [
+    "你说你有点难追",
+    "想让我知难而退",
+    "礼物不需挑最贵",
+    "只要香榭的落叶",
+    "喔 营造浪漫的约会",
+    "不害怕搞砸一切",
+    "拥有你就拥有全世界"
+  ],
+  "chorus": [
+    "亲爱的 爱上你 从那天起",
+    "甜蜜得很轻易",
+    "亲爱的 别任性 你的眼睛",
+    "在说我愿意"
+  ],
+  "final_chorus": [
+    "亲爱的 爱上你 恋爱日记",
+    "飘香水的回忆",
+    "一整瓶的梦境 全都有你",
+    "搅拌在一起"
+  ],
+  "blocks": [
+    {"start":22.7,"end":42.5,"group":"verse"},
+    {"start":42.5,"end":64.4,"group":"bridge"},
+    {"start":64.4,"end":87.0,"group":"chorus"},
+    {"start":108.2,"end":128.3,"group":"verse"},
+    {"start":128.3,"end":150.3,"group":"bridge"},
+    {"start":150.3,"end":171.3,"group":"chorus"},
+    {"start":171.3,"end":192.2,"group":"final_chorus"},
+    {"start":192.2,"end":206.5,"group":"chorus","slice":[2,4]}
+  ]
+}

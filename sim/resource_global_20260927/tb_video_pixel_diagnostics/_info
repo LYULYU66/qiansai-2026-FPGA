@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vtb_video_pixel_diagnostics
+Z1 !s110 1790583102
+!i10b 1
+!s100 @N3DKC8eVkm]2=bl8ICJX0
+IF5TzIPFDKGLO8aKAlPON:2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1790395490
+8sim/tb_video_pixel_diagnostics.v
+Fsim/tb_video_pixel_diagnostics.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1790583102.000000
+Z5 !s107 sim/tb_video_pixel_diagnostics.v|src/user_source/hdl_source/video_image_adjust.v|src/user_source/hdl_source/video_pixel_diagnostics.v|
+Z6 !s90 -work|sim/resource_global_20260927/tb_video_pixel_diagnostics|src/user_source/hdl_source/video_pixel_diagnostics.v|src/user_source/hdl_source/video_image_adjust.v|sim/tb_video_pixel_diagnostics.v|
+!i113 1
+Z7 o-work sim/resource_global_20260927/tb_video_pixel_diagnostics
+Z8 tCvgOpt 0
+vvideo_alignment_monitor
+R1
+!i10b 1
+!s100 ^HY71R0g605h9=3UFDbFK2
+IfihPfV:e>MaLfHgzFj1Hk3
+R2
+R0
+Z9 w1790487000
+Z10 8src/user_source/hdl_source/video_pixel_diagnostics.v
+Z11 Fsrc/user_source/hdl_source/video_pixel_diagnostics.v
+L0 80
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vvideo_frame_crc_monitor
+R1
+!i10b 1
+!s100 mdea6d58ENRzlZGMO]P6M1
+ILT4KRen63Lf1i:^J?ToBV3
+R2
+R0
+R9
+R10
+R11
+L0 170
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vvideo_image_adjust
+R1
+!i10b 1
+!s100 74Z339:c<<j0<?jO6<eSW0
+I=O107>jO4JEVk>G2Mead`2
+R2
+R0
+w1789907458
+8src/user_source/hdl_source/video_image_adjust.v
+Fsrc/user_source/hdl_source/video_image_adjust.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vvideo_pixel_diagnostics
+R1
+!i10b 1
+!s100 kF1RZ]1MV2G1iR`h_eD911
+I>bG_?8P^dF1]zoPKBCWn91
+R2
+R0
+R9
+R10
+R11
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

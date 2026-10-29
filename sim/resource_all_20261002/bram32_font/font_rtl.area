@@ -1,0 +1,37 @@
+standard
+***Report Model: lyric_font_bram32_rom Device: EG4S20BG256***
+
+IO Statistics
+#IO                        21
+  #input                   19
+  #output                   2
+  #inout                    0
+
+Gate Statistics
+#Basic gates                5
+  #and                      0
+  #nand                     0
+  #or                       0
+  #nor                      0
+  #xor                      0
+  #xnor                     0
+  #buf                      0
+  #not                      0
+  #bufif1                   0
+  #MX21                     0
+  #FADD                     0
+  #DFF                      5
+  #LATCH                    0
+#MACRO_ADD                  6
+#MACRO_MUX                 18
+
+Report Hierarchy Area:
++----------------------------------------------------------------+
+|Instance        |Module                 |gates  |seq    |macros |
++----------------------------------------------------------------+
+|top             |lyric_font_bram32_rom  |0      |5      |6      |
+|  banks[0]$bank |lyric_font_bram32_bank |0      |0      |0      |
+|  banks[1]$bank |lyric_font_bram32_bank |0      |0      |0      |
+|  banks[2]$bank |lyric_font_bram32_bank |0      |0      |0      |
+|  banks[3]$bank |lyric_font_bram32_bank |0      |0      |0      |
++----------------------------------------------------------------+

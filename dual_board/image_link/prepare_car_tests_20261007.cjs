@@ -1,0 +1,10 @@
+const fs=require('fs'),p=require('path'),base=__dirname;
+let s=fs.readFileSync(p.join(base,'sim/stars_opt_20261007/tb_b_hdmi_preview.v'),'utf8');
+s=s.replace('`include "star_reference.vh"','`include "star_reference.vh"\n`include "sprite_reference.vh"\n`include "car_reference.vh"');
+const needle='expected=star_reference(';
+const lines=s.split(/\r?\n/),at=lines.findIndex(l=>l.includes(needle));
+if(at<0)throw Error('No pixel reference insertion');
+lines.splice(at+1,0,'   if(view_valid && !view_page)expected=car_reference(expected,axis_count%640,axis_count/640,dut.u_car.age_q,dut.u_car.pulse_q,1);');
+s=lines.join('\n').replace('exact raw/star RGB pixels','exact instrument-car/star RGB pixels');
+console.log('*** Begin Patch\n*** Add File: dual_board/image_link/sim/car_intro_20261007/tb_b_hdmi_preview.v');
+for(const l of s.split('\n'))console.log('+'+l);console.log('*** End Patch');

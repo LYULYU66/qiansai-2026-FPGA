@@ -1,0 +1,196 @@
+{
+  "version": "dualsong_key3_20261006",
+  "created_at": "2026-10-06T02:27:20.079Z",
+  "hardware_verified": false,
+  "timing_closed": false,
+  "usage": "PROGRAM_SRAM engineering test only; not a flash/stable release",
+  "base": "resource_opt_r10, with R7A/R8B accepted rollback preserved",
+  "physical_keys": {
+    "KEY1": "reset A2",
+    "KEY2": "image control B2",
+    "KEY3": "song toggle B1",
+    "KEY4": "image control C1"
+  },
+  "resources": {
+    "A": {
+      "lut": 14763,
+      "registers": 9270,
+      "bram9k": 51,
+      "bram32k": 10,
+      "dsp": 3,
+      "pll": 4,
+      "lut_percent": "75.32",
+      "setup_ns": -5.699,
+      "hold_ns": 0.004,
+      "udp_self_ns": -2.33,
+      "video_self_ns": 0.173
+    },
+    "B": {
+      "lut": 11699,
+      "registers": 7922,
+      "bram9k": 29,
+      "bram32k": 9,
+      "dsp": 3,
+      "pll": 3,
+      "lut_percent": "59.69",
+      "setup_ns": -3.566,
+      "hold_ns": -1.54,
+      "udp_self_ns": -0.896,
+      "sd_self_ns": -0.603
+    }
+  },
+  "artifacts": [
+    {
+      "board": "A",
+      "file": "MEDIA_A_DUALSONG_KEY3_20261006.bit",
+      "sha256": "A2945958FDD2A7D10D8F8A42ADBFD82E503ECA892C0B966E44748CBF5FF018AD",
+      "size": 735559,
+      "seed": 4
+    },
+    {
+      "board": "B",
+      "file": "MEDIA_B_DUALSONG_KEY3_20261006.bit",
+      "sha256": "BA772F73E6F573E1B388F404ACC8D1222A72C404AB5FAF5336E585554EAC4E2F",
+      "size": 705300,
+      "seed": 3
+    }
+  ],
+  "pcm_format": "raw 48000Hz signed 16-bit little-endian stereo interleaved, no header",
+  "pcms": [
+    {
+      "name": "MUSIC.PCM",
+      "song": "告白气球",
+      "bytes": 40174240,
+      "samples": 10043560,
+      "sha256": "8512A513C526C26A4F5E4C7BFD0A4DFB449F97FAED4FAE4C1016FB99CB3A1831",
+      "seconds": 209.24083333333334
+    },
+    {
+      "name": "MUSIC2.PCM",
+      "song": "一路向北",
+      "bytes": 57180160,
+      "samples": 14295040,
+      "sha256": "69D27A92FB3FAE5DFFD8C9C00DB035B37BE20EEDDC1EBACB005D3B8B9EA9A6A1",
+      "seconds": 297.81333333333333
+    }
+  ],
+  "sources": [
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/audio_lyric_timeline.v",
+      "sha256": "7BC3891BB2EDF20F64C7DD7D81ED6F260AAF74AC01B400049E5B6A68E8D53C67"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/audio_receipt_a.v",
+      "sha256": "82697D8A1BF10C65FF21F9EA3E6AC55F1CAADEFCDB487C9AFB535B94B588FA94"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/audio_receipt_b.v",
+      "sha256": "EC2454A237C6FB48368638372DA911F463CC64A72BBFF1754329BD39AC28D428"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/bmp_read.v",
+      "sha256": "6A030FC4D80128CBF44BCFE0E197823BC267ED8FA868D65083B2A93166D405A8"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/dual_lyric_song_data.v",
+      "sha256": "3BBC4EF7C5A1C6470FCB745D65C3D3B3E3A85F1E539BAF2E68F6FAF91A2462AE"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/image_media_board_b_hw.v",
+      "sha256": "70AF250CDF2BF977B7C106A00A246B701D875B6F9FD5714A837E2F8CF2BD3842"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/image_tf_source_hw.v",
+      "sha256": "CF785D41542680397A5EF8CDD376345AC7B159B56F3D8B0D7A2179EF312A4B47"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/lyric_song_data.v",
+      "sha256": "C9C83B5BCA1690FEEE3489BBF16C11946275CF9FBEEE5BB8C01E1899D9631C1D"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/media_a.adc",
+      "sha256": "380EF02D69A4467A269F5BC17BB2A471F06FF9E398A042B31A9AF76268BB393D"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/remote_audio_compute_hw.v",
+      "sha256": "11A9B4CADEE55D424D1DD4CE4A6A932B95B769B593D636A3091B420394ED0B07"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/sd_card_bmp_remote.v",
+      "sha256": "EC4AF4AF816A09CB9EDEF409C632B6E0F98DB759406A42DE3D4C033B7001FCB4"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/song2_cover_rom.v",
+      "sha256": "D17CC35506316B7508303C4C2FF18D94835DA3D2556E121818D192B0FEEB25D3"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/top_dual_image_hw.v",
+      "sha256": "1B60D80273D2209307D8F634376F2E2298454B41E8C0F2AD5F047D66357C606E"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/video_lyric_overlay.v",
+      "sha256": "02F652529AF20D5D4C2C73616584F40CA52DABD39140FC9C13B0ED342C1FDE25"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/video_song_cover_overlay.v",
+      "sha256": "FCE99EB00C57596B4835A2766F152A57228159B0767B21267EA763E0EF021EBD"
+    }
+  ],
+  "regression": [
+    {
+      "name": "reader",
+      "passed": true,
+      "checks": [
+        "# PASS two-song reader reverse=0 cycles=32656 sessions=6 images=4 fragmented/FIFO/midsector/rapid/loop",
+        "# PASS two-song reader reverse=1 cycles=32689 sessions=6 images=4 fragmented/FIFO/midsector/rapid/loop"
+      ],
+      "sha256": "A35AAA295130B112AFEB2165E3ABC28C3B356EE0DF2A3703591688150AEE9ECC"
+    },
+    {
+      "name": "features",
+      "passed": true,
+      "checks": [
+        "# PASS dualsong control: KEY3 debounce, missing-file fallback, drained-sector/quiet-window switching, snapshot, CRC, reserved bits, malformed packets (120 cases)",
+        "# PASS dualsong timeline: 731 events, both banks, red sweep, underflow freeze, EOF and switch restart"
+      ],
+      "sha256": "66DF75273EA566792B40BB7E5D7613511280AA5A0820ED9EC1FA2CD249E3624A"
+    },
+    {
+      "name": "ui",
+      "passed": true,
+      "checks": [
+        "# PASS dualsong UI: 4 full frames, 5696 cover pixels, 64372 original native-font pixels, both card titles, no RGB/DE delay"
+      ],
+      "sha256": "FAFE5CF36652DB61316F10C22461A2CAC9F773367BEA37EBBC41562EC7045044"
+    },
+    {
+      "name": "boundary",
+      "passed": true,
+      "checks": [
+        "# PASS player B boundary: actual top/FIFO/scheduler/compute, 1024 PCM words, both tracks and stale-song guard, metadata freeze, UART, poisoned packet/relink and 3 image aborts",
+        "# PASS home source: actual 100/125 MHz CDC + indexed sender, 614400 words, both storage directions and backpressure"
+      ],
+      "sha256": "F9AF5D06288ED78F8FFF0E141D98D4A42018773610CE30D452135B3EF56F172C"
+    },
+    {
+      "name": "audio",
+      "passed": true,
+      "checks": [
+        "# PASS audio status: AAK3 field packing, no premature ACK, periodic frozen-head controls, CRC/length/truncation/reserved/gain/magic guards",
+        "# PASS visual guard: exact packed payload, CRC/length/truncation/session/order/future rejection, replaceable loss, same-head refresh and frame-atomic CDC",
+        "# PASS remote compute: 25/125 MHz history CDC, backpressure, 0-8 gains, RAM/32-bit wrap, invalid/stale/session guards, underflow freeze, lyric count and exact EOF",
+        "# PASS audio offload: original analyser equivalence, actual 48k playback feedback, native FIFO, CRC retry/ACK loss, 4-stream IMG4/PCM/visual/control arbitration, remote volume, underflow freeze, session restart and lyric sample count"
+      ],
+      "sha256": "BC856CC07D830A123EC76FD5C83A8B1316BDC649B90D4B2C3FD41802C5AB4F80"
+    }
+  ],
+  "lyric_timing": "User text + locally estimated forced word alignment, not manually audition calibrated",
+  "seed_trials": {
+    "A_seed3": "route failed, never published",
+    "A_seed4": "completed, selected",
+    "B_seed4": "UDP improved but SD worsened to -1.201ns, not selected",
+    "B_seed3": "completed, selected"
+  },
+  "rollback": "dual_board/image_link/accepted_baseline_20261005_r7_r8"
+}
+

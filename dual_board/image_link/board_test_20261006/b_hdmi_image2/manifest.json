@@ -1,0 +1,400 @@
+{
+  "version": "b_hdmi_image2_20261006",
+  "created_at": "2026-10-06T03:15:42.670Z",
+  "hardware_verified": false,
+  "timing_closed": false,
+  "usage": "PROGRAM_SRAM candidate only, no FLASH programming performed",
+  "image_selection": "Second successfully scanned BMP (zero-based index 1), raw RGB before home/UI tags; output 640x480",
+  "dependency": "Initial image preload currently requires A/B Ethernet link and A frame receipts. B retains cached picture across media/link restarts; no standalone B-only TF boot mode.",
+  "audio": "Local HDMI sample/ACR valid inputs permanently zero; existing network audio/visualization/lyrics remain active for A",
+  "resources": {
+    "lut": 13986,
+    "lut_percent": "71.36",
+    "registers": 10202,
+    "bram9k": 43,
+    "bram32k": 9,
+    "dsp": 3,
+    "pll": 3,
+    "setup_ns": -5.565,
+    "hold_ns": -1.662,
+    "udp_self_ns": -0.569,
+    "sd_self_ns": -0.795,
+    "mem_self_ns": 1.455,
+    "video_self_ns": 18.518
+  },
+  "delta_vs_dualsong": {
+    "lut": 2287,
+    "registers": 2280,
+    "bram9k": 14,
+    "bram32k": 0,
+    "dsp": 0,
+    "pll": 0
+  },
+  "artifacts": [
+    {
+      "board": "B",
+      "file": "MEDIA_B_HDMI_IMAGE2_20261006.bit",
+      "bytes": 721596,
+      "sha256": "34B3C20A894567B82BF53F475B8D23FC1B7710FBAB0CEE622806ABD2B9789628",
+      "seed": 3
+    }
+  ],
+  "unchanged_A": {
+    "board": "A",
+    "file": "MEDIA_A_DUALSONG_KEY3_20261006.bit",
+    "sha256": "A2945958FDD2A7D10D8F8A42ADBFD82E503ECA892C0B966E44748CBF5FF018AD",
+    "size": 735559,
+    "seed": 4
+  },
+  "baseline_B": {
+    "board": "B",
+    "file": "MEDIA_B_DUALSONG_KEY3_20261006.bit",
+    "sha256": "BA772F73E6F573E1B388F404ACC8D1222A72C404AB5FAF5336E585554EAC4E2F",
+    "size": 705300,
+    "seed": 3
+  },
+  "sources": [
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/BUFGMUX.v",
+      "sha256": "3501C3AE93FC102FD547A30BF84AAF64521DDAEAD53F398E62DAFB8CF3E8ADBD"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/clk_gen_rst_gen.v",
+      "sha256": "1CF435B0D40E3850366F237C8BD8E0DDE34CE1974C8525457D0AD8F65F5C1837"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/div_clk_gen.v",
+      "sha256": "BB9CA78FEA2DEF93464B44641B32A2491316CF3DE55C361BC81801CFC280B367"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/IDDR.v",
+      "sha256": "0CB13720A17311E80812DE7B45B0A0BA4CF2ECDF1F60E1F8A4279FEE268C7B15"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/ODDR.v",
+      "sha256": "6442C1DD9F76329DDB5420110FD8236211EF7D002EC2A1C6295D062E353A8F4D"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/RAMB16_S9_S9.v",
+      "sha256": "9651FF21B7E76F097704ECDA17398B00F2618107B13E0768D4043E24CB649BCC"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/rgmii_interface.v",
+      "sha256": "358763A4C014AAC49A0C1A0EC96E6E0224C0341371740D1616F43766D14A1DCD"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/rx_client_fifo.v",
+      "sha256": "7DAE154FD14E6CE3431C1492777C1CEFB1E485D276F15DE8D287D7A0D6BA06A3"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/temac_block.v",
+      "sha256": "D013485435ABCD2188450120A9EF99A7A75C6E46FD8F186381E2E8FA3F3C5241"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/temac_clk_gen.v",
+      "sha256": "DFDDA666362A1372FFD07B361D1D52401AC479B244CE7AFB0C45F7DBE08996E8"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/tx_client_fifo.v",
+      "sha256": "B50FD509770C57C2EB683A6074F0F97704E048392A03472F1FDB3FA9965CFFA7"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/tx_clk_en_gen.v",
+      "sha256": "78690F2C03DD38077FB3E7A1B39DD520DA6ECA10CBF125BB57FD71E2D156082A"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/udp_ip_protocol_stack_merge.enc.v",
+      "sha256": "0D06B3D6F7B2947501CDD3128373585E38C70454938234FFA9DF325010BD4F74"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_board_eth_transport.v",
+      "sha256": "88BEDCF15C44A19D1103BA8514DCFF3EF5400FFC1A38EFFCBEE724604561AD40"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round5_20261005/image_packet_tx_hw.v",
+      "sha256": "62D9A29319D04731C683C2BC7EFFCBC26B8E4FC245F7B5140E62EEE70B625D3E"
+    },
+    {
+      "file": "dual_board/image_link/rtl/b_hdmi_20261006/image_media_board_b_hw.v",
+      "sha256": "D3FA17D5CF449755DD638719B5E5FF232F5F0D4C1597B2BAC6F91E34BE416A4A"
+    },
+    {
+      "file": "dual_board/image_link/rtl/b_hdmi_20261006/image_tf_source_hw.v",
+      "sha256": "AE793EEB89BBB3099C87263D43C05491C34900DB5F91C69E64FF13CE901310DB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_pixel_cdc.v",
+      "sha256": "6198853A79080DDD1EA4FA77FF8356B8F7ABDF27B899F73B8C4FE5B98DEF061C"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_receipt.v",
+      "sha256": "50DD6B5C718DD26DB6694923F5E42299C3CE588FB95107D4D45CEF91D37FC0FD"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/sd_card_bmp_remote.v",
+      "sha256": "EC4AF4AF816A09CB9EDEF409C632B6E0F98DB759406A42DE3D4C033B7001FCB4"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/bmp_read.v",
+      "sha256": "6A030FC4D80128CBF44BCFE0E197823BC267ED8FA868D65083B2A93166D405A8"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/bmp_bilinear_stream.v",
+      "sha256": "1F6EDA9ED18694FFD5E0E386B4A3A051364B422CD8C7288AD260CEE908D799EC"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_top.v",
+      "sha256": "00AC5EB15CE2D5B1D3FF87D6CB5BE44AF50106A96327FBC8A580B831274CB123"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_sec_read_write.v",
+      "sha256": "AA73E64F7A8EDF767BEF0D7205702BB697AB4080E3FF012DE0C29BE2EE0A9FCC"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_cmd.v",
+      "sha256": "A1A50502AFD4E8B238B0627CD5F204C04738E761D49AB48F33DA35E22BA4A5FA"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/spi_master.v",
+      "sha256": "37F7A21144FA5CCA3CC5C3B5F68A5AD40B3108336B600E45A1367734AC61403C"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/ax_debounce.v",
+      "sha256": "93AA6DD38051250CC7F777C88466AC180AFE9BCDCE7838B9EA506455D8CBC9B8"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_packet_tx.v",
+      "sha256": "AC313135E5FFF0ADE85C4C3AF14CF649CDA15B2FD7DD07628AA783113A442E63"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/audio_receipt_b.v",
+      "sha256": "EC2454A237C6FB48368638372DA911F463CC64A72BBFF1754329BD39AC28D428"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_udp_arbiter.v",
+      "sha256": "8FE149E0D80DFCAE220EEC8ADDB4226E5E984C62EB40A3A72F0F51014FD28FD6"
+    },
+    {
+      "file": "dual_board/image_link/rtl/fixed_peer_udp.v",
+      "sha256": "2919B55F8240E47058824CD20DE2FEEB02373A395EB3F9B47D4F2D414715E938"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_link_session.v",
+      "sha256": "18789CEE005FDE0340404D928239CD70D1939577433042DCDE088DA5D1FB61E1"
+    },
+    {
+      "file": "src/user_source/hdl_source/IP/afifo_32_16_256.v",
+      "sha256": "7C3EE41F30BE75AE686C9ABFF3A840FC5439209CDA077E4AA275EAC0DAB9F564"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round4_20261005/audio_visual_packet_hw.v",
+      "sha256": "199FFE7769CD8050BB58CF1610A1321DDA0585F3347B41744B416CF596384C07"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/remote_audio_compute_hw.v",
+      "sha256": "11A9B4CADEE55D424D1DD4CE4A6A932B95B769B593D636A3091B420394ED0B07"
+    },
+    {
+      "file": "dual_board/image_link/rtl/resource_round10_20261005/audio_waveform_analyzer.v",
+      "sha256": "1CB7CCE6A6F07E2D0F479B271839FE77C28A87FFBF328D224E52977F1701BA92"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_spectrum_analyzer.v",
+      "sha256": "4A5AB0CE23325CD9E9E60FC71F3BDEB105FC346877761A679191D956688D0D76"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/audio_lyric_timeline.v",
+      "sha256": "7BC3891BB2EDF20F64C7DD7D81ED6F260AAF74AC01B400049E5B6A68E8D53C67"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/dual_lyric_song_data.v",
+      "sha256": "3BBC4EF7C5A1C6470FCB745D65C3D3B3E3A85F1E539BAF2E68F6FAF91A2462AE"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round2_20261005/home_index_stream_hw.v",
+      "sha256": "EF17E105BABA053CD767E4B76EDBB963CC3109A93B54173549F2FA5D81B8CA91"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_atlas_rom.v",
+      "sha256": "71BF04D37659960F9CBE6877EDC8DB876FB4B495919DDB272F2F80EEB128666B"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_control_packet.v",
+      "sha256": "E6D603B4A83FE313817219534238E01EA24121E092C6E78226435283D5CF9A95"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_baud_tick.v",
+      "sha256": "86701937B016AB297B46BBBA8A7ACC00B03F7F9E636C3EFC34ED176E1FF2809F"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_rx.v",
+      "sha256": "D75F9978C9D55D8516DAA5BCD6C9102E670D7508FA113E8C31B5A85C59232ECB"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_tx.v",
+      "sha256": "6E607568AFBFE2CF1EC019CF7E5ECDE36DABA630F20568F5D8A5527A9B4B25B3"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_audio_control.v",
+      "sha256": "82F4BAE8C513B5B1B0C71419C38842191B3EBF795408A50B0E65BFFAEDEDB35F"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round4_20261005/player_domain_reset.v",
+      "sha256": "EA7EF6223F24A544ECB69200E8B93DF567B22B1DDBE94E4E7C525BED3EDDB435"
+    },
+    {
+      "file": "dual_board/image_link/rtl/b_hdmi_20261006/b_image_capture.v",
+      "sha256": "2102DB3552CD25373DC57DDAD3A16FC5A1C48B0279AE8FB6B0072EB16EAB655F"
+    },
+    {
+      "file": "dual_board/image_link/rtl/b_hdmi_20261006/b_hdmi_preview.v",
+      "sha256": "FE907603D81AFF01BD5A30AD311A95E337C9010F373A70E417A70874EA3EEA30"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round7_20261005/frame_read_write_hw.v",
+      "sha256": "8D5848E78350E0D304755E74EA7F5D3E0D7F4DD5D5AB02662CD03530E0FAB354"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/frame_fifo_read.v",
+      "sha256": "AA456AFB9C01F6BC4D976DF1F5D1A0DB39885FDECA2CFAAB71A5C6087C4B172C"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/frame_fifo_write.v",
+      "sha256": "2C0F735EBE0CC38D3C3E3B404A0D3121412254EE3AD1DAF6CE49573856837715"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sdram.v",
+      "sha256": "2D985C2477384E677C25714241E1A50206DEF8916AA03189A5B313B2D22DFC99"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/color_bar.v",
+      "sha256": "AFE1F56714EC58D2477BA1717E5A36C5A0DA5FE5C07D70D11AA5ACE710C4B152"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/video_timing_data.v",
+      "sha256": "C6F75501E98DD5995F687AAFB40455BEFFE45B426137B5089A73AC3A036F7282"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/video_delay.v",
+      "sha256": "F47C4B63F8BAA6D8874C87DCA5B72DFDADD19F4A107403DA98752BCE98936433"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/global_def.v",
+      "sha256": "433240EC48021DBB559D3532C67526F1338C6CC6CE15D26E1D987FE89E61DA42"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/sdr_as_ram.enc.v",
+      "sha256": "767DBDFBD83D42223B77DFA7DEAB42CE8216A8FD6F6CB41B7E7593D9A345BA57"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/sdr_init_ref.enc.v",
+      "sha256": "3DA1D34D3FB8A5108A74185EDF7FE6836B28807B31F47F74EAB87DE4F23186B8"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/sdr_wrrd.enc.v",
+      "sha256": "C7D7FE07D75F66AA88D9F986B3006319C995162434F104F9990664B374CDFDD2"
+    },
+    {
+      "file": "src/user_source/hdl_source/IP/afifo_16_32_256.v",
+      "sha256": "3D29B06655482184A9AD157B9BD71B79032DEBE3199168D3B4D9570FDAC31835"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_rgb_to_axis_640x480.v",
+      "sha256": "82DA3DF6220842F072654800453ADB860DAF22126E81873F96E6769AE964E57F"
+    },
+    {
+      "file": "src/user_source/hdl_source/startup_pulse.v",
+      "sha256": "396E1E56FEBB8028339E646BC2F06B83E07AB11EF840E447422FB941956741C9"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi_phy_warpper.v",
+      "sha256": "416B082B0987001BDBC0A7E20A557CB8FB1DCA34E25DC881E6D28A8CB3CF4300"
+    },
+    {
+      "file": "src/user_source/hdl_source/lane_lvds_10_1.v",
+      "sha256": "DE9529321354F04837E051D0EC1681CF44783D4BE3284703A788E081147500BC"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "sha256": "867E0B0BDD874BC383D00918C9E1BE3FE01EDF41F343B6A0D73E262776596A63"
+    },
+    {
+      "file": "dual_board/image_link/rtl/b_hdmi_20261006/media_b.adc",
+      "sha256": "F2F7C04D1A58AF58139183AB3D39251CBCAED05E03CD8F1CC66A6EAA551D5DA9"
+    },
+    {
+      "file": "dual_board/image_link/rtl/b_hdmi_20261006/media_b.sdc",
+      "sha256": "1C4048BA14E2B301E94AA1077D2D2EDCF342E232CBB12C35A0EF956D624F0D91"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/pll_gen.ipc",
+      "sha256": "4151BBA32CC66C9AA0C4B96EE76C57FFB78DBA2E4B448D746A1331CBE17D32AE"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/rx_pll.ipc",
+      "sha256": "3D7D676316F0E0C320CE5582B61ADAF9BDF1A2F0B13E31AF85588E6447E8ABA5"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/TEMAC_CORE/TEMAC_CORE.xml",
+      "sha256": "3182FD400CB0631BA3CB94A1739DA51150470DEA3E0EC23A16061BCB49E940D1"
+    },
+    {
+      "file": "src/user_source/hdl_source/IP/sys_pll.ipc",
+      "sha256": "B8ACD7534D7FD71E5922CD194DCED754AD462A805DC7B38574486DC3A963EF41"
+    }
+  ],
+  "regression": [
+    {
+      "name": "preview",
+      "sha256": "EC795962A3F8AF8A26508EB4F0B585AB5225E292DD7B68551723C0D43AC0E4FE",
+      "passed": true,
+      "checks": [
+        "# PASS B HDMI preview: 3 complete 640x480 captures, both BMP orientations, exact raw RGB/DE/SOF/EOL, native FIFO credit, refresh stalls, partial abort retention and immediate reload slot protection; zero local audio"
+      ]
+    },
+    {
+      "name": "boundary",
+      "sha256": "7D346E5CF922E1282734F508207AD864525D29DEFD121CE13B3F6455DB722909",
+      "passed": true,
+      "checks": [
+        "# PASS player B boundary: actual top/FIFO/scheduler/compute, 1024 PCM words, both tracks and stale-song guard, metadata freeze, UART, poisoned packet/relink and 3 image aborts",
+        "# PASS B preview source: actual source wrapper with LOCAL_PREVIEW, 614400 unchanged network RGB/UI words, exactly 307200 raw second-image tap words, independent local/network backpressure and orientation metadata"
+      ]
+    },
+    {
+      "name": "reader",
+      "sha256": "34BCD1A89EA33D8434ABC8B46FA7382308DD53BC649B6007FFD544ACCF71E53E",
+      "passed": true,
+      "checks": [
+        "# PASS two-song reader reverse=0 cycles=32656 sessions=6 images=4 fragmented/FIFO/midsector/rapid/loop",
+        "# PASS two-song reader reverse=1 cycles=32689 sessions=6 images=4 fragmented/FIFO/midsector/rapid/loop"
+      ]
+    },
+    {
+      "name": "features",
+      "sha256": "1AAF1551A84590721C89D1D64B23AB16A6697E4D70F21052AAA7AEC27C0557A2",
+      "passed": true,
+      "checks": [
+        "# PASS dualsong control: KEY3 debounce, missing-file fallback, drained-sector/quiet-window switching, snapshot, CRC, reserved bits, malformed packets (120 cases)",
+        "# PASS dualsong timeline: 731 events, both banks, red sweep, underflow freeze, EOF and switch restart"
+      ]
+    },
+    {
+      "name": "audio",
+      "sha256": "237D2EC668A1291B37286016E8F095DC56167E806926CCFA314EA17B5BB4E57E",
+      "passed": true,
+      "checks": [
+        "# PASS audio status: AAK3 field packing, no premature ACK, periodic frozen-head controls, CRC/length/truncation/reserved/gain/magic guards",
+        "# PASS visual guard: exact packed payload, CRC/length/truncation/session/order/future rejection, replaceable loss, same-head refresh and frame-atomic CDC",
+        "# PASS remote compute: 25/125 MHz history CDC, backpressure, 0-8 gains, RAM/32-bit wrap, invalid/stale/session guards, underflow freeze, lyric count and exact EOF",
+        "# PASS audio offload: original analyser equivalence, actual 48k playback feedback, native FIFO, CRC retry/ACK loss, 4-stream IMG4/PCM/visual/control arbitration, remote volume, underflow freeze, session restart and lyric sample count"
+      ]
+    }
+  ],
+  "simulation_limits": "SDRAM device/controller and HDMI encrypted core/PHY are test-only interface models; native FIFOs, frame FSMs, source/packets and RGB/DE/SOF/EOL are actual RTL. Does not establish electrical correctness or timing closure.",
+  "waveform_files": [
+    "dual_board/image_link/sim/b_hdmi_20261006/preview.wlf",
+    "dual_board/image_link/sim/b_hdmi_20261006/b_boundary.wlf",
+    "dual_board/image_link/sim/b_hdmi_20261006/source.wlf"
+  ]
+}

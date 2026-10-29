@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vtb_video_frame_crc_full
+Z1 !s110 1790992604
+!i10b 1
+!s100 mIeTWo1elYfEFzELk?GKW3
+I04bfXE:Jc9jTGPHX4n8bo3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1790343708
+Z4 8sim/tb_video_frame_crc_monitor.v
+Z5 Fsim/tb_video_frame_crc_monitor.v
+L0 100
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1790992604.000000
+Z8 !s107 sim/tb_video_frame_crc_monitor.v|src/user_source/hdl_source/video_pixel_diagnostics.v|
+Z9 !s90 -work|sim/resource_all_20261002/tb_video_frame_crc_monitor|src/user_source/hdl_source/video_pixel_diagnostics.v|sim/tb_video_frame_crc_monitor.v|
+!i113 1
+Z10 o-work sim/resource_all_20261002/tb_video_frame_crc_monitor
+Z11 tCvgOpt 0
+vtb_video_frame_crc_monitor
+R1
+!i10b 1
+!s100 BoZF>jHZO07I`9HB6;JOX1
+IL@JQOhzD;i2_O7EmMcQSM2
+R2
+R0
+R3
+R4
+R5
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vvideo_alignment_monitor
+R1
+!i10b 1
+!s100 ^HY71R0g605h9=3UFDbFK2
+IJB9`l4Mzoie7fi[[LlBc`1
+R2
+R0
+Z12 w1790487000
+Z13 8src/user_source/hdl_source/video_pixel_diagnostics.v
+Z14 Fsrc/user_source/hdl_source/video_pixel_diagnostics.v
+L0 80
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vvideo_frame_crc_monitor
+R1
+!i10b 1
+!s100 mdea6d58ENRzlZGMO]P6M1
+IO_8Al8c`Q@41M1CK=Y_DO2
+R2
+R0
+R12
+R13
+R14
+L0 170
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vvideo_pixel_diagnostics
+R1
+!i10b 1
+!s100 kF1RZ]1MV2G1iR`h_eD911
+I@G1jeCHPCaYOPX>UQBh=k3
+R2
+R0
+R12
+R13
+R14
+L0 4
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

@@ -1,0 +1,11 @@
+== a3 bit=1 errors=0
+#lut 16314 out of 19600 83.23%;#reg 10354 out of 19600 52.83%;#bram 63 out of 64 98.44%;#bram32k 16 out of 16 100.00%;#dsp 14 out of 29 48.28%;
+   udp_clk -> udp_clk                 S -1.009ns, (26 viol)  H -0.011ns, (2 viol)
+   video_clk -> video_clk             S -1.310ns, (4 viol)  H -0.011ns, (2 viol)
+   mac_tx_clk -> mac_tx_clk           S  1.414ns, (0 viol)  H -0.004ns, (1 viol)
+   clk -> udp_clk                     S -0.177ns, (3 viol)  H  0.118ns, (0 viol)
+== a2 bit=1 errors=0
+#lut 16298 out of 19600 83.15%;#reg 10365 out of 19600 52.88%;#bram 63 out of 64 98.44%;#bram32k 16 out of 16 100.00%;#dsp 14 out of 29 48.28%;
+   udp_clk -> udp_clk                 S -1.345ns, (52 viol)  H  0.011ns, (0 viol)
+   video_clk -> video_clk             S  0.331ns, (0 viol)  H -0.020ns, (4 viol)
+   rgmii_rx_90 -> rgmii_rx_90         S  1.911ns, (0 viol)  H -0.004ns, (1 viol)

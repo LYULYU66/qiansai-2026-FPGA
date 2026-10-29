@@ -1,0 +1,41 @@
+standard
+***Report Model: image_main_ingress Device: EG4S20BG256***
+
+IO Statistics
+#IO                       106   out of    188   56.38%
+  #input                   36
+  #output                  70
+  #inout                    0
+
+LUT Statistics
+#Total_luts               651
+  #lut4                   578
+  #lut5                    73
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                      799   out of  19600    4.08%
+#reg                      467   out of  19600    2.38%
+#bram                       2   out of     64    3.12%
+  #bram9k                   2
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                        0   out of     29    0.00%
+#pad                      106   out of    188   56.38%
+  #ireg                     3
+  #oreg                    13
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------+
+|Instance    |Module             |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------+
+|top         |image_main_ingress |725     |74      |483     |2       |0       |
+|  u_receipt |image_receipt_tx   |132     |0       |72      |0       |0       |
+|  u_rx      |image_packet_rx    |338     |43      |239     |2       |0       |
+|  u_sink    |image_sdram_sink   |255     |31      |156     |0       |0       |
++-----------------------------------------------------------------------------+

@@ -1,0 +1,7 @@
+== a2 bit=1 errors=0
+#lut 16345 out of 19600 83.39%;#reg 10064 out of 19600 51.35%;#bram 63 out of 64 98.44%;#bram32k 16 out of 16 100.00%;#dsp 14 out of 29 48.28%;
+   udp_clk -> udp_clk                 S -1.229ns, (96 viol)  H -0.025ns, (6 viol)
+   video_clk -> video_clk             S  1.191ns, (0 viol)  H -0.020ns, (2 viol)
+== b2 bit=0 errors=3
+
+ALL DONE

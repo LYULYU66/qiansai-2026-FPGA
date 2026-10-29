@@ -1,0 +1,793 @@
+{
+  "generated_at": "2026-10-05T13:22:26.906Z",
+  "hardware_verified": false,
+  "release_status": "EXPERIMENTAL_PROGRAM_SRAM_ONLY_NOT_TIMING_CLOSED",
+  "accepted_baseline": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\accepted_baseline_20261005_r7_r8",
+  "accepted_files_unchanged": true,
+  "tests": [
+    {
+      "kind": "equivalence",
+      "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\sim\\resource_round10_20261005\\modelsim_equivalence.log",
+      "sha256": "D2B40104E9E33C2BC55ECC60B11109CA00258F14ECC9D23AA91C1383A6032AA8",
+      "checks": [
+        "PASS waveform equivalence:",
+        "PASS status equivalence:",
+        "PASS visualizer equivalence:"
+      ],
+      "warnings": "Legacy test fixtures have disabled/unconnected ports; inspect log. No errors."
+    },
+    {
+      "kind": "integration",
+      "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\sim\\resource_round10_20261005\\modelsim_integrated.log",
+      "sha256": "A85E58619A1B898CB89D1A1F3D8118308B093F4B193ACFA1A5DD45F71F49809A",
+      "checks": [
+        "PASS audio status:",
+        "PASS visual guard:",
+        "PASS remote compute:",
+        "PASS audio offload:",
+        "PASS audio guard:",
+        "PASS media abort:",
+        "PASS audio media:",
+        "PASS native home read:",
+        "PASS full 640x480 native FIFO writer:",
+        "PASS player B boundary:",
+        "PASS home source:",
+        "PASS home stage retry:"
+      ],
+      "warnings": "Legacy test fixtures have disabled/unconnected ports; inspect log. No errors."
+    }
+  ],
+  "boards": [
+    {
+      "board": "A",
+      "name": "MEDIA_SRAM_TEST_A_RESOPT_R10_S4_20261005",
+      "seed": 4,
+      "project": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\prj\\media_a_res10_seed4\\MEDIA_SRAM_TEST_A_RESOPT_R10_S4_20261005.al",
+      "build": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\prj\\media_a_res10_seed4\\build_resource_r10.tcl",
+      "build_log": {
+        "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\prj\\media_a_res10_seed4\\td_20261005_210256.log",
+        "sha256": "7AE648B6486A95F18CCAFABF707AFC54BA811E72E292B075FAF04C8C4752C848"
+      },
+      "baseline": {
+        "area": {
+          "lut": 14483,
+          "registers": 9240,
+          "bram9k": 50,
+          "bram32k": 7,
+          "dsp": 3,
+          "pll": 4
+        },
+        "timing": {
+          "global_setup_ns": -5.699,
+          "global_hold_ns": -0.052,
+          "udp_self_setup_ns": -1.23,
+          "video_self_setup_ns": 2.013,
+          "sd_self_setup_ns": null
+        }
+      },
+      "candidate": {
+        "area": {
+          "lut": 14179,
+          "registers": 9230,
+          "bram9k": 50,
+          "bram32k": 7,
+          "dsp": 3,
+          "pll": 4
+        },
+        "timing": {
+          "global_setup_ns": -5.699,
+          "global_hold_ns": 0.003,
+          "udp_self_setup_ns": -1.156,
+          "video_self_setup_ns": 8.695,
+          "sd_self_setup_ns": null
+        }
+      },
+      "files": [
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\board_test_20261005\\resource_opt_r10\\MEDIA_SRAM_TEST_A_RESOPT_R10_S4_20261005.bit",
+          "sha256": "D9DA0D86958BE338DDB833436F4769DDDBF6C028685569D8C93641C45FCF7EDB"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\board_test_20261005\\resource_opt_r10\\MEDIA_SRAM_TEST_A_RESOPT_R10_S4_20261005.al",
+          "sha256": "D0F6D20549038B748B19ED341B8176F6D8CB4E62D304FF939EAD22DD3F23A770"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\board_test_20261005\\resource_opt_r10\\MEDIA_SRAM_TEST_A_RESOPT_R10_S4_20261005_phy.area",
+          "sha256": "5D28DED688F16161ECAF259CE3C51F7522A880CD8D87A91A887CCA537BD6F312"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\board_test_20261005\\resource_opt_r10\\MEDIA_SRAM_TEST_A_RESOPT_R10_S4_20261005_pr.timing",
+          "sha256": "ED91E10B76C275DD540FE8B16BFC97824A1830D836C102827AE6F20BB4310DAF"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\board_test_20261005\\resource_opt_r10\\MEDIA_SRAM_TEST_A_RESOPT_R10_S4_20261005_phy.ts",
+          "sha256": "B6FE7ECA8B9255145E2DA1B4CA92AEFA6306A9DC42CB01F5F6564523765483D8"
+        }
+      ],
+      "source_manifest": [
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\video_source_test.v",
+          "sha256": "39CC05C9684A594D4254D11E66E97344053AB75BDB00F3F5A301643FD7AADBFC"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\key_remove_shakes.v",
+          "sha256": "8832F59E7BA94BFB8CF31E4F5A772EF7177D5257A5A2532D53CBFA1D9B7F5CD9"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\hdmi_phy_warpper.v",
+          "sha256": "416B082B0987001BDBC0A7E20A557CB8FB1DCA34E25DC881E6D28A8CB3CF4300"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\lane_lvds_10_1.v",
+          "sha256": "DE9529321354F04837E051D0EC1681CF44783D4BE3284703A788E081147500BC"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\hdmi1.4b_transmitter_core\\hdmi_1_4b_transmitter_core_wrapper.enc.v",
+          "sha256": "867E0B0BDD874BC383D00918C9E1BE3FE01EDF41F343B6A0D73E262776596A63"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\hw_round3_20261005\\top_dual_image_hw.v",
+          "sha256": "A1FC45219CE0116EB68739E4465DBCEC5090364DCCB1623E03AE4EF408B4DFCB"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\ax_debounce.v",
+          "sha256": "93AA6DD38051250CC7F777C88466AC180AFE9BCDCE7838B9EA506455D8CBC9B8"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\bmp_read.v",
+          "sha256": "15F51BF34B73FC81286EFDA86B6AA2C2ED01BD2FD72D3A0F959A7739FD65ECE2"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\color_bar.v",
+          "sha256": "AFE1F56714EC58D2477BA1717E5A36C5A0DA5FE5C07D70D11AA5ACE710C4B152"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\frame_fifo_read.v",
+          "sha256": "AA456AFB9C01F6BC4D976DF1F5D1A0DB39885FDECA2CFAAB71A5C6087C4B172C"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\frame_fifo_write.v",
+          "sha256": "2C0F735EBE0CC38D3C3E3B404A0D3121412254EE3AD1DAF6CE49573856837715"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\hw_round7_20261005\\frame_read_write_hw.v",
+          "sha256": "8D5848E78350E0D304755E74EA7F5D3E0D7F4DD5D5AB02662CD03530E0FAB354"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\sd_card_bmp.v",
+          "sha256": "BEBC7249B6D100C36335A915711F80CC407D790935BFAA69D4B585D3621D5DA6"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\video_define.v",
+          "sha256": "77748966850A8F5AF0D77F2CDB08006088BA5E1A31B98391FBA6CC61C5247DA2"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\video_delay.v",
+          "sha256": "F47C4B63F8BAA6D8874C87DCA5B72DFDADD19F4A107403DA98752BCE98936433"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\video_timing_data.v",
+          "sha256": "C6F75501E98DD5995F687AAFB40455BEFFE45B426137B5089A73AC3A036F7282"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\startup_pulse.v",
+          "sha256": "396E1E56FEBB8028339E646BC2F06B83E07AB11EF840E447422FB941956741C9"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\video_rgb_to_axis_640x480.v",
+          "sha256": "82DA3DF6220842F072654800453ADB860DAF22126E81873F96E6769AE964E57F"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\sd_card_cmd.v",
+          "sha256": "A1A50502AFD4E8B238B0627CD5F204C04738E761D49AB48F33DA35E22BA4A5FA"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\sd_card_sec_read_write.v",
+          "sha256": "AA73E64F7A8EDF767BEF0D7205702BB697AB4080E3FF012DE0C29BE2EE0A9FCC"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\sd_card_top.v",
+          "sha256": "00AC5EB15CE2D5B1D3FF87D6CB5BE44AF50106A96327FBC8A580B831274CB123"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\spi_master.v",
+          "sha256": "37F7A21144FA5CCA3CC5C3B5F68A5AD40B3108336B600E45A1367734AC61403C"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\sdram.v",
+          "sha256": "2D985C2477384E677C25714241E1A50206DEF8916AA03189A5B313B2D22DFC99"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\include\\global_def.v",
+          "sha256": "433240EC48021DBB559D3532C67526F1338C6CC6CE15D26E1D987FE89E61DA42"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\include\\sdr_as_ram.enc.v",
+          "sha256": "767DBDFBD83D42223B77DFA7DEAB42CE8216A8FD6F6CB41B7E7593D9A345BA57"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\include\\sdr_init_ref.enc.v",
+          "sha256": "3DA1D34D3FB8A5108A74185EDF7FE6836B28807B31F47F74EAB87DE4F23186B8"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\include\\sdr_wrrd.enc.v",
+          "sha256": "C7D7FE07D75F66AA88D9F986B3006319C995162434F104F9990664B374CDFDD2"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\seg_decoder.v",
+          "sha256": "62A2664BE7DB6D0DACE31FC97A8FAEF0C43F44B639B1D5A6A2C49773812A3B5E"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\seg_scan.v",
+          "sha256": "C61D6B6808E06DD0EDC6DB2D8F214426A1FB96D546556ECD1F74EA9CA6889F52"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\hdmi_audio_tone_i2s_64fs.v",
+          "sha256": "1A946821E904C411F4DBF8F6D839B59622CBF9E5EA0844CCEC6769EBE07F769E"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\I2S_receiver.v",
+          "sha256": "327271F25B3CE4348885569F544D33D8BD02C80CC2FD4524D2EEBEC814781416"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\audio_arc_calculate.v",
+          "sha256": "81D282E3D8BCFC56567F252BD214866AC66FA30F0C0B126845C92E149C15933A"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\td_project\\al_ip\\PLL_HDMI_AUDIO.v",
+          "sha256": "4152904C9FE0A01DFB9B5E47FDBE9FDF2F02EBCCEF66B9E81451D3E88D4AB5A2"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\osd_alpha_overlay.v",
+          "sha256": "17AD2C2F3A7BA2601CA6173FCF73EDE9499A74701D43E877A8DB07971745A115"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\video_transition_effects.v",
+          "sha256": "654018C079E9EA252F01C5383E617CCDCE6DF6E98CB7BF6AF349C88E3D5AEE01"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\audio_spectrum_analyzer.v",
+          "sha256": "4A5AB0CE23325CD9E9E60FC71F3BDEB105FC346877761A679191D956688D0D76"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\resource_round10_20261005\\audio_visualizer_overlay.v",
+          "sha256": "3476CDD5BF35AB697AA41F56C23CBDE9EB1E30218B0DDA279B60C69ED31F62E4"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\video_home_overlay.v",
+          "sha256": "023FDD9B69EFA77C3331B6766BC1BABDCC4755DCCA908B74E2C212CE6F92A038"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\BUFGMUX.v",
+          "sha256": "3501C3AE93FC102FD547A30BF84AAF64521DDAEAD53F398E62DAFB8CF3E8ADBD"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\clk_gen_rst_gen.v",
+          "sha256": "1CF435B0D40E3850366F237C8BD8E0DDE34CE1974C8525457D0AD8F65F5C1837"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\div_clk_gen.v",
+          "sha256": "BB9CA78FEA2DEF93464B44641B32A2491316CF3DE55C361BC81801CFC280B367"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\IDDR.v",
+          "sha256": "0CB13720A17311E80812DE7B45B0A0BA4CF2ECDF1F60E1F8A4279FEE268C7B15"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\ODDR.v",
+          "sha256": "6442C1DD9F76329DDB5420110FD8236211EF7D002EC2A1C6295D062E353A8F4D"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\RAMB16_S9_S9.v",
+          "sha256": "9651FF21B7E76F097704ECDA17398B00F2618107B13E0768D4043E24CB649BCC"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\rgmii_interface.v",
+          "sha256": "358763A4C014AAC49A0C1A0EC96E6E0224C0341371740D1616F43766D14A1DCD"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\rx_client_fifo.v",
+          "sha256": "7DAE154FD14E6CE3431C1492777C1CEFB1E485D276F15DE8D287D7A0D6BA06A3"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\temac_block.v",
+          "sha256": "D013485435ABCD2188450120A9EF99A7A75C6E46FD8F186381E2E8FA3F3C5241"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\temac_clk_gen.v",
+          "sha256": "DFDDA666362A1372FFD07B361D1D52401AC479B244CE7AFB0C45F7DBE08996E8"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\tx_client_fifo.v",
+          "sha256": "B50FD509770C57C2EB683A6074F0F97704E048392A03472F1FDB3FA9965CFFA7"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\tx_clk_en_gen.v",
+          "sha256": "78690F2C03DD38077FB3E7A1B39DD520DA6ECA10CBF125BB57FD71E2D156082A"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\udp_ip_protocol_stack_merge.enc.v",
+          "sha256": "0D06B3D6F7B2947501CDD3128373585E38C70454938234FFA9DF325010BD4F74"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\dual_board_eth_transport.v",
+          "sha256": "88BEDCF15C44A19D1103BA8514DCFF3EF5400FFC1A38EFFCBEE724604561AD40"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\image_packet_rx.v",
+          "sha256": "7DC4C31AF4A9D0341FEBF2ED51DDF234F258E1BF1BE890AC6444A8A763C676E4"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\image_receipt.v",
+          "sha256": "50DD6B5C718DD26DB6694923F5E42299C3CE588FB95107D4D45CEF91D37FC0FD"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\image_sdram_sink.v",
+          "sha256": "0D05C3C5F75B7C6B479DE42C97173555D50251AA37E6A0FF81A921A5EAA3D3D7"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\image_main_ingress.v",
+          "sha256": "59EB99C5603E93EE85BCCD3C3CE1C8DABBF3833ED4FF76C63B8D4278111BE7A2"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\image_remote_display_control.v",
+          "sha256": "D95E340189E81796A31E50A1CA28BA72C2148348F7ECBA7C1A1912E2C05C2104"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\hdmi_audio_pcm_i2s_64fs.v",
+          "sha256": "2617E785BC8D6563C3AB1CE94431314FEBF6A11B7B00A1DE4942EF7AE4FFA199"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\audio_waveform_analyzer.v",
+          "sha256": "F9AACDA9C73E47EE84E490E4C115ABD77845AFF3E8CDCC9898679773E6939BC4"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\video_frame_valid_gate.v",
+          "sha256": "AA4962A5B2339EC8691692DFF611B2F4E9474D9A6D7F95EF1273705F471403C6"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\media_control_packet.v",
+          "sha256": "E6D603B4A83FE313817219534238E01EA24121E092C6E78226435283D5CF9A95"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\video_image_adjust.v",
+          "sha256": "B59CD2088CA60D53DA532C7A5F6A59C5F3D7EC882F8CFD5E907D8133EACBD392"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\resource_round10_20261005\\video_status_overlay.v",
+          "sha256": "283448FFCDF080B4EA0137B8ACD115AEC35D3F464AA5CB8EF3A289A1F051A96A"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\alarm_switch_control.v",
+          "sha256": "4503863C7AACACC8F5B5489690C2185DF12E0B09275EF0FC25F38848D5C97E64"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\audio_alarm_mixer.v",
+          "sha256": "73C2309D1434D291EB8661AF0B1CFA024BD48354314DB138E71FA148100C5542"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\vehicle_hazard_overlay.v",
+          "sha256": "CDAFBC0AFF61000F72CF309769CBAEDD6A9A6DA61E292BA2FD65AC327BF63CF9"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\video_album_cover_rom.v",
+          "sha256": "3D7411B079B2CE5981ECDFD9ED7AE41E200A149ECA9583928F58E60473167FCF"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\video_app_icons_rom.v",
+          "sha256": "F1D460B691449680F492390CB021A8A3B0EAEA146C4FFD57F615205CDD95F6C9"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\audio_lyric_timeline.v",
+          "sha256": "4A2A493899850EE22F3F4B084B070F705F235CB5B97A68D90A954D94328EFD5B"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\video_lyric_overlay.v",
+          "sha256": "4C946C40CB7801D1E86B62B5D2AB1CE011C844C0344554A2AD468FE13D5413A8"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\lyric_song_data.v",
+          "sha256": "C9C83B5BCA1690FEEE3489BBF16C11946275CF9FBEEE5BB8C01E1899D9631C1D"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\bmp_bilinear_stream.v",
+          "sha256": "1F6EDA9ED18694FFD5E0E386B4A3A051364B422CD8C7288AD260CEE908D799EC"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\video_relax_overlay.v",
+          "sha256": "B05F8913D4A8ABA274AC74ED0B9212671EEBCF8ACFA748BA2855C5AD3959D7CF"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\video_unified_clock.v",
+          "sha256": "69830275BE314D3A3C2788346893BCD3CDB51D807E0C782DDFBB71FD49C90538"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\video_clock_digit_rom.v",
+          "sha256": "65A51B56F113F30ED3B0336E18B79B3F6B14797101ACFD41C6C270C1FC97A1A8"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\audio_packet_rx.v",
+          "sha256": "CAFE997C174422D786847D61E5FBC94308C495B09586F45524E5D359D330FA58"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\hw_20261005\\audio_receipt_hw.v",
+          "sha256": "372F7166E55F118B2C1DF3DCB85BE99C6C49DB1A24DB9B2856A439EC3C6CA9F0"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\media_udp_arbiter.v",
+          "sha256": "8FE149E0D80DFCAE220EEC8ADDB4226E5E984C62EB40A3A72F0F51014FD28FD6"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\fixed_peer_udp.v",
+          "sha256": "2919B55F8240E47058824CD20DE2FEEB02373A395EB3F9B47D4F2D414715E938"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\media_link_session.v",
+          "sha256": "18789CEE005FDE0340404D928239CD70D1939577433042DCDE088DA5D1FB61E1"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\media_audio_enable_cdc.v",
+          "sha256": "C641C3D8C3A114EEAC7B38535DA5C2B8D3A8E83A7F5FFDA1312261B5DE6ED765"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\audio_visual_packet.v",
+          "sha256": "A76921C3F83C98C4ABB8FE71E6DC7E6DEFE182267E11C7A0F64F0192A968DEA5"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\video_remote_home_overlay.v",
+          "sha256": "D52B1EDFADFD3CBBDF2940436E7932EC106273632A5CB69C13F6166CF5050BEB"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\home_assets\\home_palette_rom.v",
+          "sha256": "C62234D30000DB3CE2531A442F95B43A6688A2C3D7302136526BDEDD4EC10EBB"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\constraints\\media_a.adc",
+          "sha256": "6CA99CE263324AA8E658C45D4079CADD0DCBC6B1C206F82F9485099EE781D71B"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\constraints\\media_a.sdc",
+          "sha256": "CB2FD0E01B1D5FE3D250FFACFDBFE2B23AD3E2E52580F5DB5AE8F33D56BEA074"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\constraints_source\\edid_debug.cwc",
+          "sha256": "6716411E2346DE08976E0AD8ED2E09EB93BDC0F60EFC31BF75BA70E6CEBE1F95"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\td_project\\al_ip\\PLL.ipc",
+          "sha256": "8CB6DF3A1BB99CF2F95F9A535D7F33213B837207B36E336848A6ED0DB29AB8B5"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\ip\\afifo_16_32_256.ipc",
+          "sha256": "9DF57C0B914F2F6222F88E356528947224FDDB866BE2468F1391C26D4E60D371"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\ip\\afifo_32_16_256.ipc",
+          "sha256": "A74955DC68A02BBFB36780127008C4737EC80E0888A4648E98E6EAC9F5D2C349"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\ip\\sys_pll.ipc",
+          "sha256": "B8ACD7534D7FD71E5922CD194DCED754AD462A805DC7B38574486DC3A963EF41"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\ip\\video_pll.ipc",
+          "sha256": "B717F646067025A69B4021ED85ADEEB6531FAD881BCE5A49FCB2171CCF401076"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\prj\\board_a\\al_ip\\pll_gen.ipc",
+          "sha256": "4151BBA32CC66C9AA0C4B96EE76C57FFB78DBA2E4B448D746A1331CBE17D32AE"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\prj\\board_a\\al_ip\\rx_pll.ipc",
+          "sha256": "3D7D676316F0E0C320CE5582B61ADAF9BDF1A2F0B13E31AF85588E6447E8ABA5"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\prj\\board_a\\al_ip\\TEMAC_CORE\\TEMAC_CORE.xml",
+          "sha256": "3182FD400CB0631BA3CB94A1739DA51150470DEA3E0EC23A16061BCB49E940D1"
+        }
+      ]
+    },
+    {
+      "board": "B",
+      "name": "MEDIA_SRAM_TEST_B_RESOPT_R10_20261005",
+      "seed": 3,
+      "project": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\prj\\media_b\\MEDIA_SRAM_TEST_B_RESOPT_R10_20261005.al",
+      "build": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\prj\\media_b\\build_resource_r10.tcl",
+      "build_log": {
+        "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\prj\\media_b\\td_20261005_205344.log",
+        "sha256": "2BFA32E61536D5E5627DECCA628A4B9D242425E841A7159F2F9707EFE5B0CC86"
+      },
+      "baseline": {
+        "area": {
+          "lut": 11847,
+          "registers": 7770,
+          "bram9k": 28,
+          "bram32k": 9,
+          "dsp": 3,
+          "pll": 3
+        },
+        "timing": {
+          "global_setup_ns": -3.487,
+          "global_hold_ns": -1.54,
+          "udp_self_setup_ns": -0.525,
+          "video_self_setup_ns": null,
+          "sd_self_setup_ns": -0.115
+        }
+      },
+      "candidate": {
+        "area": {
+          "lut": 11678,
+          "registers": 7789,
+          "bram9k": 28,
+          "bram32k": 9,
+          "dsp": 3,
+          "pll": 3
+        },
+        "timing": {
+          "global_setup_ns": -3.448,
+          "global_hold_ns": -1.54,
+          "udp_self_setup_ns": -0.737,
+          "video_self_setup_ns": null,
+          "sd_self_setup_ns": -0.207
+        }
+      },
+      "files": [
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\board_test_20261005\\resource_opt_r10\\MEDIA_SRAM_TEST_B_RESOPT_R10_20261005.bit",
+          "sha256": "9814F073878153DEC362D16E55C28344B2DC3530732F5AE97394A539A0B5A825"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\board_test_20261005\\resource_opt_r10\\MEDIA_SRAM_TEST_B_RESOPT_R10_20261005.al",
+          "sha256": "05ED012ABE605F81BB3001C41B1D6CABE81C124655AEA7563D1BC6A5263C86D5"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\board_test_20261005\\resource_opt_r10\\MEDIA_SRAM_TEST_B_RESOPT_R10_20261005_phy.area",
+          "sha256": "A23724D60EE61D8B16E7F6365C85E0626F93DE71EC225F106F8D5ED79A599058"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\board_test_20261005\\resource_opt_r10\\MEDIA_SRAM_TEST_B_RESOPT_R10_20261005_pr.timing",
+          "sha256": "03A5EDBE0B77A33CBCE062FCC7F54200DF83AF7AAA0D19D7295F4A2076A67A95"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\board_test_20261005\\resource_opt_r10\\MEDIA_SRAM_TEST_B_RESOPT_R10_20261005_phy.ts",
+          "sha256": "3AA2DBB6AE0F0C14EAD80674FBEB0623894F905E04D900304FE4BD8B888881EB"
+        }
+      ],
+      "source_manifest": [
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\BUFGMUX.v",
+          "sha256": "3501C3AE93FC102FD547A30BF84AAF64521DDAEAD53F398E62DAFB8CF3E8ADBD"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\clk_gen_rst_gen.v",
+          "sha256": "1CF435B0D40E3850366F237C8BD8E0DDE34CE1974C8525457D0AD8F65F5C1837"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\div_clk_gen.v",
+          "sha256": "BB9CA78FEA2DEF93464B44641B32A2491316CF3DE55C361BC81801CFC280B367"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\IDDR.v",
+          "sha256": "0CB13720A17311E80812DE7B45B0A0BA4CF2ECDF1F60E1F8A4279FEE268C7B15"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\ODDR.v",
+          "sha256": "6442C1DD9F76329DDB5420110FD8236211EF7D002EC2A1C6295D062E353A8F4D"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\RAMB16_S9_S9.v",
+          "sha256": "9651FF21B7E76F097704ECDA17398B00F2618107B13E0768D4043E24CB649BCC"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\rgmii_interface.v",
+          "sha256": "358763A4C014AAC49A0C1A0EC96E6E0224C0341371740D1616F43766D14A1DCD"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\rx_client_fifo.v",
+          "sha256": "7DAE154FD14E6CE3431C1492777C1CEFB1E485D276F15DE8D287D7A0D6BA06A3"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\temac_block.v",
+          "sha256": "D013485435ABCD2188450120A9EF99A7A75C6E46FD8F186381E2E8FA3F3C5241"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\temac_clk_gen.v",
+          "sha256": "DFDDA666362A1372FFD07B361D1D52401AC479B244CE7AFB0C45F7DBE08996E8"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\tx_client_fifo.v",
+          "sha256": "B50FD509770C57C2EB683A6074F0F97704E048392A03472F1FDB3FA9965CFFA7"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\tx_clk_en_gen.v",
+          "sha256": "78690F2C03DD38077FB3E7A1B39DD520DA6ECA10CBF125BB57FD71E2D156082A"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\source_code\\rtl\\udp_ip_protocol_stack_merge.enc.v",
+          "sha256": "0D06B3D6F7B2947501CDD3128373585E38C70454938234FFA9DF325010BD4F74"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\dual_board_eth_transport.v",
+          "sha256": "88BEDCF15C44A19D1103BA8514DCFF3EF5400FFC1A38EFFCBEE724604561AD40"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\hw_round5_20261005\\image_packet_tx_hw.v",
+          "sha256": "62D9A29319D04731C683C2BC7EFFCBC26B8E4FC245F7B5140E62EEE70B625D3E"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\hw_round4_20261005\\image_media_board_b_hw.v",
+          "sha256": "961AE644D514FF82B20922798DF72542A7FD7C327DFF57DE8FBA43B2EE069039"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\hw_round8_20261005\\image_tf_source_hw.v",
+          "sha256": "56C15270118D6AB3D8956049DB146041775CE4B06C28C86F4B6237A1B7E2C63C"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\image_pixel_cdc.v",
+          "sha256": "6198853A79080DDD1EA4FA77FF8356B8F7ABDF27B899F73B8C4FE5B98DEF061C"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\image_receipt.v",
+          "sha256": "50DD6B5C718DD26DB6694923F5E42299C3CE588FB95107D4D45CEF91D37FC0FD"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\sd_card_bmp_remote.v",
+          "sha256": "AD45EDF4B91C22635E2B550C964A5F694108C2F5DC7809F2A6777CDE5AF2FC11"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\bmp_read.v",
+          "sha256": "15F51BF34B73FC81286EFDA86B6AA2C2ED01BD2FD72D3A0F959A7739FD65ECE2"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\bmp_bilinear_stream.v",
+          "sha256": "1F6EDA9ED18694FFD5E0E386B4A3A051364B422CD8C7288AD260CEE908D799EC"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\sd_card_top.v",
+          "sha256": "00AC5EB15CE2D5B1D3FF87D6CB5BE44AF50106A96327FBC8A580B831274CB123"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\sd_card_sec_read_write.v",
+          "sha256": "AA73E64F7A8EDF767BEF0D7205702BB697AB4080E3FF012DE0C29BE2EE0A9FCC"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\sd_card_cmd.v",
+          "sha256": "A1A50502AFD4E8B238B0627CD5F204C04738E761D49AB48F33DA35E22BA4A5FA"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\spi_master.v",
+          "sha256": "37F7A21144FA5CCA3CC5C3B5F68A5AD40B3108336B600E45A1367734AC61403C"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\SD\\ax_debounce.v",
+          "sha256": "93AA6DD38051250CC7F777C88466AC180AFE9BCDCE7838B9EA506455D8CBC9B8"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\audio_packet_tx.v",
+          "sha256": "AC313135E5FFF0ADE85C4C3AF14CF649CDA15B2FD7DD07628AA783113A442E63"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\hw_round6_20261005\\audio_receipt_hw.v",
+          "sha256": "80F6B14CFBFC273E2210780B097F8795FC044DCF27B95A14A3A471322BD45DBB"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\media_udp_arbiter.v",
+          "sha256": "8FE149E0D80DFCAE220EEC8ADDB4226E5E984C62EB40A3A72F0F51014FD28FD6"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\fixed_peer_udp.v",
+          "sha256": "2919B55F8240E47058824CD20DE2FEEB02373A395EB3F9B47D4F2D414715E938"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\media_link_session.v",
+          "sha256": "18789CEE005FDE0340404D928239CD70D1939577433042DCDE088DA5D1FB61E1"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\IP\\afifo_32_16_256.v",
+          "sha256": "7C3EE41F30BE75AE686C9ABFF3A840FC5439209CDA077E4AA275EAC0DAB9F564"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\hw_round4_20261005\\audio_visual_packet_hw.v",
+          "sha256": "199FFE7769CD8050BB58CF1610A1321DDA0585F3347B41744B416CF596384C07"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\hw_round4_20261005\\remote_audio_compute_hw.v",
+          "sha256": "00DF2D90FE5FF4122817AE8C8887327D2EAC94ED3AB5732FA384F76C2E28C732"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\resource_round10_20261005\\audio_waveform_analyzer.v",
+          "sha256": "1CB7CCE6A6F07E2D0F479B271839FE77C28A87FFBF328D224E52977F1701BA92"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\audio_spectrum_analyzer.v",
+          "sha256": "4A5AB0CE23325CD9E9E60FC71F3BDEB105FC346877761A679191D956688D0D76"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\audio_lyric_timeline.v",
+          "sha256": "4A2A493899850EE22F3F4B084B070F705F235CB5B97A68D90A954D94328EFD5B"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\lyric_song_data.v",
+          "sha256": "C9C83B5BCA1690FEEE3489BBF16C11946275CF9FBEEE5BB8C01E1899D9631C1D"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\hw_round2_20261005\\home_index_stream_hw.v",
+          "sha256": "EF17E105BABA053CD767E4B76EDBB963CC3109A93B54173549F2FA5D81B8CA91"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\home_assets\\home_atlas_rom.v",
+          "sha256": "71BF04D37659960F9CBE6877EDC8DB876FB4B495919DDB272F2F80EEB128666B"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\media_control_packet.v",
+          "sha256": "E6D603B4A83FE313817219534238E01EA24121E092C6E78226435283D5CF9A95"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\uart_baud_tick.v",
+          "sha256": "86701937B016AB297B46BBBA8A7ACC00B03F7F9E636C3EFC34ED176E1FF2809F"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\uart_rx.v",
+          "sha256": "D75F9978C9D55D8516DAA5BCD6C9102E670D7508FA113E8C31B5A85C59232ECB"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\uart_tx.v",
+          "sha256": "6E607568AFBFE2CF1EC019CF7E5ECDE36DABA630F20568F5D8A5527A9B4B25B3"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\uart_audio_control.v",
+          "sha256": "82F4BAE8C513B5B1B0C71419C38842191B3EBF795408A50B0E65BFFAEDEDB35F"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\hw_round4_20261005\\player_domain_reset.v",
+          "sha256": "EA7EF6223F24A544ECB69200E8B93DF567B22B1DDBE94E4E7C525BED3EDDB435"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\constraints\\media_b.adc",
+          "sha256": "7C0047FBE7E8073AFA858A785F736E3B86A6E52518FB32ABEC451370A17935F0"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\constraints\\media_b.sdc",
+          "sha256": "267F01FE91C64C1427B53996E471C3BD8528B6E8FCCCE63F9226B98C877C43D7"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\prj\\board_a\\al_ip\\pll_gen.ipc",
+          "sha256": "4151BBA32CC66C9AA0C4B96EE76C57FFB78DBA2E4B448D746A1331CBE17D32AE"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\prj\\board_a\\al_ip\\rx_pll.ipc",
+          "sha256": "3D7D676316F0E0C320CE5582B61ADAF9BDF1A2F0B13E31AF85588E6447E8ABA5"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\ethernet_smoke\\prj\\board_a\\al_ip\\TEMAC_CORE\\TEMAC_CORE.xml",
+          "sha256": "3182FD400CB0631BA3CB94A1739DA51150470DEA3E0EC23A16061BCB49E940D1"
+        },
+        {
+          "file": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\src\\user_source\\hdl_source\\IP\\sys_pll.ipc",
+          "sha256": "B8ACD7534D7FD71E5922CD194DCED754AD462A805DC7B38574486DC3A963EF41"
+        }
+      ]
+    }
+  ],
+  "changes": [
+    "A: reuse completed BCD digits to determine resolution text length; bounded divide-by-12 replaces wide priority decoder.",
+    "A: snapshot shift-bank data retains contents on reset; resettable busy/lane/valid guards preserve externally visible behavior.",
+    "B: 105-bit serial trace construction replaces lane-addressed writes; fifteen new points precede atomic publication; temporary work data needs no clear."
+  ],
+  "unchanged": [
+    "Network protocol, clocks, pins, HDMI IP, PLLs, SDRAM writer/read alignment, RAM/FIFO capacities, visual algorithms, lyrics/song timeline, UART commands and all page features."
+  ],
+  "caveats": [
+    "No FPGA physical programming performed. Simulation does not establish timing closure or physical hardware reliability.",
+    "A UDP self setup improves slightly; B UDP self setup is slightly worse than accepted R8. Both retain setup violations.",
+    "Total LUT drops; total routed register count increases by nine. Dedicated RAM/DSP/PLL allocations are unchanged.",
+    "This is a low-risk first round, not completion of all dual-board architectural efficiency opportunities."
+  ],
+  "totals": {
+    "baseline_lut": 26330,
+    "candidate_lut": 25857,
+    "lut_saved": 473,
+    "baseline_registers": 17010,
+    "candidate_registers": 17019
+  }
+}

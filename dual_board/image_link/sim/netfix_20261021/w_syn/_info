@@ -1,0 +1,59 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+vdual_board_eth_transport
+!i10b 1
+!s100 4Wk1:hSjK4jnYlESKBkWW1
+IIJ^XZV[iRflGZoHfh4IA12
+V4iTLn>d<^_GQOZ_T]E@JN0
+Z1 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+Z2 w1792558570
+8../../rtl/dual_board_eth_transport.v
+F../../rtl/dual_board_eth_transport.v
+L0 6
+Z3 OL;L;10.1c;51
+r1
+!s85 0
+31
+Z4 !s108 1792558693.321000
+Z5 !s107 ../../rtl/b_hdmi_image3_20261006/pll_gen_b.v|../../rtl/dual_board_eth_transport.v|../../rtl/b_hdmi_image3_20261006/image_media_board_b_hw.v|
+Z6 !s90 -work|w_syn|../../rtl/b_hdmi_image3_20261006/image_media_board_b_hw.v|../../rtl/dual_board_eth_transport.v|../../rtl/b_hdmi_image3_20261006/pll_gen_b.v|
+Z7 o-work w_syn -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vimage_media_board_b
+!i10b 1
+!s100 6j>EYFI??<^XUcUkIFB6>2
+I8BVl3[7^:_hRI]L5JC5;K3
+V<D4Q[0DAZ=kmM67XOn`h33
+R1
+R2
+8../../rtl/b_hdmi_image3_20261006/image_media_board_b_hw.v
+F../../rtl/b_hdmi_image3_20261006/image_media_board_b_hw.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+R7
+vpll_gen
+!i10b 1
+!s100 c`fo;X2:6^fIlS]7]bXZT1
+IK8e5R]m;4R;ENaj1aYXUi1
+Vf4c0e0Q@TX7DkziZe7LSD2
+R1
+w1792558538
+8../../rtl/b_hdmi_image3_20261006/pll_gen_b.v
+F../../rtl/b_hdmi_image3_20261006/pll_gen_b.v
+L0 10
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+R7

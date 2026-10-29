@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+valarm_switch_control
+Z1 !s110 1790992593
+!i10b 1
+!s100 EPc4nZ>dKaoA:^IXGEX<K0
+I`AV2DckdfMh]0[AKK^N^W3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1790759808
+8src/user_source/hdl_source/alarm_switch_control.v
+Fsrc/user_source/hdl_source/alarm_switch_control.v
+L0 7
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1790992593.000000
+Z5 !s107 sim/tb_alarm_switch_control.v|src/user_source/hdl_source/alarm_switch_control.v|
+Z6 !s90 -work|sim/resource_all_20261002/tb_alarm_switch_control|src/user_source/hdl_source/alarm_switch_control.v|sim/tb_alarm_switch_control.v|
+!i113 1
+Z7 o-work sim/resource_all_20261002/tb_alarm_switch_control
+Z8 tCvgOpt 0
+vtb_alarm_switch_control
+R1
+!i10b 1
+!s100 HA?X@36iGga]lC6M`ojNZ0
+I9Q4fNWBGT1MFoZ9bl[iFA3
+R2
+R0
+w1790760435
+8sim/tb_alarm_switch_control.v
+Fsim/tb_alarm_switch_control.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

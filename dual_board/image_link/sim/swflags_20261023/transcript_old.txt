@@ -1,0 +1,30 @@
+Reading C:/tcl/vsim/pref.tcl 
+
+# 10.1c
+
+# vsim -do {run -all; quit -f} -lib w_old -c tb_viz_photo_flag 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.tb_viz_photo_flag(fast)
+# run -all 
+# ok   play, normal m=1 p=0
+# ok   play, photo-only m=1 p=1
+# ok   pause, photo-only m=0 p=1
+# ok   pause, normal m=0 p=0
+# ok   tag ahead of played rejected
+# ok   caught up, photo m=1 p=1
+# ok   15M-word song tag m=1 p=0
+# ok   photo late in song m=0 p=1
+# ok   tag going backwards rejected
+# PASS tb_viz_photo_flag
+# ** Note: $finish    : tb_viz_photo_flag.v(44)
+#    Time: 100856 ns  Iteration: 1  Instance: /tb_viz_photo_flag

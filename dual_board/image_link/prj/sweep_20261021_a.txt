@@ -1,0 +1,14 @@
+== b5 bit=0 errors=5
+
+== b2 bit=0 errors=3
+
+== a1 bit=1 errors=0
+#lut 16327 out of 19600 83.30%;#reg 10077 out of 19600 51.41%;#bram 63 out of 64 98.44%;#bram32k 16 out of 16 100.00%;#dsp 14 out of 29 48.28%;
+   udp_clk -> udp_clk                 S -1.062ns, (102 viol)  H -0.020ns, (2 viol)
+   video_clk -> video_clk             S -0.213ns, (3 viol)  H -0.020ns, (3 viol)
+   clk -> udp_clk                     S  1.252ns, (0 viol)  H -0.075ns, (1 viol)
+== a3 bit=1 errors=0
+#lut 16345 out of 19600 83.39%;#reg 10068 out of 19600 51.37%;#bram 63 out of 64 98.44%;#bram32k 16 out of 16 100.00%;#dsp 14 out of 29 48.28%;
+   udp_clk -> udp_clk                 S -1.622ns, (117 viol)  H -0.020ns, (3 viol)
+   video_clk -> video_clk             S -0.591ns, (4 viol)  H  0.003ns, (0 viol)
+ALL DONE

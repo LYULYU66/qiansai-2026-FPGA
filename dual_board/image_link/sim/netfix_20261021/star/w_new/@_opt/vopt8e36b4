@@ -1,0 +1,117 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim
+T_opt
+VUV2S@8HJhW0T?J]mUgTT52
+04 18 4 work tb_engine_20261020 fast 0
+=1-04bf1b05a8bd-6ad84306-86-728
+o-quiet -auto_acc_if_foreign -work netfix_20261021/star/w_new
+n@_opt
+OL;O;10.1c;51
+vmedia_control_star_rx
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IM^Wi@LdYFCI_RQo:N::`K1
+Vn_C73kYnj=92`J=@oKU4h0
+Z2 !s105 media_control_star_v_unit
+S1
+Z3 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim
+Z4 w1792557757
+Z5 8../rtl/star_sky_20261020/media_control_star.v
+Z6 F../rtl/star_sky_20261020/media_control_star.v
+L0 82
+Z7 OL;L;10.1c;51
+r1
+31
+Z8 !s108 1792557828.191000
+Z9 !s107 netfix_20261021/star/tb_engine_hz.v|../rtl/star_sky_20261020/media_control_star.v|../rtl/star_sky_20261020/star_motion_engine.v|
+Z10 !s90 -sv|-work|netfix_20261021/star/w_new|../rtl/star_sky_20261020/star_motion_engine.v|../rtl/star_sky_20261020/media_control_star.v|netfix_20261021/star/tb_engine_hz.v|
+Z11 o-sv -work netfix_20261021/star/w_new
+!i10b 1
+!s100 Vh6TNE71nIS:41Re?A_gc2
+!s85 0
+vmedia_control_star_tx
+R1
+IC:aX;LVebR2[GO9?k9^_<2
+V`e]jaDSQ[mUWXOLQj:GX30
+R2
+S1
+R3
+R4
+R5
+R6
+L0 12
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 JmiA4OB]NBhdUHDObDN_>0
+!s85 0
+vstar_bundle_cdc
+R1
+IgQ2MzHGk4mfTR2V0D0[GU0
+VXkUT_>j336F]nZUnV?_zG1
+Z12 !s105 star_motion_engine_v_unit
+S1
+R3
+R4
+Z13 8../rtl/star_sky_20261020/star_motion_engine.v
+Z14 F../rtl/star_sky_20261020/star_motion_engine.v
+L0 130
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 i>DJ8UZ9XLJN;8Vbal;<M1
+!s85 0
+vstar_motion_engine
+R1
+IUW1cYAekZ71kNe=c1Dfji1
+VX?S@7ZJmi;J4h5fE2VlJz2
+R12
+S1
+R3
+R4
+R13
+R14
+L0 18
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 hFdb5QOiAG2WRzmOB4;4E1
+!s85 0
+vtb_engine_20261020
+R1
+I>?]8HVAGflKNBNU>2l3@n3
+V]XehJmT;8ha69l77BjWWk1
+S1
+R3
+w1792557784
+8netfix_20261021/star/tb_engine_hz.v
+Fnetfix_20261021/star/tb_engine_hz.v
+L0 6
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 ELLe8H<En1Y9ZQUhb_aJk1
+!s105 tb_engine_hz_v_unit
+!s85 0

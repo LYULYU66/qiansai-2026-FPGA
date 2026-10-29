@@ -1,0 +1,203 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\photosw_20261022
+vhome_logo_palette
+VQ44hATgEQ;_K2AUDS@J;z3
+r1
+31
+I3`YdPDSD_^Gmch:@7[n0T2
+Z1 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\photosw_20261022
+Z2 w1792549677
+Z3 8../../rtl/subtitle_20261021/home_logo_rom.v
+Z4 F../../rtl/subtitle_20261021/home_logo_rom.v
+L0 576
+Z5 OL;L;10.1c;51
+Z6 !s108 1792675829.003000
+Z7 !s107 tb_photo_mode_render.v|C:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/src/user_source/hdl_source/vehicle_hazard_overlay.v|C:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/src/user_source/hdl_source/video_clock_digit_rom.v|C:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/src/user_source/hdl_source/video_unified_clock.v|../../rtl/subtitle_20261021/home_logo_rom.v|../../rtl/subtitle_20261021/video_home_logo.v|../../rtl/resource_round10_20261005/video_status_overlay.v|
+Z8 !s90 -work|w_render|../../rtl/resource_round10_20261005/video_status_overlay.v|../../rtl/subtitle_20261021/video_home_logo.v|../../rtl/subtitle_20261021/home_logo_rom.v|C:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/src/user_source/hdl_source/video_unified_clock.v|C:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/src/user_source/hdl_source/video_clock_digit_rom.v|C:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/src/user_source/hdl_source/vehicle_hazard_overlay.v|tb_photo_mode_render.v|
+Z9 o-work w_render -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s85 0
+!i10b 1
+!s100 8Nk:ZX>=Fz]SMc4kkXMg`3
+vhome_logo_rom
+VYH6eDH`AI=8B=Bf808;@d3
+r1
+31
+IIiN:kT?aNM=iKWaS6@Hm^0
+R1
+R2
+R3
+R4
+L0 4
+R5
+R6
+R7
+R8
+R9
+!s85 0
+!i10b 1
+!s100 [kTn4MbZ@E[3=MG_Hi7ZY1
+vtb_photo_mode_render
+VPNR0Wm[V61^V9?PLXOnJ91
+r1
+31
+IV4YVGHV[Z]^jYOHHCGhkm2
+R1
+w1792675828
+8tb_photo_mode_render.v
+Ftb_photo_mode_render.v
+L0 7
+R5
+R6
+R7
+R8
+R9
+!s85 0
+!i10b 1
+!s100 ZTjhzne3d8f`dnZ5P^D1I1
+vvehicle_hazard_overlay
+VMPQ]O;5`9RaeNXZmm_IWK0
+r1
+31
+IT;?IWUjS87eMG1>BCHCRA2
+R1
+Z10 w1790771768
+Z11 8C:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/src/user_source/hdl_source/vehicle_hazard_overlay.v
+Z12 FC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/src/user_source/hdl_source/vehicle_hazard_overlay.v
+L0 12
+R5
+R6
+R7
+R8
+R9
+!s85 0
+!i10b 1
+!s100 :FgKRni=_^[_Xz=jbS?af1
+vvehicle_warning_glyph_rom
+V0Y6;3Oi7203L;j?6=zPWK1
+r1
+!s85 0
+31
+I1;_MgO^ddHPWTj:W[F?7f2
+R1
+R10
+R11
+R12
+L0 243
+R5
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 FA1?Z;J?VkC3X`cm[F@::0
+vvideo_clock_digit_rom
+V:Ri=5Z<0PgF2FiCo[GPNh0
+r1
+31
+IcYmUBRnCgkU7N?e0CEl3Z0
+R1
+Z13 w1790949146
+8C:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/src/user_source/hdl_source/video_clock_digit_rom.v
+FC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/src/user_source/hdl_source/video_clock_digit_rom.v
+L0 1
+R5
+R6
+R7
+R8
+R9
+!s85 0
+!i10b 1
+!s100 XZXOL0KKbU`k]?_SkMZX32
+vvideo_clock_overlay
+VOfcoEdzkT>ZI9DIzfh<X>1
+r1
+31
+IVBBdEEDhPBSQ<mWDG@]oJ3
+R1
+R13
+Z14 8C:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/src/user_source/hdl_source/video_unified_clock.v
+Z15 FC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/src/user_source/hdl_source/video_unified_clock.v
+L0 46
+R5
+R6
+R7
+R8
+R9
+!s85 0
+!i10b 1
+!s100 Tz0lzN=IionkEG2Al[C?S3
+vvideo_home_logo
+VPac4camCXjR=MV_CDVdJo3
+r1
+31
+I7k6m=U7B[CI=>aKDo`IAE0
+R1
+w1792545915
+8../../rtl/subtitle_20261021/video_home_logo.v
+F../../rtl/subtitle_20261021/video_home_logo.v
+L0 8
+R5
+R6
+R7
+R8
+R9
+!s85 0
+!i10b 1
+!s100 WEbf;]AdmS:2?ijEhLla]3
+vvideo_status_font_rom
+V@i2lkibVY`n?HFA^h0kne0
+r1
+31
+IkeX<^UnmV3:lK1V:]>U?02
+R1
+Z16 w1792659996
+Z17 8../../rtl/resource_round10_20261005/video_status_overlay.v
+Z18 F../../rtl/resource_round10_20261005/video_status_overlay.v
+L0 358
+R5
+R6
+R7
+R8
+R9
+!s85 0
+!i10b 1
+!s100 ICjCiEBDVJPE:9abln^ha3
+vvideo_status_overlay
+VAgT92Tg25CbLg@UOjSbeH2
+r1
+31
+IP2<BTTN2`=B8ldMc@AYUV2
+R1
+R16
+R17
+R18
+L0 5
+R5
+R6
+R7
+R8
+R9
+!s85 0
+!i10b 1
+!s100 df<;iH6c;@_CEJfQE>o<Q1
+vvideo_unified_clock
+I:<9MGja_zeg>W`eK[@gJ21
+VYM?5k]71K_<5ZFn?gcihj0
+R1
+R13
+R14
+R15
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 LH?X5UnSUQ6K?Xl6>7n9m0
+!s85 0

@@ -1,0 +1,437 @@
+{
+  "phase": 9,
+  "date": "2026-10-04",
+  "generatedAt": "2026-10-04T13:59:46.823Z",
+  "modelsim": "Starter 10.5b",
+  "original_unchanged_cases_passed": 30,
+  "full_regression_with_crc_expression_candidate_passed": 34,
+  "final_candidate_targeted_cases_passed": 4,
+  "final_candidate_full_regression_rerun": false,
+  "full_regression_warnings": 77,
+  "final_candidate_warnings": 13,
+  "simulation_errors": 0,
+  "passed": [
+    "PASS image_packet_rx",
+    "PASS image link TX/RX",
+    "PASS image pixel CDC",
+    "PASS reliable image",
+    "PASS image sink guard",
+    "PASS remote display",
+    "PASS audio guard",
+    "PASS media abort",
+    "PASS audio media",
+    "PASS audio status",
+    "PASS visual guard",
+    "PASS remote compute",
+    "PASS audio offload",
+    "PASS home atlas",
+    "PASS home pixels",
+    "PASS tagged image",
+    "PASS home pipeline",
+    "PASS home source",
+    "PASS media control",
+    "PASS control guard",
+    "PASS resolution image",
+    "PASS resolution guard",
+    "PASS resolution display",
+    "PASS link session",
+    "PASS media generation",
+    "PASS cache recovery",
+    "PASS audio session reset",
+    "PASS cache reuse guard",
+    "PASS cache reuse full",
+    "PASS media restart",
+    "PASS flat scheduler A",
+    "PASS flat scheduler B",
+    "PASS flat audio offload",
+    "PASS flat media restart"
+  ],
+  "validation_note": "The complete 34-case run used the equivalent explicit payload-CRC expression for the new scheduler. The final lower-LUT candidate was recompiled and independently passed all four new scheduler/media tests afterward. The legacy two-channel arbiter and its original 30 component tests were not changed.",
+  "board_a": {
+    "lut": 15799,
+    "registers": 11493,
+    "bram9k": 49,
+    "bram32k": 7,
+    "dsp": 3,
+    "pll": 4
+  },
+  "board_b": {
+    "lut": 13261,
+    "registers": 9898,
+    "bram9k": 27,
+    "bram32k": 9,
+    "dsp": 3,
+    "pll": 3
+  },
+  "resource_stage": "gate synthesis, not placed/routed",
+  "rom_initialization": "gate eram_init on",
+  "lut_saved": {
+    "a": 136,
+    "b": 397,
+    "total": 533
+  },
+  "total_lut": 29060,
+  "total_vs_one_board_percent": 148.26530612244898,
+  "protocols": [
+    "IMG4",
+    "AUD2",
+    "AAK3",
+    "VIZ2",
+    "CTL2",
+    "LNK1"
+  ],
+  "modified_production_rtl": [
+    "image_media_board_b.v",
+    "media_udp_arbiter.v",
+    "top_dual_image.v"
+  ],
+  "legacy_arbiter_unchanged": true,
+  "single_board_unchanged": true,
+  "project_lists_unchanged": true,
+  "arp_icmp_removed": false,
+  "encrypted_udp_mac_modified": false,
+  "physical_constraints_changed": false,
+  "player_bit_generated": false,
+  "placed_and_routed": false,
+  "timing_closed": false,
+  "hardware_validated": false,
+  "next_required_work": "A significant further reduction needs a separately validated fixed-peer IPv4/UDP endpoint replacing the opaque general UDP stack. Formal A/B pin/timing constraints and place/route remain incomplete.",
+  "files": [
+    {
+      "file": "best_result/lab_ex5_i2s_v1.0_logic_round3_20261003.bit",
+      "sha256": "94744392DEC4010D38261036AB360AB6E01BC4C718B34167E821302A15297C88"
+    },
+    {
+      "file": "dual_board/image_link/phase9_network_scheduler_20261004.md",
+      "sha256": "458AEB9A0C117057423F964DB1FF2B7F4927CBC30DCB6E9761E8411D83CC561D"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_a/MEDIA_IMAGE_A.al",
+      "sha256": "26A3E18A391518BAF18838A95E5D61503C92B6CFD3B347240AE06CB8E9E9BF33"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_a/MEDIA_IMAGE_A_gate.area",
+      "sha256": "8174C7A8C88137F04383F20F0C1AED7A20CE174FE7F597D61FF1F21379E5328F"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_a/MEDIA_IMAGE_A_netopt_20261004_gate.area",
+      "sha256": "8174C7A8C88137F04383F20F0C1AED7A20CE174FE7F597D61FF1F21379E5328F"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_a/td_20261004_214838.log",
+      "sha256": "22A85A524373DC25E20DB5F177DA58B6C693C0C1332EC7F102AE02CFBDEFE047"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B.al",
+      "sha256": "461267652BDDDA1B8A061CA7A58D051AE27665D165A1EBD713F272EE2ADAB46E"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B_gate.area",
+      "sha256": "4B709E298A0A771BBB08B3BB0D5EE45C6AF5FAD2DFEC04F4566B57ACF010008D"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B_netopt_20261004_gate.area",
+      "sha256": "4B709E298A0A771BBB08B3BB0D5EE45C6AF5FAD2DFEC04F4566B57ACF010008D"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/td_20261004_214919.log",
+      "sha256": "60432C3256D7449016DB9E0F2D592C09D3ADA39F668959A9F3447F94E1B362C2"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_packet_rx.v",
+      "sha256": "CAFE997C174422D786847D61E5FBC94308C495B09586F45524E5D359D330FA58"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_packet_tx.v",
+      "sha256": "AC313135E5FFF0ADE85C4C3AF14CF649CDA15B2FD7DD07628AA783113A442E63"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_receipt.v",
+      "sha256": "4B08AB1BA3B2E8734C59D9B199EDE164D20AF0A0A5F569A65D437C3DE26AD4DC"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_visual_packet.v",
+      "sha256": "A76921C3F83C98C4ABB8FE71E6DC7E6DEFE182267E11C7A0F64F0192A968DEA5"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_board_eth_transport.v",
+      "sha256": "98790E233BFFD8E9C5D75655BE2CD9F5FE375696ACB1D4CBCAAAE112110B108E"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_atlas_manifest.json",
+      "sha256": "61E86C5ABEA3616890604FE91929468CA38FFFB3B875EC63ABA6228D34F270BB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_atlas_rom.v",
+      "sha256": "71BF04D37659960F9CBE6877EDC8DB876FB4B495919DDB272F2F80EEB128666B"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_palette_rom.v",
+      "sha256": "C62234D30000DB3CE2531A442F95B43A6688A2C3D7302136526BDEDD4EC10EBB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_index_stream.v",
+      "sha256": "1F66BCFC9581141A5387CBEA7FE0560B8DE541EFA4319DFFAEEB52F4B26C29D5"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_link_board_a.v",
+      "sha256": "C0C9E2CBC777247AEF96ADC7F22BD83BC09CC6BF66A5844C646B23CACF6A89F2"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_link_board_b.v",
+      "sha256": "3CF2D132208EA5EFA62FA796E23DB372B17FFEB679EBC0A637E527B675BEC744"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_main_ingress.v",
+      "sha256": "59EB99C5603E93EE85BCCD3C3CE1C8DABBF3833ED4FF76C63B8D4278111BE7A2"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_media_board_b.v",
+      "sha256": "B514DB3DAB1473DAFAB7F342BC1917CCFF963A7F15F876400F56EF9FAF00EA20"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_packet_rx.v",
+      "sha256": "7DC4C31AF4A9D0341FEBF2ED51DDF234F258E1BF1BE890AC6444A8A763C676E4"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_packet_tx.v",
+      "sha256": "C87666A90004E2E6F4D999CB52204D976D1DC9D7B3A9C303035027B2A9E41130"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_pixel_cdc.v",
+      "sha256": "6198853A79080DDD1EA4FA77FF8356B8F7ABDF27B899F73B8C4FE5B98DEF061C"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_receipt.v",
+      "sha256": "50DD6B5C718DD26DB6694923F5E42299C3CE588FB95107D4D45CEF91D37FC0FD"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_remote_display_control.v",
+      "sha256": "D95E340189E81796A31E50A1CA28BA72C2148348F7ECBA7C1A1912E2C05C2104"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_sdram_sink.v",
+      "sha256": "0D05C3C5F75B7C6B479DE42C97173555D50251AA37E6A0FF81A921A5EAA3D3D7"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_tf_source.v",
+      "sha256": "14F374C614A577DB338A93B1F6E939EB11AA1C74F3E6E28C7AFA3E4585E2A64C"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_audio_enable_cdc.v",
+      "sha256": "C641C3D8C3A114EEAC7B38535DA5C2B8D3A8E83A7F5FFDA1312261B5DE6ED765"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_control_packet.v",
+      "sha256": "E6D603B4A83FE313817219534238E01EA24121E092C6E78226435283D5CF9A95"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_link_session.v",
+      "sha256": "18789CEE005FDE0340404D928239CD70D1939577433042DCDE088DA5D1FB61E1"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_udp_arbiter.v",
+      "sha256": "8FE149E0D80DFCAE220EEC8ADDB4226E5E984C62EB40A3A72F0F51014FD28FD6"
+    },
+    {
+      "file": "dual_board/image_link/rtl/remote_audio_compute.v",
+      "sha256": "2CECCA2356611026FC82E030D45F56B597F823CC49E8BEFECD534FF1D3720020"
+    },
+    {
+      "file": "dual_board/image_link/rtl/sd_card_bmp_remote.v",
+      "sha256": "AD45EDF4B91C22635E2B550C964A5F694108C2F5DC7809F2A6777CDE5AF2FC11"
+    },
+    {
+      "file": "dual_board/image_link/rtl/top_dual_image.v",
+      "sha256": "DE9758C86BAEDA055932A009740580A733D65F53E6A09B548EC2E4722AFCD1FC"
+    },
+    {
+      "file": "dual_board/image_link/rtl/video_remote_home_overlay.v",
+      "sha256": "D52B1EDFADFD3CBBDF2940436E7932EC106273632A5CB69C13F6166CF5050BEB"
+    },
+    {
+      "file": "dual_board/image_link/sim/modelsim_netopt.log",
+      "sha256": "0F6428EDB6CFF9E2E96BE0E258373D22DB29F94AA45805B153E162B4671EFE40"
+    },
+    {
+      "file": "dual_board/image_link/sim/phase9_candidate_crc_modelsim_20261004.log",
+      "sha256": "8C1BF8BFB1D566B3DFC7087F24F151221AFE20B32D92A4DFFD795C3A2DACD18C"
+    },
+    {
+      "file": "dual_board/image_link/sim/phase9_final_netopt_20261004.log",
+      "sha256": "0F6428EDB6CFF9E2E96BE0E258373D22DB29F94AA45805B153E162B4671EFE40"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_audio_modelsim.do",
+      "sha256": "B23EF0247D0666493AA21535C7E5B323A40180EEF7CFBFFFF37E2602FA0A10F4"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_control_modelsim.do",
+      "sha256": "50AC6FCD09226E5B56D1F9D5A5ECF941A6482452B0F6F44E8B33CF8BDD4672BC"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_home_capture.do",
+      "sha256": "99E807275A1E9B3B257BAB24BDBD07F6CD53268D5355E3F0401B62A7099FCD9E"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_home_modelsim.do",
+      "sha256": "EEAD95B0103CD8C1414FFD4DE621AC71E560BBCFFA4698FC7FB36ED8BE5D863C"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_link_modelsim.do",
+      "sha256": "66ED402300DE51971371490187549183043B98BCBD689CA44E178D11E501C5AF"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_metadata_guard.do",
+      "sha256": "E34C87D97B0B1B08F0CF2D3B0A50A877D3CDFA3F16921429B1C060E6AB2D36E9"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_modelsim.do",
+      "sha256": "2FB01F5C45F8F67BF7EB31015F0D28595C076594EFC7D4302EA979C3E3C394EA"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_modelsim.ps1",
+      "sha256": "3A3E7734209C0626EE28B483C8C9E122E698040FB90FD8818DD82D11A95AA9D2"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_netopt_modelsim.do",
+      "sha256": "F2404041BE18A9E40A215EB18F2D9B8FB918EEC8BC2F2A24313AA0166AE01796"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_offload_modelsim.do",
+      "sha256": "1E06892CA4630CAA3EEBE49DC701B0EC4B1E8CB7AC4ECBA26DF5125C8D857EBB"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_protocol_modelsim.do",
+      "sha256": "DCCD84625277E4DA5B9E55DC9B0C78C7096B03C4BA292FFAF52220E73D6A8002"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_reuse_modelsim.do",
+      "sha256": "3C1A7F51A7AD518EE269E9551FD73B7E5B27C096EE496076F04F953E48333A5C"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_scheduler_modelsim.do",
+      "sha256": "DA2E9905E882E32D6291F94B57C8E29C71BAC46C1A201216CFC1D848943D4900"
+    },
+    {
+      "file": "dual_board/image_link/sim/snapshot_netopt_validation.js",
+      "sha256": "AABBF639F41D0598E0A1AB73BFEE34A0DF7D195A14DCFFB577D299B71FFEEAC2"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_audio_guard.v",
+      "sha256": "2CEEEFC69EBDCC72CFA1E95CCD114C571EA51F7409C66EF42FC07E1A286B8C1E"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_audio_media.v",
+      "sha256": "31C49F80297DC9E477AA423DD7A9F1A8F8E7FECC07A4A995A6966EC9B7504A73"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_audio_offload.v",
+      "sha256": "E1875A04C01530858429CC2F57B46241BDF75347B8D7B8512BE112314D5DBEB3"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_audio_session_reset.v",
+      "sha256": "670E37B01DDD9506D352CADF72968A04CBD9CE4858CE3202E76117EDE65ECB6C"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_audio_status_guard.v",
+      "sha256": "B72CC11F4058425B5B5FA2117E1BB411FFC6362752B548E216E391567498B154"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_audio_visual_guard.v",
+      "sha256": "7D96FED8E70A9C7B38980CFC42F9F0FF03C9863A3C6571C687A9EAEB9DFDF3C8"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_cache_reuse.v",
+      "sha256": "499AE1AD1C4C1BB255248593B841EE912715262113E4D5F8276ED4DE541B8C77"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_control_guard.v",
+      "sha256": "C5FCC19DD9F2F4F22B7FAABE4B2F450168182BCACF38AE626AF7628731BE8AF5"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_home_atlas.v",
+      "sha256": "280BED8AD682C5DC58529176B3980E0FF436A65327243A25BEF86425F6CDECFA"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_home_capture.v",
+      "sha256": "2D868B94CE288AECB8F932BC7EEC40C1BA7513DCADCA7DBE5E69F75D8B620CD1"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_home_pipeline.v",
+      "sha256": "485E703F16F58C6C2C2370640A5593ADFA4BF697BBCCC8AFC84AE49B108B97EA"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_home_pixels.v",
+      "sha256": "A48324F1C1FF5F5FBB704C7377C82AE35188967512EE26F0F3D893CC3C9927E2"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_home_source.v",
+      "sha256": "DD4B3E66287809922A8C03212AC13F223F30E11DF8E0658D1703A1FD6B3981BE"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_image_link_full.v",
+      "sha256": "8DA128E314C932FFAB635CD3A51767FAF0CB02975FA38008B706FCEA83D25108"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_image_link_loop.v",
+      "sha256": "0CF324D5355631F42544B17A211A1FEF3050EDC21EAE133267C0BE27C98518C6"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_image_packet_rx.v",
+      "sha256": "C7C4FEFB2C2379E395FFCE1C8F826ED837DB855E84AFD5B04675852EFA37E70C"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_image_pixel_cdc.v",
+      "sha256": "567782DC49D3CDBDBBC3BF7AFB70D4653AAE194F38AC4A4A138829431AA1131D"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_image_reliable.v",
+      "sha256": "20DB16D537232AEDAFB578803AF77526770E5DD26BDE630C22E6B6EBB70F08E1"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_image_sink_guard.v",
+      "sha256": "E96183E699FB5855A1E83C95033DFAEABDAF04A9DA4EBA17EF752E793460B55F"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_link_session.v",
+      "sha256": "C760FF8104FB3CE94A89AFA529D5902D487F81C92F37D4186B87251D05146EFF"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_media_control.v",
+      "sha256": "BAF2AB78C988521E4BCDC8A84E66A42B7F1B037A701393A48AB1C79F592BEA94"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_media_generation.v",
+      "sha256": "AD50BD5BCAE0EC11B57A771C78A7D47EF00001267C7E022E6F54AAC0939070B2"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_media_restart.v",
+      "sha256": "324A0FD392B62C5346BF7444E21DE9EA8869000B66E2BD02B0B9AA8EF941DB63"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_media_scheduler.v",
+      "sha256": "C36D042FC44496D56956436418BC12F9F8B78F108D1E37C57E689C8025196065"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_remote_compute.v",
+      "sha256": "BC86824055A89642C0021C948026EAA00860CD0DB17507FCDE85C807A28500F2"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_remote_display.v",
+      "sha256": "C10B8536DDD0767032F08F1063AA456FBA372C50F5E79FA1BCA1DF92528B6548"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_resolution_display.v",
+      "sha256": "9401C5ACEC42828A60AE3C2184B81736AFF7531426F852346CFE61AF16440567"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_resolution_guard.v",
+      "sha256": "92CEC50E5DC10A0982147807E51B05637C64C9F17160DE0D9BC7010F78FDD2E7"
+    },
+    {
+      "file": "src/user_source/hdl_source/top_tf_hdmi_audio.v",
+      "sha256": "561394111CB599D811AA3408B25C6AABCC420D32111BC03D3B3EE87AB2D8E0E8"
+    }
+  ]
+}

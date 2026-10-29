@@ -1,0 +1,683 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vaudio_lyric_timeline
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790992796
+!i10b 1
+!s100 M6A4i`KCFg^V_[?0_^TQ[1
+ILzF]hcjS?UQjDDXdS]4H21
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 audio_lyric_timeline_v_unit
+S1
+R0
+w1790907521
+8src/user_source/hdl_source/audio_lyric_timeline.v
+Fsrc/user_source/hdl_source/audio_lyric_timeline.v
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1790992796.000000
+Z6 !s107 sim/tb_lyric_actual_pixels.sv|src/user_source/hdl_source/video_album_cover_rom.v|src/user_source/hdl_source/video_app_icons_rom.v|src/user_source/hdl_source/video_home_overlay.v|src/user_source/hdl_source/video_status_overlay.v|src/user_source/hdl_source/osd_alpha_overlay.v|src/user_source/hdl_source/audio_visualizer_overlay.v|src/user_source/hdl_source/lyric_song_data.v|src/user_source/hdl_source/video_lyric_overlay.v|src/user_source/hdl_source/audio_lyric_timeline.v|
+Z7 !s90 -sv|+define+LYRIC_FAST_SIM|-suppress|2600|-work|sim/lyrics_20261001/actual|src/user_source/hdl_source/audio_lyric_timeline.v|src/user_source/hdl_source/video_lyric_overlay.v|src/user_source/hdl_source/lyric_song_data.v|src/user_source/hdl_source/audio_visualizer_overlay.v|src/user_source/hdl_source/osd_alpha_overlay.v|src/user_source/hdl_source/video_status_overlay.v|src/user_source/hdl_source/video_home_overlay.v|src/user_source/hdl_source/video_app_icons_rom.v|src/user_source/hdl_source/video_album_cover_rom.v|sim/tb_lyric_actual_pixels.sv|
+!i113 1
+Z8 o-suppress 2600 -sv -work sim/lyrics_20261001/actual
+Z9 !s92 -suppress 2600 -sv +define+LYRIC_FAST_SIM -work sim/lyrics_20261001/actual
+Z10 tCvgOpt 0
+vaudio_visualizer_overlay
+R1
+R2
+!i10b 1
+!s100 k>bE6PkX45oHKA4WaBDQm1
+I8SKL:6`RFFVn_n@J`QoXR1
+R3
+!s105 audio_visualizer_overlay_v_unit
+S1
+R0
+w1790928777
+8src/user_source/hdl_source/audio_visualizer_overlay.v
+Fsrc/user_source/hdl_source/audio_visualizer_overlay.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vlyric_boundary_map
+R1
+R2
+!i10b 1
+!s100 [>>nco<2jLaG8ZeZ4kQ962
+I9^W`Xi4HzjX=l1<OBD?kn2
+R3
+Z11 !s105 lyric_song_data_v_unit
+S1
+R0
+Z12 w1790925506
+Z13 8src/user_source/hdl_source/lyric_song_data.v
+Z14 Fsrc/user_source/hdl_source/lyric_song_data.v
+L0 389
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vlyric_char_bram32_rom
+R1
+R2
+!i10b 1
+!s100 WoR8]K<=2l_ci`8PZ238b0
+IA0B:[V>]80R7HcUegnD8_1
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 14311
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vlyric_event_rom
+R1
+R2
+!i10b 1
+!s100 ?I01[Lh;]9=XoE=`aPOl31
+Il@mbS_gjB4gWo03W^g]1g1
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vlyric_font_bank
+R1
+R2
+!i10b 1
+!s100 7475RDd?cPMO;bXnEb<`C1
+IHhVI;J]<Cd]eblF]QF>OD1
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 726
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vlyric_font_bram32_bank
+R1
+R2
+!i10b 1
+!s100 jGDeP<3AGdO0a73k7LiQC1
+IYm2;N0In>DcYn_BLWE3=^1
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 13747
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vlyric_font_packed9_reference
+R1
+R2
+!i10b 1
+!s100 T?QhQ17c]P9d?hl1<Yc]B3
+I6;`dbCkiz3DDbK;RN<kg=1
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 7507
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vlyric_font_packed_rom
+R1
+R2
+!i10b 1
+!s100 @5T1=@^?=UiPlm<PEi8G<2
+IdOana9`QhM`f`dHG6FkL20
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 13732
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vlyric_font_rom
+R1
+R2
+!i10b 1
+!s100 1?^Da4PQVg_bi2[4LY0W@1
+I?XFFd2YLj4b>;h]]CScbL1
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 717
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vlyric_line_rom
+R1
+R2
+!i10b 1
+!s100 2<D@JN@UDdg;T5FMc]@SH2
+I>a@dfYI2PdHUCRjfG:9l_3
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 440
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vlyric_packed_font_bank
+R1
+R2
+!i10b 1
+!s100 A7cbb1@zXLLOAHB73=mj81
+I;bck<XP6c_DclOB9ZEL<82
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 7553
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vosd_alpha_overlay
+R1
+R2
+!i10b 1
+!s100 Po9jmfQNW2bb86cAGLo6b2
+INk]Gj`a2j0E5g?BPHT=C=1
+R3
+Z15 !s105 osd_alpha_overlay_v_unit
+S1
+R0
+Z16 w1790771768
+Z17 8src/user_source/hdl_source/osd_alpha_overlay.v
+Z18 Fsrc/user_source/hdl_source/osd_alpha_overlay.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vosd_glyph_rom
+R1
+R2
+!i10b 1
+!s100 FE[cn0@`ZogL]F;UnG^0f3
+I?zLh=Lh`TLJZL>ezZac8B3
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 192
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vtb_lyric_actual_pixels
+R1
+R2
+!i10b 1
+!s100 7dj[VlSPbA_ki8NmS8:UD3
+IWz1QAzzS>gh<OFlLe;aYe0
+R3
+!s105 tb_lyric_actual_pixels_sv_unit
+S1
+R0
+w1790949904
+8sim/tb_lyric_actual_pixels.sv
+Fsim/tb_lyric_actual_pixels.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vtb_packed_font_equivalence
+R1
+!s110 1790909474
+!i10b 1
+!s100 RkeOCZ]Z^e04HIWgfKDWI3
+IoRXOTUZznU=:bHcalV:em0
+R3
+!s105 tb_packed_font_equivalence_sv_unit
+S1
+R0
+w1790909465
+8sim/tb_packed_font_equivalence.sv
+Fsim/tb_packed_font_equivalence.sv
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1790909474.000000
+!s107 sim/tb_packed_font_equivalence.sv|src/user_source/hdl_source/lyric_song_data.v|
+!s90 -sv|+define+LYRIC_FAST_SIM|-suppress|2600|-work|sim/lyrics_20261001/actual|src/user_source/hdl_source/lyric_song_data.v|sim/tb_packed_font_equivalence.sv|
+!i113 1
+R8
+R9
+R10
+vtb_shared_music_card
+R1
+Z19 !s110 1790993092
+!i10b 1
+!s100 mL1:[<^c<H^=RPCUAVIQ70
+Il8Z2cd[<@AM3[CH0A0VVQ0
+R3
+!s105 tb_shared_music_card_sv_unit
+S1
+R0
+w1790907861
+8sim/tb_shared_music_card.sv
+Fsim/tb_shared_music_card.sv
+L0 4
+R4
+r1
+!s85 0
+31
+Z20 !s108 1790993092.000000
+Z21 !s107 sim/tb_shared_music_card.sv|sim/lyrics_music_card_20261002/baseline/video_home_overlay_before_music.v|
+Z22 !s90 -sv|-suppress|2600|-work|sim/lyrics_20261001/actual|sim/lyrics_music_card_20261002/baseline/video_home_overlay_before_music.v|sim/tb_shared_music_card.sv|
+!i113 1
+R8
+R10
+vvideo_album_cover_rom
+R1
+R2
+!i10b 1
+!s100 o@32=o1[z?KZXC6m2Pd0U2
+I:lM6?^QcHkjPebD9IW_:63
+R3
+!s105 video_album_cover_rom_v_unit
+S1
+R0
+w1790768460
+8src/user_source/hdl_source/video_album_cover_rom.v
+Fsrc/user_source/hdl_source/video_album_cover_rom.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vvideo_app_icons_rom
+R1
+R2
+!i10b 1
+!s100 QQ`jZeLcQ9jaLeMH6k[fd1
+I=BM`Mf]9Ggi=Z0ed`V5LP1
+R3
+!s105 video_app_icons_rom_v_unit
+S1
+R0
+w1790767958
+8src/user_source/hdl_source/video_app_icons_rom.v
+Fsrc/user_source/hdl_source/video_app_icons_rom.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vvideo_bottom_nav_rom
+R1
+R2
+!i10b 1
+!s100 VXNK=zSz]]K>95bR4P2oI3
+I9S_U9NVO8ahmgB@<__SzX1
+R3
+Z23 !s105 video_home_overlay_v_unit
+S1
+R0
+Z24 w1790945711
+Z25 8src/user_source/hdl_source/video_home_overlay.v
+Z26 Fsrc/user_source/hdl_source/video_home_overlay.v
+L0 898
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vvideo_home_glyph_rom
+R1
+R2
+!i10b 1
+!s100 dzTLZYifU2VfzfMjBkbb:2
+IL@EhcUG5<?8`a018CO@Ib3
+R3
+R23
+S1
+R0
+R24
+R25
+R26
+L0 538
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vvideo_home_overlay
+R1
+R2
+!i10b 1
+!s100 J^BCl9T[]DVG9hAhjZ1RB2
+IQiT2AHJMKMU@7dMzEZNF:3
+R3
+R23
+S1
+R0
+R24
+R25
+R26
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vvideo_home_overlay_before_music
+R1
+R19
+!i10b 1
+!s100 lh@lLZDanfQeEmS=PFm800
+IgCUaR^fLBSVZLkH6oKE]W1
+R3
+!s105 video_home_overlay_before_music_v_unit
+S1
+R0
+w1790907229
+8sim/lyrics_music_card_20261002/baseline/video_home_overlay_before_music.v
+Fsim/lyrics_music_card_20261002/baseline/video_home_overlay_before_music.v
+L0 3
+R4
+r1
+!s85 0
+31
+R20
+R21
+R22
+!i113 1
+R8
+R10
+vvideo_lyric_overlay
+R1
+R2
+!i10b 1
+!s100 k@=hdG_IR4k9IVkz2S^Mz2
+IV5jA4fGKT5>aPlABObJCU2
+R3
+!s105 video_lyric_overlay_v_unit
+S1
+R0
+w1790949325
+8src/user_source/hdl_source/video_lyric_overlay.v
+Fsrc/user_source/hdl_source/video_lyric_overlay.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vvideo_status_font_rom
+R1
+R2
+!i10b 1
+!s100 D26=WoFZK>dcjdBV6mWV[3
+I@UfSmfYcC5]7bKA`JFFX>3
+R3
+Z27 !s105 video_status_overlay_v_unit
+S1
+R0
+Z28 w1790992530
+Z29 8src/user_source/hdl_source/video_status_overlay.v
+Z30 Fsrc/user_source/hdl_source/video_status_overlay.v
+L0 377
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vvideo_status_overlay
+R1
+R2
+!i10b 1
+!s100 R35L<SP@NVlX0L^elOgBE3
+IRVR[6K?OQ>HOSf06^a^7J1
+R3
+R27
+S1
+R0
+R28
+R29
+R30
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vvideo_tpms_car_rom
+R1
+R2
+!i10b 1
+!s100 kR:]lMXk5]3OY6AVVC1UG1
+ITLb2V2Ah6Gl0MB_TKYcSo3
+R3
+R23
+S1
+R0
+R24
+R25
+R26
+L0 1514
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10

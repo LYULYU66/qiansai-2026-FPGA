@@ -1,0 +1,47 @@
+standard
+***Report Model: star_area_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        74   out of    188   39.36%
+  #input                   40
+  #output                  34
+  #inout                    0
+
+LUT Statistics
+#Total_luts              1299
+  #lut4                  1178
+  #lut5                   121
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                     2063   out of  19600   10.53%
+#reg                     1154   out of  19600    5.89%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                       10   out of     29   34.48%
+#pad                       74   out of    188   39.36%
+  #ireg                    11
+  #oreg                     2
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------------+
+|Instance     |Module                |lut     |ripple  |seq     |bram    |dsp     |
++---------------------------------------------------------------------------------+
+|top          |star_area_top         |1693    |370     |1167    |0       |10      |
+|  cdc        |star_bundle_cdc       |75      |0       |75      |0       |0       |
+|  eng        |star_motion_engine    |252     |82      |291     |0       |0       |
+|  rx         |media_control_star_rx |149     |16      |275     |0       |0       |
+|  sky        |video_star_sky        |933     |259     |376     |0       |10      |
+|    u_far    |star_far_layer        |186     |44      |155     |0       |3       |
+|      u_hash |star_cell_hash        |23      |0       |0       |0       |3       |
+|    u_near   |star_near_layer       |331     |56      |120     |0       |4       |
+|      u_hash |star_cell_hash        |31      |0       |0       |0       |3       |
+|  tx         |media_control_star_tx |259     |13      |137     |0       |0       |
++---------------------------------------------------------------------------------+

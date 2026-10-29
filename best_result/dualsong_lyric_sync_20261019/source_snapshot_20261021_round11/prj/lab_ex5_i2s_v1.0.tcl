@@ -1,0 +1,1 @@
+source build_b_hdmi_timing_tmp.tcl

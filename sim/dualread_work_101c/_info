@@ -1,0 +1,167 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf
+vfifo_cross_domain_addr_process_al_rfifo_32_32_512
+!i10b 1
+Z1 !s100 MlUhA_n8hZm7`RY0KQBb<2
+Z2 I@3RE_6D5ice7bfd5nYPJo2
+Z3 VKM1_4kLamYkEzJI>K_ec33
+Z4 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf
+Z5 w1749457582
+Z6 8src/user_source/hdl_source/IP/afifo_32_16_256.v
+Z7 Fsrc/user_source/hdl_source/IP/afifo_32_16_256.v
+Z8 L0 250
+Z9 OL;L;10.1c;51
+r1
+!s85 0
+31
+Z10 !s108 1789283514.377000
+Z11 !s107 src/user_source/hdl_source/SD/frame_read_write.v|src/user_source/hdl_source/SD/frame_fifo_write.v|src/user_source/hdl_source/SD/frame_fifo_read.v|src/user_source/hdl_source/IP/afifo_32_16_256.v|src/user_source/hdl_source/IP/afifo_16_32_256.v|
+Z12 !s90 -work|sim/dualread_work_101c|src/user_source/hdl_source/IP/afifo_16_32_256.v|src/user_source/hdl_source/IP/afifo_32_16_256.v|src/user_source/hdl_source/SD/frame_fifo_read.v|src/user_source/hdl_source/SD/frame_fifo_write.v|src/user_source/hdl_source/SD/frame_read_write.v|
+Z13 o-work sim/dualread_work_101c -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vfifo_cross_domain_addr_process_al_wfifo_32_32_512
+!i10b 1
+Z14 !s100 L]_?a=OB11nIaE9W=c4kN2
+Z15 InHZ8B;dl2;RQjUofg;mGN3
+Z16 V`DXOBX>U4<EN^H0je2LST1
+R4
+Z17 w1749525034
+Z18 8src/user_source/hdl_source/IP/afifo_16_32_256.v
+Z19 Fsrc/user_source/hdl_source/IP/afifo_16_32_256.v
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+R13
+vframe_fifo_read
+!i10b 1
+Z20 !s100 mzXzA2eej?c1j?a9I@l682
+Z21 I4Ed5PW5SJ6]mzfRPCnkk21
+Z22 VM?A>_8<0Z3kfJcEa9237C2
+R4
+Z23 w1789281544
+Z24 8src/user_source/hdl_source/SD/frame_fifo_read.v
+Z25 Fsrc/user_source/hdl_source/SD/frame_fifo_read.v
+L0 2
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+R13
+vframe_fifo_write
+!i10b 1
+Z26 !s100 6Qo__nAE:aPLEBH??W@Ic0
+Z27 I^idjmSWRO<dR@K]achS9C0
+Z28 VO3NHlSmAZKRVAC7<ZP>GG3
+R4
+Z29 w1789127644
+Z30 8src/user_source/hdl_source/SD/frame_fifo_write.v
+Z31 Fsrc/user_source/hdl_source/SD/frame_fifo_write.v
+L0 2
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+R13
+vframe_read_write
+!i10b 1
+Z32 !s100 =0WN22V:Q7a7F4[V1LYhg0
+Z33 I<f=DC1?JBcAM<i_nb44o32
+Z34 V3lj_ILocLhdBYP9<5I70k3
+R4
+Z35 w1789282617
+Z36 8src/user_source/hdl_source/SD/frame_read_write.v
+Z37 Fsrc/user_source/hdl_source/SD/frame_read_write.v
+L0 2
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+R13
+vram_infer_rfifo_32_32_512
+!i10b 1
+Z38 !s100 7E1h;b[??ohR47TlW2JC11
+Z39 I4VIiobe8b?dO6C=hf9jCj1
+Z40 VZ1dlIggi3`3A1foWEU5S10
+R4
+R5
+R6
+R7
+Z41 L0 333
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+R13
+vram_infer_wfifo_32_32_512
+!i10b 1
+Z42 !s100 A[T@a7Zle0NCAnWRRZkXP0
+Z43 I<0NNHShbb]BcfYIP<:46_1
+Z44 V5;FK8;9D@AX[<U1L;z;Ph2
+R4
+R17
+R18
+R19
+R41
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+R13
+vrfifo_32_32_512
+!i10b 1
+Z45 !s100 TJUlj]Sh1P>0WjzmV8LaE2
+Z46 IDHU1TcZ@^FL?O3TMK`0a01
+Z47 V7V9L<3dUhe:zLUFZ6h89d0
+R4
+R5
+R6
+R7
+L0 13
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+R13
+vwfifo_32_32_512
+!i10b 1
+Z48 !s100 UVgWEXkfK5WU3JDfo@;1H2
+Z49 I_JWNPK5Jj8FO[]Q14NnF@0
+Z50 V<@Ll1]IFEQaEkRJaZYo=c0
+R4
+R17
+R18
+R19
+L0 13
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+R13

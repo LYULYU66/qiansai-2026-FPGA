@@ -1,0 +1,205 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vbmp_bilinear_stream
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790937122
+!i10b 1
+!s100 6MNNcVX=]omcAl9nk@lQ_2
+I4XBeSWD1=XK9A1oV0NWCo0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 bmp_bilinear_stream_v_unit
+S1
+R0
+w1790937106
+8src/user_source/hdl_source/SD/bmp_bilinear_stream.v
+Fsrc/user_source/hdl_source/SD/bmp_bilinear_stream.v
+L0 7
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1790937121.000000
+Z6 !s107 sim/tb_bmp_resize_reader.sv|src/user_source/hdl_source/SD/bmp_read.v|src/user_source/hdl_source/SD/bmp_bilinear_stream.v|
+Z7 !s90 -sv|+define+BILINEAR_FAST_SIM|-work|sim/bmp_resize_20261002/integration|src/user_source/hdl_source/SD/bmp_bilinear_stream.v|src/user_source/hdl_source/SD/bmp_read.v|sim/tb_bmp_resize_reader.sv|
+!i113 1
+Z8 o-sv -work sim/bmp_resize_20261002/integration
+Z9 !s92 -sv +define+BILINEAR_FAST_SIM -work sim/bmp_resize_20261002/integration
+Z10 tCvgOpt 0
+vbmp_read
+R1
+R2
+!i10b 1
+!s100 GOim4UReDYIh<R4Qk[dcI2
+I0B6=10IMYlD_:`O4lCanX3
+R3
+!s105 bmp_read_v_unit
+S1
+R0
+w1790937105
+8src/user_source/hdl_source/SD/bmp_read.v
+Fsrc/user_source/hdl_source/SD/bmp_read.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vframe_fifo_write
+R1
+Z11 !s110 1790935434
+!i10b 1
+!s100 dAY?Iam6ZSLD2L6UW1UGP1
+IDA[z>7o9oPYa7[?kB0_?H3
+R3
+!s105 frame_fifo_write_v_unit
+S1
+R0
+w1790934694
+8src/user_source/hdl_source/SD/frame_fifo_write.v
+Fsrc/user_source/hdl_source/SD/frame_fifo_write.v
+L0 2
+R4
+r1
+!s85 0
+31
+Z12 !s108 1790935434.000000
+Z13 !s107 sim/tb_resize_write_orientation.sv|src/user_source/hdl_source/SD/frame_fifo_write.v|
+Z14 !s90 -sv|-work|sim/bmp_resize_20261002/integration|src/user_source/hdl_source/SD/frame_fifo_write.v|sim/tb_resize_write_orientation.sv|
+!i113 1
+R8
+R10
+vtb_bmp_resize_reader
+R1
+R2
+!i10b 1
+!s100 CQ:<=SN:JnfWzbL=2SV;?3
+I9TLN`zJhb5:D^m8PF8Pia3
+R3
+!s105 tb_bmp_resize_reader_sv_unit
+S1
+R0
+w1790937107
+8sim/tb_bmp_resize_reader.sv
+Fsim/tb_bmp_resize_reader.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vtb_resize_write_orientation
+R1
+R11
+!i10b 1
+!s100 o;jO7BJ8eIY^7iBRA<LZA3
+IKnCHjBB[3;Uz4DYdhbG1M2
+R3
+!s105 tb_resize_write_orientation_sv_unit
+S1
+R0
+w1790935432
+8sim/tb_resize_write_orientation.sv
+Fsim/tb_resize_write_orientation.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 1
+R8
+R10
+vtb_resolution_status
+R1
+Z15 !s110 1790935229
+!i10b 1
+!s100 ;XTMoc6<KDL41Q0R3h_EQ2
+Id__Jl853DQ3fF0dID9IJX3
+R3
+!s105 tb_resolution_status_sv_unit
+S1
+R0
+w1790935224
+8sim/tb_resolution_status.sv
+Fsim/tb_resolution_status.sv
+L0 2
+R4
+r1
+!s85 0
+31
+Z16 !s108 1790935229.000000
+Z17 !s107 sim/tb_resolution_status.sv|src/user_source/hdl_source/video_status_overlay.v|
+Z18 !s90 -sv|-work|sim/bmp_resize_20261002/integration|src/user_source/hdl_source/video_status_overlay.v|sim/tb_resolution_status.sv|
+!i113 1
+R8
+R10
+vvideo_status_font_rom
+R1
+R15
+!i10b 1
+!s100 DFejM1a^B?o3[41D^Rk@U3
+IV@joeIg3kEoc@b6b2`k841
+R3
+Z19 !s105 video_status_overlay_v_unit
+S1
+R0
+Z20 w1790934927
+Z21 8src/user_source/hdl_source/video_status_overlay.v
+Z22 Fsrc/user_source/hdl_source/video_status_overlay.v
+L0 387
+R4
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R8
+R10
+vvideo_status_overlay
+R1
+R15
+!i10b 1
+!s100 ORVXPgAg=I7jncM^C[7lm0
+IHIM3<ccVQ0nP=^C_XYS;82
+R3
+R19
+S1
+R0
+R20
+R21
+R22
+L0 4
+R4
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R8
+R10

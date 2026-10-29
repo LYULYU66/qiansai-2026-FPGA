@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-10-05T09:13:48.743Z",
+  "hardware_verified": false,
+  "program_mode": "PROGRAM_SRAM only",
+  "previous_hardware_result": "Original A/B SRAM media test: audio works, A display black and page digit remains zero.",
+  "fix": "Gate producer credit through FIFO reset and three write clocks of reset release; explicitly zero-extend FIFO count input ports.",
+  "unchanged": "B bit, HDMI core, PLL, SDRAM controller, FIFO depth and protocol unchanged.",
+  "tests": [
+    "Old failure reproduced at 3 clock phases: 3 reset-window pixels lost and only 768/1024 SDRAM writes, cache invalid.",
+    "Fixed 5 clock phases, each 3 complete 1024-word frames checked.",
+    "Full 640x480 frame: all 307200 RGB/tag words and addresses checked, cache committed."
+  ],
+  "bit": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\board_test_20261005\\MEDIA_SRAM_TEST_A_IMAGEFIX_R7_20261005.bit",
+  "sha256": "2F687129FD0FD90F03A7E121B87FC71DD96D7F819EF9EA267678CF12CC4E6E85",
+  "files": [
+    {
+      "path": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\prj\\media_a\\MEDIA_SRAM_TEST_A_IMAGEFIX_R7_20261005.bit",
+      "sha256": "2F687129FD0FD90F03A7E121B87FC71DD96D7F819EF9EA267678CF12CC4E6E85"
+    },
+    {
+      "path": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\rtl\\hw_round7_20261005\\frame_read_write_hw.v",
+      "sha256": "8D5848E78350E0D304755E74EA7F5D3E0D7F4DD5D5AB02662CD03530E0FAB354"
+    },
+    {
+      "path": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\prj\\media_a\\MEDIA_SRAM_TEST_A_IMAGEFIX_R7_20261005_phy.area",
+      "sha256": "63301917CD18975FCA2EBF31250B718AEF45511E543AA33D149D8D6D128235A7"
+    },
+    {
+      "path": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\dual_board\\image_link\\prj\\media_a\\MEDIA_SRAM_TEST_A_IMAGEFIX_R7_20261005_pr.timing",
+      "sha256": "1C017B91E32550DFE1DADB445424C9B3C9031FFF5A795141F23D3F37C97BFE2F"
+    }
+  ]
+}

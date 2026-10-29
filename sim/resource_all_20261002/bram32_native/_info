@@ -1,0 +1,348 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vEG_PHY_BRAM32K
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790993148
+!i10b 1
+!s100 :ojoL<FQXchMCJHm0RdCR2
+I6JYdacnZj;E=kWI5iEkV;0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 eg_phy_bram32k_v_unit
+S1
+R0
+Z4 w1752052136
+8C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_bram32k.v
+FC:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_bram32k.v
+L0 71
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1790993147.000000
+Z7 !s107 sim/resource_all_20261002/tb_bram32_font.sv|src/user_source/hdl_source/lyric_song_data.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_bram32k.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_glbl.v|
+Z8 !s90 -sv|-work|sim/resource_all_20261002/bram32_native|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_glbl.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_bram32k.v|src/user_source/hdl_source/lyric_song_data.v|sim/resource_all_20261002/tb_bram32_font.sv|
+!i113 1
+Z9 o-sv -work sim/resource_all_20261002/bram32_native
+Z10 tCvgOpt 0
+n@e@g_@p@h@y_@b@r@a@m32@k
+vglbl
+R1
+!s110 1790993147
+!i10b 1
+!s100 `U0Z;4oNbGofGM;zdjJ4Z1
+Ifl=XI@b@M`:6amLXSh2ZU0
+R3
+!s105 eg_phy_glbl_v_unit
+S1
+R0
+R4
+8C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_glbl.v
+FC:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_glbl.v
+L0 23
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vlyric_boundary_map
+R1
+R2
+!i10b 1
+!s100 [>>nco<2jLaG8ZeZ4kQ962
+IT1lIgW=gc36z[3@RFO4P:0
+R3
+Z11 !s105 lyric_song_data_v_unit
+S1
+R0
+Z12 w1790925506
+Z13 8src/user_source/hdl_source/lyric_song_data.v
+Z14 Fsrc/user_source/hdl_source/lyric_song_data.v
+L0 389
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vlyric_char_bram32_rom
+R1
+R2
+!i10b 1
+!s100 WoR8]K<=2l_ci`8PZ238b0
+I6QPWeZGAh9UGb2oTYIYgk1
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 14311
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vlyric_event_rom
+R1
+R2
+!i10b 1
+!s100 ?I01[Lh;]9=XoE=`aPOl31
+IiDj;YFaX@RU:lYQJM;9fX1
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vlyric_font_bank
+R1
+R2
+!i10b 1
+!s100 mUoCP9]=`m[LWKG[SZZ@;0
+ImL^^T=F>XF8;Z@g0ICDh<2
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 726
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vlyric_font_bram32_bank
+R1
+R2
+!i10b 1
+!s100 9R2N3QDYBnGge;FcSKalA3
+IH1X[QS`Mn5[0h8L93Jh2`2
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 13747
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vlyric_font_bram32_rom
+R1
+!s110 1790924555
+!i10b 1
+!s100 z[U6g`]T3F[N<7ZWa4hEk0
+IWU:L3kF@^>ejIl]Rd742L2
+R3
+!s105 lyric_font_bram32_rom_v_unit
+S1
+R0
+w1790924507
+8sim/resource_all_20261002/bram32_font/lyric_font_bram32_rom.v
+Fsim/resource_all_20261002/bram32_font/lyric_font_bram32_rom.v
+L0 2
+R5
+r1
+!s85 0
+31
+!s108 1790924555.000000
+!s107 sim/resource_all_20261002/tb_bram32_font.sv|sim/resource_all_20261002/bram32_font/lyric_font_bram32_rom.v|src/user_source/hdl_source/lyric_song_data.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_bram32k.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_glbl.v|
+!s90 -sv|+define+LYRIC_FAST_SIM|-work|sim/resource_all_20261002/bram32_native|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_glbl.v|C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/sim_release/eg4/eg_phy_bram32k.v|src/user_source/hdl_source/lyric_song_data.v|sim/resource_all_20261002/bram32_font/lyric_font_bram32_rom.v|sim/resource_all_20261002/tb_bram32_font.sv|
+!i113 1
+R9
+!s92 -sv +define+LYRIC_FAST_SIM -work sim/resource_all_20261002/bram32_native
+R10
+vlyric_font_packed9_reference
+R1
+R2
+!i10b 1
+!s100 T?QhQ17c]P9d?hl1<Yc]B3
+Ifm1XbWe9F]07=4i<e5mjT0
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 7507
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vlyric_font_packed_rom
+R1
+R2
+!i10b 1
+!s100 @5T1=@^?=UiPlm<PEi8G<2
+IYDm]VDo8P2gozM4Ro51kO2
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 13732
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vlyric_font_rom
+R1
+R2
+!i10b 1
+!s100 1?^Da4PQVg_bi2[4LY0W@1
+IemiXgjX4TP:]jYW6f0IbZ0
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 717
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vlyric_line_rom
+R1
+R2
+!i10b 1
+!s100 [328W?b34KK7261db`9FS0
+If>I8=PS^9bSf6Y0CZzAZW3
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 440
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vlyric_packed_font_bank
+R1
+R2
+!i10b 1
+!s100 XEL[QCgJiU>YST8HiKP1f1
+IHc_?5?8XN7g;Kmz^ehjaA2
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 7553
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vtb_bram32_font
+R1
+R2
+!i10b 1
+!s100 R8PDTcAf@XQMRzGU`OSLZ3
+I<IN]<7L45?^lbXNeX@;282
+R3
+!s105 tb_bram32_font_sv_unit
+S1
+R0
+w1790925466
+8sim/resource_all_20261002/tb_bram32_font.sv
+Fsim/resource_all_20261002/tb_bram32_font.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10

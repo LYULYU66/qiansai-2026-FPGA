@@ -1,0 +1,210 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vlyric_boundary_map
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790911059
+!i10b 1
+!s100 [>>nco<2jLaG8ZeZ4kQ962
+IjMCIN19PLYc?<YG]eEnGN2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 lyric_song_data_v_unit
+S1
+R0
+Z5 w1790911033
+Z6 8src/user_source/hdl_source/lyric_song_data.v
+Z7 Fsrc/user_source/hdl_source/lyric_song_data.v
+L0 389
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1790911059.000000
+Z10 !s107 sim/tb_packed_font_equivalence.sv|src/user_source/hdl_source/lyric_song_data.v|
+Z11 !s90 -sv|+define+LYRIC_FAST_SIM|-work|sim/resource_all_20261002/packed_font|src/user_source/hdl_source/lyric_song_data.v|sim/tb_packed_font_equivalence.sv|
+!i113 1
+Z12 o-sv -work sim/resource_all_20261002/packed_font
+Z13 !s92 -sv +define+LYRIC_FAST_SIM -work sim/resource_all_20261002/packed_font
+Z14 tCvgOpt 0
+vlyric_event_rom
+R1
+R2
+!i10b 1
+!s100 ?I01[Lh;]9=XoE=`aPOl31
+IBN9G^1QW:GX5ozoVM7ffi3
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_font_bank
+R1
+R2
+!i10b 1
+!s100 ZSFo:o]XC^kZ6hA4>3Gm01
+Ii[fPUH62jDGWQ@bMC6SXI2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 717
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_font_packed_rom
+R1
+R2
+!i10b 1
+!s100 Rm]^TnhSAf[5]Q=<HE>Dz2
+I18QhUEUR2TYRInH@jn_b;3
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 7498
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_font_rom
+R1
+R2
+!i10b 1
+!s100 5XQ2<XT=7UBYY:RBc[g6h0
+Ij:S_1_>UHaAcc?7<SGf?81
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 708
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_line_rom
+R1
+R2
+!i10b 1
+!s100 C]e[YXU1:iVIcBSf89MmS3
+IDFZgR4jeIC5llHLQccIQD3
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 440
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_packed_font_bank
+R1
+R2
+!i10b 1
+!s100 9o>h7a@YE2Q=Ym_^<ceW]3
+IPbeWViC^hYdE`I^3Gl7Xg2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 7544
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vtb_packed_font_equivalence
+R1
+R2
+!i10b 1
+!s100 RkeOCZ]Z^e04HIWgfKDWI3
+Ie?FJn0e783Bgzf7>U?R7A1
+R3
+!s105 tb_packed_font_equivalence_sv_unit
+S1
+R0
+w1790909465
+8sim/tb_packed_font_equivalence.sv
+Fsim/tb_packed_font_equivalence.sv
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14

@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vtb_resolution_status
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790944243
+!i10b 1
+!s100 ;XTMoc6<KDL41Q0R3h_EQ2
+Iin_K3zWQ0>[kYLI1oe>AZ1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 tb_resolution_status_sv_unit
+S1
+R0
+w1790935224
+8sim/tb_resolution_status.sv
+Fsim/tb_resolution_status.sv
+L0 2
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1790944243.000000
+Z6 !s107 sim/tb_resolution_status.sv|src/user_source/hdl_source/video_status_overlay.v|
+Z7 !s90 -sv|-work|sim/bmp_resize_20261002/status|src/user_source/hdl_source/video_status_overlay.v|sim/tb_resolution_status.sv|
+!i113 1
+Z8 o-sv -work sim/bmp_resize_20261002/status
+Z9 tCvgOpt 0
+vvideo_status_font_rom
+R1
+R2
+!i10b 1
+!s100 DFejM1a^B?o3[41D^Rk@U3
+Ie7zY4Z[f47RR@11?CWbAT1
+R3
+Z10 !s105 video_status_overlay_v_unit
+S1
+R0
+Z11 w1790934927
+Z12 8src/user_source/hdl_source/video_status_overlay.v
+Z13 Fsrc/user_source/hdl_source/video_status_overlay.v
+L0 387
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vvideo_status_overlay
+R1
+R2
+!i10b 1
+!s100 ORVXPgAg=I7jncM^C[7lm0
+IYh7^TR?9MZ^:z;WQZj=H90
+R3
+R10
+S1
+R0
+R11
+R12
+R13
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

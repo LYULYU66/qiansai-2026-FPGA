@@ -1,0 +1,16 @@
+{
+  "source": "C:\\Users\\28492\\Desktop\\\u8f66\u8f7d\u56fe\u7247\\\u5468\u6770\u4f26 \u4e00\u8def\u5411\u5317.mp3",
+  "source_sha256": "2cdda61fcdeb7b50a12c59d3f2886b3cb8c67ba07ed5969bd7b30a76014af0ed",
+  "output": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\best_result\\yilu_replace_20261006\\TF_CARD\\MUSIC2.PCM",
+  "format": "raw signed 16-bit little-endian, 48000 Hz stereo interleaved, no header",
+  "decoded_sample_frames": 14122423,
+  "padding_sample_frames": 73,
+  "sample_frames": 14122496,
+  "bytes": 56489984,
+  "duration_seconds": 294.21866666666665,
+  "sha256": "876444391e3ebd28b61420e766e762c6e3bcab5fe67548abcdd6bf514c5c228d",
+  "gain": "unchanged",
+  "peak_dbfs": 0.0,
+  "rms_dbfs": -10.604387485667914,
+  "nonzero_samples": 28238465
+}

@@ -1,0 +1,280 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+T_opt
+V@cWTJ>8`6do`eISnH7a@A3
+04 22 4 work tb_image_reliable_full fast 0
+=1-04bf1b05a8bd-6ad83f01-9f-1ddc
+Z1 o-quiet -auto_acc_if_foreign -work w_img_base
+n@_opt
+Z2 OL;O;10.1c;51
+Z3 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+T_opt1
+V9cnzjgLFE9G>6llZIzRD72
+04 20 4 work tb_image_tagged_full fast 0
+=1-04bf1b05a8bd-6ad83f05-23f-71f0
+R1
+n@_opt1
+R2
+R3
+T_opt2
+V2c`5jJ]F[3ELeJTeS8VNj0
+04 19 4 work tb_image_resolution fast 0
+=1-04bf1b05a8bd-6ad83f09-3a2-8bb0
+R1
+n@_opt2
+R2
+vimage_main_ingress
+Z4 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IVB^agd9D]?5g=eSCE4^Ub0
+V6@z3_lNbL^b=?C`YhlaUc0
+S1
+R3
+w1791115320
+8../../rtl/image_main_ingress.v
+F../../rtl/image_main_ingress.v
+L0 5
+Z5 OL;L;10.1c;51
+r1
+31
+Z6 !s108 1792556787.859000
+Z7 !s107 ../tb_image_reliable.v|../tb_cache_reuse.v|../../rtl/backup_before_netfix_20261021/image_packet_tx_hw.v|../../rtl/image_main_ingress.v|../../rtl/backup_before_netfix_20261021/image_sdram_sink.v|../../rtl/image_packet_rx.v|../../rtl/backup_before_netfix_20261021/image_receipt.v|
+Z8 !s90 -sv|-work|w_img_base|../../rtl/backup_before_netfix_20261021/image_receipt.v|../../rtl/image_packet_rx.v|../../rtl/backup_before_netfix_20261021/image_sdram_sink.v|../../rtl/image_main_ingress.v|../../rtl/backup_before_netfix_20261021/image_packet_tx_hw.v|../tb_cache_reuse.v|../tb_image_reliable.v|
+Z9 o-sv -work w_img_base -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 C:OFW45bMSkINL]Go39j<3
+!s105 image_main_ingress_v_unit
+!s85 0
+vimage_packet_rx
+R4
+ILhmJBZV:4C=<CMXKaXCBW0
+VKn5TH=e;:TQDTjo?[@i@Y0
+S1
+R3
+w1792421568
+8../../rtl/image_packet_rx.v
+F../../rtl/image_packet_rx.v
+L0 7
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 ]PnW1mSn4X1=M>fC2WIB<3
+!s105 image_packet_rx_v_unit
+!s85 0
+vimage_packet_tx
+R4
+IA^ohY75UU6:`ZWAm<omd30
+VGaBA3:i_R8dkQVEHG^I[G2
+S1
+R3
+w1791182383
+8../../rtl/backup_before_netfix_20261021/image_packet_tx_hw.v
+F../../rtl/backup_before_netfix_20261021/image_packet_tx_hw.v
+L0 6
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 Mo8SC2QEW`LWK<>2JU=QV2
+!s105 image_packet_tx_hw_v_unit
+!s85 0
+vimage_receipt_rx
+R4
+IKUVTYJ_L?V_S5ncQi9YIE0
+V`h^6kbFfHS:B]^a=HHhJm1
+Z10 !s105 image_receipt_v_unit
+S1
+R3
+Z11 w1792545872
+Z12 8../../rtl/backup_before_netfix_20261021/image_receipt.v
+Z13 F../../rtl/backup_before_netfix_20261021/image_receipt.v
+L0 54
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 8>GiF]QN5AoCXV[]af=G=0
+!s85 0
+vimage_receipt_tx
+R4
+IQoVz7?66]b3?kJPBf@>hd1
+Vb5E^eDRDA;8P>XefVQmV41
+R10
+S1
+R3
+R11
+R12
+R13
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 me]c^iXnG6aVTBNF0n34:0
+!s85 0
+vimage_sdram_sink
+R4
+IZYaR5B=R]UPEM8;Kz@N=D0
+V_8dV^K@[R40UazdMjkX^F0
+S1
+R3
+w1792417857
+8../../rtl/backup_before_netfix_20261021/image_sdram_sink.v
+F../../rtl/backup_before_netfix_20261021/image_sdram_sink.v
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 JK];h3g?]g;OPQNhaa:@53
+!s105 image_sdram_sink_v_unit
+!s85 0
+vtb_cache_reuse
+R4
+IA9`NDkX]KTVZiF;zIeCzG2
+VD[7=Q2>8NUc29PRnbWNH]1
+Z14 !s105 tb_cache_reuse_v_unit
+S1
+R3
+Z15 w1791115682
+Z16 8../tb_cache_reuse.v
+Z17 F../tb_cache_reuse.v
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 LTZ1=D@8RcIXO`UA5d60I0
+!s85 0
+vtb_cache_reuse_full
+R4
+I2lAG^_f@NYAd4ZP2RQ98L1
+V>E0K[^aML<m>n5Egb1FHn1
+R14
+S1
+R3
+R15
+R16
+R17
+L0 156
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 YHNZQaY_z3h1jgYWjW_DK1
+!s85 0
+vtb_image_reliable
+R4
+I?XkaikKgokS[bWg?[Z0;[3
+VVcfUWa<l7CFR[eUEYFd2V1
+Z18 !s105 tb_image_reliable_v_unit
+S1
+R3
+Z19 w1791103147
+Z20 8../tb_image_reliable.v
+Z21 F../tb_image_reliable.v
+L0 2
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 _Cd;5[TzVD>eJjEg4QK>@3
+!s85 0
+vtb_image_reliable_full
+R4
+I`?:FUHQjkckUgmjS;Uf6<2
+V6j>BF1???A:cC1NSClzLO0
+R18
+S1
+R3
+R19
+R20
+R21
+L0 107
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 fYVP1fmD<?9U^5UDYRmmb2
+!s85 0
+vtb_image_resolution
+R4
+IOIIHGQgzYP6`SE<FnIS502
+VnngUfbmhlNPn<oXVijC=01
+R18
+S1
+R3
+R19
+R20
+R21
+L0 115
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 UD8T?JZkZZzMN>AnFNJd33
+!s85 0
+vtb_image_tagged_full
+R4
+I52H2a3UUhziE<ViQL0>3Z3
+V3bE]X<QmjkMA0gO?1oY`:1
+R18
+S1
+R3
+R19
+R20
+R21
+L0 111
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 _WeI^H4DRX]d`Fg^Vl4NY1
+!s85 0

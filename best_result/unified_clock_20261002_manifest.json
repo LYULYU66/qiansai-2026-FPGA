@@ -1,0 +1,919 @@
+{
+  "release": "unified_clock_20261002",
+  "seed": 7,
+  "board_verified": false,
+  "timing_closed": false,
+  "default_time": "09:00:00",
+  "calendar_enabled": false,
+  "rtc_persistence": false,
+  "independent_digit_coverage_pixels": 3840,
+  "resources": {
+    "lut": 17643,
+    "reg": 8707,
+    "bram9k": 47,
+    "bram32k": 7,
+    "dsp": 6,
+    "pll": 3
+  },
+  "baseline_resources": {
+    "lut": 17553,
+    "reg": 8622,
+    "bram9k": 46,
+    "bram32k": 7,
+    "dsp": 6,
+    "pll": 3
+  },
+  "resource_delta": {
+    "lut": 90,
+    "reg": 85,
+    "bram9k": 1,
+    "bram32k": 0,
+    "dsp": 0,
+    "pll": 0
+  },
+  "setup_wns_ns": -5.699,
+  "setup_tns_ns": -456.217,
+  "hold_wns_ns": -1.263,
+  "hold_tns_ns": -7.829,
+  "clocks": [
+    {
+      "id": "clk0",
+      "mhz": 25,
+      "setup_ns": 0.313,
+      "hold_ns": -0.033
+    },
+    {
+      "id": "clk1",
+      "mhz": 100,
+      "setup_ns": -3.011,
+      "hold_ns": -0.06
+    },
+    {
+      "id": "clk2",
+      "mhz": 100,
+      "setup_ns": -5.699,
+      "hold_ns": -1.263
+    },
+    {
+      "id": "clk3",
+      "mhz": 50,
+      "setup_ns": 3.481,
+      "hold_ns": -0.786
+    },
+    {
+      "id": "clk4",
+      "mhz": 12.295,
+      "setup_ns": 64.497,
+      "hold_ns": 0.223
+    },
+    {
+      "id": "clk5",
+      "mhz": 125,
+      "setup_ns": 0.485,
+      "hold_ns": 0.23
+    },
+    {
+      "id": "clk6",
+      "mhz": 100,
+      "setup_ns": -1.86,
+      "hold_ns": 4.74
+    },
+    {
+      "id": "clk7",
+      "mhz": 75.002,
+      "setup_ns": 0,
+      "hold_ns": 0
+    }
+  ],
+  "source_bit": "src/td_project/resopt_Runs/phy_clock_packed_s7_20261002/lab_ex5_i2s_v1.0.bit",
+  "bit_sha256": "C0C548B319A5F2A32BF866E76CC1332233B95FA15BE4D5CEF97034DBD71C68DF",
+  "bit_bytes": 679676,
+  "rollback_bit": "best_result/lab_ex5_i2s_v1.0_page3_relax_fast_audio_20261002.bit",
+  "rollback_sha256": "8CA6F20E0BF3E82982B140C7A736CF0623F99370CABAF1BD89ED7D3B978CB882",
+  "pcm_sha256": "8512A513C526C26A4F5E4C7BFD0A4DFB449F97FAED4FAE4C1016FB99CB3A1831",
+  "source_hashes": {
+    "src/td_project/al_ip/PLL.v": "4E873EEF9499FA93508D8CF2CAC90EEA0E16C6F649AE29502CDC4C5886CD32AA",
+    "src/td_project/al_ip/PLL.vhd": "E46792BB3D2B72621B18B323C472213FD5880EB29E5E85F0B7D50E5117E47494",
+    "src/td_project/al_ip/PLL_HDMI_AUDIO.v": "4152904C9FE0A01DFB9B5E47FDBE9FDF2F02EBCCEF66B9E81451D3E88D4AB5A2",
+    "src/user_source/constraints_source/pin.adc": "93368635C9A1347FAC4CB8F79944D809D8AEDB2FA3AEACEC276F96F4BDB47813",
+    "src/user_source/constraints_source/timing.sdc": "ADDC88D719039514D6B5B70CC6B780CD5E77E938C0D0F1D5363D32AD8E75329B",
+    "src/user_source/hdl_source/alarm_switch_control.v": "4503863C7AACACC8F5B5489690C2185DF12E0B09275EF0FC25F38848D5C97E64",
+    "src/user_source/hdl_source/audio_alarm_mixer.v": "73C2309D1434D291EB8661AF0B1CFA024BD48354314DB138E71FA148100C5542",
+    "src/user_source/hdl_source/audio_arc_calculate.v": "81D282E3D8BCFC56567F252BD214866AC66FA30F0C0B126845C92E149C15933A",
+    "src/user_source/hdl_source/audio_lyric_timeline.v": "4A2A493899850EE22F3F4B084B070F705F235CB5B97A68D90A954D94328EFD5B",
+    "src/user_source/hdl_source/audio_spectrum_analyzer.v": "1105978B059A974F529D6C729A3D41A34FABBC1E7005641895605942C1CCFC14",
+    "src/user_source/hdl_source/audio_visualizer_overlay.v": "9B55E4CC71A255615A7FD3D21CE761E9C6982CBD76ABEB67C7F0A4CFC930FDC5",
+    "src/user_source/hdl_source/audio_waveform_analyzer.v": "F9AACDA9C73E47EE84E490E4C115ABD77845AFF3E8CDCC9898679773E6939BC4",
+    "src/user_source/hdl_source/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v": "867E0B0BDD874BC383D00918C9E1BE3FE01EDF41F343B6A0D73E262776596A63",
+    "src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v": "2617E785BC8D6563C3AB1CE94431314FEBF6A11B7B00A1DE4942EF7AE4FFA199",
+    "src/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v": "1A946821E904C411F4DBF8F6D839B59622CBF9E5EA0844CCEC6769EBE07F769E",
+    "src/user_source/hdl_source/hdmi_phy_warpper.v": "416B082B0987001BDBC0A7E20A557CB8FB1DCA34E25DC881E6D28A8CB3CF4300",
+    "src/user_source/hdl_source/I2S_receiver.v": "327271F25B3CE4348885569F544D33D8BD02C80CC2FD4524D2EEBEC814781416",
+    "src/user_source/hdl_source/include/global_def.v": "433240EC48021DBB559D3532C67526F1338C6CC6CE15D26E1D987FE89E61DA42",
+    "src/user_source/hdl_source/include/sdr_as_ram.enc.v": "767DBDFBD83D42223B77DFA7DEAB42CE8216A8FD6F6CB41B7E7593D9A345BA57",
+    "src/user_source/hdl_source/include/sdr_init_ref.enc.v": "3DA1D34D3FB8A5108A74185EDF7FE6836B28807B31F47F74EAB87DE4F23186B8",
+    "src/user_source/hdl_source/include/sdr_wrrd.enc.v": "C7D7FE07D75F66AA88D9F986B3006319C995162434F104F9990664B374CDFDD2",
+    "src/user_source/hdl_source/IP/afifo_16_256.tcl": "5807155B00F2F749328339E01A85B4BB836F91598286DD167513836B60AF33DB",
+    "src/user_source/hdl_source/IP/afifo_16_256.v": "DAB43A76A35E21DF4064A25EDB940699B041427D70BAE89CC03C5280B7BF4BF8",
+    "src/user_source/hdl_source/IP/afifo_16_256.vhd": "50D6D10017B63E1CE5A77BAD4A80E9A3DE81402909D30CA0818674A1887EB46D",
+    "src/user_source/hdl_source/IP/afifo_16_256_sim.v": "55B81AB3AA699902B6F11FE766658B852E0740844879A942DCA81CD57B40F729",
+    "src/user_source/hdl_source/IP/afifo_16_32_256.tcl": "5807155B00F2F749328339E01A85B4BB836F91598286DD167513836B60AF33DB",
+    "src/user_source/hdl_source/IP/afifo_16_32_256.v": "3D29B06655482184A9AD157B9BD71B79032DEBE3199168D3B4D9570FDAC31835",
+    "src/user_source/hdl_source/IP/afifo_32_16_256.tcl": "5807155B00F2F749328339E01A85B4BB836F91598286DD167513836B60AF33DB",
+    "src/user_source/hdl_source/IP/afifo_32_16_256.v": "7C3EE41F30BE75AE686C9ABFF3A840FC5439209CDA077E4AA275EAC0DAB9F564",
+    "src/user_source/hdl_source/IP/sdram.v": "1487E8583BBF52FE6D079A2854C10EBFF2E569A3872A9088C1C9717BA14D17FE",
+    "src/user_source/hdl_source/IP/sdram.vhd": "853170E99291FB6B2B1BF3F5F20CD1DD0CC723052864147810B674E18CD70705",
+    "src/user_source/hdl_source/IP/sys_pll.v": "8F3017A8A0DCAABCBE6DECD36F3BFEF944C6B08CEC867C845D18DE46C6879689",
+    "src/user_source/hdl_source/IP/sys_pll.vhd": "DE786886D135E4884AF0CA5D62BC8463983C174E48D37A9D9C3DB2484D5C504C",
+    "src/user_source/hdl_source/IP/video_pll.v": "57E45A062814673E97773CF6C58FF1629FA45895E30DE9D2C2B6BDD30BD9BB13",
+    "src/user_source/hdl_source/IP/video_pll.vhd": "4C23A8A81B28C81BED4834E1E9A757DB01EEBD360C7FE3A7066F8F8F7B6A36C4",
+    "src/user_source/hdl_source/key_remove_shakes.v": "8832F59E7BA94BFB8CF31E4F5A772EF7177D5257A5A2532D53CBFA1D9B7F5CD9",
+    "src/user_source/hdl_source/lane_lvds_10_1.v": "DE9529321354F04837E051D0EC1681CF44783D4BE3284703A788E081147500BC",
+    "src/user_source/hdl_source/lyric_song_data.v": "C9C83B5BCA1690FEEE3489BBF16C11946275CF9FBEEE5BB8C01E1899D9631C1D",
+    "src/user_source/hdl_source/osd_alpha_overlay.v": "17AD2C2F3A7BA2601CA6173FCF73EDE9499A74701D43E877A8DB07971745A115",
+    "src/user_source/hdl_source/SD/ax_debounce.v": "93AA6DD38051250CC7F777C88466AC180AFE9BCDCE7838B9EA506455D8CBC9B8",
+    "src/user_source/hdl_source/SD/bmp_bilinear_stream.v": "3A88AA856B41CB7A34BFFBE5073703F43BA68FE3ABE4877E614DE577BCBED774",
+    "src/user_source/hdl_source/SD/bmp_read.v": "3D5C379E13BDA23E5DA44903F66901394E4DC1FBC5A7C8607659BCC79A3C1176",
+    "src/user_source/hdl_source/SD/color_bar.v": "AFE1F56714EC58D2477BA1717E5A36C5A0DA5FE5C07D70D11AA5ACE710C4B152",
+    "src/user_source/hdl_source/SD/frame_fifo_read.v": "AA456AFB9C01F6BC4D976DF1F5D1A0DB39885FDECA2CFAAB71A5C6087C4B172C",
+    "src/user_source/hdl_source/SD/frame_fifo_write.v": "2C0F735EBE0CC38D3C3E3B404A0D3121412254EE3AD1DAF6CE49573856837715",
+    "src/user_source/hdl_source/SD/frame_read_write.v": "E02024EC44F149E9354672FC599C24B2804F05621719228177766B1DB5C228E5",
+    "src/user_source/hdl_source/SD/sd_card_bmp.v": "042130732E122D3C120EDE834E57550D296B0E5547CFBF856524D3EE8B97B301",
+    "src/user_source/hdl_source/SD/sd_card_cmd.v": "A1A50502AFD4E8B238B0627CD5F204C04738E761D49AB48F33DA35E22BA4A5FA",
+    "src/user_source/hdl_source/SD/sd_card_sec_read_write.v": "AA73E64F7A8EDF767BEF0D7205702BB697AB4080E3FF012DE0C29BE2EE0A9FCC",
+    "src/user_source/hdl_source/SD/sd_card_top.v": "00AC5EB15CE2D5B1D3FF87D6CB5BE44AF50106A96327FBC8A580B831274CB123",
+    "src/user_source/hdl_source/SD/sdram.v": "2D985C2477384E677C25714241E1A50206DEF8916AA03189A5B313B2D22DFC99",
+    "src/user_source/hdl_source/SD/seg_decoder.v": "62A2664BE7DB6D0DACE31FC97A8FAEF0C43F44B639B1D5A6A2C49773812A3B5E",
+    "src/user_source/hdl_source/SD/seg_scan.v": "C61D6B6808E06DD0EDC6DB2D8F214426A1FB96D546556ECD1F74EA9CA6889F52",
+    "src/user_source/hdl_source/SD/spi_master.v": "37F7A21144FA5CCA3CC5C3B5F68A5AD40B3108336B600E45A1367734AC61403C",
+    "src/user_source/hdl_source/SD/video_define.v": "77748966850A8F5AF0D77F2CDB08006088BA5E1A31B98391FBA6CC61C5247DA2",
+    "src/user_source/hdl_source/SD/video_delay.v": "F47C4B63F8BAA6D8874C87DCA5B72DFDADD19F4A107403DA98752BCE98936433",
+    "src/user_source/hdl_source/SD/video_timing_data.v": "C6F75501E98DD5995F687AAFB40455BEFFE45B426137B5089A73AC3A036F7282",
+    "src/user_source/hdl_source/startup_pulse.v": "396E1E56FEBB8028339E646BC2F06B83E07AB11EF840E447422FB941956741C9",
+    "src/user_source/hdl_source/top_tf_hdmi_audio.v": "8C60BFC13E80D8607972E0D392C6FA5DC33936B45F2A4BC5878164592BCE30FC",
+    "src/user_source/hdl_source/uart_audio_control.v": "82F4BAE8C513B5B1B0C71419C38842191B3EBF795408A50B0E65BFFAEDEDB35F",
+    "src/user_source/hdl_source/uart_baud_tick.v": "86701937B016AB297B46BBBA8A7ACC00B03F7F9E636C3EFC34ED176E1FF2809F",
+    "src/user_source/hdl_source/uart_rx.v": "D75F9978C9D55D8516DAA5BCD6C9102E670D7508FA113E8C31B5A85C59232ECB",
+    "src/user_source/hdl_source/uart_tx.v": "6E607568AFBFE2CF1EC019CF7E5ECDE36DABA630F20568F5D8A5527A9B4B25B3",
+    "src/user_source/hdl_source/vehicle_hazard_overlay.v": "CDAFBC0AFF61000F72CF309769CBAEDD6A9A6DA61E292BA2FD65AC327BF63CF9",
+    "src/user_source/hdl_source/video_album_cover_rom.v": "3D7411B079B2CE5981ECDFD9ED7AE41E200A149ECA9583928F58E60473167FCF",
+    "src/user_source/hdl_source/video_app_icons_rom.v": "F1D460B691449680F492390CB021A8A3B0EAEA146C4FFD57F615205CDD95F6C9",
+    "src/user_source/hdl_source/video_clock_digit_rom.v": "B90E3018BD3D24615D9009760CF293F7597BE72B295483F0826AF8DCC1B138D5",
+    "src/user_source/hdl_source/video_frame_valid_gate.v": "AA4962A5B2339EC8691692DFF611B2F4E9474D9A6D7F95EF1273705F471403C6",
+    "src/user_source/hdl_source/video_home_overlay.v": "023FDD9B69EFA77C3331B6766BC1BABDCC4755DCCA908B74E2C212CE6F92A038",
+    "src/user_source/hdl_source/video_image_adjust.v": "CB6C1301EDB45B68CCF30F06FBAF14356017A42B407E7698FA99969F24632C29",
+    "src/user_source/hdl_source/video_lyric_overlay.v": "562838F38E0FD080865CFA6CA03635572546DBF525BF5DEE898A209C441691A3",
+    "src/user_source/hdl_source/video_pixel_diagnostics.v": "F48BDF1619FA0297DA025A61957FBF418D9BB65F09AD7923839E6353BE54BB84",
+    "src/user_source/hdl_source/video_relax_overlay.v": "CC8AA7D9CAFCBB93E6D1E2CBDC9761A16CA2877A46C2DDE6001C79655A9F7A2B",
+    "src/user_source/hdl_source/video_rgb_to_axis_640x480.v": "82DA3DF6220842F072654800453ADB860DAF22126E81873F96E6769AE964E57F",
+    "src/user_source/hdl_source/video_source_test.v": "39CC05C9684A594D4254D11E66E97344053AB75BDB00F3F5A301643FD7AADBFC",
+    "src/user_source/hdl_source/video_status_overlay.v": "2694317AF33519E9C2EB5A69DCBADD46E26D811746D86ED7427D5DD252D39DF2",
+    "src/user_source/hdl_source/video_transition_effects.v": "654018C079E9EA252F01C5383E617CCDCE6DF6E98CB7BF6AF349C88E3D5AEE01",
+    "src/user_source/hdl_source/video_unified_clock.v": "558C2D52030C648F68146FB4AA90FF848E486D0BEF0B873C2C869A341F5CA450",
+    "src/user_source/ip_source/pll.v": "202799F886F12CFC1D837AFA932328B636C6C3DEE70167BE68C084133647B39C",
+    "src/user_source/ip_source/pll.vhd": "A8166865B5AEF9CAAEE525D4633AA1DEC4172244A7BBFF239E0D658C0CA775E4"
+  },
+  "build_files": {
+    "src/td_project/lab_ex5_i2s_v1.0.al": "564D01641C8F50F0F326A58EE52FCB064146577A5BA06DDA9D7089449F16C165",
+    "src/td_project/resopt_Runs/syn_clock_packed_20261002/lab_ex5_i2s_v1.0.prj": "64E49A2E1B3842736FFC3D9A43291935D838E6091617D7FF08A1B161276FD306",
+    "src/td_project/resopt_Runs/syn_clock_packed_20261002/settings.cfg": "E8BBE93F910238E34AEFCBF77F5EC38CAC587225AD857AD09F7877E5201B67A7",
+    "src/td_project/resopt_Runs/syn_clock_packed_20261002/lab_ex5_i2s_v1.0.tcl": "7155E0398142F4240A3BA0E760F8B2BD40D997662A7561773C48ED707DFD4678",
+    "src/td_project/resopt_Runs/phy_clock_packed_s7_20261002/lab_ex5_i2s_v1.0.prj": "64E49A2E1B3842736FFC3D9A43291935D838E6091617D7FF08A1B161276FD306",
+    "src/td_project/resopt_Runs/phy_clock_packed_s7_20261002/settings.cfg": "0193E5777371107D0BC3548D9761C294FD0EC02CA83AD66030F67EDBCCFC9EDB",
+    "src/td_project/resopt_Runs/phy_clock_packed_s7_20261002/lab_ex5_i2s_v1.0.tcl": "7155E0398142F4240A3BA0E760F8B2BD40D997662A7561773C48ED707DFD4678"
+  },
+  "unchanged_source_files": [
+    "src/td_project/al_ip/PLL.v",
+    "src/td_project/al_ip/PLL.vhd",
+    "src/td_project/al_ip/PLL_HDMI_AUDIO.v",
+    "src/user_source/constraints_source/pin.adc",
+    "src/user_source/constraints_source/timing.sdc",
+    "src/user_source/hdl_source/alarm_switch_control.v",
+    "src/user_source/hdl_source/audio_alarm_mixer.v",
+    "src/user_source/hdl_source/audio_arc_calculate.v",
+    "src/user_source/hdl_source/audio_lyric_timeline.v",
+    "src/user_source/hdl_source/audio_spectrum_analyzer.v",
+    "src/user_source/hdl_source/audio_visualizer_overlay.v",
+    "src/user_source/hdl_source/audio_waveform_analyzer.v",
+    "src/user_source/hdl_source/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+    "src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v",
+    "src/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v",
+    "src/user_source/hdl_source/hdmi_phy_warpper.v",
+    "src/user_source/hdl_source/I2S_receiver.v",
+    "src/user_source/hdl_source/include/global_def.v",
+    "src/user_source/hdl_source/include/sdr_as_ram.enc.v",
+    "src/user_source/hdl_source/include/sdr_init_ref.enc.v",
+    "src/user_source/hdl_source/include/sdr_wrrd.enc.v",
+    "src/user_source/hdl_source/IP/afifo_16_256.tcl",
+    "src/user_source/hdl_source/IP/afifo_16_256.v",
+    "src/user_source/hdl_source/IP/afifo_16_256.vhd",
+    "src/user_source/hdl_source/IP/afifo_16_256_sim.v",
+    "src/user_source/hdl_source/IP/afifo_16_32_256.tcl",
+    "src/user_source/hdl_source/IP/afifo_16_32_256.v",
+    "src/user_source/hdl_source/IP/afifo_32_16_256.tcl",
+    "src/user_source/hdl_source/IP/afifo_32_16_256.v",
+    "src/user_source/hdl_source/IP/sdram.v",
+    "src/user_source/hdl_source/IP/sdram.vhd",
+    "src/user_source/hdl_source/IP/sys_pll.v",
+    "src/user_source/hdl_source/IP/sys_pll.vhd",
+    "src/user_source/hdl_source/IP/video_pll.v",
+    "src/user_source/hdl_source/IP/video_pll.vhd",
+    "src/user_source/hdl_source/key_remove_shakes.v",
+    "src/user_source/hdl_source/lane_lvds_10_1.v",
+    "src/user_source/hdl_source/lyric_song_data.v",
+    "src/user_source/hdl_source/osd_alpha_overlay.v",
+    "src/user_source/hdl_source/SD/ax_debounce.v",
+    "src/user_source/hdl_source/SD/bmp_bilinear_stream.v",
+    "src/user_source/hdl_source/SD/bmp_read.v",
+    "src/user_source/hdl_source/SD/color_bar.v",
+    "src/user_source/hdl_source/SD/frame_fifo_read.v",
+    "src/user_source/hdl_source/SD/frame_fifo_write.v",
+    "src/user_source/hdl_source/SD/frame_read_write.v",
+    "src/user_source/hdl_source/SD/sd_card_bmp.v",
+    "src/user_source/hdl_source/SD/sd_card_cmd.v",
+    "src/user_source/hdl_source/SD/sd_card_sec_read_write.v",
+    "src/user_source/hdl_source/SD/sd_card_top.v",
+    "src/user_source/hdl_source/SD/sdram.v",
+    "src/user_source/hdl_source/SD/seg_decoder.v",
+    "src/user_source/hdl_source/SD/seg_scan.v",
+    "src/user_source/hdl_source/SD/spi_master.v",
+    "src/user_source/hdl_source/SD/video_define.v",
+    "src/user_source/hdl_source/SD/video_delay.v",
+    "src/user_source/hdl_source/SD/video_timing_data.v",
+    "src/user_source/hdl_source/startup_pulse.v",
+    "src/user_source/hdl_source/uart_audio_control.v",
+    "src/user_source/hdl_source/uart_baud_tick.v",
+    "src/user_source/hdl_source/uart_rx.v",
+    "src/user_source/hdl_source/uart_tx.v",
+    "src/user_source/hdl_source/vehicle_hazard_overlay.v",
+    "src/user_source/hdl_source/video_album_cover_rom.v",
+    "src/user_source/hdl_source/video_app_icons_rom.v",
+    "src/user_source/hdl_source/video_frame_valid_gate.v",
+    "src/user_source/hdl_source/video_image_adjust.v",
+    "src/user_source/hdl_source/video_lyric_overlay.v",
+    "src/user_source/hdl_source/video_pixel_diagnostics.v",
+    "src/user_source/hdl_source/video_relax_overlay.v",
+    "src/user_source/hdl_source/video_rgb_to_axis_640x480.v",
+    "src/user_source/hdl_source/video_source_test.v",
+    "src/user_source/hdl_source/video_status_overlay.v",
+    "src/user_source/hdl_source/video_transition_effects.v",
+    "src/user_source/ip_source/pll.v",
+    "src/user_source/ip_source/pll.vhd"
+  ],
+  "fresh_regressions": [
+    {
+      "log": "sim/resource_all_20261002/tb_alarm_switch_control.log",
+      "sha256": "B6BC91A968DD0B8240FD15446E8B140570915E2F430A17BEB2BC6FF2C0F88EA3",
+      "pass": [
+        "PASS tb_alarm_switch_control: four independent debounced directions"
+      ],
+      "modified": 1790946071.880217
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_audio_alarm_mixer.log",
+      "sha256": "296D1B2733F4F9B4C30514776291E46B72CE933192FFC43D54E47C262B8BA483",
+      "pass": [
+        "PASS audio_alarm_mixer priority=ok duck=ok muted_alarm=ok stereo=ok saturation=ok"
+      ],
+      "modified": 1790946072.8349967
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_audio_visualizer_overlay.log",
+      "sha256": "02219652F967E0CB4FB989931D7AC3341545D430F3F74B443F390316B670CA66",
+      "pass": [
+        "PASS audio visualizer overlay geometry and hazards"
+      ],
+      "modified": 1790946074.833913
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_video_image_adjust.log",
+      "sha256": "2428D8AF44D8FA040F98D6D70B411ECE25365E341E8F5441BF8BCB46D03B7B57",
+      "pass": [
+        "PASS BRI100/CON25 natural path        rgb=c86428",
+        "PASS no mid-frame setting tear        rgb=c86428",
+        "PASS 75/75 mapped channels            rgb=b04000",
+        "PASS 50/50 pending until frame        rgb=b04000",
+        "PASS 50/50 mapped channels            rgb=6c2c08",
+        "PASS 25/100 mapped channels           rgb=401000",
+        "PASS 25 contrast natural image        rgb=c86428",
+        "PASS 100 contrast expanded image      rgb=fc4800",
+        "PASS RGB666 dark-colour stabilization rgb=7c3818",
+        "PASS tb_video_image_adjust: all checks passed"
+      ],
+      "modified": 1790946075.758813
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_video_status_overlay.log",
+      "sha256": "8AE3D1DF9D4F6FC8BA8C4C4B49983AAB77283AFC07FA3EE2131B273F03C22048",
+      "pass": [
+        "PASS FRAMELESS STATUS BRI=164 CON=167 VOL=124"
+      ],
+      "modified": 1790946076.799553
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_osd_alpha_overlay.log",
+      "sha256": "4DFDE76C76A8DA636B5026D353F6A25C2BE2293A698EDE6A1E1022C4A7D0C4F1",
+      "pass": [
+        "PASS OSD fixed_bar=2 text=93 phase=200->201 wrap=839->0"
+      ],
+      "modified": 1790946078.8433774
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_video_frame_valid_gate.log",
+      "sha256": "9660483AB73AA535607612B4D2F6F62A4EBE00E5B6C827735C6815D970A3B6F3",
+      "pass": [
+        "PASS VIDEO_VALID frame_boundary_only startup_image1_safe"
+      ],
+      "modified": 1790946079.7626245
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_video_rgb_to_axis_640x480.log",
+      "sha256": "EEB8F644A771A279AEA15B83FB6E54C34C3075652C0CF5EFEC597952F0DC359A",
+      "pass": [
+        "PASS AXIS_FRAME pixels=640 user=1 last_pos=640"
+      ],
+      "modified": 1790946080.6638079
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_video_pixel_diagnostics.log",
+      "sha256": "56517E42A146C7B9DB755A991BAE37BEDBEBB9C9AA64C486983512184AE42365",
+      "pass": [
+        "PASS PIXEL_DIAGNOSTICS 10240 pixels; frame-boundary switching; sticky A/B/H; clear/re-arm"
+      ],
+      "modified": 1790946082.0316477
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_video_frame_crc_monitor.log",
+      "sha256": "606818A3FBFD7356F4B42AF82FC1521A98F6B43A0D1159B76C7FF2DD4771E82C",
+      "pass": [
+        "PASS FRAME_CRC vector, first/last pixel bit faults, clear mid-frame, transition/index exclusions, missing/extra pixels"
+      ],
+      "modified": 1790946082.9874077
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_audio_spectrum_analyzer.log",
+      "sha256": "A8F42C464818A782F698163A46CCC498934D9A46F6DC8F7E2820A2C6625232B9",
+      "pass": [
+        "PASS audio spectrum analyser"
+      ],
+      "modified": 1790946084.5762606
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_audio_waveform_analyzer.log",
+      "sha256": "B179BB09C2ED242922E83980584B5CADA3B86F629B727427FB0DFF8F65F1C1D5",
+      "pass": [
+        "PASS audio waveform analyser"
+      ],
+      "modified": 1790946085.487612
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_audio_visual_volume_mapping.log",
+      "sha256": "24F7FF78F433EEC5B97BDDF164123319A47C400C61715DF735068DC1801EBBAD",
+      "pass": [
+        "PASS VISUAL_VOLUME spectrum=96/48/24/0 waveform_mute=0 frame_atomic=ok"
+      ],
+      "modified": 1790946086.4458554
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_uart_audio_control.log",
+      "sha256": "6915095B9F5F6D1E229068FA4A191F576176CA4EE524CA6D69B03EE1DC55BB81",
+      "pass": [
+        "PASS UART removed TEST/DIAG/DCLEAR commands answer ERR",
+        "PASS UART parser/tx volume regression + BRI/CON 25/50/75/100 + STATUS"
+      ],
+      "modified": 1790946087.421279
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_hdmi_audio_pcm_i2s.log",
+      "sha256": "032DB6CFF8403CF40AD142F6BDCBF70BD2870B63DF95504CAF9A83A3F7C10AF0",
+      "pass": [
+        "PASS PCM_I2S data=ok underflow_fallback=ok rebuffer_restart=ok reads=3"
+      ],
+      "modified": 1790946088.3211458
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_hdmi_audio_chain.log",
+      "sha256": "9EA769B104301CB43912AF29F40D172C0BE109BCEDDE724442762DA559060C33",
+      "pass": [
+        "PASS samples=144 nonzero=143 acr=3 last_cts=0 n=0"
+      ],
+      "modified": 1790946089.3973682
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_bmp_pcm_stream.log",
+      "sha256": "C8081DEA4F033EAED44D37F49F3BCA3D1AF7C953D0D03B843AE92B48DF0A0F4B",
+      "pass": [
+        "PASS PCM_SCAN bmp=4 music=found fragmented=7_to_9 loop=ok bytes=1040"
+      ],
+      "modified": 1790946090.351786
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_sd_card_bmp_playback.log",
+      "sha256": "693B0E8D68345F5849C7ECCE6E944E1B46096A43E2BA5FA7491369E7687CC6CF",
+      "pass": [
+        "PASS PLAYBACK first=1 manual=2 auto=1 background_preload=ok emergency_hold=ok"
+      ],
+      "modified": 1790946091.3078399
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_audio_spectrum_resource_equivalence.log",
+      "sha256": "A36FFD3579BB507D71CD0ADA3DE2ACD4EF84BBF0338EDECBC9FC468CCFADF5D1",
+      "pass": [
+        "PASS SPECTRUM_EQ 6147 stereo samples; settled outputs bit-identical within 200 cycles (<520 real cadence); extrema, random, partial-block mute/restart"
+      ],
+      "modified": 1790946096.5167668
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_bmp_resource_equivalence.log",
+      "sha256": "E3EB32CC73F5EEA0FF6BE342947972225475FB7518EF71B913D79AC8FBAD270C",
+      "pass": [
+        "PASS BMP_EQ spc=1 MBR=0 directory_fragment=ok images=4 pixels=2048 PCM_fragment_and_loop=ok",
+        "PASS BMP_EQ spc=2 MBR=128 directory_fragment=ok images=4 pixels=2048 PCM_fragment_and_loop=ok",
+        "PASS BMP_EQ spc=4 MBR=0 directory_fragment=ok images=4 pixels=2048 PCM_fragment_and_loop=ok",
+        "PASS BMP_EQ spc=8 MBR=65536 directory_fragment=ok images=4 pixels=2048 PCM_fragment_and_loop=ok",
+        "PASS BMP_EQ spc=16 MBR=0 directory_fragment=ok images=4 pixels=2048 PCM_fragment_and_loop=ok",
+        "PASS BMP_EQ spc=32 MBR=16777216 directory_fragment=ok images=4 pixels=2048 PCM_fragment_and_loop=ok",
+        "PASS BMP_EQ spc=64 MBR=0 directory_fragment=ok images=4 pixels=2048 PCM_fragment_and_loop=ok",
+        "PASS BMP_EQ spc=128 MBR=32768 directory_fragment=ok images=4 pixels=2048 PCM_fragment_and_loop=ok",
+        "PASS BMP_RESOURCE_EQ all 8 FAT cluster sizes, all external outputs identical every cycle",
+        "PASS FAT_CLUSTER_BOUNDS 1024 boundary/masking and 10000 random checks"
+      ],
+      "modified": 1790946099.8111053
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_waveform_resource_equivalence.log",
+      "sha256": "1541295303E151DA94767166917984833B1DADBCAC75B8F67B76BF0580F6B0DA",
+      "pass": [
+        "PASS WAVEFORM_EQ 120000 cycles, 107 publications"
+      ],
+      "modified": 1790946101.865776
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_visualizer_latest_equivalence.log",
+      "sha256": "C331F2B314ED49EB60C26211FF08833B788A357D3A33166BE2DF6CFDB14AD127",
+      "pass": [
+        "PASS VISUAL_EQ 1228800 pixels bit-identical: spectrum, waveform, VU, volume, hazards, bypass"
+      ],
+      "modified": 1790946676.844074
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_visualizer_latest_sequence.log",
+      "sha256": "354889E4780A7114C962332EDA59824C3EE6BF83DFD4483B0A1E1C923FF23760",
+      "pass": [
+        "PASS VISUAL_SEQUENCE_EQ 12377 cycles; all volumes, saturation, snapshot isolation, interrupted frames"
+      ],
+      "modified": 1790946677.7429945
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_spectrum_abort_recovery.log",
+      "sha256": "4A85F6B156D29409F198E1B9F2A1F297DFE0388468B3417FC1F28801C5FCE72D",
+      "pass": [
+        "PASS packed spectrum abort/recovery: 24 epochs, 9252 stereo samples, disable+reset at every 12 processing states, partial writes ignored, exact outputs and 520-cycle deadlines"
+      ],
+      "modified": 1790946689.6421897
+    },
+    {
+      "log": "sim/resource_all_20261002/tb_smooth_math_exhaustive.log",
+      "sha256": "9E08E31A4978C18E07FA35DFFCB8CC997BFBB2F6B5835F92A2C52BEE6E343572",
+      "pass": [
+        "PASS exhaustive signed smooth math: 32768 comparisons, all 128x128 endpoint pairs, old/new exact including saturation"
+      ],
+      "modified": 1790946690.507725
+    },
+    {
+      "log": "sim/vehicle_warning_4dir_20260930/tb_vehicle_hazard_overlay.log",
+      "sha256": "3580B84CFDE2F681C0966D6F5D8106392442CD53E80A908CB71D4637CE117E3A",
+      "pass": [
+        "PASS vehicle_hazard_overlay: frame lock, priority, simultaneous borders and flash rates"
+      ],
+      "modified": 1790946104.043749
+    },
+    {
+      "log": "sim/vehicle_warning_4dir_20260930/tb_video_transition_effects.log",
+      "sha256": "C535DCC569197AAE67536FA2A49EB414C9F164E37FEC1EA10AD48738ADC7CC3E",
+      "pass": [
+        "PASS TRANSITIONS fade=1->2 left=2->3 right=3->4 grid=4->1 steps=32"
+      ],
+      "modified": 1790946104.8536422
+    },
+    {
+      "log": "sim/vehicle_warning_4dir_20260930/tb_warning_preload.log",
+      "sha256": "FB9328AE2A8D0A89F89BEC8C10A589FCCDF8F7B7ABE3CCE521FF941FDDDA8F40",
+      "pass": [
+        "PASS warning preload: all four buffers load during danger, image 4 waits for writer completion"
+      ],
+      "modified": 1790946106.482787
+    },
+    {
+      "log": "sim/vehicle_warning_4dir_20260930/tb_warning_direct_switch.log",
+      "sha256": "DB62C380C14AFDCCD5600E24BA7289E4869216A4A80063C8FBB25207618527B0",
+      "pass": [
+        "PASS direct warning switch: 42 frames, 42 SDRAM base checks, all pages/effects, hold/release, preload and boundary races"
+      ],
+      "modified": 1790946107.3525076
+    },
+    {
+      "log": "sim/vehicle_warning_4dir_20260930/tb_transition_resource_equivalence.log",
+      "sha256": "8F713B272D1ACF4E0582CCA10DD1C766115F892F560808F0DDFFA28765AADCCE",
+      "pass": [
+        "PASS TRANSITION_EQ 675840 pixels all 32 steps, four effects, short blanking"
+      ],
+      "modified": 1790946127.8718002
+    },
+    {
+      "log": "sim/vehicle_warning_4dir_20260930/tb_vehicle_warning_page.log",
+      "sha256": "DC2581C79CEC0F8DBDC9FA989078FEAD6C4FBE78CBFEB9A1FC5FF9C99F48A452",
+      "pass": [
+        "PASS vehicle warning page: 3686400 pixels, F/L/R/rear, 32px font, blink, retained border, frame lock and no playback OSD"
+      ],
+      "modified": 1790946173.0237682
+    },
+    {
+      "log": "sim/home_nav_app_20260930/tb_home_light_apps.log",
+      "sha256": "7CF98124BB57469412AA75FF71E6B97B0B1287BC7DADECEC504034495E39804E",
+      "pass": [
+        "PASS FOUR-CARD HOME: 307200 pixels, four 40px apps in 2x2 grid, four rounded cards, 40px navbar, 8px date gap, disabled passthrough"
+      ],
+      "modified": 1790946187.238334
+    },
+    {
+      "log": "sim/home_nav_app_20260930/tb_video_home_overlay.log",
+      "sha256": "E8D862705C5EDF03394F4170CF0A10034DBD2630F028775A932D0EF7857647FE",
+      "pass": [
+        "PASS HOME OVERLAY cards/nav/clock/pass-through counts=1110,376,439,227"
+      ],
+      "modified": 1790946193.6660495
+    },
+    {
+      "log": "sim/home_nav_app_20260930/tb_home_navigation_card.log",
+      "sha256": "DD90AF9024DCF58409E63073B83221361083E4371CD41737E127A4172F018EC5",
+      "pass": [
+        "PASS HOME CARDS changed=101836 outside=0 shape=0 blue=370 arrow=36 divider=23 dest=520 home=67/207 office=142/174 cover=1184 song=376 controls=100/78/111 apps=1524,1524,1524,1524 apptext=0 date=439 time=227 sun=301"
+      ],
+      "modified": 1790946202.302544
+    },
+    {
+      "log": "sim/home_nav_app_20260930/tb_home_dashboard_combined.log",
+      "sha256": "A4A62157958AE39120B660F539E7B3F787F3B25E30EBA243FDDA94840A89A157",
+      "pass": [
+        "PASS COMBINED DASHBOARD top=708 clock=1184 cards=56800"
+      ],
+      "modified": 1790946209.7807198
+    },
+    {
+      "log": "sim/home_nav_app_20260930/tb_nav_toolbar_alignment.log",
+      "sha256": "599A8970EC9EDDFEA0F15554BA99FEE4C3A3DC8D19F0DB56EFDE7F62041CF12D",
+      "pass": [
+        "PASS NAV/CAR ALIGNMENT: 51200 footer pixels, 4096 realistic-car pixels, three full frames, 1/2/3-cycle blanking, enable/pass-through"
+      ],
+      "modified": 1790946225.233265
+    },
+    {
+      "log": "sim/lyrics_20261001/audio_lyric_timeline.log",
+      "sha256": "7775547CF81D4C897C6827F05CE0B38208C5943F874C7979E73754A255309994",
+      "pass": [
+        "PASS smooth PCM timeline: per-sample interpolation within 1px, silent-gap holds, 200 exact loops, interlude preview, underflow freeze, stop/wrong-file, two-stage ROM and atomic CDC"
+      ],
+      "modified": 1790946240.2145622
+    },
+    {
+      "log": "sim/lyrics_20261001/video_lyric_overlay.log",
+      "sha256": "982A5922AB86EB05C2D05AA4C0686CFE61F36548CBBCB3F5D42590FD3B400573",
+      "pass": [
+        "PASS smooth 24px overlay: 4915200 pixels, two-row credits, shared card title, independent gates, per-pixel red feather, line-slide, frame-atomic updates, 1/2/3 blanks, exact bypass"
+      ],
+      "modified": 1790946263.5871913
+    },
+    {
+      "log": "sim/lyrics_20261001/packed_font.log",
+      "sha256": "9AAB8DFDE21CFE19D68FC4FC83CB5B134FCD6F0AE83650F470AD7459C1B01DA1",
+      "pass": [
+        "PASS packed font: 128744 synchronous pixel checks, all 133 glyphs, 64372 sequential + random addresses, one-clock latency, exact 2-bit antialias coverage"
+      ],
+      "modified": 1790946265.8622327
+    },
+    {
+      "log": "sim/lyrics_20261001/actual.log",
+      "sha256": "36D8D62B23892614F3C3011FA82041BBA507DA6B3BCCE8190AA6B099BFF48BFB",
+      "pass": [
+        "PASS actual smooth lyrics: 64372 font pixels, 512 delta entries, 373 events, exact EOF, 5836800 composed pixels; 24px, compact credits, shared music card, interlude preview, feathered sweep, line-slide, VS atomic, scroll unchanged"
+      ],
+      "modified": 1790946561.2512906
+    },
+    {
+      "log": "sim/lyrics_20261001/shared_card.log",
+      "sha256": "F6396C569A3058EF46793D6E1A01607A2CA44B72D7374C13A9102C6BC28CDA93",
+      "pass": [
+        "PASS shared music card: 1843200 pixels, homepage exact against pre-change RTL, page-2 confinement, alternating modes, enable bypass, 1/2/3-cycle blanking"
+      ],
+      "modified": 1790946621.5527067
+    },
+    {
+      "log": "sim/resource_all_20261002/bram32_font.log",
+      "sha256": "FD89D128361CA5FA1C9B5C35BE20FC8299465F7E51F155A42754E3AD3309EB32",
+      "pass": [
+        "PASS native BRAM32K font and character table: 128744 sequential/random reads each, every original coverage pixel, all 2048 character addresses, one-clock ports"
+      ],
+      "modified": 1790946657.4138687
+    },
+    {
+      "log": "sim/unified_clock_20261002/tb_unified_clock.log",
+      "sha256": "212B887F2E942182C65B741F030244F3EA69793BE2A5D614787BF1E122CC5CD3",
+      "pass": [
+        "PASS UNIFIED_CLOCK 86402 seconds: all second/minute/hour carries, midnight wrap, frame-atomic HHMM, default09:00 reset"
+      ],
+      "modified": 1790946298.8832774
+    },
+    {
+      "log": "sim/unified_clock_20261002/tb_clock_overlay.log",
+      "sha256": "BD56738A752C7755813C910BF5D8C983B7627145516FA0BCBCBD99C43FA11244",
+      "pass": [
+        "PASS clock raster page=          0 enabled=          1 ink=        547",
+        "PASS clock raster page=          1 enabled=          1 ink=        547",
+        "PASS clock raster page=          2 enabled=          1 ink=        529",
+        "PASS clock raster page=          3 enabled=          1 ink=        547",
+        "PASS clock raster page=          2 enabled=          1 ink=        477",
+        "PASS clock raster page=          0 enabled=          0 ink=          0",
+        "PASS CLOCK_OVERLAY     1843200 pixels, four page layouts, native antialias, no box, exact RGB pass-through"
+      ],
+      "modified": 1790946306.2081366
+    },
+    {
+      "log": "sim/unified_clock_20261002/tb_home_clock_replacement.log",
+      "sha256": "3866A6677AFB013FC8E002BDA250092A72D36A0DB235F8AEC82C1C226FFD4C37",
+      "pass": [
+        "PASS HOME_CLOCK_REPLACE      307200 exact pixels; removed         311 fixed-time pixels, all cards/date/sun/toolbar unchanged"
+      ],
+      "modified": 1790946315.6734807
+    },
+    {
+      "log": "sim/unified_clock_20261002/scene.log",
+      "sha256": "C4EA586AD2386F00401DFBE52A1C6486470F48EE5A99D1E0A15D15108ABB6AF8",
+      "pass": [
+        "PASS actual relax/status scene music=0 glow=20 status=1180, no bottom playback layers",
+        "PASS actual relax/status scene music=1 glow=372 status=1180, no bottom playback layers",
+        "PASS actual relax/status scene music=2 glow=382 status=1180, no bottom playback layers",
+        "PASS CLOCK_SCENE 921600 actual RTL pixels: shared09:00, stacked hour/minute, 16 music stars, frameless parameters"
+      ],
+      "modified": 1790946389.4119084
+    }
+  ],
+  "inherited_unchanged_component_regressions": [
+    {
+      "log": "sim/relax_20261002/tb_relax_page_policy.log",
+      "sha256": "F00BC6AA912E29ABE5DE899B34A2591A4BF894FDA86FA5A526B1D92AF165AD5A",
+      "pass": [
+        "PASS production page policy 3200 combinations: only picture3 changed, transitions/PCM/invalid frames exact"
+      ],
+      "modified": 1790944574.664838
+    },
+    {
+      "log": "sim/relax_20261002/tb_video_relax_overlay.log",
+      "sha256": "F606E76F84AD938B1AC659D10FD21CD14B5229BFCC7E3715BBB74587294C1448",
+      "pass": [
+        "PASS music-driven glow intensity",
+        "PASS exact glow raster enabled=1 saturated=0 changed=801",
+        "PASS exact glow raster enabled=1 saturated=1 changed=796",
+        "PASS exact glow raster enabled=0 saturated=0 changed=0",
+        "PASS independent spectral lanes",
+        "PASS 600-frame bounded smooth motion",
+        "PASS video_relax_overlay 921600 pixels / reset / silence / saturation / audio loss"
+      ],
+      "modified": 1790944585.843318
+    },
+    {
+      "log": "sim/relax_20261002/tb_relax_audio_response.log",
+      "sha256": "64EC4B1226E034B83991A8979CDDA3D0003D9FAFDA5146F9058C04029B59D371",
+      "pass": [
+        "PASS real 48kHz PCM -> VU/Goertzel -> glow: samples=9600 band4=96 energy=0->1448 amplitude=33->216"
+      ],
+      "modified": 1790944605.62211
+    },
+    {
+      "log": "sim/relax_20261002/tb_relax_scene_preview.log",
+      "sha256": "6CA57705DB11E9F12E9BF8FD0690E65C427904CB97FE063B1BE85A366A55BD68",
+      "pass": [
+        "PASS actual relax/status scene music=0 glow=20 status=1180, no bottom playback layers",
+        "PASS actual relax/status scene music=1 glow=372 status=1180, no bottom playback layers",
+        "PASS actual relax/status scene music=2 glow=382 status=1180, no bottom playback layers",
+        "PASS relax preview 921600 actual composed RTL pixels at two music phases"
+      ],
+      "modified": 1790944758.6698022
+    },
+    {
+      "log": "sim/fast_audio_20261002/cache.log",
+      "sha256": "7B209E2747121F899E3537E2671B5F3DA3DAB78720B66368F7BB741A9463AD35",
+      "pass": [
+        "PASS FAST_AUDIO: PCM began after           0 image commits, four fragmented resized BMPs exact,         800 consumed stereo frames, continuous loops / manual-auto switching / FIFO bounds"
+      ],
+      "modified": 1790944971.6637917
+    },
+    {
+      "log": "sim/fast_audio_20261002/silence.log",
+      "sha256": "4FBC9D09BD76D2CF9AEA510F1CDFE6CB647F8C8F1AF3A607C1085D9D5D68ECBF",
+      "pass": [
+        "PASS SILENT_START:          48 silent stereo frames, no tone, 128-frame guard retained, TF stereo correct"
+      ],
+      "modified": 1790944972.741815
+    },
+    {
+      "log": "sim/fast_audio_20261002/slow.log",
+      "sha256": "FDAC496258795429E5B64C1B7083041E1C906070476ED760BDB71A7EA069B056",
+      "pass": [
+        "PASS FAST_AUDIO: PCM began after           0 image commits, four fragmented resized BMPs exact,        4739 consumed stereo frames, continuous loops / manual-auto switching / FIFO bounds"
+      ],
+      "modified": 1790944592.7907207
+    },
+    {
+      "log": "sim/bmp_resize_20261002/reader.log",
+      "sha256": "139B1DF31C5E0EAB78FC90EDECC15AC09C37F35FCE7EF26C3D7640AA31ED076E",
+      "pass": [
+        "PASS reader BMP           2x          2 topdown=          0 offset=         54 bpp=         24",
+        "PASS reader BMP          39x         13 topdown=          0 offset=        700 bpp=         24",
+        "PASS reader BMP           7x          5 topdown=          0 offset=         54 bpp=         24",
+        "PASS reader BMP           9x          7 topdown=          1 offset=         54 bpp=         24",
+        "PASS reader BMP           5x          7 topdown=          1 offset=         54 bpp=         24",
+        "PASS reader BMP           1x          1 topdown=          1 offset=       1024 bpp=         24",
+        "PASS reader BMP          33x          1 topdown=          0 offset=         54 bpp=         24",
+        "PASS reader BMP           1x         31 topdown=          0 offset=         54 bpp=         24",
+        "PASS reader BMP           2x          2 topdown=          0 offset=         54 bpp=         32",
+        "PASS reader BMP           2x          2 topdown=          0 offset=         54 bpp=         24",
+        "PASS reader BMP       70000x          1 topdown=          0 offset=         54 bpp=         24",
+        "PASS reader BMP          17x          9 topdown=          1 offset=         54 bpp=         24",
+        "PASS BMP reader/header/padding/fragmentation/abort          12 cases"
+      ],
+      "modified": 1790944241.4351988
+    },
+    {
+      "log": "sim/bmp_resize_20261002/cache_pcm.log",
+      "sha256": "3BCAA79F721DC82BBFA4358DE84341CC7EFB2CA4B9D23E2F59859E030FE242FF",
+      "pass": [
+        "PASS real reader four resized caches / committed original dimensions / manual-auto switches / PCM loop frames=         64"
+      ],
+      "modified": 1790944242.4510436
+    },
+    {
+      "log": "sim/bmp_resize_20261002/orientation.log",
+      "sha256": "2953D146BCEED75C91F5BDAC7CD6B218C0C6B1151FA5452D0C5AF498A56AC33A",
+      "pass": [
+        "PASS dynamic BMP orientation topdown=          0 pixels=         40",
+        "PASS dynamic BMP orientation topdown=          1 pixels=         40"
+      ],
+      "modified": 1790944243.3273053
+    },
+    {
+      "log": "sim/bmp_resize_20261002/status.log",
+      "sha256": "212FBE731F27AE387FF04F720B91572E72A1ABF9E9806F14798A3F0F1BAAF6BF",
+      "pass": [
+        "PASS frameless RES:800x600 ink=        304",
+        "PASS frameless RES:1920x1080 ink=        350",
+        "PASS frameless RES:65535x1 ink=        287",
+        "PASS frameless RES:640x480 ink=        308",
+        "PASS resolution BCD/frame/geometry"
+      ],
+      "modified": 1790944244.466949
+    },
+    {
+      "log": "sim/bmp_resize_20261002/bmp_lut_stress.log",
+      "sha256": "45C2D0BE3860D989EF3E6B00E641F7791CB79143EC8DA69A2F197619F298A970",
+      "pass": [
+        "PASS BMP_LUTOPT_STRESS spc=1 MBR=0 found=4",
+        "PASS BMP_LUTOPT_STRESS spc=2 MBR=128 found=0",
+        "PASS BMP_LUTOPT_STRESS spc=4 MBR=0 found=0",
+        "PASS BMP_LUTOPT_STRESS spc=8 MBR=65536 found=0",
+        "PASS BMP_LUTOPT_STRESS spc=16 MBR=0 found=0",
+        "PASS BMP_LUTOPT_STRESS spc=32 MBR=16777216 found=0",
+        "PASS BMP_LUTOPT_STRESS spc=64 MBR=0 found=0",
+        "PASS BMP_LUTOPT_STRESS spc=128 MBR=32768 found=0",
+        "PASS BMP_LUTOPT_STRESS 2000000 cycles: rescans=269 aborts=388 reinits=108 loads=2779 pixels=64388 pcm=127230, all outputs identical every cycle"
+      ],
+      "modified": 1790944254.9605758
+    },
+    {
+      "log": "sim/bmp_resize_20261002/small.log",
+      "sha256": "EAC5DDAAE21A70717823B1521B9D67727728CD592471B328EFECBCEFAE805CD8",
+      "pass": [
+        "PASS bilinear 7x5 -> 7x5 (35 pixels)",
+        "PASS bilinear 8x5 -> 7x5 (35 pixels)",
+        "PASS bilinear 7x6 -> 7x5 (35 pixels)",
+        "PASS bilinear 14x10 -> 7x5 (35 pixels)",
+        "PASS bilinear 26x5 -> 7x5 (35 pixels)",
+        "PASS bilinear 7x16 -> 7x5 (35 pixels)",
+        "PASS bilinear 31x17 -> 7x5 (35 pixels)",
+        "PASS bilinear 19x17 -> 7x5 (35 pixels)",
+        "PASS bilinear 128x19 -> 7x5 (35 pixels)",
+        "PASS bilinear 17x33 -> 7x5 (35 pixels)",
+        "PASS bilinear 8x26 -> 7x5 (35 pixels)",
+        "PASS bilinear 9x25 -> 7x5 (35 pixels)",
+        "PASS bilinear 10x24 -> 7x5 (35 pixels)",
+        "PASS bilinear 11x23 -> 7x5 (35 pixels)",
+        "PASS bilinear 12x22 -> 7x5 (35 pixels)",
+        "PASS bilinear 13x21 -> 7x5 (35 pixels)",
+        "PASS bilinear 14x20 -> 7x5 (35 pixels)",
+        "PASS bilinear 15x19 -> 7x5 (35 pixels)",
+        "PASS bilinear 16x18 -> 7x5 (35 pixels)",
+        "PASS bilinear 17x17 -> 7x5 (35 pixels)",
+        "PASS bilinear 18x16 -> 7x5 (35 pixels)",
+        "PASS bilinear 19x15 -> 7x5 (35 pixels)",
+        "PASS bilinear 20x14 -> 7x5 (35 pixels)",
+        "PASS bilinear 21x13 -> 7x5 (35 pixels)",
+        "PASS bilinear 22x12 -> 7x5 (35 pixels)",
+        "PASS bilinear 23x11 -> 7x5 (35 pixels)",
+        "PASS bilinear 24x10 -> 7x5 (35 pixels)",
+        "PASS bilinear 25x9 -> 7x5 (35 pixels)",
+        "PASS bilinear 26x8 -> 7x5 (35 pixels)",
+        "PASS bilinear 27x7 -> 7x5 (35 pixels)",
+        "PASS bilinear 28x6 -> 7x5 (35 pixels)",
+        "PASS bilinear 7x5 -> 7x5 (35 pixels)",
+        "PASS bilinear 8x6 -> 7x5 (35 pixels)",
+        "PASS bilinear 9x7 -> 7x5 (35 pixels)",
+        "PASS bilinear 10x5 -> 7x5 (35 pixels)",
+        "PASS bilinear 7x6 -> 7x5 (35 pixels)",
+        "PASS bilinear 8x7 -> 7x5 (35 pixels)",
+        "PASS bilinear 9x5 -> 7x5 (35 pixels)",
+        "PASS bilinear 10x6 -> 7x5 (35 pixels)",
+        "PASS bilinear 7x7 -> 7x5 (35 pixels)",
+        "PASS bilinear 8x5 -> 7x5 (35 pixels)",
+        "PASS scaler regression 41 cases"
+      ],
+      "modified": 1790937111.3404956
+    },
+    {
+      "log": "sim/bmp_resize_20261002/native_small.log",
+      "sha256": "F63BCE74C331009AD413708D6A868B8BD26B8CC78DBDF4250B0F138157E298E6",
+      "pass": [
+        "PASS bilinear 7x5 -> 7x5 (35 pixels)",
+        "PASS bilinear 8x5 -> 7x5 (35 pixels)",
+        "PASS bilinear 7x6 -> 7x5 (35 pixels)",
+        "PASS bilinear 14x10 -> 7x5 (35 pixels)",
+        "PASS bilinear 26x5 -> 7x5 (35 pixels)",
+        "PASS bilinear 7x16 -> 7x5 (35 pixels)",
+        "PASS bilinear 31x17 -> 7x5 (35 pixels)",
+        "PASS bilinear 19x17 -> 7x5 (35 pixels)",
+        "PASS bilinear 128x19 -> 7x5 (35 pixels)",
+        "PASS bilinear 17x33 -> 7x5 (35 pixels)",
+        "PASS bilinear 8x26 -> 7x5 (35 pixels)",
+        "PASS bilinear 9x25 -> 7x5 (35 pixels)",
+        "PASS bilinear 10x24 -> 7x5 (35 pixels)",
+        "PASS bilinear 11x23 -> 7x5 (35 pixels)",
+        "PASS bilinear 12x22 -> 7x5 (35 pixels)",
+        "PASS bilinear 13x21 -> 7x5 (35 pixels)",
+        "PASS bilinear 14x20 -> 7x5 (35 pixels)",
+        "PASS bilinear 15x19 -> 7x5 (35 pixels)",
+        "PASS bilinear 16x18 -> 7x5 (35 pixels)",
+        "PASS bilinear 17x17 -> 7x5 (35 pixels)",
+        "PASS bilinear 18x16 -> 7x5 (35 pixels)",
+        "PASS bilinear 19x15 -> 7x5 (35 pixels)",
+        "PASS bilinear 20x14 -> 7x5 (35 pixels)",
+        "PASS bilinear 21x13 -> 7x5 (35 pixels)",
+        "PASS bilinear 22x12 -> 7x5 (35 pixels)",
+        "PASS bilinear 23x11 -> 7x5 (35 pixels)",
+        "PASS bilinear 24x10 -> 7x5 (35 pixels)",
+        "PASS bilinear 25x9 -> 7x5 (35 pixels)",
+        "PASS bilinear 26x8 -> 7x5 (35 pixels)",
+        "PASS bilinear 27x7 -> 7x5 (35 pixels)",
+        "PASS bilinear 28x6 -> 7x5 (35 pixels)",
+        "PASS bilinear 7x5 -> 7x5 (35 pixels)",
+        "PASS bilinear 8x6 -> 7x5 (35 pixels)",
+        "PASS bilinear 9x7 -> 7x5 (35 pixels)",
+        "PASS bilinear 10x5 -> 7x5 (35 pixels)",
+        "PASS bilinear 7x6 -> 7x5 (35 pixels)",
+        "PASS bilinear 8x7 -> 7x5 (35 pixels)",
+        "PASS bilinear 9x5 -> 7x5 (35 pixels)",
+        "PASS bilinear 10x6 -> 7x5 (35 pixels)",
+        "PASS bilinear 7x7 -> 7x5 (35 pixels)",
+        "PASS bilinear 8x5 -> 7x5 (35 pixels)",
+        "PASS scaler regression 41 cases"
+      ],
+      "modified": 1790937114.3110173
+    },
+    {
+      "log": "sim/bmp_resize_20261002/high_resolution.log",
+      "sha256": "7216CF49210A8A0BB1003DCE2DB603F11041F220DEF024BB811A47AB4933A720",
+      "pass": [
+        "PASS bilinear 1280x720 -> 640x480 (307200 pixels)",
+        "PASS bilinear 1920x1080 -> 640x480 (307200 pixels)",
+        "PASS scaler regression 2 cases"
+      ],
+      "modified": 1790937235.5480702
+    },
+    {
+      "log": "sim/bmp_resize_20261002/native_full.log",
+      "sha256": "453B286160508491C0184A48AC57F00A4EEE325291AF91C774E39A2387290A72",
+      "pass": [
+        "PASS bilinear 640x480 -> 640x480 (307200 pixels)",
+        "PASS scaler regression 1 cases"
+      ],
+      "modified": 1790937664.9183164
+    }
+  ],
+  "previews": {
+    "sim/unified_clock_20261002/relax_clock.bmp": "696C3C9D35199F503B7C04D81C1A9AFEB5E545F6A1693CD04D7A726056F8AA37",
+    "sim/unified_clock_20261002/relax_clock_later.bmp": "DD3BACAAF870856A45895415B8BA6EC5BBB0FE1E1753EA777DCBB3EA5831EC6C",
+    "sim/unified_clock_20261002/relax_clock_quiet.bmp": "C15533CBEDB0AEB8DB6C77785A2C1B7CEC1AC8AF58F66A72ADF6032FD72C52D7"
+  },
+  "scope": "One 25MHz free-running 24-hour clock starts09:00:00 on reset; no page resets. One VS snapshot feeds every page: stackedHH/MM page3, compactHH:MM pages1/2/4. Homepage fixed09:00 suppressed; date remains original fixed demo date. No calendar/RTC/UTC persistence.",
+  "audio_visuals": "Previous16-star effects and early TF audio sources unchanged. Native16x24 Noto Sans SC digits, 2-bit coverage, eight-column halves packed into one BRAM9K, palette antialias, no RGB/timing latency.",
+  "preview_audio": "Controlled VU/band fixtures, not a replay of the song. Separate real 48kHz PCM/analyzer integration test passes.",
+  "delivery_bit": "best_result/lab_ex5_i2s_v1.0_unified_clock_20261002.bit"
+}

@@ -1,0 +1,2400 @@
+{
+  "stage": "dual-board media engineering SRAM test with B receipt qualification pipeline",
+  "generatedAt": "2026-10-05T07:38:06.326Z",
+  "release_status": "EXPERIMENTAL_SRAM_ONLY_NOT_TIMING_CLOSED",
+  "hardware_verified": false,
+  "automatic_board_programming": false,
+  "flash_programming_approved": false,
+  "old_single_board_and_diagnostic_bits_unchanged": true,
+  "previous_candidates_unchanged": true,
+  "tests": {
+    "receipt_equivalence": {
+      "file": "dual_board/image_link/sim/hw_round6_20261005/modelsim_guard.log",
+      "sha256": "26689F251462F755D34B8BD4AC2B0F89AA8749A89B54908D387C9D6B6ABF2A80",
+      "passed": [
+        "PASS receipt pipeline equivalence ext=0",
+        "PASS receipt pipeline equivalence ext=1",
+        "PASS AAK2/AAK3 pipeline:"
+      ],
+      "errors": 0,
+      "warnings": 0
+    },
+    "b_top_and_home": {
+      "file": "dual_board/image_link/sim/hw_round6_20261005/modelsim_boundary.log",
+      "sha256": "5965AD859E03664CD1FF9411B43233AE0B2F2EFA0B791CD3816D07E3BEF59128",
+      "passed": [
+        "PASS player B boundary:",
+        "PASS home source:"
+      ],
+      "errors": 0,
+      "warnings": 11
+    },
+    "audio": {
+      "file": "dual_board/image_link/sim/hw_round6_20261005/modelsim_audio.log",
+      "sha256": "D35DEC6654EBA8D80E2ACD8CAC117EC15845A0B16F89258AC36E681B557EFF12",
+      "passed": [
+        "PASS audio status",
+        "PASS visual guard",
+        "PASS remote compute",
+        "PASS audio offload",
+        "PASS audio guard",
+        "PASS media abort",
+        "PASS audio media"
+      ],
+      "errors": 0,
+      "warnings": 27
+    }
+  },
+  "previous_full_40_evidence": {
+    "file": "dual_board/image_link/phase13_crc_pipeline_validation_20261005.json",
+    "sha256": "80F23C6784BC1E759011FE6C3A574C45864989E77EA9EF1F0D7926AD7EB880D4"
+  },
+  "test_counts": {
+    "previous_full_40_not_rerun_this_round": 40,
+    "new_receipt_testbenches": 1,
+    "equivalence_parameter_cases": 2,
+    "new_receipt_packets": 2400,
+    "b_top_boundary": 1,
+    "repeated_home_source": 1,
+    "repeated_audio_regressions": 7,
+    "total_this_round_test_runs": 10
+  },
+  "builds": [
+    {
+      "role": "A main HDMI/SDRAM",
+      "bit": {
+        "file": "dual_board/image_link/board_test_20261005/MEDIA_SRAM_TEST_A_MAIN_20261005.bit",
+        "sha256": "2B5BE1BE8F79FF8BBAB916E8FBEFDA977D3D57616D8CA4DF11DCAB714B290815",
+        "bytes": 720427
+      },
+      "routed": {
+        "file": "dual_board/image_link/prj/media_a/MEDIA_SRAM_TEST_A_MAIN_20261005_phy.area",
+        "sha256": "00ACE9E53AFEB324C7C3BA122972C3CD0CABF04E32D12E575929CEAF23EAA369",
+        "lut": 14280,
+        "registers": 9241,
+        "bram9k": 50,
+        "bram32k": 7,
+        "dsp": 3,
+        "pll": 4,
+        "lut_percent": 72.86
+      },
+      "timing": {
+        "file": "dual_board/image_link/prj/media_a/MEDIA_SRAM_TEST_A_MAIN_20261005_pr.timing",
+        "sha256": "565DE59551DE336CB58F7A65442B4856B716DCC361B9680CABBFCBAAB36CE485",
+        "confidence": "Routed",
+        "coverage_percent": 99.9,
+        "setup_or_recovery_wns": -5.699,
+        "hold_or_removal_wns": -0.052,
+        "path_groups": [
+          {
+            "name": "udp_clk -> udp_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": -1.167,
+                "begin": "u_remote_visual/progress_reg[5]_syn_3.clk",
+                "end": "u_remote_visual/visual_state_reg[0]_syn_4.ce",
+                "type": "setup"
+              },
+              {
+                "slack": -1.167,
+                "begin": "u_remote_visual/progress_reg[5]_syn_3.clk",
+                "end": "u_remote_visual/visual_state_reg[43]_syn_3.ce",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> udp_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": -0.02,
+                "begin": "u_audio_pcm_fifo/wr_addr_reg[4]_syn_3.clk",
+                "end": "u_audio_pcm_fifo/ram_inst/ramread0_syn_6.addra[8]",
+                "type": "hold"
+              },
+              {
+                "slack": -0.012,
+                "begin": "u_audio_pcm_fifo/wr_addr_reg[3]_syn_3.clk",
+                "end": "u_audio_pcm_fifo/ram_inst/ramread0_syn_25.addra[7]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> udp_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": 0.035,
+                "begin": "u_net/fixed_peer$u_udp/rx_state_reg[0]_syn_10.clk",
+                "end": "u_net/fixed_peer$u_udp/rx_read_index_reg[5]_syn_4.sr",
+                "type": "removal"
+              },
+              {
+                "slack": 0.035,
+                "begin": "u_net/fixed_peer$u_udp/rx_state_reg[0]_syn_10.clk",
+                "end": "u_net/fixed_peer$u_udp/rx_state_reg[1]_syn_104.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "video_clk -> video_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 3.689,
+                "begin": "u_video_image_adjust/lut_pixels$red_green/I_addr_a[5]_syn_26.clk",
+                "end": "u_video_lyric_overlay/u_font/banks[3]$bank/bank_3$ram.addra[8]",
+                "type": "setup"
+              },
+              {
+                "slack": 5.619,
+                "begin": "u_video_image_adjust/lut_pixels$red_green/I_addr_a[5]_syn_26.clk",
+                "end": "u_video_lyric_overlay/u_font/banks[2]$bank/bank_2$ram.addra[8]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "video_clk -> video_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": -0.02,
+                "begin": "u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/S_packet_body_1d_reg[14]_syn_3.clk",
+                "end": "u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/u_w96_d1024_fifo/u_logic_ramfifo_syn_534.dia[5]",
+                "type": "hold"
+              },
+              {
+                "slack": -0.012,
+                "begin": "video_delay_m0/vout_data_r_reg[14]_syn_4.clk",
+                "end": "u_video_transition_effects/packed_line_buffers$line_a/ramread1_syn_6.dia[5]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "video_clk -> video_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": -0.005,
+                "begin": "u_hdmi_1_4b_transmitter_core_wrapper/u0_reset_sync/O_sync_reset_reg_syn_54.clk",
+                "end": "u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_CH1_D0_shift_reg[25]_syn_4.sr",
+                "type": "removal"
+              },
+              {
+                "slack": -0.005,
+                "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_aSis0jQ9/al102_oXrqzjAP_b3[6]_syn_6.clk",
+                "end": "u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[0]__7_syn_4.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "clk -> udp_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": -1.243,
+                "begin": "u_network_images/u_sink/mux101_syn_117.clk",
+                "end": "u_network_images/u_sink/count_reg[5]_syn_4.ce",
+                "type": "setup"
+              },
+              {
+                "slack": -1.243,
+                "begin": "u_network_images/u_sink/mux101_syn_117.clk",
+                "end": "u_network_images/u_sink/count_reg[17]_syn_4.ce",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "clk -> udp_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": -0.052,
+                "begin": "u_network_images/u_sink/mux101_syn_117.clk",
+                "end": "u_network_images/u_sink/mux113_syn_201.sr",
+                "type": "removal"
+              },
+              {
+                "slack": -0.044,
+                "begin": "u_network_images/u_sink/mux101_syn_117.clk",
+                "end": "u_network_images/u_sink/mux72_syn_943.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "clk -> video_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 14.311,
+                "begin": "rst_all_reg_reg_syn_127.clk",
+                "end": "u_video_lyric_overlay/ramread0_syn_180.e[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 14.311,
+                "begin": "rst_all_reg_reg_syn_127.clk",
+                "end": "u_video_lyric_overlay/ramread0_syn_194.e[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "clk -> video_clk",
+            "type": "recovery",
+            "worst_reported": [
+              {
+                "slack": 14.095,
+                "begin": "u_remote_control/mux17_syn_260.clk",
+                "end": "u_remote_visual_cdc/frame_state_reg[120]_syn_4.sr",
+                "type": "recovery"
+              },
+              {
+                "slack": 14.258,
+                "begin": "u_remote_control/mux17_syn_260.clk",
+                "end": "u_remote_visual_cdc/frame_state_reg[20]_syn_4.sr",
+                "type": "recovery"
+              }
+            ]
+          },
+          {
+            "name": "clk -> video_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": 0.04,
+                "begin": "u_video_rgb_to_axis_640x480/I_rgb[17]_syn_637.clk",
+                "end": "u_video_status_overlay/u_font_rom/I_addr[4]_syn_190.sr",
+                "type": "removal"
+              },
+              {
+                "slack": 0.04,
+                "begin": "u_video_rgb_to_axis_640x480/I_rgb[17]_syn_637.clk",
+                "end": "u_audio_visualizer_overlay/pixel_y_reg[8]_syn_4.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> ext_mem_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 1.498,
+                "begin": "frame_read_write_m0/write_buf/rd_addr_reg[2]_syn_3.clk",
+                "end": "frame_read_write_m0/write_buf/ram_inst/ramread0_syn_25.addrb[5]",
+                "type": "setup"
+              },
+              {
+                "slack": 1.95,
+                "begin": "frame_read_write_m0/write_buf/rd_addr_reg[2]_syn_3.clk",
+                "end": "frame_read_write_m0/write_buf/ram_inst/ramread0_syn_6.addrb[5]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> ext_mem_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.041,
+                "begin": "frame_read_write_m0/read_buf_b/wr_addr_reg[8]_syn_4.clk",
+                "end": "frame_read_write_m0/read_buf_b/ram_inst/ramread0_syn_26.addra[5]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> ext_mem_clk",
+            "type": "recovery",
+            "worst_reported": [
+              {
+                "slack": 2.795,
+                "begin": "u_frame_memory_reset/release_pipe_reg[1]_syn_4.clk",
+                "end": "frame_read_write_m0/frame_fifo_write_m0/flip_latched_reg_syn_8.sr",
+                "type": "recovery"
+              },
+              {
+                "slack": 2.795,
+                "begin": "u_frame_memory_reset/release_pipe_reg[1]_syn_4.clk",
+                "end": "frame_read_write_m0/frame_fifo_write_m0/wr_x_reg[7]_syn_4.sr",
+                "type": "recovery"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> ext_mem_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": 0.003,
+                "begin": "frame_read_write_m0/read_buf_a/asy_w_rst1_reg_syn_4.clk",
+                "end": "frame_read_write_m0/read_buf_a/rd_to_wr_cross_inst/primary_addr_gray_sync_reg[4]_syn_4.sr",
+                "type": "removal"
+              },
+              {
+                "slack": 0.003,
+                "begin": "frame_read_write_m0/read_buf_a/asy_w_rst1_reg_syn_4.clk",
+                "end": "frame_read_write_m0/read_buf_a/rd_to_wr_cross_inst/secondary_addr_o_reg[0]_syn_4.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "rgmii_rx_90 -> rgmii_rx_90",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 2.456,
+                "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_f4biXjlA/al102_0_I1BBbU/al102_gwCF1dVC_reg_syn_12.clk",
+                "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_f4biXjlA/al102_yKqPCjEw/al102_HP1qu49R_reg[4]_syn_4.sr",
+                "type": "setup"
+              },
+              {
+                "slack": 2.555,
+                "begin": "u_video_rgb_to_axis_640x480/I_rgb[7]_syn_22.clk",
+                "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/addr_filter_top/al102_hxcEIhDE$dynamic_config/al102_49sgR8qI_reg_syn_19.a[1]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "rgmii_rx_90 -> rgmii_rx_90",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.095,
+                "begin": "u_net/u_rx_fifo/wr_addr_reg[11]_syn_4.clk",
+                "end": "u_net/u_rx_fifo/ramgen_l/inst_syn_1.addra[4]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.099,
+                "begin": "u_net/u_rx_fifo/wr_addr_reg[8]_syn_4.clk",
+                "end": "u_net/u_rx_fifo/ramgen_l/inst_syn_11.addra[12]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> video_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.344,
+                "begin": "u_remote_visual_cdc/mailbox_reg[72]_syn_4.clk",
+                "end": "u_vehicle_hazard_overlay/lt27_syn_28.mi[1]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.344,
+                "begin": "u_remote_visual_cdc/mailbox_reg[69]_syn_4.clk",
+                "end": "u_remote_visual_cdc/frame_state_reg[10]_syn_4.mi[1]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> video_clk",
+            "type": "recovery",
+            "worst_reported": [
+              {
+                "slack": 0.769,
+                "begin": "u_link_session/send_event_reg_syn_5.clk",
+                "end": "u_remote_visual_cdc/frame_state_reg[152]_syn_4.sr",
+                "type": "recovery"
+              },
+              {
+                "slack": 0.884,
+                "begin": "u_link_session/send_event_reg_syn_5.clk",
+                "end": "u_video_lyric_overlay/lt3_syn_36.sr",
+                "type": "recovery"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> mac_tx_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 0.671,
+                "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_gR4MUiLa_reg[14]_syn_28.clk",
+                "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_gR4MUiLa_reg[14]_syn_24.a[1]",
+                "type": "setup"
+              },
+              {
+                "slack": 1.089,
+                "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_gR4MUiLa_reg[14]_syn_28.clk",
+                "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_gR4MUiLa_reg[12]_syn_7.d[1]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> mac_tx_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": -0.011,
+                "begin": "u_net/u_tx_fifo/rd_addr_reg[9]_syn_4.clk",
+                "end": "u_net/u_tx_fifo/ramgen_u/inst_syn_1.addrb[12]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.149,
+                "begin": "u_net/u_tx_fifo/rd_addr_reg[7]_syn_4.clk",
+                "end": "u_net/u_tx_fifo/ramgen_u/inst_syn_11.addrb[10]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "audio_mclk -> audio_mclk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 68.908,
+                "begin": "u_audio_pcm_fifo/ram_inst/ramread0_syn_25.clkb",
+                "end": "u_hdmi_audio_pcm_i2s_64fs/right_sample_reg[18]_syn_4.a[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 69.021,
+                "begin": "u_audio_pcm_fifo/rd_addr_reg[6]_syn_3.clk",
+                "end": "u_hdmi_audio_pcm_i2s_64fs/shift_reg_reg[58]_syn_4.a[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "audio_mclk -> audio_mclk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.295,
+                "begin": "u_hdmi_audio_pcm_i2s_64fs/O_i2s_BCLK_reg_syn_5.clk",
+                "end": "u_hdmi_audio_pcm_i2s_64fs/bit_cnt_reg[2]_syn_4.ce",
+                "type": "hold"
+              },
+              {
+                "slack": 0.32,
+                "begin": "u_audio_pcm_fifo/wr_to_rd_cross_inst/sync_r1_reg[0]_syn_3.clk",
+                "end": "u_audio_pcm_fifo/wr_to_rd_cross_inst/primary_addr_gray_sync_reg[0]_syn_3.mi[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "audio_mclk -> audio_mclk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": 0.217,
+                "begin": "u_audio_enable_sync/enable_sync_reg[1]_syn_4.clk",
+                "end": "u_audio_pcm_fifo/rd_addr_reg[6]_syn_3.sr",
+                "type": "removal"
+              },
+              {
+                "slack": 0.285,
+                "begin": "u_audio_enable_sync/enable_sync_reg[1]_syn_4.clk",
+                "end": "u_audio_pcm_fifo/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[6]_syn_4.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "clk -> clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 8.568,
+                "begin": "rst_cnt_reg[10]_syn_3.clk",
+                "end": "u_audio_visualizer_overlay/lt3_syn_30.mi[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 8.691,
+                "begin": "rst_cnt_reg[10]_syn_3.clk",
+                "end": "rst_all_reg_reg_syn_179.mi[1]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "clk -> clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.381,
+                "begin": "seg_scan_m0/scan_sel_reg[2]_syn_10.clk",
+                "end": "seg_scan_m0/scan_sel_reg[2]_syn_10.d[1]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.603,
+                "begin": "seg_scan_m0/scan_sel_reg[2]_syn_10.clk",
+                "end": "seg_scan_m0/scan_sel_reg[2]_syn_10.d[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "clk -> ext_mem_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 6.361,
+                "begin": "rst_all_reg_reg_syn_158.clk",
+                "end": "U3/u2_ram/u2_wrrd/app_wr_addr_1d_reg[19]_syn_3.a[1]",
+                "type": "setup"
+              },
+              {
+                "slack": 6.928,
+                "begin": "rst_all_reg_reg_syn_158.clk",
+                "end": "U3/u2_ram/u2_wrrd/cas_reg_syn_8.d[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "clk -> ext_mem_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.248,
+                "begin": "rst_all_reg_reg_syn_143.clk",
+                "end": "U3/u2_ram/u1_init_ref/pwr_200ms_cnt_reg[12]_syn_3.sr",
+                "type": "hold"
+              },
+              {
+                "slack": 0.264,
+                "begin": "u_audio_alarm_mixer/add1_syn_92.clk",
+                "end": "u_audio_alarm_mixer/tone_mode[2]_syn_80.sr",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "video_clk -> udp_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 2.595,
+                "begin": "u_video_transition_effects/effect_step_reg[2]_syn_25.clk",
+                "end": "protected_video0_reg[2]_syn_4.a[1]",
+                "type": "setup"
+              },
+              {
+                "slack": 2.595,
+                "begin": "u_video_transition_effects/effect_step_reg[2]_syn_25.clk",
+                "end": "protected_video0_reg[3]_syn_4.a[1]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "video_clk -> udp_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.153,
+                "begin": "u_control_snapshot/frame_state_reg[5]_syn_3.clk",
+                "end": "u_control_snapshot/ack_sync_reg[1]_syn_3.mi[0]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.269,
+                "begin": "u_control_snapshot/frame_state_reg[2]_syn_3.clk",
+                "end": "volume_meta_udp_reg[1]_syn_3.mi[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> mac_tx_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 6.197,
+                "begin": "u_net/u_tx_fifo/rd_txfer_tog_reg1_syn_11.clk",
+                "end": "u_audio_visualizer_overlay/lt22_syn_35.sr",
+                "type": "setup"
+              },
+              {
+                "slack": 6.263,
+                "begin": "u_net/u_tx_fifo/rd_txfer_tog_reg1_syn_11.clk",
+                "end": "u_net/u_tx_fifo/sub1_syn_76.sr",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> mac_tx_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.313,
+                "begin": "u_net/reset_pipe_reg[2]_syn_40.clk",
+                "end": "u_net/u_tx_fifo/rd_start_addr_reg[11]_syn_4.sr",
+                "type": "hold"
+              },
+              {
+                "slack": 0.438,
+                "begin": "u_net/reset_pipe_reg[2]_syn_40.clk",
+                "end": "u_video_rgb_to_axis_640x480/I_rgb[10]_syn_57.sr",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "video_clk -> ext_mem_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 6.582,
+                "begin": "u_video_transition_effects/effect_step_reg[2]_syn_25.clk",
+                "end": "frame_read_write_m0/frame_fifo_read_a/read_addr_index_d0_reg[0]_syn_4.a[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 6.582,
+                "begin": "u_video_transition_effects/effect_step_reg[2]_syn_25.clk",
+                "end": "frame_read_write_m0/frame_fifo_read_a/read_addr_index_d0_reg[0]_syn_4.a[1]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "video_clk -> ext_mem_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.132,
+                "begin": "frame_read_write_m0/read_buf_a/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.clk",
+                "end": "frame_read_write_m0/read_buf_a/rd_to_wr_cross_inst/primary_addr_gray_sync_reg[0]_syn_3.mi[0]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.132,
+                "begin": "frame_read_write_m0/read_buf_b/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.clk",
+                "end": "frame_read_write_m0/read_buf_b/rd_to_wr_cross_inst/sync_r1_reg[2]_syn_3.mi[1]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> video_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 6.859,
+                "begin": "frame_read_write_m0/frame_fifo_read_b/fifo_aclr_reg_syn_8.clk",
+                "end": "video_timing_data_m0/read_req_reg_syn_11.d[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 8.414,
+                "begin": "frame_read_write_m0/read_buf_b/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk",
+                "end": "frame_read_write_m0/read_buf_b/sub1_syn_49.mi[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> video_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.323,
+                "begin": "frame_read_write_m0/read_buf_a/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[6]_syn_4.clk",
+                "end": "frame_read_write_m0/read_buf_a/wr_to_rd_cross_inst/sync_r1_reg[6]_syn_4.mi[1]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.42,
+                "begin": "frame_read_write_m0/read_buf_a/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk",
+                "end": "frame_read_write_m0/read_buf_a/sub1_syn_49.mi[1]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> video_clk",
+            "type": "recovery",
+            "worst_reported": [
+              {
+                "slack": 8.397,
+                "begin": "frame_read_write_m0/frame_fifo_read_b/fifo_aclr_reg_syn_8.clk",
+                "end": "frame_read_write_m0/read_buf_b/asy_r_rst1_reg_syn_5.sr",
+                "type": "recovery"
+              },
+              {
+                "slack": 8.505,
+                "begin": "frame_read_write_m0/frame_fifo_read_a/fifo_aclr_reg_syn_8.clk",
+                "end": "frame_read_write_m0/read_buf_a/asy_r_rst1_reg_syn_4.sr",
+                "type": "recovery"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> video_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": 0.348,
+                "begin": "frame_read_write_m0/frame_fifo_read_a/fifo_aclr_reg_syn_8.clk",
+                "end": "frame_read_write_m0/read_buf_a/asy_r_rst1_reg_syn_4.sr",
+                "type": "removal"
+              },
+              {
+                "slack": 0.421,
+                "begin": "frame_read_write_m0/frame_fifo_read_b/fifo_aclr_reg_syn_8.clk",
+                "end": "frame_read_write_m0/read_buf_b/asy_r_rst1_reg_syn_5.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> ext_mem_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 0.321,
+                "begin": "u_network_images/u_sink/write_req_reg_syn_10.clk",
+                "end": "u_network_images/u_sink/mux113_syn_213.mi[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 0.682,
+                "begin": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.clk",
+                "end": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[1]_syn_3.mi[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> ext_mem_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.214,
+                "begin": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[8]_syn_3.clk",
+                "end": "frame_read_write_m0/write_buf/lt0_syn_35.mi[0]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.214,
+                "begin": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[5]_syn_4.clk",
+                "end": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_sync_reg[0]_syn_4.mi[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> ext_mem_clk",
+            "type": "recovery",
+            "worst_reported": [
+              {
+                "slack": -0.136,
+                "begin": "u_network_images/u_sink/timeout_count_b[5]_syn_9.clk",
+                "end": "u_network_images/u_sink/lt0_syn_104.sr",
+                "type": "recovery"
+              },
+              {
+                "slack": 0.206,
+                "begin": "u_network_images/u_sink/timeout_count_b[5]_syn_9.clk",
+                "end": "u_network_images/u_sink/mux102_syn_128.sr",
+                "type": "recovery"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> udp_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 6.614,
+                "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[8]_syn_4.clk",
+                "end": "u_audio_visualizer_overlay/lt23_syn_38.mi[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 6.737,
+                "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[3]_syn_3.clk",
+                "end": "u_net/u_tx_fifo/wr_rd_addr_reg[1]_syn_3.mi[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> udp_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.244,
+                "begin": "u_video_rgb_to_axis_640x480/I_rgb[3]_syn_67.clk",
+                "end": "u_video_rgb_to_axis_640x480/I_rgb[4]_syn_45.mi[0]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.244,
+                "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[1]_syn_3.clk",
+                "end": "u_net/u_tx_fifo/wr_rd_addr_reg[0]_syn_3.mi[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> udp_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 0.802,
+                "begin": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/secondary_addr_o_reg[6]_syn_4.clk",
+                "end": "frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[0]_syn_3.mi[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 0.805,
+                "begin": "frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_sync_reg[8]_syn_3.clk",
+                "end": "frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[8]_syn_4.mi[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> udp_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.214,
+                "begin": "frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk",
+                "end": "frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[5]_syn_4.mi[0]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.223,
+                "begin": "frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.clk",
+                "end": "frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[2]_syn_4.mi[1]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> udp_clk",
+            "type": "recovery",
+            "worst_reported": [
+              {
+                "slack": -0.142,
+                "begin": "u_network_images/u_sink/timeout_count_b[7]_syn_11.clk",
+                "end": "u_network_images/u_sink/add2_syn_116.sr",
+                "type": "recovery"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> udp_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": 0.382,
+                "begin": "frame_read_write_m0/frame_fifo_write_m0/write_req_d1_reg_syn_5.clk",
+                "end": "u_network_images/u_sink/add2_syn_116.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "video_clk -> clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 16.795,
+                "begin": "u_video_transition_effects/direct_force_reg_syn_8.clk",
+                "end": "image_number_sync0_reg[2]_syn_4.b[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 17.121,
+                "begin": "u_video_transition_effects/direct_force_reg_syn_8.clk",
+                "end": "image_number_sync0_reg[0]_syn_4.b[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "video_clk -> clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.687,
+                "begin": "u_video_frame_valid_gate/frame_vs_d_reg_syn_8.clk",
+                "end": "image_number_sync0_reg[0]_syn_4.d[0]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.687,
+                "begin": "u_video_frame_valid_gate/frame_vs_d_reg_syn_8.clk",
+                "end": "image_number_sync0_reg[0]_syn_4.d[1]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 0.884,
+                "begin": "u_video_lyric_overlay/load_index_reg[5]_syn_11.clk",
+                "end": "phy1_rgmii_tx_clk_syn_2.do[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 6.594,
+                "begin": "u_video_lyric_overlay/load_index_reg[5]_syn_11.clk",
+                "end": "phy1_rgmii_tx_clk_syn_2.do[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+            "type": "recovery",
+            "worst_reported": [
+              {
+                "slack": 0.95,
+                "begin": "u_net/u_temac/reset_reg2_reg[1]_syn_4.clk",
+                "end": "phy1_rgmii_tx_clk_syn_2.rst",
+                "type": "recovery"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": 6.379,
+                "begin": "u_net/u_temac/reset_reg2_reg[1]_syn_4.clk",
+                "end": "phy1_rgmii_tx_clk_syn_2.rst",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> ext_mem_clk_sft",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": -1.973,
+                "begin": "U3/u2_ram/u2_wrrd/app_wr_addr_1d_reg[19]_syn_3.clk",
+                "end": "U3/sdram.dq[17]",
+                "type": "setup"
+              },
+              {
+                "slack": -1.973,
+                "begin": "U3/u2_ram/u2_wrrd/app_wr_addr_1d_reg[19]_syn_3.clk",
+                "end": "U3/sdram.dq[16]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk -> ext_mem_clk_sft",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 4.867,
+                "begin": "U3/sdram_syn_1.osclk",
+                "end": "U3/sdram.dq[0]",
+                "type": "hold"
+              },
+              {
+                "slack": 4.867,
+                "begin": "U3/sdram_syn_2.osclk",
+                "end": "U3/sdram.dq[6]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk_sft -> ext_mem_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": -5.699,
+                "begin": "U3/sdram.dq[0]",
+                "end": "U3/sdram_syn_1.bpad",
+                "type": "setup"
+              },
+              {
+                "slack": -5.699,
+                "begin": "U3/sdram.dq[6]",
+                "end": "U3/sdram_syn_2.bpad",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "ext_mem_clk_sft -> ext_mem_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 9.521,
+                "begin": "U3/sdram.dq[0]",
+                "end": "U3/sdram_syn_1.bpad",
+                "type": "hold"
+              },
+              {
+                "slack": 9.521,
+                "begin": "U3/sdram.dq[6]",
+                "end": "U3/sdram_syn_2.bpad",
+                "type": "hold"
+              }
+            ]
+          }
+        ],
+        "closed": false
+      },
+      "td_log": {
+        "file": "dual_board/image_link/prj/media_a/td_20261005_152523.log",
+        "sha256": "69A6E19A59A9DAD5EFECEA2C6072DFFFF1FEA6321121BF0F56B9DDF20C9CB69D"
+      },
+      "critical_warnings": [
+        "PHY-7002 CRITICAL-WARNING: Instance U3/sdram location (12, 12) is not honored. Cell's initial location is not legal at the beginning of ECO placement, and will be moved during placement. Please verify user location constraints through the adc file.",
+        "PHY-7002 CRITICAL-WARNING: Instance U3/sdram location (164, 288) is not honored. Cell's initial location is not legal at the beginning of ECO placement, and will be moved during placement. Please verify user location constraints through the adc file.",
+        "PHY-5079 CRITICAL-WARNING: Marked 1 clock net(s) utilize the local routing resources. Please check log message and the sinks of clock nets."
+      ],
+      "candidate_project": {
+        "file": "dual_board/image_link/prj/media_a/MEDIA_IMAGE_A_R3_HW_20261005.al",
+        "sha256": "79CE6305AB15AF80F81A42191232F4D19E69A0CC908A7E89F3F3E34A81F5BE0C"
+      }
+    },
+    {
+      "role": "B TF/media/compute",
+      "bit": {
+        "file": "dual_board/image_link/board_test_20261005/MEDIA_SRAM_TEST_B_TF_20261005.bit",
+        "sha256": "A120D9866579A64FDED7A73D03AA06470B01EBD9D7F7643BB93FCBE39C1CC880",
+        "bytes": 704136
+      },
+      "routed": {
+        "file": "dual_board/image_link/prj/media_b/MEDIA_SRAM_TEST_B_TF_20261005_phy.area",
+        "sha256": "2DB050EE65B92E25795FDF8CC81025B7816186E743619F9C2D7A4D6D65D69C14",
+        "lut": 11726,
+        "registers": 7763,
+        "bram9k": 28,
+        "bram32k": 9,
+        "dsp": 3,
+        "pll": 3,
+        "lut_percent": 59.83
+      },
+      "timing": {
+        "file": "dual_board/image_link/prj/media_b/MEDIA_SRAM_TEST_B_TF_20261005_pr.timing",
+        "sha256": "2C80F458AD82874716C4DBD6E00A52D7B0DB9EC9D35229A09FD380FAD9C472ED",
+        "confidence": "Routed",
+        "coverage_percent": 99.95,
+        "setup_or_recovery_wns": -3.251,
+        "hold_or_removal_wns": -1.54,
+        "path_groups": [
+          {
+            "name": "sd_clk -> sd_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": -1.037,
+                "begin": "u_media/u_tf/bmp_read_m0/state_reg[4]_syn_16.clk",
+                "end": "u_media/u_tf/bmp_read_m0/g_resample$u_scaler/div_shift_reg[15]_syn_4.a[1]",
+                "type": "setup"
+              },
+              {
+                "slack": -1.025,
+                "begin": "u_media/u_tf/bmp_read_m0/state_reg[4]_syn_16.clk",
+                "end": "u_media/u_tf/bmp_read_m0/g_resample$u_scaler/div_shift_reg[11]_syn_4.a[1]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "sd_clk -> sd_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.024,
+                "begin": "u_media/u_tf/bmp_read_m0/g_resample$u_scaler/pixel_rgb_reg[0]_syn_3.clk",
+                "end": "u_media/u_pixels/ramread0_syn_17.dia[8]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.086,
+                "begin": "u_media/u_tf/bmp_read_m0/g_resample$u_scaler/pixel_rgb_reg[9]_syn_4.clk",
+                "end": "u_media/u_pixels/ramread0_syn_7.dia[1]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "sd_clk -> sd_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": 0.11,
+                "begin": "u_media/u_pixels/wr_reset_pipe_reg[1]_syn_4.clk",
+                "end": "u_media/u_pixels/rd_sync0_reg[9]_syn_4.sr",
+                "type": "removal"
+              },
+              {
+                "slack": 0.11,
+                "begin": "u_media/u_pixels/wr_reset_pipe_reg[1]_syn_4.clk",
+                "end": "u_media/u_pixels/rd_sync1_reg[9]_syn_4.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> udp_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": -1.627,
+                "begin": "u_media/u_packets/state_reg[2]_syn_4.clk",
+                "end": "u_media/u_home_indices/run_address_reg[12]_syn_4.ce",
+                "type": "setup"
+              },
+              {
+                "slack": -1.464,
+                "begin": "u_media/u_packets/state_reg[2]_syn_4.clk",
+                "end": "u_media/u_home_indices/run_address_reg[3]_syn_4.ce",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> udp_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": -0.012,
+                "begin": "u_net/u_tx_fifo/wr_addr_reg[3]_syn_4.clk",
+                "end": "u_net/u_tx_fifo/ramgen_u/inst_syn_11.addra[6]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.086,
+                "begin": "u_net/u_tx_fifo/wr_data_bram_reg[0]_syn_3.clk",
+                "end": "u_net/u_tx_fifo/ramgen_l/inst_syn_11.dia[7]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> udp_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": -0.004,
+                "begin": "u_remote_compute/u_controls_cdc/source_release_reg[1]_syn_4.clk",
+                "end": "u_remote_compute/u_controls_cdc/mailbox_reg[27]_syn_4.sr",
+                "type": "removal"
+              },
+              {
+                "slack": 0.011,
+                "begin": "u_net/fixed_peer$u_udp/rx_state_reg[1]_syn_82.clk",
+                "end": "u_net/fixed_peer$u_udp/header_ok_reg_syn_183.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "compute_clk -> compute_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 18.519,
+                "begin": "u_remote_compute/written_g1_reg[30]_syn_4.clk",
+                "end": "u_remote_compute/written_g0_reg[16]_syn_3.a[1]",
+                "type": "setup"
+              },
+              {
+                "slack": 18.799,
+                "begin": "u_remote_compute/written_g1_reg[30]_syn_4.clk",
+                "end": "u_remote_compute/written_local_reg[8]_syn_4.d[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "compute_clk -> compute_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": -0.004,
+                "begin": "u_remote_compute/analysed_reg[3]_syn_4.clk",
+                "end": "u_remote_compute/ramread0_syn_6.addrb[10]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.099,
+                "begin": "u_remote_compute/u_spectrum/band_level_ram_n_syn_4.clk",
+                "end": "u_remote_compute/u_spectrum/ramread0_syn_9.a[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "compute_clk -> compute_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": 0.18,
+                "begin": "u_remote_compute/controls_udp_b_n_syn_84.clk",
+                "end": "u_remote_compute/u_controls_cdc/frame_state_reg[24]_syn_4.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "rgmii_rx_90 -> rgmii_rx_90",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 2.188,
+                "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_f4biXjlA/al102_yKqPCjEw/al102_XeYY7GUJ_reg_syn_25.clk",
+                "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_f4biXjlA/al102_yKqPCjEw/al102_HP1qu49R_reg[0]_syn_4.sr",
+                "type": "setup"
+              },
+              {
+                "slack": 2.477,
+                "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_f4biXjlA/al102_yKqPCjEw/al102_XeYY7GUJ_reg_syn_25.clk",
+                "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_f4biXjlA/al102_yKqPCjEw/al102_HP1qu49R_reg[2]_syn_4.sr",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "rgmii_rx_90 -> rgmii_rx_90",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.14,
+                "begin": "u_net/u_rx_fifo/wr_data_bram_reg[2]_syn_3.clk",
+                "end": "u_net/u_rx_fifo/ramgen_l/inst_syn_1.dia[2]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.141,
+                "begin": "u_net/u_rx_fifo/wr_addr_reg[2]_syn_4.clk",
+                "end": "u_net/u_rx_fifo/ramgen_u/inst_syn_1.addra[5]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> mac_tx_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 2.474,
+                "begin": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_gR4MUiLa_reg[5]_syn_4.clk",
+                "end": "u_net/u_temac/trimac_core/mac_core_aead6cd6dadd_Inst/TEMAC_CORE_INST/al102_vfhtA8Nz/al102_6KjBLuws/al102_BrbRRXKu/al102_gR4MUiLa_reg[14]_syn_20.a[1]",
+                "type": "setup"
+              },
+              {
+                "slack": 2.49,
+                "begin": "u_net/u_tx_fifo/ramgen_u/inst_syn_1.clkb",
+                "end": "u_net/u_tx_fifo/rd_eof_pipe_reg_syn_5.c[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> mac_tx_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": -0.003,
+                "begin": "u_net/u_tx_fifo/rd_addr_reg[3]_syn_4.clk",
+                "end": "u_net/u_tx_fifo/ramgen_u/inst_syn_1.addrb[6]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.103,
+                "begin": "u_net/u_tx_fifo/rd_addr_reg[7]_syn_4.clk",
+                "end": "u_net/u_tx_fifo/ramgen_l/inst_syn_1.addrb[10]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "clk_50 -> clk_50",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 10.422,
+                "begin": "u_pc_control/command_length_reg[3]_syn_7.clk",
+                "end": "u_pc_control/response_count_reg[1]_syn_4.d[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 10.422,
+                "begin": "u_pc_control/command_length_reg[3]_syn_7.clk",
+                "end": "u_pc_control/response_count_reg[1]_syn_4.d[1]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "clk_50 -> clk_50",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.214,
+                "begin": "u_pc_control/u_uart_rx/data_reg[5]_syn_4.clk",
+                "end": "u_pc_control/command_buffer_reg[111]_syn_4.mi[1]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.23,
+                "begin": "u_pc_control/u_uart_rx/data_reg[0]_syn_4.clk",
+                "end": "u_pc_control/response_kind_b[1]_syn_44.mi[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "compute_clk -> udp_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 5.79,
+                "begin": "u_compute_snapshot/mailbox_reg[19]_syn_3.clk",
+                "end": "u_media/u_tf/sd_card_top_m0/sd_card_cmd_m0/byte_cnt_b[9]_syn_23.mi[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 6.081,
+                "begin": "u_remote_compute/u_wave/lt4_syn_29.clk",
+                "end": "u_compute_snapshot/frame_state_reg[11]_syn_3.mi[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "compute_clk -> udp_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.335,
+                "begin": "u_compute_snapshot/mailbox_reg[8]_syn_4.clk",
+                "end": "u_compute_snapshot/frame_state_reg[12]_syn_3.mi[0]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.335,
+                "begin": "u_compute_snapshot/mailbox_reg[40]_syn_4.clk",
+                "end": "u_compute_snapshot/frame_state_reg[31]_syn_3.mi[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "sd_clk -> udp_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 1.403,
+                "begin": "u_link_session/heartbeat_b[23]_syn_14.clk",
+                "end": "u_media/u_home_indices/y_reg[2]_syn_4.d[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 1.818,
+                "begin": "u_link_session/heartbeat_b[23]_syn_14.clk",
+                "end": "u_media/u_home_indices/y_reg[6]_syn_4.d[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "sd_clk -> udp_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": -1.54,
+                "begin": "u_media/index_latched_reg[1]_syn_4.clk",
+                "end": "u_link_session/solicited_reg_syn_133.mi[0]",
+                "type": "hold"
+              },
+              {
+                "slack": -1.54,
+                "begin": "u_media/u_tf/bmp_read_m0/audio_file_size_reg[4]_syn_4.clk",
+                "end": "u_media/u_tf/bmp_read_m0/add9_syn_194.mi[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "sd_clk -> udp_clk",
+            "type": "recovery",
+            "worst_reported": [
+              {
+                "slack": 0.564,
+                "begin": "u_media/u_tf/preload_next_idx_reg[1]_syn_21.clk",
+                "end": "u_pcm_source_fifo/asy_r_rst1_reg_syn_4.sr",
+                "type": "recovery"
+              },
+              {
+                "slack": 1.461,
+                "begin": "u_media/u_tf/load_abort_reg_syn_18.clk",
+                "end": "u_media/u_bridge_udp_reset/release_pipe_reg[1]_syn_4.sr",
+                "type": "recovery"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> compute_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 5.022,
+                "begin": "u_remote_compute/u_controls_cdc/mailbox_reg[27]_syn_4.clk",
+                "end": "u_remote_compute/u_controls_cdc/frame_state_reg[0]_syn_16.mi[0]",
+                "type": "setup"
+              },
+              {
+                "slack": 5.086,
+                "begin": "u_remote_compute/u_controls_cdc/mailbox_reg[27]_syn_4.clk",
+                "end": "u_remote_compute/u_controls_cdc/frame_state_reg[0]_syn_23.mi[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> compute_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.144,
+                "begin": "u_remote_compute/written_gray_reg[19]_syn_4.clk",
+                "end": "u_remote_compute/written_g0_reg[19]_syn_3.mi[1]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.144,
+                "begin": "u_remote_compute/written_gray_reg[24]_syn_4.clk",
+                "end": "u_remote_compute/written_g0_reg[24]_syn_3.mi[1]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> compute_clk",
+            "type": "recovery",
+            "worst_reported": [
+              {
+                "slack": 3.95,
+                "begin": "u_media/u_packets/packet_write_addr[1]_syn_4.clk",
+                "end": "u_compute_snapshot/source_release_reg[1]_syn_4.sr",
+                "type": "recovery"
+              },
+              {
+                "slack": 5.494,
+                "begin": "u_remote_compute/controls_udp_b_n_syn_82.clk",
+                "end": "u_packet_scheduler/crc_b[12]_syn_402.sr",
+                "type": "recovery"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> compute_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": 0.18,
+                "begin": "u_remote_compute/controls_udp_b_n_syn_82.clk",
+                "end": "u_remote_compute/controls_udp_b_n_syn_76.sr",
+                "type": "removal"
+              },
+              {
+                "slack": 0.18,
+                "begin": "u_remote_compute/controls_udp_b_n_syn_82.clk",
+                "end": "u_remote_compute/controls_udp_b_n_syn_84.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> mac_tx_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 5.871,
+                "begin": "u_net/reset_pipe_reg[2]_syn_38.clk",
+                "end": "u_net/u_tx_fifo/rd_state_reg[2]_syn_4.sr",
+                "type": "setup"
+              },
+              {
+                "slack": 5.99,
+                "begin": "u_net/reset_pipe_reg[2]_syn_38.clk",
+                "end": "u_net/u_tx_fifo/rd_16_count_reg[1]_syn_4.sr",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> mac_tx_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.398,
+                "begin": "u_net/u_tx_fifo/wr_transmit_frame_reg_syn_5.clk",
+                "end": "u_net/u_tx_fifo/wr_frame_in_fifo_reg_reg[0]_syn_4.mi[0]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.51,
+                "begin": "u_net/reset_pipe_reg[2]_syn_38.clk",
+                "end": "u_net/u_tx_fifo/rd_addr_txfer_reg[0]_syn_3.sr",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> sd_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": -1.143,
+                "begin": "u_media/finish_toggle_reg_syn_8.clk",
+                "end": "u_media/u_pixels/used_words_b_n6_syn_5.mi[0]",
+                "type": "setup"
+              },
+              {
+                "slack": -0.981,
+                "begin": "u_media/u_pixels/rd_gray_reg[1]_syn_4.clk",
+                "end": "u_media/u_pixels/rd_sync0_reg[1]_syn_3.mi[1]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> sd_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 1.85,
+                "begin": "u_media/u_pixels/rd_gray_reg[1]_syn_4.clk",
+                "end": "u_media/u_pixels/rd_sync0_reg[1]_syn_3.mi[0]",
+                "type": "hold"
+              },
+              {
+                "slack": 1.85,
+                "begin": "u_media/u_pixels/rd_gray_reg[9]_syn_4.clk",
+                "end": "u_media/u_pixels/rd_sync0_reg[9]_syn_4.mi[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> sd_clk",
+            "type": "recovery",
+            "worst_reported": [
+              {
+                "slack": -3.251,
+                "begin": "u_media/u_packets/packet_write_addr[1]_syn_4.clk",
+                "end": "u_media/u_pixels/lt0_syn_27.sr",
+                "type": "recovery"
+              },
+              {
+                "slack": -3.133,
+                "begin": "u_media/u_packets/packet_write_addr[1]_syn_4.clk",
+                "end": "u_pcm_source_fifo/asy_w_rst1_reg_syn_4.sr",
+                "type": "recovery"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> udp_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 6.578,
+                "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[3]_syn_3.clk",
+                "end": "u_net/u_tx_fifo/wr_rd_addr_reg[3]_syn_4.mi[1]",
+                "type": "setup"
+              },
+              {
+                "slack": 6.589,
+                "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[3]_syn_3.clk",
+                "end": "u_net/u_tx_fifo/wr_rd_addr_reg[6]_syn_4.mi[1]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> udp_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.253,
+                "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[10]_syn_4.clk",
+                "end": "u_net/u_tx_fifo/wr_rd_addr_reg[9]_syn_4.mi[0]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.253,
+                "begin": "u_net/u_tx_fifo/rd_addr_txfer_reg[7]_syn_3.clk",
+                "end": "u_net/u_tx_fifo/wr_rd_addr_reg[9]_syn_4.mi[1]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "clk_50 -> udp_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 2.594,
+                "begin": "u_control_source/mailbox_reg[1]_syn_4.clk",
+                "end": "u_control_source/frame_state_reg[2]_syn_3.mi[1]",
+                "type": "setup"
+              },
+              {
+                "slack": 2.61,
+                "begin": "u_control_source/mailbox_reg[1]_syn_4.clk",
+                "end": "u_control_source/frame_state_reg[0]_syn_3.mi[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "clk_50 -> udp_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.266,
+                "begin": "u_control_source/mailbox_reg[3]_syn_4.clk",
+                "end": "u_control_source/frame_state_reg[2]_syn_3.mi[0]",
+                "type": "hold"
+              },
+              {
+                "slack": 0.276,
+                "begin": "u_control_source/mailbox_reg[3]_syn_4.clk",
+                "end": "u_control_source/frame_state_reg[4]_syn_3.mi[1]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> clk_50",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 2.883,
+                "begin": "u_control_source/acknowledge_toggle_reg_syn_4.clk",
+                "end": "u_control_source/ack_sync_reg[1]_syn_3.mi[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> clk_50",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 0.266,
+                "begin": "u_control_source/acknowledge_toggle_reg_syn_4.clk",
+                "end": "u_control_source/ack_sync_reg[1]_syn_3.mi[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> clk_50",
+            "type": "recovery",
+            "worst_reported": [
+              {
+                "slack": 1.88,
+                "begin": "u_media/u_packets/packet_write_addr[1]_syn_4.clk",
+                "end": "u_pc_reset/release_pipe_reg[1]_syn_4.sr",
+                "type": "recovery"
+              },
+              {
+                "slack": 2.025,
+                "begin": "u_media/u_packets/packet_write_addr[1]_syn_4.clk",
+                "end": "u_control_source/source_release_reg[1]_syn_4.sr",
+                "type": "recovery"
+              }
+            ]
+          },
+          {
+            "name": "udp_clk -> clk_50",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": 0.61,
+                "begin": "u_media/u_packets/packet_write_addr[1]_syn_4.clk",
+                "end": "u_control_source/source_release_reg[1]_syn_4.sr",
+                "type": "removal"
+              },
+              {
+                "slack": 0.722,
+                "begin": "u_media/u_packets/packet_write_addr[1]_syn_4.clk",
+                "end": "u_pc_reset/release_pipe_reg[1]_syn_4.sr",
+                "type": "removal"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+            "type": "setup",
+            "worst_reported": [
+              {
+                "slack": 1.275,
+                "begin": "u_net/u_temac/u_tx_clk_en_gen/rgmii_txc_en_shift_reg_syn_8.clk",
+                "end": "phy1_rgmii_tx_clk_syn_2.do[0]",
+                "type": "setup"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+            "type": "hold",
+            "worst_reported": [
+              {
+                "slack": 6.287,
+                "begin": "u_net/u_temac/u_tx_clk_en_gen/rgmii_txc_en_shift_reg_syn_8.clk",
+                "end": "phy1_rgmii_tx_clk_syn_2.do[0]",
+                "type": "hold"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+            "type": "recovery",
+            "worst_reported": [
+              {
+                "slack": 0.893,
+                "begin": "u_net/u_temac/u_tx_clk_en_gen/client_txc_en_reg_syn_25.clk",
+                "end": "phy1_rgmii_tx_clk_syn_2.rst",
+                "type": "recovery"
+              }
+            ]
+          },
+          {
+            "name": "mac_tx_clk -> rgmii_tx_shift_clk",
+            "type": "removal",
+            "worst_reported": [
+              {
+                "slack": 6.379,
+                "begin": "u_net/u_temac/u_tx_clk_en_gen/client_txc_en_reg_syn_25.clk",
+                "end": "phy1_rgmii_tx_clk_syn_2.rst",
+                "type": "removal"
+              }
+            ]
+          }
+        ],
+        "closed": false
+      },
+      "td_log": {
+        "file": "dual_board/image_link/prj/media_b/td_20261005_152618.log",
+        "sha256": "8133074223D3EB488C8EF4FD94CE9055F87B461FE146933BE9C201737F97EC7F"
+      },
+      "critical_warnings": [],
+      "candidate_project": {
+        "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B_R6_HW_20261005.al",
+        "sha256": "829186DE6B83A9956B397DB376FEA4F1D85ECC35F07BAF6C6AF777A3BCA6EF14"
+      }
+    }
+  ],
+  "source_manifest": [
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/TEMAC_CORE/TEMAC_CORE.xml",
+      "sha256": "3182FD400CB0631BA3CB94A1739DA51150470DEA3E0EC23A16061BCB49E940D1"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/pll_gen.ipc",
+      "sha256": "4151BBA32CC66C9AA0C4B96EE76C57FFB78DBA2E4B448D746A1331CBE17D32AE"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/rx_pll.ipc",
+      "sha256": "3D7D676316F0E0C320CE5582B61ADAF9BDF1A2F0B13E31AF85588E6447E8ABA5"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/BUFGMUX.v",
+      "sha256": "3501C3AE93FC102FD547A30BF84AAF64521DDAEAD53F398E62DAFB8CF3E8ADBD"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/IDDR.v",
+      "sha256": "0CB13720A17311E80812DE7B45B0A0BA4CF2ECDF1F60E1F8A4279FEE268C7B15"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/ODDR.v",
+      "sha256": "6442C1DD9F76329DDB5420110FD8236211EF7D002EC2A1C6295D062E353A8F4D"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/RAMB16_S9_S9.v",
+      "sha256": "9651FF21B7E76F097704ECDA17398B00F2618107B13E0768D4043E24CB649BCC"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/clk_gen_rst_gen.v",
+      "sha256": "1CF435B0D40E3850366F237C8BD8E0DDE34CE1974C8525457D0AD8F65F5C1837"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/div_clk_gen.v",
+      "sha256": "BB9CA78FEA2DEF93464B44641B32A2491316CF3DE55C361BC81801CFC280B367"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/rgmii_interface.v",
+      "sha256": "358763A4C014AAC49A0C1A0EC96E6E0224C0341371740D1616F43766D14A1DCD"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/rx_client_fifo.v",
+      "sha256": "7DAE154FD14E6CE3431C1492777C1CEFB1E485D276F15DE8D287D7A0D6BA06A3"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/temac_block.v",
+      "sha256": "D013485435ABCD2188450120A9EF99A7A75C6E46FD8F186381E2E8FA3F3C5241"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/temac_clk_gen.v",
+      "sha256": "DFDDA666362A1372FFD07B361D1D52401AC479B244CE7AFB0C45F7DBE08996E8"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/tx_client_fifo.v",
+      "sha256": "B50FD509770C57C2EB683A6074F0F97704E048392A03472F1FDB3FA9965CFFA7"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/tx_clk_en_gen.v",
+      "sha256": "78690F2C03DD38077FB3E7A1B39DD520DA6ECA10CBF125BB57FD71E2D156082A"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/udp_ip_protocol_stack_merge.enc.v",
+      "sha256": "0D06B3D6F7B2947501CDD3128373585E38C70454938234FFA9DF325010BD4F74"
+    },
+    {
+      "file": "dual_board/image_link/constraints/media_a.adc",
+      "sha256": "6CA99CE263324AA8E658C45D4079CADD0DCBC6B1C206F82F9485099EE781D71B"
+    },
+    {
+      "file": "dual_board/image_link/constraints/media_a.sdc",
+      "sha256": "CB2FD0E01B1D5FE3D250FFACFDBFE2B23AD3E2E52580F5DB5AE8F33D56BEA074"
+    },
+    {
+      "file": "dual_board/image_link/constraints/media_b.adc",
+      "sha256": "7C0047FBE7E8073AFA858A785F736E3B86A6E52518FB32ABEC451370A17935F0"
+    },
+    {
+      "file": "dual_board/image_link/constraints/media_b.sdc",
+      "sha256": "267F01FE91C64C1427B53996E471C3BD8528B6E8FCCCE63F9226B98C877C43D7"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_a/MEDIA_SRAM_TEST_A_MAIN_20261005.al",
+      "sha256": "98A6D86D267856CC434176751AAA08267A853197A097221A227949190282A8E8"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_a/build_sram_test.tcl",
+      "sha256": "2608F43F4D88C59CD091741C0C78CC16310700E5A0318A4C6AE56C01D20B0CEB"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B_R6_HW_20261005.al",
+      "sha256": "829186DE6B83A9956B397DB376FEA4F1D85ECC35F07BAF6C6AF777A3BCA6EF14"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SRAM_TEST_B_TF_20261005.al",
+      "sha256": "FA915FC438BBA6BC452ADC77A6D2DB7B2F1E503F492BD25B955238CB9D237B8E"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/build_round6_b.tcl",
+      "sha256": "A0397A4B0FDE4DE4A6F8B0E654C62093C7069AB8C67373F118F3C58197B9AF68"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/build_sram_test.tcl",
+      "sha256": "7040B0FED01DE746236ADEE09B19549356D9C29B02232A42DA45894D18DDC53A"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_packet_rx.v",
+      "sha256": "CAFE997C174422D786847D61E5FBC94308C495B09586F45524E5D359D330FA58"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_packet_tx.v",
+      "sha256": "AC313135E5FFF0ADE85C4C3AF14CF649CDA15B2FD7DD07628AA783113A442E63"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_visual_packet.v",
+      "sha256": "A76921C3F83C98C4ABB8FE71E6DC7E6DEFE182267E11C7A0F64F0192A968DEA5"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_board_eth_transport.v",
+      "sha256": "88BEDCF15C44A19D1103BA8514DCFF3EF5400FFC1A38EFFCBEE724604561AD40"
+    },
+    {
+      "file": "dual_board/image_link/rtl/fixed_peer_udp.v",
+      "sha256": "2919B55F8240E47058824CD20DE2FEEB02373A395EB3F9B47D4F2D414715E938"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_atlas_rom.v",
+      "sha256": "71BF04D37659960F9CBE6877EDC8DB876FB4B495919DDB272F2F80EEB128666B"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_palette_rom.v",
+      "sha256": "C62234D30000DB3CE2531A442F95B43A6688A2C3D7302136526BDEDD4EC10EBB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_20261005/audio_receipt_hw.v",
+      "sha256": "372F7166E55F118B2C1DF3DCB85BE99C6C49DB1A24DB9B2856A439EC3C6CA9F0"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round2_20261005/home_index_stream_hw.v",
+      "sha256": "EF17E105BABA053CD767E4B76EDBB963CC3109A93B54173549F2FA5D81B8CA91"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round3_20261005/frame_read_write_hw.v",
+      "sha256": "0CCA89D50A738E066F55937A701247A0410E0764C02F3539E9AD18541AF3931F"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round3_20261005/top_dual_image_hw.v",
+      "sha256": "A1FC45219CE0116EB68739E4465DBCEC5090364DCCB1623E03AE4EF408B4DFCB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round4_20261005/audio_visual_packet_hw.v",
+      "sha256": "199FFE7769CD8050BB58CF1610A1321DDA0585F3347B41744B416CF596384C07"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round4_20261005/image_media_board_b_hw.v",
+      "sha256": "961AE644D514FF82B20922798DF72542A7FD7C327DFF57DE8FBA43B2EE069039"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round4_20261005/image_tf_source_hw.v",
+      "sha256": "BE703DD0546A56113D6D231A49867E1C0AE3CF0675499178ECDFDE8075140425"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round4_20261005/player_domain_reset.v",
+      "sha256": "EA7EF6223F24A544ECB69200E8B93DF567B22B1DDBE94E4E7C525BED3EDDB435"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round4_20261005/remote_audio_compute_hw.v",
+      "sha256": "00DF2D90FE5FF4122817AE8C8887327D2EAC94ED3AB5732FA384F76C2E28C732"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round5_20261005/image_packet_tx_hw.v",
+      "sha256": "62D9A29319D04731C683C2BC7EFFCBC26B8E4FC245F7B5140E62EEE70B625D3E"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round6_20261005/audio_receipt_hw.v",
+      "sha256": "80F6B14CFBFC273E2210780B097F8795FC044DCF27B95A14A3A471322BD45DBB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_main_ingress.v",
+      "sha256": "59EB99C5603E93EE85BCCD3C3CE1C8DABBF3833ED4FF76C63B8D4278111BE7A2"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_packet_rx.v",
+      "sha256": "7DC4C31AF4A9D0341FEBF2ED51DDF234F258E1BF1BE890AC6444A8A763C676E4"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_pixel_cdc.v",
+      "sha256": "6198853A79080DDD1EA4FA77FF8356B8F7ABDF27B899F73B8C4FE5B98DEF061C"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_receipt.v",
+      "sha256": "50DD6B5C718DD26DB6694923F5E42299C3CE588FB95107D4D45CEF91D37FC0FD"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_remote_display_control.v",
+      "sha256": "D95E340189E81796A31E50A1CA28BA72C2148348F7ECBA7C1A1912E2C05C2104"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_sdram_sink.v",
+      "sha256": "0D05C3C5F75B7C6B479DE42C97173555D50251AA37E6A0FF81A921A5EAA3D3D7"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_audio_enable_cdc.v",
+      "sha256": "C641C3D8C3A114EEAC7B38535DA5C2B8D3A8E83A7F5FFDA1312261B5DE6ED765"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_control_packet.v",
+      "sha256": "E6D603B4A83FE313817219534238E01EA24121E092C6E78226435283D5CF9A95"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_link_session.v",
+      "sha256": "18789CEE005FDE0340404D928239CD70D1939577433042DCDE088DA5D1FB61E1"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_udp_arbiter.v",
+      "sha256": "8FE149E0D80DFCAE220EEC8ADDB4226E5E984C62EB40A3A72F0F51014FD28FD6"
+    },
+    {
+      "file": "dual_board/image_link/rtl/sd_card_bmp_remote.v",
+      "sha256": "AD45EDF4B91C22635E2B550C964A5F694108C2F5DC7809F2A6777CDE5AF2FC11"
+    },
+    {
+      "file": "dual_board/image_link/rtl/video_remote_home_overlay.v",
+      "sha256": "D52B1EDFADFD3CBBDF2940436E7932EC106273632A5CB69C13F6166CF5050BEB"
+    },
+    {
+      "file": "dual_board/image_link/sim/home_reference_indices.hex",
+      "sha256": "3BC52162FE1FD65ABEA70D27CF40EBCE08AF3220B198C8370CAA3830F2126460"
+    },
+    {
+      "file": "dual_board/image_link/sim/hw_round6_20261005/audio_receipt_golden.v",
+      "sha256": "502042D8F26F3B32F1E5BA8521260C0607BB73AEB4BFD0AE4578A093157FBA09"
+    },
+    {
+      "file": "dual_board/image_link/sim/hw_round6_20261005/run_audio_modelsim.do",
+      "sha256": "8D6C8FC563F0EAD47051FD5BB560E4AF4D24942772C18406B01A01AB367F1914"
+    },
+    {
+      "file": "dual_board/image_link/sim/hw_round6_20261005/run_boundary.do",
+      "sha256": "75B90CD112A0E66B158E0752D5D6D21AFC9D2AF284700EF10E632F12B79701DB"
+    },
+    {
+      "file": "dual_board/image_link/sim/hw_round6_20261005/run_offload_modelsim.do",
+      "sha256": "7BD2F940C435B630D80CEB5BA91478BAED41F7EC11AC4EB1C597F3CE481833E1"
+    },
+    {
+      "file": "dual_board/image_link/sim/package_media_sram_test.js",
+      "sha256": "185456BD8EC2493D412FAB7631B0477FE787C53E5F07CB88DECB9F37CBA237AF"
+    },
+    {
+      "file": "dual_board/image_link/sim/prepare_media_sram_test.js",
+      "sha256": "3EBE70093C41982BF464733BE295471AF8934F42797789557AE1E33DCD3FEBEA"
+    },
+    {
+      "file": "dual_board/image_link/sim/prepare_player_round6.js",
+      "sha256": "004075200F2CC129B16FA01C60EFCF4E854C74454EB9D3BAF3BEEDA118D3859E"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_player_round6.ps1",
+      "sha256": "7742155503CCC84D8C3F465057183D96477D3DA3D0EA0D6D88F79EC1D5B70BB1"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_player_round6_audio.do",
+      "sha256": "554B686E7B1D524427B2B0CA1310B9FF14F25A4C8A012482AF73700E785E652F"
+    },
+    {
+      "file": "dual_board/image_link/sim/run_player_round6_guard.do",
+      "sha256": "79B5488BAF81158E3859BBFFC6E08F48F3F211F4721B3542C29E51F3610C6A8B"
+    },
+    {
+      "file": "dual_board/image_link/sim/tb_audio_receipt_pipeline_equiv.v",
+      "sha256": "2BABA40B915BFBB9729D332E2A001F22272F3547C253B1F2BCA2CB18DE5C5026"
+    },
+    {
+      "file": "src/td_project/al_ip/PLL.ipc",
+      "sha256": "8CB6DF3A1BB99CF2F95F9A535D7F33213B837207B36E336848A6ED0DB29AB8B5"
+    },
+    {
+      "file": "src/td_project/al_ip/PLL_HDMI_AUDIO.v",
+      "sha256": "4152904C9FE0A01DFB9B5E47FDBE9FDF2F02EBCCEF66B9E81451D3E88D4AB5A2"
+    },
+    {
+      "file": "src/user_source/constraints_source/edid_debug.cwc",
+      "sha256": "6716411E2346DE08976E0AD8ED2E09EB93BDC0F60EFC31BF75BA70E6CEBE1F95"
+    },
+    {
+      "file": "src/user_source/hdl_source/I2S_receiver.v",
+      "sha256": "327271F25B3CE4348885569F544D33D8BD02C80CC2FD4524D2EEBEC814781416"
+    },
+    {
+      "file": "src/user_source/hdl_source/IP/afifo_32_16_256.v",
+      "sha256": "7C3EE41F30BE75AE686C9ABFF3A840FC5439209CDA077E4AA275EAC0DAB9F564"
+    },
+    {
+      "file": "src/user_source/hdl_source/IP/sys_pll.ipc",
+      "sha256": "B8ACD7534D7FD71E5922CD194DCED754AD462A805DC7B38574486DC3A963EF41"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/ax_debounce.v",
+      "sha256": "93AA6DD38051250CC7F777C88466AC180AFE9BCDCE7838B9EA506455D8CBC9B8"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/bmp_bilinear_stream.v",
+      "sha256": "1F6EDA9ED18694FFD5E0E386B4A3A051364B422CD8C7288AD260CEE908D799EC"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/bmp_read.v",
+      "sha256": "15F51BF34B73FC81286EFDA86B6AA2C2ED01BD2FD72D3A0F959A7739FD65ECE2"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/color_bar.v",
+      "sha256": "AFE1F56714EC58D2477BA1717E5A36C5A0DA5FE5C07D70D11AA5ACE710C4B152"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/frame_fifo_read.v",
+      "sha256": "AA456AFB9C01F6BC4D976DF1F5D1A0DB39885FDECA2CFAAB71A5C6087C4B172C"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/frame_fifo_write.v",
+      "sha256": "2C0F735EBE0CC38D3C3E3B404A0D3121412254EE3AD1DAF6CE49573856837715"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_bmp.v",
+      "sha256": "BEBC7249B6D100C36335A915711F80CC407D790935BFAA69D4B585D3621D5DA6"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_cmd.v",
+      "sha256": "A1A50502AFD4E8B238B0627CD5F204C04738E761D49AB48F33DA35E22BA4A5FA"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_sec_read_write.v",
+      "sha256": "AA73E64F7A8EDF767BEF0D7205702BB697AB4080E3FF012DE0C29BE2EE0A9FCC"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_top.v",
+      "sha256": "00AC5EB15CE2D5B1D3FF87D6CB5BE44AF50106A96327FBC8A580B831274CB123"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sdram.v",
+      "sha256": "2D985C2477384E677C25714241E1A50206DEF8916AA03189A5B313B2D22DFC99"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/seg_decoder.v",
+      "sha256": "62A2664BE7DB6D0DACE31FC97A8FAEF0C43F44B639B1D5A6A2C49773812A3B5E"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/seg_scan.v",
+      "sha256": "C61D6B6808E06DD0EDC6DB2D8F214426A1FB96D546556ECD1F74EA9CA6889F52"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/spi_master.v",
+      "sha256": "37F7A21144FA5CCA3CC5C3B5F68A5AD40B3108336B600E45A1367734AC61403C"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/video_define.v",
+      "sha256": "77748966850A8F5AF0D77F2CDB08006088BA5E1A31B98391FBA6CC61C5247DA2"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/video_delay.v",
+      "sha256": "F47C4B63F8BAA6D8874C87DCA5B72DFDADD19F4A107403DA98752BCE98936433"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/video_timing_data.v",
+      "sha256": "C6F75501E98DD5995F687AAFB40455BEFFE45B426137B5089A73AC3A036F7282"
+    },
+    {
+      "file": "src/user_source/hdl_source/alarm_switch_control.v",
+      "sha256": "4503863C7AACACC8F5B5489690C2185DF12E0B09275EF0FC25F38848D5C97E64"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_alarm_mixer.v",
+      "sha256": "73C2309D1434D291EB8661AF0B1CFA024BD48354314DB138E71FA148100C5542"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_arc_calculate.v",
+      "sha256": "81D282E3D8BCFC56567F252BD214866AC66FA30F0C0B126845C92E149C15933A"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_lyric_timeline.v",
+      "sha256": "4A2A493899850EE22F3F4B084B070F705F235CB5B97A68D90A954D94328EFD5B"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_spectrum_analyzer.v",
+      "sha256": "4A5AB0CE23325CD9E9E60FC71F3BDEB105FC346877761A679191D956688D0D76"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_visualizer_overlay.v",
+      "sha256": "9B55E4CC71A255615A7FD3D21CE761E9C6982CBD76ABEB67C7F0A4CFC930FDC5"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_waveform_analyzer.v",
+      "sha256": "F9AACDA9C73E47EE84E490E4C115ABD77845AFF3E8CDCC9898679773E6939BC4"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "sha256": "867E0B0BDD874BC383D00918C9E1BE3FE01EDF41F343B6A0D73E262776596A63"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v",
+      "sha256": "2617E785BC8D6563C3AB1CE94431314FEBF6A11B7B00A1DE4942EF7AE4FFA199"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v",
+      "sha256": "1A946821E904C411F4DBF8F6D839B59622CBF9E5EA0844CCEC6769EBE07F769E"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi_phy_warpper.v",
+      "sha256": "416B082B0987001BDBC0A7E20A557CB8FB1DCA34E25DC881E6D28A8CB3CF4300"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/global_def.v",
+      "sha256": "433240EC48021DBB559D3532C67526F1338C6CC6CE15D26E1D987FE89E61DA42"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/sdr_as_ram.enc.v",
+      "sha256": "767DBDFBD83D42223B77DFA7DEAB42CE8216A8FD6F6CB41B7E7593D9A345BA57"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/sdr_init_ref.enc.v",
+      "sha256": "3DA1D34D3FB8A5108A74185EDF7FE6836B28807B31F47F74EAB87DE4F23186B8"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/sdr_wrrd.enc.v",
+      "sha256": "C7D7FE07D75F66AA88D9F986B3006319C995162434F104F9990664B374CDFDD2"
+    },
+    {
+      "file": "src/user_source/hdl_source/ip/afifo_16_32_256.ipc",
+      "sha256": "9DF57C0B914F2F6222F88E356528947224FDDB866BE2468F1391C26D4E60D371"
+    },
+    {
+      "file": "src/user_source/hdl_source/ip/afifo_32_16_256.ipc",
+      "sha256": "A74955DC68A02BBFB36780127008C4737EC80E0888A4648E98E6EAC9F5D2C349"
+    },
+    {
+      "file": "src/user_source/hdl_source/ip/sys_pll.ipc",
+      "sha256": "B8ACD7534D7FD71E5922CD194DCED754AD462A805DC7B38574486DC3A963EF41"
+    },
+    {
+      "file": "src/user_source/hdl_source/ip/video_pll.ipc",
+      "sha256": "B717F646067025A69B4021ED85ADEEB6531FAD881BCE5A49FCB2171CCF401076"
+    },
+    {
+      "file": "src/user_source/hdl_source/key_remove_shakes.v",
+      "sha256": "8832F59E7BA94BFB8CF31E4F5A772EF7177D5257A5A2532D53CBFA1D9B7F5CD9"
+    },
+    {
+      "file": "src/user_source/hdl_source/lane_lvds_10_1.v",
+      "sha256": "DE9529321354F04837E051D0EC1681CF44783D4BE3284703A788E081147500BC"
+    },
+    {
+      "file": "src/user_source/hdl_source/lyric_song_data.v",
+      "sha256": "C9C83B5BCA1690FEEE3489BBF16C11946275CF9FBEEE5BB8C01E1899D9631C1D"
+    },
+    {
+      "file": "src/user_source/hdl_source/osd_alpha_overlay.v",
+      "sha256": "17AD2C2F3A7BA2601CA6173FCF73EDE9499A74701D43E877A8DB07971745A115"
+    },
+    {
+      "file": "src/user_source/hdl_source/startup_pulse.v",
+      "sha256": "396E1E56FEBB8028339E646BC2F06B83E07AB11EF840E447422FB941956741C9"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_audio_control.v",
+      "sha256": "82F4BAE8C513B5B1B0C71419C38842191B3EBF795408A50B0E65BFFAEDEDB35F"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_baud_tick.v",
+      "sha256": "86701937B016AB297B46BBBA8A7ACC00B03F7F9E636C3EFC34ED176E1FF2809F"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_rx.v",
+      "sha256": "D75F9978C9D55D8516DAA5BCD6C9102E670D7508FA113E8C31B5A85C59232ECB"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_tx.v",
+      "sha256": "6E607568AFBFE2CF1EC019CF7E5ECDE36DABA630F20568F5D8A5527A9B4B25B3"
+    },
+    {
+      "file": "src/user_source/hdl_source/vehicle_hazard_overlay.v",
+      "sha256": "CDAFBC0AFF61000F72CF309769CBAEDD6A9A6DA61E292BA2FD65AC327BF63CF9"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_album_cover_rom.v",
+      "sha256": "3D7411B079B2CE5981ECDFD9ED7AE41E200A149ECA9583928F58E60473167FCF"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_app_icons_rom.v",
+      "sha256": "F1D460B691449680F492390CB021A8A3B0EAEA146C4FFD57F615205CDD95F6C9"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_clock_digit_rom.v",
+      "sha256": "65A51B56F113F30ED3B0336E18B79B3F6B14797101ACFD41C6C270C1FC97A1A8"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_frame_valid_gate.v",
+      "sha256": "AA4962A5B2339EC8691692DFF611B2F4E9474D9A6D7F95EF1273705F471403C6"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_home_overlay.v",
+      "sha256": "023FDD9B69EFA77C3331B6766BC1BABDCC4755DCCA908B74E2C212CE6F92A038"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_image_adjust.v",
+      "sha256": "B59CD2088CA60D53DA532C7A5F6A59C5F3D7EC882F8CFD5E907D8133EACBD392"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_lyric_overlay.v",
+      "sha256": "4C946C40CB7801D1E86B62B5D2AB1CE011C844C0344554A2AD468FE13D5413A8"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_relax_overlay.v",
+      "sha256": "B05F8913D4A8ABA274AC74ED0B9212671EEBCF8ACFA748BA2855C5AD3959D7CF"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_rgb_to_axis_640x480.v",
+      "sha256": "82DA3DF6220842F072654800453ADB860DAF22126E81873F96E6769AE964E57F"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_source_test.v",
+      "sha256": "39CC05C9684A594D4254D11E66E97344053AB75BDB00F3F5A301643FD7AADBFC"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_status_overlay.v",
+      "sha256": "FD8CB3322772D91D82FB9B4D1A2C9EA953B162928774CA89470089C99172A37F"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_transition_effects.v",
+      "sha256": "654018C079E9EA252F01C5383E617CCDCE6DF6E98CB7BF6AF349C88E3D5AEE01"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_unified_clock.v",
+      "sha256": "69830275BE314D3A3C2788346893BCD3CDB51D807E0C782DDFBB71FD49C90538"
+    }
+  ],
+  "protected_manifests": [
+    {
+      "file": "dual_board/image_link/phase11_baseline_20261005.json",
+      "sha256": "5EEFCFDEAF590A13E0C90468458DF72769445830E9825CA55463D48EE8C78224"
+    },
+    {
+      "file": "dual_board/image_link/phase10_validation_20261004.json",
+      "sha256": "F79080D8A2FE6D49699C7692E57F0C86047B8159534F4211F9D7D007944D7BB3"
+    },
+    {
+      "file": "dual_board/image_link/phase11_pipeline_validation_20261005.json",
+      "sha256": "89A067E441E62A0F5A2CA2842AEAD720436C54DD33CF4E6755F4C9588FD087B4"
+    },
+    {
+      "file": "dual_board/image_link/phase12_domain_validation_20261005.json",
+      "sha256": "3AEA47D3DA941CAE17D1CA5CCDCC1F928018877D2259BF2DF02ABB51F092AC05"
+    },
+    {
+      "file": "dual_board/image_link/phase13_crc_pipeline_validation_20261005.json",
+      "sha256": "80F23C6784BC1E759011FE6C3A574C45864989E77EA9EF1F0D7926AD7EB880D4"
+    }
+  ],
+  "documentation": [
+    {
+      "file": "dual_board/image_link/board_test_20261005/README.md",
+      "sha256": "7A3E81F94AC5DA74B4B9673308DE3344B5DE69E5BF6065852D508278177B7060"
+    },
+    {
+      "file": "dual_board/image_link/phase14_receipt_pipeline_notes_20261005.md",
+      "sha256": "F9DA161B8877924D3F95F6F493A67C7019E9EA3DD9F6FEDC2150EAA0CB967728"
+    }
+  ],
+  "limitations": [
+    "Both boards retain negative same-domain and cross-domain timing; not only special SDRAM IO paths.",
+    "No new false paths, clock groups, PLL, native IP, FIFO depth or protocol changes.",
+    "Prior full regression is R5 evidence; only the listed targeted R6 checks were freshly run.",
+    "Application-level and native FIFO simulation is not real TF/PHY/SDRAM/HDMI verification.",
+    "A SDRAM placement/local clock warnings remain; external IO timing specification audit is incomplete.",
+    "Use PROGRAM_SRAM with paired files, keep known rollback, do not treat board observations as timing signoff."
+  ]
+}

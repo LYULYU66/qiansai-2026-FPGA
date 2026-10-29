@@ -1,0 +1,20 @@
+{
+  "source": "C:/Users/28492/Desktop/车载图片/周杰伦 - 一路向北.mp3",
+  "source_bytes": 11915098,
+  "source_sample_rate": 44100,
+  "output": "MUSIC.PCM",
+  "format": "raw signed 16-bit little-endian interleaved stereo PCM; no header",
+  "sample_rate": 48000,
+  "channels": 2,
+  "bytes_per_sample_frame": 4,
+  "sample_frames": 14295040,
+  "bytes": 57180160,
+  "duration_seconds": 297.81333333333333,
+  "whole_song": true,
+  "gain_applied": false,
+  "sha256": "69D27A92FB3FAE5DFFD8C9C00DB035B37BE20EEDDC1EBACB005D3B8B9EA9A6A1",
+  "verification": "Entire output read back with FFmpeg; nonzero audio, 28590080 individual channel samples, mean -12.5 dBFS, peak 0 dBFS.",
+  "tf_card_modified": false,
+  "fpga_sources_modified_for_audio_conversion": false,
+  "lyrics_and_static_title": "Not updated; current title/timeline belongs to the previously accepted song."
+}

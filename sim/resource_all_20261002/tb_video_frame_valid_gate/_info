@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vtb_video_frame_valid_gate
+Z1 !s110 1790992601
+!i10b 1
+!s100 d0dF@KK<^<Uj7Bb6QnBVC3
+ISB<l1OPEaIlh2AQd@k6Z41
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1789549770
+8sim/tb_video_frame_valid_gate.v
+Fsim/tb_video_frame_valid_gate.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1790992601.000000
+Z5 !s107 sim/tb_video_frame_valid_gate.v|src/user_source/hdl_source/video_frame_valid_gate.v|
+Z6 !s90 -work|sim/resource_all_20261002/tb_video_frame_valid_gate|src/user_source/hdl_source/video_frame_valid_gate.v|sim/tb_video_frame_valid_gate.v|
+!i113 1
+Z7 o-work sim/resource_all_20261002/tb_video_frame_valid_gate
+Z8 tCvgOpt 0
+vvideo_frame_valid_gate
+R1
+!i10b 1
+!s100 K=EWUf7]Gn6X>j1ZahIk?1
+IE^V1gbS1aDIh1K3nDOOli1
+R2
+R0
+w1789549754
+8src/user_source/hdl_source/video_frame_valid_gate.v
+Fsrc/user_source/hdl_source/video_frame_valid_gate.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

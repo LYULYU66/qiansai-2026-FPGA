@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>双FPGA车载双屏影音系统 宣传海报</title>
+<style>
+  :root {
+    --c-bg: #0A1526;
+    --c-bg-2: #0E1E38;
+    --c-text: #F2F6FC;
+    --c-muted: rgba(226, 236, 250, 0.62);
+    --c-accent: #4FA8FF;
+    --c-accent-2: #37D6E8;
+    --hairline: rgba(143, 178, 226, 0.16);
+  }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--c-bg);
+    -webkit-font-smoothing: antialiased;
+  }
+  * { box-sizing: border-box; }
+  .poster {
+    width: 720px;
+    position: relative;
+    background:
+      radial-gradient(560px 420px at 88% -4%, rgba(56, 120, 255, 0.20), rgba(56, 120, 255, 0) 68%),
+      radial-gradient(520px 400px at -8% 30%, rgba(46, 196, 220, 0.12), rgba(46, 196, 220, 0) 62%),
+      linear-gradient(180deg, var(--c-bg-2) 0%, var(--c-bg) 34%, var(--c-bg) 100%);
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    color: var(--c-text);
+    padding: 52px 56px 44px;
+    line-height: 1.4;
+  }
+  /* 网格纹理层（纯装饰，绝对定位，不占流） */
+  .grid-tex {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(120, 165, 230, 0.055) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(120, 165, 230, 0.055) 1px, transparent 1px);
+    background-size: 44px 44px;
+    -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,.9), rgba(0,0,0,.25) 42%, rgba(0,0,0,.75));
+    mask-image: linear-gradient(180deg, rgba(0,0,0,.9), rgba(0,0,0,.25) 42%, rgba(0,0,0,.75));
+    pointer-events: none;
+  }
+  .inner { position: relative; }
+
+  /* ---------- 顶部 kicker ---------- */
+  .kicker-row {
+    display: flex; align-items: center; gap: 14px;
+  }
+  .kicker {
+    font-size: 15px; letter-spacing: 5px;
+    color: var(--c-muted); font-weight: 400; white-space: nowrap;
+  }
+  .kicker-line { flex: 1; height: 1px; background: var(--hairline); }
+
+  /* ---------- 主标题 ---------- */
+  .hero { margin-top: 34px; }
+  .hero-cn {
+    font-size: 88px; font-weight: 900; line-height: 1.12;
+    letter-spacing: 6px; margin: 0;
+  }
+  .hero-cn .grad {
+    background: linear-gradient(92deg, #6FB5FF 0%, #3ED4E6 100%);
+    -webkit-background-clip: text; background-clip: text;
+    color: transparent;
+  }
+  .hero-sub {
+    margin-top: 18px;
+    font-size: 25px; font-weight: 300; letter-spacing: 3px;
+    color: rgba(226, 236, 250, 0.88);
+  }
+  .hero-tag {
+    margin-top: 14px;
+    font-size: 17px; letter-spacing: 2px;
+    color: var(--c-accent-2); font-weight: 400;
+  }
+  .hero-tag b { color: var(--c-text); font-weight: 700; }
+
+  /* ---------- 双屏展示 ---------- */
+  .screens {
+    margin-top: 38px;
+    display: flex; gap: 20px; align-items: flex-end;
+  }
+  .screen { flex: 1; min-width: 0; }
+  .screen img {
+    width: 100%; display: block;
+    border-radius: 10px;
+    border: 1px solid rgba(146, 186, 240, 0.28);
+    box-shadow: 0 18px 44px rgba(2, 8, 20, 0.55);
+  }
+  .screen .cap {
+    margin-top: 12px; display: flex; align-items: baseline; gap: 10px;
+  }
+  .screen .cap .tag {
+    font-family: "Bahnschrift", "Segoe UI", sans-serif;
+    font-size: 15px; font-weight: 700; letter-spacing: 1px;
+    color: var(--c-accent-2);
+  }
+  .screen .cap .name { font-size: 17px; color: rgba(226, 236, 250, 0.85); }
+  .link-line {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    width: 74px; flex: none; align-self: center;
+  }
+  .link-line .wire { width: 1px; height: 54px; background: linear-gradient(180deg, rgba(79,168,255,.15), rgba(79,168,255,.85), rgba(79,168,255,.15)); }
+  .link-line .gbit {
+    font-family: "Bahnschrift", "Segoe UI", sans-serif;
+    font-size: 14px; font-weight: 700; letter-spacing: 1.5px;
+    color: var(--c-accent); margin: 8px 0; white-space: nowrap;
+    writing-mode: vertical-rl; text-orientation: mixed;
+  }
+
+  /* ---------- 数据雕塑 ---------- */
+  .stats {
+    margin-top: 44px;
+    display: flex; flex-wrap: wrap; gap: 0 28px;
+  }
+  .stat { flex: 1 1 40%; padding: 18px 0 16px; border-top: 1px solid var(--hairline); }
+  .stat .num {
+    font-family: "Bahnschrift", "Segoe UI", sans-serif;
+    font-size: 60px; font-weight: 700; line-height: 1;
+    color: var(--c-text); letter-spacing: 1px;
+  }
+  .stat .num .unit { font-size: 24px; font-weight: 600; color: var(--c-accent-2); margin-left: 6px; letter-spacing: 0; }
+  .stat.hot .num { color: #3ED4E6; }
+  .stat .label { margin-top: 9px; font-size: 15px; color: var(--c-muted); letter-spacing: 2px; }
+
+  /* ---------- 特性区（纯排版，无卡片） ---------- */
+  .features { margin-top: 30px; }
+  .feat-head {
+    display: flex; align-items: center; gap: 14px; margin-bottom: 6px;
+  }
+  .feat-title { font-size: 26px; font-weight: 700; letter-spacing: 3px; }
+  .feat-line { flex: 1; height: 1px; background: var(--hairline); }
+  .feat-list { margin-top: 10px; }
+  .feat {
+    display: flex; gap: 18px; align-items: baseline;
+    padding: 13px 0;
+  }
+  .feat .idx {
+    font-family: "Bahnschrift", "Segoe UI", sans-serif;
+    font-size: 17px; font-weight: 700; color: var(--c-accent-2);
+    flex: none; width: 34px;
+  }
+  .feat .kw { font-size: 24px; font-weight: 700; letter-spacing: 1px; flex: none; }
+  .feat .desc { font-size: 16px; color: var(--c-muted); letter-spacing: 1px; line-height: 1.5; }
+
+  /* ---------- 底部 ---------- */
+  .footer { margin-top: 34px; }
+  .foot-line { height: 1px; background: var(--hairline); }
+  .foot-row {
+    margin-top: 18px;
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .foot-meta {
+    font-family: "Bahnschrift", "Segoe UI", sans-serif;
+    font-size: 15px; letter-spacing: 1.5px; color: var(--c-muted);
+  }
+  .foot-brand { font-size: 15px; letter-spacing: 3px; color: var(--c-muted); }
+  .foot-brand b { color: var(--c-text); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="grid-tex"></div>
+  <div class="inner">
+
+    <!-- 顶部 -->
+    <div class="kicker-row">
+      <div class="kicker">2026 FPGA 创新设计竞赛 · 参赛作品</div>
+      <div class="kicker-line"></div>
+    </div>
+
+    <!-- 主标题 -->
+    <div class="hero">
+      <h1 class="hero-cn">双屏智联<br><span class="grad">声画合一</span></h1>
+      <div class="hero-sub">双 FPGA 千兆以太网协同 · 车载双屏影音系统</div>
+      <div class="hero-tag">无 CPU 纯硬件 RTL &nbsp;·&nbsp; 两块 <b>安路 EG4S20</b> &nbsp;·&nbsp; 一根网线互联</div>
+    </div>
+
+    <!-- 双屏展示 -->
+    <div class="screens">
+      <div class="screen">
+        <img src="{{IMG_B_DASH}}" alt="B 板虚拟仪表盘">
+        <div class="cap"><span class="tag">B 板</span><span class="name">虚拟仪表盘 · 歌单 · 星空</span></div>
+      </div>
+      <div class="link-line">
+        <div class="wire"></div>
+        <div class="gbit">1000BASE-T</div>
+        <div class="wire"></div>
+      </div>
+      <div class="screen">
+        <img src="{{IMG_A_HOME}}" alt="A 板中控娱乐屏">
+        <div class="cap"><span class="tag">A 板</span><span class="name">中控娱乐屏 · 歌词 · 频谱</span></div>
+      </div>
+    </div>
+
+    <!-- 数据雕塑 -->
+    <div class="stats">
+      <div class="stat hot">
+        <div class="num">0<span class="unit">采样</span></div>
+        <div class="label">歌词逐字同步误差</div>
+      </div>
+      <div class="stat">
+        <div class="num">2523<span class="unit">事件</span></div>
+        <div class="label">六首歌曲同步校验全通过</div>
+      </div>
+      <div class="stat">
+        <div class="num">1200<span class="unit">包/帧</span></div>
+        <div class="label">图像确认重传 · 断链自愈</div>
+      </div>
+      <div class="stat">
+        <div class="num">48<span class="unit">kHz</span></div>
+        <div class="label">双声道 HDMI 音视频同线输出</div>
+      </div>
+    </div>
+
+    <!-- 特性区 -->
+    <div class="features">
+      <div class="feat-head">
+        <div class="feat-title">核心特性</div>
+        <div class="feat-line"></div>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="idx">01</div>
+          <div class="kw">播放进度闭环</div>
+          <div class="desc">A 板已播采样数实时反馈，B 板据此点亮歌词与频谱，网络抖动不伤同步</div>
+        </div>
+        <div class="feat">
+          <div class="idx">02</div>
+          <div class="kw">四帧缓存切换</div>
+          <div class="desc">SDRAM 预载四图，按键 15 ms 内换图，刷新仲裁与读写零冲突</div>
+        </div>
+        <div class="feat">
+          <div class="idx">03</div>
+          <div class="kw">零 DSP 图像处理</div>
+          <div class="desc">亮度 / 对比度 / 音量全用移位加法实现，帧边界生效不撕裂</div>
+        </div>
+        <div class="feat">
+          <div class="idx">04</div>
+          <div class="kw">安全预警联动</div>
+          <div class="desc">拨动任一方向开关，仪表屏即刻切入红色警示，解除自动复原</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+      <div class="foot-line"></div>
+      <div class="foot-row">
+        <div class="foot-meta">EG4S20 ×2 · HDMI 1.4b ×2 · FAT32 · 64 fs I2S · UDP 可靠传输</div>
+        <div class="foot-brand"><b>纯硬件</b> 车载座舱演示平台</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

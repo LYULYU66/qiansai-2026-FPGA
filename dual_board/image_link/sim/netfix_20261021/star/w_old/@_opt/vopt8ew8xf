@@ -1,0 +1,117 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim
+T_opt
+VQ6Gn?YNAKHo2SCFfgOla21
+04 18 4 work tb_engine_20261020 fast 0
+=1-04bf1b05a8bd-6ad842da-140-4678
+o-quiet -auto_acc_if_foreign -work netfix_20261021/star/w_old
+n@_opt
+OL;O;10.1c;51
+vmedia_control_star_rx
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I9l3I0L3izP8f8AhW3d9NX2
+Vn_C73kYnj=92`J=@oKU4h0
+Z2 !s105 media_control_star_v_unit
+S1
+Z3 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim
+Z4 w1792545829
+Z5 8../rtl/backup_before_netfix_20261021/media_control_star.v
+Z6 F../rtl/backup_before_netfix_20261021/media_control_star.v
+L0 81
+Z7 OL;L;10.1c;51
+r1
+31
+Z8 !s108 1792557784.521000
+Z9 !s107 netfix_20261021/star/tb_engine_hz.v|../rtl/backup_before_netfix_20261021/media_control_star.v|../rtl/backup_before_netfix_20261021/star_motion_engine.v|
+Z10 !s90 -sv|-work|netfix_20261021/star/w_old|../rtl/backup_before_netfix_20261021/star_motion_engine.v|../rtl/backup_before_netfix_20261021/media_control_star.v|netfix_20261021/star/tb_engine_hz.v|
+Z11 o-sv -work netfix_20261021/star/w_old
+!i10b 1
+!s100 3<CK7m^D?J=aHd3iiB[jo2
+!s85 0
+vmedia_control_star_tx
+R1
+IELo9WNFmBK_QUiBi:`>IH1
+V`e]jaDSQ[mUWXOLQj:GX30
+R2
+S1
+R3
+R4
+R5
+R6
+L0 12
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 SmLG5CU1>`M6QhE7k>B]K1
+!s85 0
+vstar_bundle_cdc
+R1
+I3=C`Qj6W1R9icCzRTco?S2
+VXkUT_>j336F]nZUnV?_zG1
+Z12 !s105 star_motion_engine_v_unit
+S1
+R3
+Z13 w1792505393
+Z14 8../rtl/backup_before_netfix_20261021/star_motion_engine.v
+Z15 F../rtl/backup_before_netfix_20261021/star_motion_engine.v
+L0 113
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 A?;ic0BFDc<?M5n1:1:K70
+!s85 0
+vstar_motion_engine
+R1
+I1=oi^`B8P6F8AfP^EohEj2
+VX?S@7ZJmi;J4h5fE2VlJz2
+R12
+S1
+R3
+R13
+R14
+R15
+L0 18
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 >A74MA=N^PHc8aX5V3^Cc3
+!s85 0
+vtb_engine_20261020
+R1
+I8hn?0c_QToL>2WJJZc`9>3
+V]XehJmT;8ha69l77BjWWk1
+S1
+R3
+w1792557784
+8netfix_20261021/star/tb_engine_hz.v
+Fnetfix_20261021/star/tb_engine_hz.v
+L0 6
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 ELLe8H<En1Y9ZQUhb_aJk1
+!s105 tb_engine_hz_v_unit
+!s85 0

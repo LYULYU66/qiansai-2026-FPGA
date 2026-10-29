@@ -1,0 +1,1433 @@
+{
+  "version": "car_rotate_20261009",
+  "created_at": "2026-10-09T12:26:19.777Z",
+  "hardware_verified": false,
+  "timing_closed": false,
+  "baseline": "dual_board/image_link/board_test_20261008/startup_fix",
+  "change": "B only: periodic single-sprite projected width compression and horizontal mirror, with travelling highlight. Not a real multi-view 3D car.",
+  "animation": {
+    "page": 5,
+    "frame_rate_hz": 59.523809523809526,
+    "intro_frames": 144,
+    "first_wait_frames": 298,
+    "first_wait_seconds": 5.0064,
+    "first_rotation_after_page_entry_seconds": 7.4256,
+    "period_frames": 298,
+    "period_seconds": 5.0064,
+    "active_frames": 64,
+    "active_seconds": 1.0752,
+    "angle_steps": 32,
+    "frames_per_angle": 2,
+    "return_to_original": true,
+    "reset_on_page_exit": true,
+    "extra_frame_memory": false
+  },
+  "controls": {
+    "B": {
+      "KEY1": "reset",
+      "KEY2": "toggle TF image 5/6; cached target required",
+      "KEY3": "unused",
+      "KEY4": "unused",
+      "autoplay": false
+    },
+    "A": "unchanged; remote B6 entry pauses autoplay, local hazard priority retained"
+  },
+  "images": {
+    "A": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "B": [
+      5,
+      6
+    ],
+    "order": "first six regular BMP entries in FAT root directory; NOT filename sorting",
+    "formats": "existing 24-bit uncompressed BMP reader/downscaler; recommend 640x480",
+    "tf_board": "B",
+    "local_cache_slots": 4,
+    "local_cache_external_bytes": 4915200
+  },
+  "synchronization": {
+    "protocol": "CTL4, 14 bytes; reserved byte11 now visible-relax flag + 7-bit entry epoch",
+    "trigger": "B actually displays image6 at frame boundary",
+    "action": "A requests image3; defer until cached and no local hazard; pause autoplay",
+    "return_to_B5": "does not move A",
+    "duplicates": "do not override A manual page again",
+    "star_time": "unchanged B-owned shared animation timestamp; A left/B right; not electrical HDMI genlock"
+  },
+  "startup": "B loads remote images1..4 in order, advancing on complete or no-progress timeout (3s at100MHz); then local images5/6, with PCM enabled after remote preload attempts. No startup timeout shortened in this candidate.",
+  "resources": {
+    "A": {
+      "seed": 4,
+      "lut": 14640,
+      "lut_percent": 74.69,
+      "registers": 9337,
+      "bram9k": 50,
+      "bram32k": 12,
+      "dsp": 3,
+      "pll": 4,
+      "setup_ns": -5.699,
+      "hold_ns": 0.003,
+      "video": {
+        "setup_ns": 1.16,
+        "hold_ns": 0.011
+      },
+      "udp": {
+        "setup_ns": -1.542,
+        "hold_ns": 0.024
+      },
+      "lut_delta": 0,
+      "reg_delta": 0,
+      "unchanged": true
+    },
+    "B": {
+      "seed": 4,
+      "lut": 15795,
+      "lut_percent": 80.59,
+      "registers": 10398,
+      "bram9k": 43,
+      "bram32k": 12,
+      "dsp": 4,
+      "pll": 3,
+      "setup_ns": -5.565,
+      "hold_ns": -1.71,
+      "video": {
+        "setup_ns": 6.649,
+        "hold_ns": -0.011
+      },
+      "udp": {
+        "setup_ns": -1.516,
+        "hold_ns": -0.004
+      },
+      "sd": {
+        "setup_ns": -1.86,
+        "hold_ns": -0.011
+      },
+      "lut_delta": -41,
+      "reg_delta": 5
+    }
+  },
+  "seed_comparison": [
+    {
+      "seed": 3,
+      "build_stem": "MEDIA_B_CAR_ROTATE_20261009",
+      "resources": {
+        "seed": 3,
+        "lut": 15806,
+        "lut_percent": 80.64,
+        "registers": 10412,
+        "bram9k": 43,
+        "bram32k": 12,
+        "dsp": 4,
+        "pll": 3,
+        "setup_ns": -5.565,
+        "hold_ns": -1.662,
+        "video": {
+          "setup_ns": 5.218,
+          "hold_ns": 0.003
+        },
+        "udp": {
+          "setup_ns": -2.411,
+          "hold_ns": -0.012
+        },
+        "sd": {
+          "setup_ns": -1.908,
+          "hold_ns": -0.011
+        },
+        "lut_delta": -30,
+        "reg_delta": 19
+      }
+    },
+    {
+      "seed": 1,
+      "build_stem": "MEDIA_B_CAR_ROTATE_S1_20261009",
+      "resources": {
+        "seed": 1,
+        "lut": 15826,
+        "lut_percent": 80.74,
+        "registers": 10426,
+        "bram9k": 43,
+        "bram32k": 12,
+        "dsp": 4,
+        "pll": 3,
+        "setup_ns": -6.313,
+        "hold_ns": -1.674,
+        "video": {
+          "setup_ns": 4.912,
+          "hold_ns": -0.004
+        },
+        "udp": {
+          "setup_ns": -6.313,
+          "hold_ns": -0.02
+        },
+        "sd": {
+          "setup_ns": -1.843,
+          "hold_ns": 0.037
+        },
+        "lut_delta": -10,
+        "reg_delta": 33
+      }
+    },
+    {
+      "seed": 4,
+      "build_stem": "MEDIA_B_CAR_ROTATE_S4_20261009",
+      "resources": {
+        "seed": 4,
+        "lut": 15795,
+        "lut_percent": 80.59,
+        "registers": 10398,
+        "bram9k": 43,
+        "bram32k": 12,
+        "dsp": 4,
+        "pll": 3,
+        "setup_ns": -5.565,
+        "hold_ns": -1.71,
+        "video": {
+          "setup_ns": 6.649,
+          "hold_ns": -0.011
+        },
+        "udp": {
+          "setup_ns": -1.516,
+          "hold_ns": -0.004
+        },
+        "sd": {
+          "setup_ns": -1.86,
+          "hold_ns": -0.011
+        },
+        "lut_delta": -41,
+        "reg_delta": 5
+      }
+    }
+  ],
+  "selection": "Among seeds3/1/4 with positive video setup, selected best UDP self setup, then SD self setup. No constraint/pin/PLL/FIFO change; timing remains unclosed.",
+  "artifacts": [
+    {
+      "board": "A",
+      "file": "MEDIA_A_STARS_OPT_20261007.bit",
+      "build_stem": "MEDIA_A_STARS_OPT_S4_20261007",
+      "bytes": 743707,
+      "sha256": "B84DA000BA148CA06331CE3C4A0DFA70B7B0B6B92E7BE4E158AA383E7AD4B9ED",
+      "unchanged": true
+    },
+    {
+      "board": "B",
+      "file": "MEDIA_B_CAR_ROTATE_20261009.bit",
+      "build_stem": "MEDIA_B_CAR_ROTATE_S4_20261009",
+      "seed": 4,
+      "bytes": 735564,
+      "sha256": "7421D7CEA647A075F5F9C3D861F1E4EACDA6A74D16EC3124C7BB6C85A4EF9B48"
+    }
+  ],
+  "sources": [
+    {
+      "file": "src/user_source/hdl_source/video_source_test.v",
+      "sha256": "39CC05C9684A594D4254D11E66E97344053AB75BDB00F3F5A301643FD7AADBFC"
+    },
+    {
+      "file": "src/user_source/hdl_source/key_remove_shakes.v",
+      "sha256": "8832F59E7BA94BFB8CF31E4F5A772EF7177D5257A5A2532D53CBFA1D9B7F5CD9"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi_phy_warpper.v",
+      "sha256": "416B082B0987001BDBC0A7E20A557CB8FB1DCA34E25DC881E6D28A8CB3CF4300"
+    },
+    {
+      "file": "src/user_source/hdl_source/lane_lvds_10_1.v",
+      "sha256": "DE9529321354F04837E051D0EC1681CF44783D4BE3284703A788E081147500BC"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "sha256": "867E0B0BDD874BC383D00918C9E1BE3FE01EDF41F343B6A0D73E262776596A63"
+    },
+    {
+      "file": "dual_board/image_link/rtl/manual_dual_20261007/top_dual_image_hw.v",
+      "sha256": "8682D7A9F14B8249CD98F909581141980E05F974CA65C46D45DF66528629FE09"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/ax_debounce.v",
+      "sha256": "93AA6DD38051250CC7F777C88466AC180AFE9BCDCE7838B9EA506455D8CBC9B8"
+    },
+    {
+      "file": "dual_board/image_link/rtl/manual_dual_20261007/bmp_read.v",
+      "sha256": "F1845AB59A0BC4D0C7EA323C267371D82ADBE6CD8661D6C98482EB7A7E804D6E"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/color_bar.v",
+      "sha256": "AFE1F56714EC58D2477BA1717E5A36C5A0DA5FE5C07D70D11AA5ACE710C4B152"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/frame_fifo_read.v",
+      "sha256": "AA456AFB9C01F6BC4D976DF1F5D1A0DB39885FDECA2CFAAB71A5C6087C4B172C"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/frame_fifo_write.v",
+      "sha256": "2C0F735EBE0CC38D3C3E3B404A0D3121412254EE3AD1DAF6CE49573856837715"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round7_20261005/frame_read_write_hw.v",
+      "sha256": "8D5848E78350E0D304755E74EA7F5D3E0D7F4DD5D5AB02662CD03530E0FAB354"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_bmp.v",
+      "sha256": "BEBC7249B6D100C36335A915711F80CC407D790935BFAA69D4B585D3621D5DA6"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/video_define.v",
+      "sha256": "77748966850A8F5AF0D77F2CDB08006088BA5E1A31B98391FBA6CC61C5247DA2"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/video_delay.v",
+      "sha256": "F47C4B63F8BAA6D8874C87DCA5B72DFDADD19F4A107403DA98752BCE98936433"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/video_timing_data.v",
+      "sha256": "C6F75501E98DD5995F687AAFB40455BEFFE45B426137B5089A73AC3A036F7282"
+    },
+    {
+      "file": "src/user_source/hdl_source/startup_pulse.v",
+      "sha256": "396E1E56FEBB8028339E646BC2F06B83E07AB11EF840E447422FB941956741C9"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_rgb_to_axis_640x480.v",
+      "sha256": "82DA3DF6220842F072654800453ADB860DAF22126E81873F96E6769AE964E57F"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_cmd.v",
+      "sha256": "A1A50502AFD4E8B238B0627CD5F204C04738E761D49AB48F33DA35E22BA4A5FA"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_sec_read_write.v",
+      "sha256": "AA73E64F7A8EDF767BEF0D7205702BB697AB4080E3FF012DE0C29BE2EE0A9FCC"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_top.v",
+      "sha256": "00AC5EB15CE2D5B1D3FF87D6CB5BE44AF50106A96327FBC8A580B831274CB123"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/spi_master.v",
+      "sha256": "37F7A21144FA5CCA3CC5C3B5F68A5AD40B3108336B600E45A1367734AC61403C"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sdram.v",
+      "sha256": "2D985C2477384E677C25714241E1A50206DEF8916AA03189A5B313B2D22DFC99"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/global_def.v",
+      "sha256": "433240EC48021DBB559D3532C67526F1338C6CC6CE15D26E1D987FE89E61DA42"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/sdr_as_ram.enc.v",
+      "sha256": "767DBDFBD83D42223B77DFA7DEAB42CE8216A8FD6F6CB41B7E7593D9A345BA57"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/sdr_init_ref.enc.v",
+      "sha256": "3DA1D34D3FB8A5108A74185EDF7FE6836B28807B31F47F74EAB87DE4F23186B8"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/sdr_wrrd.enc.v",
+      "sha256": "C7D7FE07D75F66AA88D9F986B3006319C995162434F104F9990664B374CDFDD2"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/seg_decoder.v",
+      "sha256": "62A2664BE7DB6D0DACE31FC97A8FAEF0C43F44B639B1D5A6A2C49773812A3B5E"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/seg_scan.v",
+      "sha256": "C61D6B6808E06DD0EDC6DB2D8F214426A1FB96D546556ECD1F74EA9CA6889F52"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v",
+      "sha256": "1A946821E904C411F4DBF8F6D839B59622CBF9E5EA0844CCEC6769EBE07F769E"
+    },
+    {
+      "file": "src/user_source/hdl_source/I2S_receiver.v",
+      "sha256": "327271F25B3CE4348885569F544D33D8BD02C80CC2FD4524D2EEBEC814781416"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_arc_calculate.v",
+      "sha256": "81D282E3D8BCFC56567F252BD214866AC66FA30F0C0B126845C92E149C15933A"
+    },
+    {
+      "file": "src/td_project/al_ip/PLL_HDMI_AUDIO.v",
+      "sha256": "4152904C9FE0A01DFB9B5E47FDBE9FDF2F02EBCCEF66B9E81451D3E88D4AB5A2"
+    },
+    {
+      "file": "src/user_source/hdl_source/osd_alpha_overlay.v",
+      "sha256": "17AD2C2F3A7BA2601CA6173FCF73EDE9499A74701D43E877A8DB07971745A115"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_transition_effects.v",
+      "sha256": "654018C079E9EA252F01C5383E617CCDCE6DF6E98CB7BF6AF349C88E3D5AEE01"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_spectrum_analyzer.v",
+      "sha256": "4A5AB0CE23325CD9E9E60FC71F3BDEB105FC346877761A679191D956688D0D76"
+    },
+    {
+      "file": "dual_board/image_link/rtl/resource_round10_20261005/audio_visualizer_overlay.v",
+      "sha256": "3476CDD5BF35AB697AA41F56C23CBDE9EB1E30218B0DDA279B60C69ED31F62E4"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_home_overlay.v",
+      "sha256": "023FDD9B69EFA77C3331B6766BC1BABDCC4755DCCA908B74E2C212CE6F92A038"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/BUFGMUX.v",
+      "sha256": "3501C3AE93FC102FD547A30BF84AAF64521DDAEAD53F398E62DAFB8CF3E8ADBD"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/clk_gen_rst_gen.v",
+      "sha256": "1CF435B0D40E3850366F237C8BD8E0DDE34CE1974C8525457D0AD8F65F5C1837"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/div_clk_gen.v",
+      "sha256": "BB9CA78FEA2DEF93464B44641B32A2491316CF3DE55C361BC81801CFC280B367"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/IDDR.v",
+      "sha256": "0CB13720A17311E80812DE7B45B0A0BA4CF2ECDF1F60E1F8A4279FEE268C7B15"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/ODDR.v",
+      "sha256": "6442C1DD9F76329DDB5420110FD8236211EF7D002EC2A1C6295D062E353A8F4D"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/RAMB16_S9_S9.v",
+      "sha256": "9651FF21B7E76F097704ECDA17398B00F2618107B13E0768D4043E24CB649BCC"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/rgmii_interface.v",
+      "sha256": "358763A4C014AAC49A0C1A0EC96E6E0224C0341371740D1616F43766D14A1DCD"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/rx_client_fifo.v",
+      "sha256": "7DAE154FD14E6CE3431C1492777C1CEFB1E485D276F15DE8D287D7A0D6BA06A3"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/temac_block.v",
+      "sha256": "D013485435ABCD2188450120A9EF99A7A75C6E46FD8F186381E2E8FA3F3C5241"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/temac_clk_gen.v",
+      "sha256": "DFDDA666362A1372FFD07B361D1D52401AC479B244CE7AFB0C45F7DBE08996E8"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/tx_client_fifo.v",
+      "sha256": "B50FD509770C57C2EB683A6074F0F97704E048392A03472F1FDB3FA9965CFFA7"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/tx_clk_en_gen.v",
+      "sha256": "78690F2C03DD38077FB3E7A1B39DD520DA6ECA10CBF125BB57FD71E2D156082A"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/udp_ip_protocol_stack_merge.enc.v",
+      "sha256": "0D06B3D6F7B2947501CDD3128373585E38C70454938234FFA9DF325010BD4F74"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_board_eth_transport.v",
+      "sha256": "88BEDCF15C44A19D1103BA8514DCFF3EF5400FFC1A38EFFCBEE724604561AD40"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_packet_rx.v",
+      "sha256": "7DC4C31AF4A9D0341FEBF2ED51DDF234F258E1BF1BE890AC6444A8A763C676E4"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_receipt.v",
+      "sha256": "50DD6B5C718DD26DB6694923F5E42299C3CE588FB95107D4D45CEF91D37FC0FD"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_sdram_sink.v",
+      "sha256": "0D05C3C5F75B7C6B479DE42C97173555D50251AA37E6A0FF81A921A5EAA3D3D7"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_main_ingress.v",
+      "sha256": "59EB99C5603E93EE85BCCD3C3CE1C8DABBF3833ED4FF76C63B8D4278111BE7A2"
+    },
+    {
+      "file": "dual_board/image_link/rtl/manual_dual_20261007/image_remote_display_control.v",
+      "sha256": "A117F9125FE16E09CDDBE6F6044F7512BE4596A3BF52265348BFF426C9888F3D"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v",
+      "sha256": "2617E785BC8D6563C3AB1CE94431314FEBF6A11B7B00A1DE4942EF7AE4FFA199"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_waveform_analyzer.v",
+      "sha256": "F9AACDA9C73E47EE84E490E4C115ABD77845AFF3E8CDCC9898679773E6939BC4"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_frame_valid_gate.v",
+      "sha256": "AA4962A5B2339EC8691692DFF611B2F4E9474D9A6D7F95EF1273705F471403C6"
+    },
+    {
+      "file": "dual_board/image_link/rtl/manual_dual_20261007/media_control_packet.v",
+      "sha256": "F052CD18F3499E8622B226949D29CDA79C13544F7AFF8CB1AB50AEDA28FB1DC3"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_image_adjust.v",
+      "sha256": "B59CD2088CA60D53DA532C7A5F6A59C5F3D7EC882F8CFD5E907D8133EACBD392"
+    },
+    {
+      "file": "dual_board/image_link/rtl/resource_round10_20261005/video_status_overlay.v",
+      "sha256": "283448FFCDF080B4EA0137B8ACD115AEC35D3F464AA5CB8EF3A289A1F051A96A"
+    },
+    {
+      "file": "src/user_source/hdl_source/alarm_switch_control.v",
+      "sha256": "4503863C7AACACC8F5B5489690C2185DF12E0B09275EF0FC25F38848D5C97E64"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_alarm_mixer.v",
+      "sha256": "73C2309D1434D291EB8661AF0B1CFA024BD48354314DB138E71FA148100C5542"
+    },
+    {
+      "file": "src/user_source/hdl_source/vehicle_hazard_overlay.v",
+      "sha256": "CDAFBC0AFF61000F72CF309769CBAEDD6A9A6DA61E292BA2FD65AC327BF63CF9"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_album_cover_rom.v",
+      "sha256": "3D7411B079B2CE5981ECDFD9ED7AE41E200A149ECA9583928F58E60473167FCF"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_app_icons_rom.v",
+      "sha256": "F1D460B691449680F492390CB021A8A3B0EAEA146C4FFD57F615205CDD95F6C9"
+    },
+    {
+      "file": "dual_board/image_link/rtl/yilu_replace_20261006/audio_lyric_timeline.v",
+      "sha256": "FAA028E03BABE709168A6EC6BB1F5970B5B02DDE2B778E1E4D373A502566A7FB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/video_lyric_overlay.v",
+      "sha256": "02F652529AF20D5D4C2C73616584F40CA52DABD39140FC9C13B0ED342C1FDE25"
+    },
+    {
+      "file": "dual_board/image_link/rtl/yilu_replace_20261006/dual_lyric_song_data.v",
+      "sha256": "350CDE6980C6BD94FDEF83DA6C03DF4952C7EFAB08A20638E0537631818A4850"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/bmp_bilinear_stream.v",
+      "sha256": "1F6EDA9ED18694FFD5E0E386B4A3A051364B422CD8C7288AD260CEE908D799EC"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_relax_overlay.v",
+      "sha256": "B05F8913D4A8ABA274AC74ED0B9212671EEBCF8ACFA748BA2855C5AD3959D7CF"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_unified_clock.v",
+      "sha256": "69830275BE314D3A3C2788346893BCD3CDB51D807E0C782DDFBB71FD49C90538"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_clock_digit_rom.v",
+      "sha256": "65A51B56F113F30ED3B0336E18B79B3F6B14797101ACFD41C6C270C1FC97A1A8"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_packet_rx.v",
+      "sha256": "CAFE997C174422D786847D61E5FBC94308C495B09586F45524E5D359D330FA58"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/audio_receipt_a.v",
+      "sha256": "82697D8A1BF10C65FF21F9EA3E6AC55F1CAADEFCDB487C9AFB535B94B588FA94"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_udp_arbiter.v",
+      "sha256": "8FE149E0D80DFCAE220EEC8ADDB4226E5E984C62EB40A3A72F0F51014FD28FD6"
+    },
+    {
+      "file": "dual_board/image_link/rtl/fixed_peer_udp.v",
+      "sha256": "2919B55F8240E47058824CD20DE2FEEB02373A395EB3F9B47D4F2D414715E938"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_link_session.v",
+      "sha256": "18789CEE005FDE0340404D928239CD70D1939577433042DCDE088DA5D1FB61E1"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_audio_enable_cdc.v",
+      "sha256": "C641C3D8C3A114EEAC7B38535DA5C2B8D3A8E83A7F5FFDA1312261B5DE6ED765"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_visual_packet.v",
+      "sha256": "A76921C3F83C98C4ABB8FE71E6DC7E6DEFE182267E11C7A0F64F0192A968DEA5"
+    },
+    {
+      "file": "dual_board/image_link/rtl/video_remote_home_overlay.v",
+      "sha256": "D52B1EDFADFD3CBBDF2940436E7932EC106273632A5CB69C13F6166CF5050BEB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_palette_rom.v",
+      "sha256": "C62234D30000DB3CE2531A442F95B43A6688A2C3D7302136526BDEDD4EC10EBB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/yilu_replace_20261006/video_song_cover_overlay.v",
+      "sha256": "754757AB6F62CAA7E510472A588C702D13AB2939ABC301D1808CA74D3BED010E"
+    },
+    {
+      "file": "dual_board/image_link/rtl/yilu_replace_20261006/song2_cover_rom.v",
+      "sha256": "48F5327ACCCD390CBBC04C635D0C8BA147254E371E85A2BAE84B8185B98311EC"
+    },
+    {
+      "file": "dual_board/image_link/rtl/stars_opt_20261007/video_dual_star_overlay.v",
+      "sha256": "04E065A4C9918394630B5BAC24A6F9B671E9AF9163CE8FDD81B15232BEDE864F"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/media_a.adc",
+      "sha256": "380EF02D69A4467A269F5BC17BB2A471F06FF9E398A042B31A9AF76268BB393D"
+    },
+    {
+      "file": "dual_board/image_link/constraints/media_a.sdc",
+      "sha256": "CB2FD0E01B1D5FE3D250FFACFDBFE2B23AD3E2E52580F5DB5AE8F33D56BEA074"
+    },
+    {
+      "file": "src/user_source/constraints_source/edid_debug.cwc",
+      "sha256": "6716411E2346DE08976E0AD8ED2E09EB93BDC0F60EFC31BF75BA70E6CEBE1F95"
+    },
+    {
+      "file": "src/td_project/al_ip/PLL.ipc",
+      "sha256": "8CB6DF3A1BB99CF2F95F9A535D7F33213B837207B36E336848A6ED0DB29AB8B5"
+    },
+    {
+      "file": "src/user_source/hdl_source/ip/afifo_16_32_256.ipc",
+      "sha256": "9DF57C0B914F2F6222F88E356528947224FDDB866BE2468F1391C26D4E60D371"
+    },
+    {
+      "file": "src/user_source/hdl_source/ip/afifo_32_16_256.ipc",
+      "sha256": "A74955DC68A02BBFB36780127008C4737EC80E0888A4648E98E6EAC9F5D2C349"
+    },
+    {
+      "file": "src/user_source/hdl_source/ip/sys_pll.ipc",
+      "sha256": "B8ACD7534D7FD71E5922CD194DCED754AD462A805DC7B38574486DC3A963EF41"
+    },
+    {
+      "file": "src/user_source/hdl_source/ip/video_pll.ipc",
+      "sha256": "B717F646067025A69B4021ED85ADEEB6531FAD881BCE5A49FCB2171CCF401076"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/pll_gen.ipc",
+      "sha256": "4151BBA32CC66C9AA0C4B96EE76C57FFB78DBA2E4B448D746A1331CBE17D32AE"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/rx_pll.ipc",
+      "sha256": "3D7D676316F0E0C320CE5582B61ADAF9BDF1A2F0B13E31AF85588E6447E8ABA5"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/TEMAC_CORE/TEMAC_CORE.xml",
+      "sha256": "3182FD400CB0631BA3CB94A1739DA51150470DEA3E0EC23A16061BCB49E940D1"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round5_20261005/image_packet_tx_hw.v",
+      "sha256": "62D9A29319D04731C683C2BC7EFFCBC26B8E4FC245F7B5140E62EEE70B625D3E"
+    },
+    {
+      "file": "dual_board/image_link/rtl/stars_opt_20261007/image_media_board_b_hw.v",
+      "sha256": "B0CA5B854A87B823E872ECDD7BE00D243B716B9FDBBF758C28172A36F77A32DE"
+    },
+    {
+      "file": "dual_board/image_link/rtl/manual_dual_20261007/image_tf_source_hw.v",
+      "sha256": "7540C992F43A24B1606D04526E7C7A48204744AD3114CE23028D3613534A0C72"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_pixel_cdc.v",
+      "sha256": "6198853A79080DDD1EA4FA77FF8356B8F7ABDF27B899F73B8C4FE5B98DEF061C"
+    },
+    {
+      "file": "dual_board/image_link/rtl/manual_dual_20261007/sd_card_bmp_remote.v",
+      "sha256": "51F1125064D6452DB2EE81066707EDB7DEA3EBCE3E18624FCCFD080AC33BAFD4"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_packet_tx.v",
+      "sha256": "AC313135E5FFF0ADE85C4C3AF14CF649CDA15B2FD7DD07628AA783113A442E63"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/audio_receipt_b.v",
+      "sha256": "EC2454A237C6FB48368638372DA911F463CC64A72BBFF1754329BD39AC28D428"
+    },
+    {
+      "file": "dual_board/image_link/rtl/startup_fix_20261008/media_udp_arbiter.v",
+      "sha256": "4E16B39353B2EB1882D00414F9CDDD82AE707F59E5BA3A72E599B7DB3B420F0D"
+    },
+    {
+      "file": "src/user_source/hdl_source/IP/afifo_32_16_256.v",
+      "sha256": "7C3EE41F30BE75AE686C9ABFF3A840FC5439209CDA077E4AA275EAC0DAB9F564"
+    },
+    {
+      "file": "dual_board/image_link/rtl/stars_opt_20261007/audio_visual_packet_hw.v",
+      "sha256": "9C028D7936B4A23C3173D29097CD887FBDF2FDEA939F7BD5925BBC698AC2E000"
+    },
+    {
+      "file": "dual_board/image_link/rtl/stars_opt_20261007/remote_audio_compute_hw.v",
+      "sha256": "5C78B55347229BB94597435B428FD4A63D09DC2DF03427DC8E8E00F9BD854062"
+    },
+    {
+      "file": "dual_board/image_link/rtl/resource_round10_20261005/audio_waveform_analyzer.v",
+      "sha256": "1CB7CCE6A6F07E2D0F479B271839FE77C28A87FFBF328D224E52977F1701BA92"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round2_20261005/home_index_stream_hw.v",
+      "sha256": "EF17E105BABA053CD767E4B76EDBB963CC3109A93B54173549F2FA5D81B8CA91"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_atlas_rom.v",
+      "sha256": "71BF04D37659960F9CBE6877EDC8DB876FB4B495919DDB272F2F80EEB128666B"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_baud_tick.v",
+      "sha256": "86701937B016AB297B46BBBA8A7ACC00B03F7F9E636C3EFC34ED176E1FF2809F"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_rx.v",
+      "sha256": "D75F9978C9D55D8516DAA5BCD6C9102E670D7508FA113E8C31B5A85C59232ECB"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_tx.v",
+      "sha256": "6E607568AFBFE2CF1EC019CF7E5ECDE36DABA630F20568F5D8A5527A9B4B25B3"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_audio_control.v",
+      "sha256": "82F4BAE8C513B5B1B0C71419C38842191B3EBF795408A50B0E65BFFAEDEDB35F"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round4_20261005/player_domain_reset.v",
+      "sha256": "EA7EF6223F24A544ECB69200E8B93DF567B22B1DDBE94E4E7C525BED3EDDB435"
+    },
+    {
+      "file": "dual_board/image_link/rtl/manual_dual_20261007/b_image_capture.v",
+      "sha256": "89565D53E0020EB5118BAB05E7F5830F2F7530569F0CA3ED8CCAD18D00B5C78C"
+    },
+    {
+      "file": "dual_board/image_link/rtl/car_intro_20261007/b_hdmi_preview.v",
+      "sha256": "B7655E8B31B37CE7FE683EDC20DB98AEF3D38D2893516A6BBEB03AB1CDD551C2"
+    },
+    {
+      "file": "src/user_source/hdl_source/IP/afifo_16_32_256.v",
+      "sha256": "3D29B06655482184A9AD157B9BD71B79032DEBE3199168D3B4D9570FDAC31835"
+    },
+    {
+      "file": "dual_board/image_link/rtl/car_rotate_20261009/video_car_intro.v",
+      "sha256": "B393E0EBC34CB017427FF61D87E04B2093354871BCCB410781C79850FF9DE053"
+    },
+    {
+      "file": "dual_board/image_link/rtl/car_intro_20261007/car_intro_rom.v",
+      "sha256": "AD0EE9FC81C3C62C16F21A8E750BC3B888C320465BA698D31B165C663D052B0E"
+    },
+    {
+      "file": "dual_board/image_link/rtl/manual_dual_20261007/media_b.adc",
+      "sha256": "29E0658AC06CA7F008583EB1043430477955865010E29790056AE05EA6745524"
+    },
+    {
+      "file": "dual_board/image_link/rtl/manual_dual_20261007/media_b.sdc",
+      "sha256": "1C4048BA14E2B301E94AA1077D2D2EDCF342E232CBB12C35A0EF956D624F0D91"
+    },
+    {
+      "file": "src/user_source/hdl_source/IP/sys_pll.ipc",
+      "sha256": "B8ACD7534D7FD71E5922CD194DCED754AD462A805DC7B38574486DC3A963EF41"
+    }
+  ],
+  "changed_or_added_inputs": [
+    {
+      "file": "dual_board/image_link/rtl/car_rotate_20261009/video_car_intro.v",
+      "sha256": "B393E0EBC34CB017427FF61D87E04B2093354871BCCB410781C79850FF9DE053"
+    }
+  ],
+  "removed_project_inputs": [
+    {
+      "file": "dual_board/image_link/rtl/car_intro_20261007/video_car_intro.v",
+      "sha256": "7D724883BE21B57AA9718952DF7D1F0A6389459BC11B932FF618ADCFB608F5CC"
+    }
+  ],
+  "functions_removed": [],
+  "regression": [
+    {
+      "file": "rotation.log",
+      "pass_count": 3,
+      "pass_lines": [
+        "# PASS car rotation lifecycle:144-frame original introduction,298-frame first wait and three298-frame periods,64 active frames,VS-only advance",
+        "# PASS car rotation pixels:1878528 RGB/DE/VS checks,229376 independent cosine signed-address/crop/mirror checks,all32 angles,edge-on,hold/off-page,no dial coverage",
+        "# PASS car rotation reset:page exit and re-entry restart,asynchronous reset,unchanged one-clock output alignment"
+      ],
+      "sha256": "7B6F355572BDB44B544B16BF300CE4F95B26917600E4AC3D7A8818A54A61170D",
+      "mtime": "2026-10-09T11:59:31.911Z"
+    },
+    {
+      "file": "intro.log",
+      "pass_count": 3,
+      "pass_lines": [
+        "# PASS car sprite ROM: 25276 native BRAM bank/nibble/palette checks and700 enable holds",
+        "# PASS car pixels: 3379200 exact full-frame RGB/DE/VS checks, fade wrap128/full opacity, rise, moving highlight, platform pulse, off-page passthrough and no dial coverage",
+        "# PASS car lifecycle: frame-only progression, saturated hold, exit reset, manual re-entry replay and asynchronous reset"
+      ],
+      "sha256": "A40392DAC35C3D3961A338F7E45D8F172AEC5F11B5F40BFEA4A0F091CFE264BF",
+      "mtime": "2026-10-09T12:03:56.845Z"
+    },
+    {
+      "file": "boundary.log",
+      "pass_count": 1,
+      "pass_lines": [
+        "# PASS manual-dual B boundary: actual new top/source/scanner/preview/control/shader, 1024 PCM words, both latest tracks and stale-song guard, metadata freeze, UART, poisoned packet/relink and four network-image aborts"
+      ],
+      "sha256": "F560A8D9AEDCD6443B8020A6F825AC01D85DF17484A36D91B70C9E6A6756F7B6",
+      "mtime": "2026-10-09T12:18:33.595Z"
+    }
+  ],
+  "total_pass_count": 7,
+  "evidence": [
+    {
+      "file": "MEDIA_A_STARS_OPT_20261007.bit",
+      "sha256": "B84DA000BA148CA06331CE3C4A0DFA70B7B0B6B92E7BE4E158AA383E7AD4B9ED"
+    },
+    {
+      "file": "MEDIA_B_CAR_ROTATE_20261009.bit",
+      "sha256": "7421D7CEA647A075F5F9C3D861F1E4EACDA6A74D16EC3124C7BB6C85A4EF9B48"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/video_source_test.v",
+      "sha256": "39CC05C9684A594D4254D11E66E97344053AB75BDB00F3F5A301643FD7AADBFC"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/key_remove_shakes.v",
+      "sha256": "8832F59E7BA94BFB8CF31E4F5A772EF7177D5257A5A2532D53CBFA1D9B7F5CD9"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/hdmi_phy_warpper.v",
+      "sha256": "416B082B0987001BDBC0A7E20A557CB8FB1DCA34E25DC881E6D28A8CB3CF4300"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/lane_lvds_10_1.v",
+      "sha256": "DE9529321354F04837E051D0EC1681CF44783D4BE3284703A788E081147500BC"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "sha256": "867E0B0BDD874BC383D00918C9E1BE3FE01EDF41F343B6A0D73E262776596A63"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/manual_dual_20261007/top_dual_image_hw.v",
+      "sha256": "8682D7A9F14B8249CD98F909581141980E05F974CA65C46D45DF66528629FE09"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/ax_debounce.v",
+      "sha256": "93AA6DD38051250CC7F777C88466AC180AFE9BCDCE7838B9EA506455D8CBC9B8"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/manual_dual_20261007/bmp_read.v",
+      "sha256": "F1845AB59A0BC4D0C7EA323C267371D82ADBE6CD8661D6C98482EB7A7E804D6E"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/color_bar.v",
+      "sha256": "AFE1F56714EC58D2477BA1717E5A36C5A0DA5FE5C07D70D11AA5ACE710C4B152"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/frame_fifo_read.v",
+      "sha256": "AA456AFB9C01F6BC4D976DF1F5D1A0DB39885FDECA2CFAAB71A5C6087C4B172C"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/frame_fifo_write.v",
+      "sha256": "2C0F735EBE0CC38D3C3E3B404A0D3121412254EE3AD1DAF6CE49573856837715"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/hw_round7_20261005/frame_read_write_hw.v",
+      "sha256": "8D5848E78350E0D304755E74EA7F5D3E0D7F4DD5D5AB02662CD03530E0FAB354"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/sd_card_bmp.v",
+      "sha256": "BEBC7249B6D100C36335A915711F80CC407D790935BFAA69D4B585D3621D5DA6"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/video_define.v",
+      "sha256": "77748966850A8F5AF0D77F2CDB08006088BA5E1A31B98391FBA6CC61C5247DA2"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/video_delay.v",
+      "sha256": "F47C4B63F8BAA6D8874C87DCA5B72DFDADD19F4A107403DA98752BCE98936433"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/video_timing_data.v",
+      "sha256": "C6F75501E98DD5995F687AAFB40455BEFFE45B426137B5089A73AC3A036F7282"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/startup_pulse.v",
+      "sha256": "396E1E56FEBB8028339E646BC2F06B83E07AB11EF840E447422FB941956741C9"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/video_rgb_to_axis_640x480.v",
+      "sha256": "82DA3DF6220842F072654800453ADB860DAF22126E81873F96E6769AE964E57F"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/sd_card_cmd.v",
+      "sha256": "A1A50502AFD4E8B238B0627CD5F204C04738E761D49AB48F33DA35E22BA4A5FA"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/sd_card_sec_read_write.v",
+      "sha256": "AA73E64F7A8EDF767BEF0D7205702BB697AB4080E3FF012DE0C29BE2EE0A9FCC"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/sd_card_top.v",
+      "sha256": "00AC5EB15CE2D5B1D3FF87D6CB5BE44AF50106A96327FBC8A580B831274CB123"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/spi_master.v",
+      "sha256": "37F7A21144FA5CCA3CC5C3B5F68A5AD40B3108336B600E45A1367734AC61403C"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/sdram.v",
+      "sha256": "2D985C2477384E677C25714241E1A50206DEF8916AA03189A5B313B2D22DFC99"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/include/global_def.v",
+      "sha256": "433240EC48021DBB559D3532C67526F1338C6CC6CE15D26E1D987FE89E61DA42"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/include/sdr_as_ram.enc.v",
+      "sha256": "767DBDFBD83D42223B77DFA7DEAB42CE8216A8FD6F6CB41B7E7593D9A345BA57"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/include/sdr_init_ref.enc.v",
+      "sha256": "3DA1D34D3FB8A5108A74185EDF7FE6836B28807B31F47F74EAB87DE4F23186B8"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/include/sdr_wrrd.enc.v",
+      "sha256": "C7D7FE07D75F66AA88D9F986B3006319C995162434F104F9990664B374CDFDD2"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/seg_decoder.v",
+      "sha256": "62A2664BE7DB6D0DACE31FC97A8FAEF0C43F44B639B1D5A6A2C49773812A3B5E"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/seg_scan.v",
+      "sha256": "C61D6B6808E06DD0EDC6DB2D8F214426A1FB96D546556ECD1F74EA9CA6889F52"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v",
+      "sha256": "1A946821E904C411F4DBF8F6D839B59622CBF9E5EA0844CCEC6769EBE07F769E"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/I2S_receiver.v",
+      "sha256": "327271F25B3CE4348885569F544D33D8BD02C80CC2FD4524D2EEBEC814781416"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/audio_arc_calculate.v",
+      "sha256": "81D282E3D8BCFC56567F252BD214866AC66FA30F0C0B126845C92E149C15933A"
+    },
+    {
+      "file": "source_snapshot/src/td_project/al_ip/PLL_HDMI_AUDIO.v",
+      "sha256": "4152904C9FE0A01DFB9B5E47FDBE9FDF2F02EBCCEF66B9E81451D3E88D4AB5A2"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/osd_alpha_overlay.v",
+      "sha256": "17AD2C2F3A7BA2601CA6173FCF73EDE9499A74701D43E877A8DB07971745A115"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/video_transition_effects.v",
+      "sha256": "654018C079E9EA252F01C5383E617CCDCE6DF6E98CB7BF6AF349C88E3D5AEE01"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/audio_spectrum_analyzer.v",
+      "sha256": "4A5AB0CE23325CD9E9E60FC71F3BDEB105FC346877761A679191D956688D0D76"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/resource_round10_20261005/audio_visualizer_overlay.v",
+      "sha256": "3476CDD5BF35AB697AA41F56C23CBDE9EB1E30218B0DDA279B60C69ED31F62E4"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/video_home_overlay.v",
+      "sha256": "023FDD9B69EFA77C3331B6766BC1BABDCC4755DCCA908B74E2C212CE6F92A038"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/BUFGMUX.v",
+      "sha256": "3501C3AE93FC102FD547A30BF84AAF64521DDAEAD53F398E62DAFB8CF3E8ADBD"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/clk_gen_rst_gen.v",
+      "sha256": "1CF435B0D40E3850366F237C8BD8E0DDE34CE1974C8525457D0AD8F65F5C1837"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/div_clk_gen.v",
+      "sha256": "BB9CA78FEA2DEF93464B44641B32A2491316CF3DE55C361BC81801CFC280B367"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/IDDR.v",
+      "sha256": "0CB13720A17311E80812DE7B45B0A0BA4CF2ECDF1F60E1F8A4279FEE268C7B15"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/ODDR.v",
+      "sha256": "6442C1DD9F76329DDB5420110FD8236211EF7D002EC2A1C6295D062E353A8F4D"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/RAMB16_S9_S9.v",
+      "sha256": "9651FF21B7E76F097704ECDA17398B00F2618107B13E0768D4043E24CB649BCC"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/rgmii_interface.v",
+      "sha256": "358763A4C014AAC49A0C1A0EC96E6E0224C0341371740D1616F43766D14A1DCD"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/rx_client_fifo.v",
+      "sha256": "7DAE154FD14E6CE3431C1492777C1CEFB1E485D276F15DE8D287D7A0D6BA06A3"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/temac_block.v",
+      "sha256": "D013485435ABCD2188450120A9EF99A7A75C6E46FD8F186381E2E8FA3F3C5241"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/temac_clk_gen.v",
+      "sha256": "DFDDA666362A1372FFD07B361D1D52401AC479B244CE7AFB0C45F7DBE08996E8"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/tx_client_fifo.v",
+      "sha256": "B50FD509770C57C2EB683A6074F0F97704E048392A03472F1FDB3FA9965CFFA7"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/tx_clk_en_gen.v",
+      "sha256": "78690F2C03DD38077FB3E7A1B39DD520DA6ECA10CBF125BB57FD71E2D156082A"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/source_code/rtl/udp_ip_protocol_stack_merge.enc.v",
+      "sha256": "0D06B3D6F7B2947501CDD3128373585E38C70454938234FFA9DF325010BD4F74"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/dual_board_eth_transport.v",
+      "sha256": "88BEDCF15C44A19D1103BA8514DCFF3EF5400FFC1A38EFFCBEE724604561AD40"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/image_packet_rx.v",
+      "sha256": "7DC4C31AF4A9D0341FEBF2ED51DDF234F258E1BF1BE890AC6444A8A763C676E4"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/image_receipt.v",
+      "sha256": "50DD6B5C718DD26DB6694923F5E42299C3CE588FB95107D4D45CEF91D37FC0FD"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/image_sdram_sink.v",
+      "sha256": "0D05C3C5F75B7C6B479DE42C97173555D50251AA37E6A0FF81A921A5EAA3D3D7"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/image_main_ingress.v",
+      "sha256": "59EB99C5603E93EE85BCCD3C3CE1C8DABBF3833ED4FF76C63B8D4278111BE7A2"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/manual_dual_20261007/image_remote_display_control.v",
+      "sha256": "A117F9125FE16E09CDDBE6F6044F7512BE4596A3BF52265348BFF426C9888F3D"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v",
+      "sha256": "2617E785BC8D6563C3AB1CE94431314FEBF6A11B7B00A1DE4942EF7AE4FFA199"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/audio_waveform_analyzer.v",
+      "sha256": "F9AACDA9C73E47EE84E490E4C115ABD77845AFF3E8CDCC9898679773E6939BC4"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/video_frame_valid_gate.v",
+      "sha256": "AA4962A5B2339EC8691692DFF611B2F4E9474D9A6D7F95EF1273705F471403C6"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/manual_dual_20261007/media_control_packet.v",
+      "sha256": "F052CD18F3499E8622B226949D29CDA79C13544F7AFF8CB1AB50AEDA28FB1DC3"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/video_image_adjust.v",
+      "sha256": "B59CD2088CA60D53DA532C7A5F6A59C5F3D7EC882F8CFD5E907D8133EACBD392"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/resource_round10_20261005/video_status_overlay.v",
+      "sha256": "283448FFCDF080B4EA0137B8ACD115AEC35D3F464AA5CB8EF3A289A1F051A96A"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/alarm_switch_control.v",
+      "sha256": "4503863C7AACACC8F5B5489690C2185DF12E0B09275EF0FC25F38848D5C97E64"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/audio_alarm_mixer.v",
+      "sha256": "73C2309D1434D291EB8661AF0B1CFA024BD48354314DB138E71FA148100C5542"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/vehicle_hazard_overlay.v",
+      "sha256": "CDAFBC0AFF61000F72CF309769CBAEDD6A9A6DA61E292BA2FD65AC327BF63CF9"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/video_album_cover_rom.v",
+      "sha256": "3D7411B079B2CE5981ECDFD9ED7AE41E200A149ECA9583928F58E60473167FCF"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/video_app_icons_rom.v",
+      "sha256": "F1D460B691449680F492390CB021A8A3B0EAEA146C4FFD57F615205CDD95F6C9"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/yilu_replace_20261006/audio_lyric_timeline.v",
+      "sha256": "FAA028E03BABE709168A6EC6BB1F5970B5B02DDE2B778E1E4D373A502566A7FB"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/dualsong_20261005/video_lyric_overlay.v",
+      "sha256": "02F652529AF20D5D4C2C73616584F40CA52DABD39140FC9C13B0ED342C1FDE25"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/yilu_replace_20261006/dual_lyric_song_data.v",
+      "sha256": "350CDE6980C6BD94FDEF83DA6C03DF4952C7EFAB08A20638E0537631818A4850"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/SD/bmp_bilinear_stream.v",
+      "sha256": "1F6EDA9ED18694FFD5E0E386B4A3A051364B422CD8C7288AD260CEE908D799EC"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/video_relax_overlay.v",
+      "sha256": "B05F8913D4A8ABA274AC74ED0B9212671EEBCF8ACFA748BA2855C5AD3959D7CF"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/video_unified_clock.v",
+      "sha256": "69830275BE314D3A3C2788346893BCD3CDB51D807E0C782DDFBB71FD49C90538"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/video_clock_digit_rom.v",
+      "sha256": "65A51B56F113F30ED3B0336E18B79B3F6B14797101ACFD41C6C270C1FC97A1A8"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/audio_packet_rx.v",
+      "sha256": "CAFE997C174422D786847D61E5FBC94308C495B09586F45524E5D359D330FA58"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/dualsong_20261005/audio_receipt_a.v",
+      "sha256": "82697D8A1BF10C65FF21F9EA3E6AC55F1CAADEFCDB487C9AFB535B94B588FA94"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/media_udp_arbiter.v",
+      "sha256": "8FE149E0D80DFCAE220EEC8ADDB4226E5E984C62EB40A3A72F0F51014FD28FD6"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/fixed_peer_udp.v",
+      "sha256": "2919B55F8240E47058824CD20DE2FEEB02373A395EB3F9B47D4F2D414715E938"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/media_link_session.v",
+      "sha256": "18789CEE005FDE0340404D928239CD70D1939577433042DCDE088DA5D1FB61E1"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/media_audio_enable_cdc.v",
+      "sha256": "C641C3D8C3A114EEAC7B38535DA5C2B8D3A8E83A7F5FFDA1312261B5DE6ED765"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/audio_visual_packet.v",
+      "sha256": "A76921C3F83C98C4ABB8FE71E6DC7E6DEFE182267E11C7A0F64F0192A968DEA5"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/video_remote_home_overlay.v",
+      "sha256": "D52B1EDFADFD3CBBDF2940436E7932EC106273632A5CB69C13F6166CF5050BEB"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/home_assets/home_palette_rom.v",
+      "sha256": "C62234D30000DB3CE2531A442F95B43A6688A2C3D7302136526BDEDD4EC10EBB"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/yilu_replace_20261006/video_song_cover_overlay.v",
+      "sha256": "754757AB6F62CAA7E510472A588C702D13AB2939ABC301D1808CA74D3BED010E"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/yilu_replace_20261006/song2_cover_rom.v",
+      "sha256": "48F5327ACCCD390CBBC04C635D0C8BA147254E371E85A2BAE84B8185B98311EC"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/stars_opt_20261007/video_dual_star_overlay.v",
+      "sha256": "04E065A4C9918394630B5BAC24A6F9B671E9AF9163CE8FDD81B15232BEDE864F"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/dualsong_20261005/media_a.adc",
+      "sha256": "380EF02D69A4467A269F5BC17BB2A471F06FF9E398A042B31A9AF76268BB393D"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/constraints/media_a.sdc",
+      "sha256": "CB2FD0E01B1D5FE3D250FFACFDBFE2B23AD3E2E52580F5DB5AE8F33D56BEA074"
+    },
+    {
+      "file": "source_snapshot/src/user_source/constraints_source/edid_debug.cwc",
+      "sha256": "6716411E2346DE08976E0AD8ED2E09EB93BDC0F60EFC31BF75BA70E6CEBE1F95"
+    },
+    {
+      "file": "source_snapshot/src/td_project/al_ip/PLL.ipc",
+      "sha256": "8CB6DF3A1BB99CF2F95F9A535D7F33213B837207B36E336848A6ED0DB29AB8B5"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/ip/afifo_16_32_256.ipc",
+      "sha256": "9DF57C0B914F2F6222F88E356528947224FDDB866BE2468F1391C26D4E60D371"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/ip/afifo_32_16_256.ipc",
+      "sha256": "A74955DC68A02BBFB36780127008C4737EC80E0888A4648E98E6EAC9F5D2C349"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/ip/sys_pll.ipc",
+      "sha256": "B8ACD7534D7FD71E5922CD194DCED754AD462A805DC7B38574486DC3A963EF41"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/ip/video_pll.ipc",
+      "sha256": "B717F646067025A69B4021ED85ADEEB6531FAD881BCE5A49FCB2171CCF401076"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/prj/board_a/al_ip/pll_gen.ipc",
+      "sha256": "4151BBA32CC66C9AA0C4B96EE76C57FFB78DBA2E4B448D746A1331CBE17D32AE"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/prj/board_a/al_ip/rx_pll.ipc",
+      "sha256": "3D7D676316F0E0C320CE5582B61ADAF9BDF1A2F0B13E31AF85588E6447E8ABA5"
+    },
+    {
+      "file": "source_snapshot/dual_board/ethernet_smoke/prj/board_a/al_ip/TEMAC_CORE/TEMAC_CORE.xml",
+      "sha256": "3182FD400CB0631BA3CB94A1739DA51150470DEA3E0EC23A16061BCB49E940D1"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/hw_round5_20261005/image_packet_tx_hw.v",
+      "sha256": "62D9A29319D04731C683C2BC7EFFCBC26B8E4FC245F7B5140E62EEE70B625D3E"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/stars_opt_20261007/image_media_board_b_hw.v",
+      "sha256": "B0CA5B854A87B823E872ECDD7BE00D243B716B9FDBBF758C28172A36F77A32DE"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/manual_dual_20261007/image_tf_source_hw.v",
+      "sha256": "7540C992F43A24B1606D04526E7C7A48204744AD3114CE23028D3613534A0C72"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/image_pixel_cdc.v",
+      "sha256": "6198853A79080DDD1EA4FA77FF8356B8F7ABDF27B899F73B8C4FE5B98DEF061C"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/manual_dual_20261007/sd_card_bmp_remote.v",
+      "sha256": "51F1125064D6452DB2EE81066707EDB7DEA3EBCE3E18624FCCFD080AC33BAFD4"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/audio_packet_tx.v",
+      "sha256": "AC313135E5FFF0ADE85C4C3AF14CF649CDA15B2FD7DD07628AA783113A442E63"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/dualsong_20261005/audio_receipt_b.v",
+      "sha256": "EC2454A237C6FB48368638372DA911F463CC64A72BBFF1754329BD39AC28D428"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/startup_fix_20261008/media_udp_arbiter.v",
+      "sha256": "4E16B39353B2EB1882D00414F9CDDD82AE707F59E5BA3A72E599B7DB3B420F0D"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/IP/afifo_32_16_256.v",
+      "sha256": "7C3EE41F30BE75AE686C9ABFF3A840FC5439209CDA077E4AA275EAC0DAB9F564"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/stars_opt_20261007/audio_visual_packet_hw.v",
+      "sha256": "9C028D7936B4A23C3173D29097CD887FBDF2FDEA939F7BD5925BBC698AC2E000"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/stars_opt_20261007/remote_audio_compute_hw.v",
+      "sha256": "5C78B55347229BB94597435B428FD4A63D09DC2DF03427DC8E8E00F9BD854062"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/resource_round10_20261005/audio_waveform_analyzer.v",
+      "sha256": "1CB7CCE6A6F07E2D0F479B271839FE77C28A87FFBF328D224E52977F1701BA92"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/hw_round2_20261005/home_index_stream_hw.v",
+      "sha256": "EF17E105BABA053CD767E4B76EDBB963CC3109A93B54173549F2FA5D81B8CA91"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/home_assets/home_atlas_rom.v",
+      "sha256": "71BF04D37659960F9CBE6877EDC8DB876FB4B495919DDB272F2F80EEB128666B"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/uart_baud_tick.v",
+      "sha256": "86701937B016AB297B46BBBA8A7ACC00B03F7F9E636C3EFC34ED176E1FF2809F"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/uart_rx.v",
+      "sha256": "D75F9978C9D55D8516DAA5BCD6C9102E670D7508FA113E8C31B5A85C59232ECB"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/uart_tx.v",
+      "sha256": "6E607568AFBFE2CF1EC019CF7E5ECDE36DABA630F20568F5D8A5527A9B4B25B3"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/uart_audio_control.v",
+      "sha256": "82F4BAE8C513B5B1B0C71419C38842191B3EBF795408A50B0E65BFFAEDEDB35F"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/hw_round4_20261005/player_domain_reset.v",
+      "sha256": "EA7EF6223F24A544ECB69200E8B93DF567B22B1DDBE94E4E7C525BED3EDDB435"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/manual_dual_20261007/b_image_capture.v",
+      "sha256": "89565D53E0020EB5118BAB05E7F5830F2F7530569F0CA3ED8CCAD18D00B5C78C"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/car_intro_20261007/b_hdmi_preview.v",
+      "sha256": "B7655E8B31B37CE7FE683EDC20DB98AEF3D38D2893516A6BBEB03AB1CDD551C2"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/IP/afifo_16_32_256.v",
+      "sha256": "3D29B06655482184A9AD157B9BD71B79032DEBE3199168D3B4D9570FDAC31835"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/car_rotate_20261009/video_car_intro.v",
+      "sha256": "B393E0EBC34CB017427FF61D87E04B2093354871BCCB410781C79850FF9DE053"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/car_intro_20261007/car_intro_rom.v",
+      "sha256": "AD0EE9FC81C3C62C16F21A8E750BC3B888C320465BA698D31B165C663D052B0E"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/manual_dual_20261007/media_b.adc",
+      "sha256": "29E0658AC06CA7F008583EB1043430477955865010E29790056AE05EA6745524"
+    },
+    {
+      "file": "source_snapshot/dual_board/image_link/rtl/manual_dual_20261007/media_b.sdc",
+      "sha256": "1C4048BA14E2B301E94AA1077D2D2EDCF342E232CBB12C35A0EF956D624F0D91"
+    },
+    {
+      "file": "source_snapshot/src/user_source/hdl_source/IP/sys_pll.ipc",
+      "sha256": "B8ACD7534D7FD71E5922CD194DCED754AD462A805DC7B38574486DC3A963EF41"
+    },
+    {
+      "file": "evidence/seed3/B_build.log",
+      "sha256": "BA315EBEBCF1079FF4E89FF5FDAF688B36FB6E5313623F5B0D1DFD5289B22A8E"
+    },
+    {
+      "file": "evidence/seed3/build_flow.tcl",
+      "sha256": "D62B32FE29F09052999DFD2AE3F8D8C20BAD6E6CECBD68C28C27F551CC350CC5"
+    },
+    {
+      "file": "evidence/seed3/MEDIA_B_CAR_ROTATE_20261009.al",
+      "sha256": "951268143C377159756592A2387DFFC5D920B331DA3704E084C5A9A77A12CEA6"
+    },
+    {
+      "file": "evidence/seed3/MEDIA_B_CAR_ROTATE_20261009_gate.area",
+      "sha256": "965EB29EDAED33D4F38822704FF6FBFD8FD70D6205E5D1F3F7F40A5DE4B9C944"
+    },
+    {
+      "file": "evidence/seed3/MEDIA_B_CAR_ROTATE_20261009_phy.area",
+      "sha256": "845BFD1DD3CF7D5AA2988B2B1B2CE8A925C2387DA302CE6CB5FDAFAAFA6B07CA"
+    },
+    {
+      "file": "evidence/seed3/MEDIA_B_CAR_ROTATE_20261009_pr.timing",
+      "sha256": "9757CFA3A839986FA609D253366EDA26B0369AFDF73F6B8E629F1735F45576BF"
+    },
+    {
+      "file": "evidence/seed3/MEDIA_B_CAR_ROTATE_20261009_phy.ts",
+      "sha256": "DFF505F873CCACB2564013BA42D11E06E1685D989EF4A9AEC7334DDF3A1FA2F1"
+    },
+    {
+      "file": "evidence/seed1/B_build.log",
+      "sha256": "F3FEE4C7E4CDC4093E8B393EFB59E97A87BF5C801DC0F4E5D66BC15CA17B592E"
+    },
+    {
+      "file": "evidence/seed1/build_flow.tcl",
+      "sha256": "6E0D1635519916B2DDD60908E89CB113A1ED5B6A31DD5753709CF70962A7B726"
+    },
+    {
+      "file": "evidence/seed1/MEDIA_B_CAR_ROTATE_S1_20261009.al",
+      "sha256": "91544C474C8AC3324A7132052815B961AC43E663912CF09316A1F5FB14EA004D"
+    },
+    {
+      "file": "evidence/seed1/MEDIA_B_CAR_ROTATE_S1_20261009_gate.area",
+      "sha256": "965EB29EDAED33D4F38822704FF6FBFD8FD70D6205E5D1F3F7F40A5DE4B9C944"
+    },
+    {
+      "file": "evidence/seed1/MEDIA_B_CAR_ROTATE_S1_20261009_phy.area",
+      "sha256": "EFA0710EF4E4604369595124EE71C27C9DAAE301EDDF0C6977BAC6D92E56DAFA"
+    },
+    {
+      "file": "evidence/seed1/MEDIA_B_CAR_ROTATE_S1_20261009_pr.timing",
+      "sha256": "B4A729824B5312740FFEAFEC80FFBBA66EEF94122949A90213E5B52F18B50F38"
+    },
+    {
+      "file": "evidence/seed1/MEDIA_B_CAR_ROTATE_S1_20261009_phy.ts",
+      "sha256": "6877632B0DF500930ADD32E018C4A132D1268C0EE77815DA5B29008DF99A0E6A"
+    },
+    {
+      "file": "evidence/seed4/B_build.log",
+      "sha256": "085900B371D51F5079B38BCA6FBA4D65E12EB37E14EEBFD4B44F887953CBCBB2"
+    },
+    {
+      "file": "evidence/seed4/build_flow.tcl",
+      "sha256": "FD708CC9B02C1D4094E4B98D042E88B2E2CB3CECFE372F4CBEAA7F30E84DC13B"
+    },
+    {
+      "file": "evidence/seed4/MEDIA_B_CAR_ROTATE_S4_20261009.al",
+      "sha256": "25646A5F58E74A8ABD9DA8F39C5276E15BE10C60C85BBE06A18A72158F2D345E"
+    },
+    {
+      "file": "evidence/seed4/MEDIA_B_CAR_ROTATE_S4_20261009_gate.area",
+      "sha256": "965EB29EDAED33D4F38822704FF6FBFD8FD70D6205E5D1F3F7F40A5DE4B9C944"
+    },
+    {
+      "file": "evidence/seed4/MEDIA_B_CAR_ROTATE_S4_20261009_phy.area",
+      "sha256": "40D48D73F91EFA87A90749B9722F779E8830D1A8AD659CF8E1906DE464957A22"
+    },
+    {
+      "file": "evidence/seed4/MEDIA_B_CAR_ROTATE_S4_20261009_pr.timing",
+      "sha256": "256C1C5590CE705878D4C4A188A542DE4FE3FBC607D8DDCA44374296C383196C"
+    },
+    {
+      "file": "evidence/seed4/MEDIA_B_CAR_ROTATE_S4_20261009_phy.ts",
+      "sha256": "074F96602FCCFC8A7DB6AB9DE4DB4A27C0F38E04238C3A88B932D011B8DE7769"
+    },
+    {
+      "file": "evidence/rotation.log",
+      "sha256": "7B6F355572BDB44B544B16BF300CE4F95B26917600E4AC3D7A8818A54A61170D"
+    },
+    {
+      "file": "evidence/intro.log",
+      "sha256": "A40392DAC35C3D3961A338F7E45D8F172AEC5F11B5F40BFEA4A0F091CFE264BF"
+    },
+    {
+      "file": "evidence/boundary.log",
+      "sha256": "F560A8D9AEDCD6443B8020A6F825AC01D85DF17484A36D91B70C9E6A6756F7B6"
+    },
+    {
+      "file": "tests/car_rotate_20261009/run_boundary.do",
+      "sha256": "96469A0B51BE914750E8865B4F43ECC6AD99347E50CF09B70649B46902B13B2C"
+    },
+    {
+      "file": "tests/car_rotate_20261009/run_intro.do",
+      "sha256": "C277913D1C15F9013F7AE6D63787D33CD6E7EF15C543E583B85A455A9F44B876"
+    },
+    {
+      "file": "tests/car_rotate_20261009/run_rotate.do",
+      "sha256": "F3730BC0441C4505018DBD6FA52494AFADD178AFE2AA77EC825DFC73B4FD4CFC"
+    },
+    {
+      "file": "tests/car_rotate_20261009/tb_car_rotate.v",
+      "sha256": "E8F15FA3C39D3604CF2A4761EAFB5532A975E423FA082CCC18FBE036CA6B4DF8"
+    },
+    {
+      "file": "tests/car_intro_20261007/tb_car_intro.v",
+      "sha256": "5EDD5D00947F10198DD20646DE108DC60AE2DE62D5F4A62DC841B16315051F6D"
+    },
+    {
+      "file": "tests/car_intro_20261007/car_reference.vh",
+      "sha256": "C377FEC0A798344ED6006DE3CBB58A42573331F587E33DF0A1B94A66B417F52E"
+    },
+    {
+      "file": "tests/car_intro_20261007/sprite_reference.vh",
+      "sha256": "7F0C34A996EC699463A950CEBE133C07B11B08C092F3E7CFA1B7DAA322484C5C"
+    },
+    {
+      "file": "tests/manual_dual_20261007/tb_b_boundary.v",
+      "sha256": "ECCA161E157197D876BB4049812CDC701CD4C6C787EC52AC14768C584EF379F6"
+    },
+    {
+      "file": "tests/manual_dual_20261007/b_hdmi_models.v",
+      "sha256": "18B20E3F01C2E5E1168AB8CB57DB3F6C50ECE260C4AB3C525BE590FEBA3EE03C"
+    },
+    {
+      "file": "build_helpers/prepare_car_rotate_20261009.cjs",
+      "sha256": "92CD0D9E94B336B1E8B32E7D1809AAF2C4C3CD1D60B9FF19941019008FE1614E"
+    },
+    {
+      "file": "build_helpers/prepare_car_rotate_seeds_20261009.cjs",
+      "sha256": "3D6AE85D6DAE0882331660FA4F5CB2411ED192958E632328DCBB07F5E15BACCC"
+    },
+    {
+      "file": "build_helpers/package_car_rotate_20261009.cjs",
+      "sha256": "262580C68F256FCA9D4346BEFC7B16696F9B7C5F15280B585730EE13749C8865"
+    }
+  ],
+  "carried_baseline_regression": {
+    "manifest": "../../board_test_20261008/startup_fix/manifest.json",
+    "sha256": "7C397B5A389C804E2BE9731A16F2AD14895F9D4B4BFCF30C0059FC8276F36C07",
+    "review_sha256": "80D4966B98FBEFE41A8195A4278AC5CAD4BA3D4E3E567CBE5681E5BCF3030E7E",
+    "scope": "Unchanged startup packet scheduler, paired A/B UDP reboot, stars and cached-image tests carried by source hashes; original car and actual B top rerun this turn."
+  },
+  "caveats": "PROGRAM_SRAM engineering candidate only. Functional RTL simulation is not proof of real PHY/MAC/SDRAM stability. Startup-fix hardware outcome remains unconfirmed. A/TF content unchanged; no automatic programming, flash erase or TF writes."
+}

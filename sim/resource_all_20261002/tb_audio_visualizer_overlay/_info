@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vaudio_visualizer_overlay
+Z1 !s110 1790992595
+!i10b 1
+!s100 ]XB_zm3M3GFP^IZ@Wn>]]3
+Ifm[KzIGdAYfYgJl`Z[iW;2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1790928777
+8src/user_source/hdl_source/audio_visualizer_overlay.v
+Fsrc/user_source/hdl_source/audio_visualizer_overlay.v
+L0 4
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1790992595.000000
+Z5 !s107 sim/tb_audio_visualizer_overlay.v|src/user_source/hdl_source/audio_visualizer_overlay.v|
+Z6 !s90 -work|sim/resource_all_20261002/tb_audio_visualizer_overlay|src/user_source/hdl_source/audio_visualizer_overlay.v|sim/tb_audio_visualizer_overlay.v|
+!i113 1
+Z7 o-work sim/resource_all_20261002/tb_audio_visualizer_overlay
+Z8 tCvgOpt 0
+vtb_audio_visualizer_overlay
+R1
+!i10b 1
+!s100 TS<;LGRedMGcz7TG^kce`0
+IkQ<c@QOL0PSZ7?@J4e7kX2
+R2
+R0
+w1790489745
+8sim/tb_audio_visualizer_overlay.v
+Fsim/tb_audio_visualizer_overlay.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

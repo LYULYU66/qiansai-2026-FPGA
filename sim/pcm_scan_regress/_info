@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf/sim
+vbmp_read
+Z1 !s110 1789377281
+!i10b 1
+!s100 8mI8FaGa6Sz0kaaVnACe23
+I1VI_Ce8NeQ6So>]n;5P[W0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1789376215
+8..\src\user_source\hdl_source\SD\bmp_read.v
+F..\src\user_source\hdl_source\SD\bmp_read.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1789377281.000000
+Z5 !s107 tb_bmp_pcm_stream.v|..\src\user_source\hdl_source\SD\bmp_read.v|
+Z6 !s90 -work|pcm_scan_regress|..\src\user_source\hdl_source\SD\bmp_read.v|tb_bmp_pcm_stream.v|
+!i113 1
+Z7 o-work pcm_scan_regress
+Z8 tCvgOpt 0
+vtb_bmp_pcm_stream
+R1
+!i10b 1
+!s100 e4olD^XZR`Sn60[gaWO<K2
+I:PYVT]=55cBahRj526J9C3
+R2
+R0
+w1789376275
+8tb_bmp_pcm_stream.v
+Ftb_bmp_pcm_stream.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

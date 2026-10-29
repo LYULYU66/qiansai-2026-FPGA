@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vaudio_alarm_mixer
+Z1 !s110 1790583091
+!i10b 1
+!s100 =1?Y8gmL_mXZK=LZSb]b:3
+Iia<gLVblZ0OkD1fkZBn751
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1790078474
+8src/user_source/hdl_source/audio_alarm_mixer.v
+Fsrc/user_source/hdl_source/audio_alarm_mixer.v
+L0 7
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1790583091.000000
+Z5 !s107 sim/tb_audio_alarm_mixer.v|src/user_source/hdl_source/audio_alarm_mixer.v|
+Z6 !s90 -work|sim/resource_global_20260927/tb_audio_alarm_mixer|src/user_source/hdl_source/audio_alarm_mixer.v|sim/tb_audio_alarm_mixer.v|
+!i113 1
+Z7 o-work sim/resource_global_20260927/tb_audio_alarm_mixer
+Z8 tCvgOpt 0
+vtb_audio_alarm_mixer
+R1
+!i10b 1
+!s100 2@VZJl9Zh@iX2PP>D0_d`1
+IAHKoiIo4oUTg;[zl4X`K83
+R2
+R0
+w1790078476
+8sim/tb_audio_alarm_mixer.v
+Fsim/tb_audio_alarm_mixer.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

@@ -1,0 +1,156 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\swflags_20261023
+T_opt
+V]_MI1ek`DPh@CIda3UXaM2
+04 23 4 work tb_swflags_before_music fast 0
+=1-04bf1b05a8bd-6adab0d3-13c-5f18
+o-quiet -auto_acc_if_foreign -work w_tb
+n@_opt
+OL;O;10.1c;51
+vaudio_visual_cdc
+!s100 =PVV^_10Z[3AAS@P;EecW3
+I6U6Ej?dB6mRIC[7UOM2cV3
+Vj7Va2@3SlTLOdFdkcCeQU0
+Z1 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\swflags_20261023
+Z2 w1792716936
+Z3 8../../rtl/hw_round4_20261005/audio_visual_packet_hw.v
+Z4 F../../rtl/hw_round4_20261005/audio_visual_packet_hw.v
+L0 144
+Z5 OL;L;10.1c;51
+r1
+31
+Z6 !s108 1792717009.507000
+Z7 !s107 tb_swflags_before_music.v|a_visual_rx_copy.v|../../rtl/hw_round4_20261005/audio_visual_packet_hw.v|
+Z8 !s90 -work|w_tb|../../rtl/hw_round4_20261005/audio_visual_packet_hw.v|a_visual_rx_copy.v|tb_swflags_before_music.v|
+Z9 o-work w_tb -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s85 0
+vaudio_visual_cdc_a
+!s100 0`b?6[HBmOz05P@0am0353
+IUP5fB;BB<e>P29JPZlWU80
+VP4BLbTj71_Vi;9d?TmS9U1
+R1
+Z10 w1792716995
+Z11 8a_visual_rx_copy.v
+Z12 Fa_visual_rx_copy.v
+L0 209
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s85 0
+vaudio_visual_flags_rx
+!s100 [H>dK3h0dzWMTZeo>bnI31
+I>8ibaP9Z5lFAL:DZTfMZl0
+Vg`iDYIBNMY@05E5O3Gg?`2
+R1
+R10
+R11
+R12
+L0 160
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s85 0
+vaudio_visual_rx
+!s100 ?d`DOAT0DN^7H034jNC]h3
+I2`]RMUJYhY9R7B9l3QIUH0
+V:c[kf:<LZNLZWQVc8H:4F2
+R1
+R2
+R3
+R4
+L0 82
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s85 0
+vaudio_visual_rx_a
+!s100 ]1dV=bc==4`DeiiE;AAeH2
+Ill6T<YUam1lGYKZmk:MnT3
+VJBIl^>zNg0Gca4Q<@[H5B3
+R1
+R10
+R11
+R12
+L0 71
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s85 0
+vaudio_visual_tx
+!s100 PlzglmfHf`g_[OLSkllO?1
+I_:lTM=?KNdOFDZAg=bC8e3
+VUoZ@TfE0b7@[4FEFXz:Va2
+R1
+R2
+R3
+R4
+L0 5
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s85 0
+vaudio_visual_tx_a_unused
+!s100 T@XCbH80AQWJ41cIJPQnE2
+I=P`?Ydno[]5J_J9lIO@Qj1
+VA:=?Tf4AYEizZSJ6H1l740
+R1
+R10
+R11
+R12
+L0 5
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s85 0
+vtb_swflags_before_music
+!s100 Sn0:<<F94PRUOOFBj<LcF2
+IPOYlS?<5;z5Y_P<ji:FLJ1
+VVK<PnkF6l=HMoIhn818F61
+R1
+R10
+8tb_swflags_before_music.v
+Ftb_swflags_before_music.v
+L0 5
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s85 0

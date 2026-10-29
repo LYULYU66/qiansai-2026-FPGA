@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vaudio_visualizer_overlay
+Z1 !s110 1790583122
+!i10b 1
+!s100 DPMa;g4J4A1>gk?fc`6Kf1
+I<P1>eBFZNAK?TB:<lEh[81
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1790521889
+8src/user_source/hdl_source/audio_visualizer_overlay.v
+Fsrc/user_source/hdl_source/audio_visualizer_overlay.v
+L0 4
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1790583122.000000
+Z5 !s107 sim/tb_visualizer_resource_equivalence.sv|sim/resource_global_20260927/baseline/audio_visualizer_overlay.v|src/user_source/hdl_source/audio_visualizer_overlay.v|
+Z6 !s90 -work|sim/resource_global_20260927/tb_visualizer_resource_equivalence|src/user_source/hdl_source/audio_visualizer_overlay.v|sim/resource_global_20260927/baseline/audio_visualizer_overlay.v|sim/tb_visualizer_resource_equivalence.sv|
+!i113 1
+Z7 o-work sim/resource_global_20260927/tb_visualizer_resource_equivalence
+Z8 tCvgOpt 0
+vaudio_visualizer_overlay_resource_reference
+R1
+!i10b 1
+!s100 0aR3CTAzg6HeJBbSh<7]Y3
+IcI63MH`EH[I1cIeKSM>8P2
+R2
+R0
+Z9 w1790492452
+8sim/resource_global_20260927/baseline/audio_visualizer_overlay.v
+Fsim/resource_global_20260927/baseline/audio_visualizer_overlay.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vtb_visualizer_resource_equivalence
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 ;mkDEO9X8e2_6I;_Ycoo<1
+Iz89RS[iag>nYj2im8GhU>2
+R2
+!s105 tb_visualizer_resource_equivalence_sv_unit
+S1
+R0
+R9
+8sim/tb_visualizer_resource_equivalence.sv
+Fsim/tb_visualizer_resource_equivalence.sv
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

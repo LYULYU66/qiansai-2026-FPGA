@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vlyric_font_packed_rom
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790992770
+!i10b 1
+!s100 UT;R2XRGo8o[cG_ANQj[^3
+I_P?^kCe1YM8E]GVzZU`k22
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 tb_video_lyric_overlay_sv_unit
+S1
+R0
+Z5 w1790949327
+Z6 8sim/tb_video_lyric_overlay.sv
+Z7 Fsim/tb_video_lyric_overlay.sv
+L0 85
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1790992769.000000
+Z10 !s107 sim/tb_video_lyric_overlay.sv|src/user_source/hdl_source/video_lyric_overlay.v|
+Z11 !s90 -sv|-work|sim/lyrics_20261001/video_lyric_overlay|src/user_source/hdl_source/video_lyric_overlay.v|sim/tb_video_lyric_overlay.sv|
+!i113 1
+Z12 o-sv -work sim/lyrics_20261001/video_lyric_overlay
+Z13 tCvgOpt 0
+vlyric_font_rom
+R1
+!s110 1790907873
+!i10b 1
+!s100 P_JkJ19QEMjl@G^;bX39b2
+ITn`Pn5l7:HA2EFLBORe7I0
+R3
+R4
+S1
+R0
+w1790907649
+R6
+R7
+L0 84
+R8
+r1
+!s85 0
+31
+!s108 1790907873.000000
+R10
+R11
+!i113 1
+R12
+R13
+vlyric_line_rom
+R1
+R2
+!i10b 1
+!s100 =iDaXf5KTJMHM>8PN`P1>3
+IC?CDL[BdS1gZJaFa8`m]Q3
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 77
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vtb_video_lyric_overlay
+R1
+R2
+!i10b 1
+!s100 <FG7?Q8Klz>8@X:El5V3b3
+Iflbz9E^;c=N65lY::T8Q_0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vvideo_lyric_overlay
+R1
+R2
+!i10b 1
+!s100 k@=hdG_IR4k9IVkz2S^Mz2
+IPT2PCOSZBTnZIi[:4ehJW2
+R3
+!s105 video_lyric_overlay_v_unit
+S1
+R0
+w1790949325
+8src/user_source/hdl_source/video_lyric_overlay.v
+Fsrc/user_source/hdl_source/video_lyric_overlay.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13

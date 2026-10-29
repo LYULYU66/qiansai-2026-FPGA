@@ -1,0 +1,106 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vaudio_lyric_timeline
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790992757
+!i10b 1
+!s100 M6A4i`KCFg^V_[?0_^TQ[1
+I`7=47KP[8QNk9=Web]SPD0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 audio_lyric_timeline_v_unit
+S1
+R0
+w1790907521
+8src/user_source/hdl_source/audio_lyric_timeline.v
+Fsrc/user_source/hdl_source/audio_lyric_timeline.v
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1790992757.000000
+Z6 !s107 sim/tb_audio_lyric_timeline.sv|src/user_source/hdl_source/audio_lyric_timeline.v|
+Z7 !s90 -sv|-work|sim/lyrics_20261001/audio_lyric_timeline|src/user_source/hdl_source/audio_lyric_timeline.v|sim/tb_audio_lyric_timeline.sv|
+!i113 1
+Z8 o-sv -work sim/lyrics_20261001/audio_lyric_timeline
+Z9 tCvgOpt 0
+vlyric_boundary_map
+R1
+R2
+!i10b 1
+!s100 T]iCC@gh@OKBeBDTaoA761
+IkADi6gGh;c[a_KJ]D@RiU0
+R3
+Z10 !s105 tb_audio_lyric_timeline_sv_unit
+S1
+R0
+Z11 w1790906004
+Z12 8sim/tb_audio_lyric_timeline.sv
+Z13 Fsim/tb_audio_lyric_timeline.sv
+L0 74
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vlyric_event_rom
+R1
+R2
+!i10b 1
+!s100 `zORhNl[[_E]DAE@4k2@P2
+IeQ=e2`:c1@0eob;3`mzGo1
+R3
+R10
+S1
+R0
+R11
+R12
+R13
+L0 57
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vtb_audio_lyric_timeline
+R1
+R2
+!i10b 1
+!s100 F??Z=D]Td]GKB:Z`he_FM3
+Io3OALT9U:I26f0?kc5V2h0
+R3
+R10
+S1
+R0
+R11
+R12
+R13
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

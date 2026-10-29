@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-05",
+  "files": [
+    {
+      "file": "dual_board/image_link/prj/media_a/MEDIA_IMAGE_A.al",
+      "sha256": "EBBD7BE6201F5E93746B330496EDDD362A949F092F3FE07088B86481545B3A52"
+    },
+    {
+      "file": "dual_board/image_link/prj/media_b/MEDIA_SOURCE_B.al",
+      "sha256": "71AF0AE0E64EE97FEF68008FBC1E80B701ADFCAEDA2C1CF596362E03C1F378D3"
+    },
+    {
+      "file": "dual_board/image_link/rtl/top_dual_image.v",
+      "sha256": "C6F83AE1B8D4508F2C3B40ACF6BFABC4FEF2A72A9F9861C14E0544DB08CADE4B"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_media_board_b.v",
+      "sha256": "B6AD862B40193245113941151E23DC0624AFBE3788889F93D1D0B772A731D081"
+    },
+    {
+      "file": "dual_board/image_link/phase10_validation_20261004.json",
+      "sha256": "F79080D8A2FE6D49699C7692E57F0C86047B8159534F4211F9D7D007944D7BB3"
+    },
+    {
+      "file": "src/user_source/constraints_source/pin.adc",
+      "sha256": "93368635C9A1347FAC4CB8F79944D809D8AEDB2FA3AEACEC276F96F4BDB47813"
+    },
+    {
+      "file": "src/user_source/constraints_source/timing.sdc",
+      "sha256": "ADDC88D719039514D6B5B70CC6B780CD5E77E938C0D0F1D5363D32AD8E75329B"
+    },
+    {
+      "file": "src/user_source/hdl_source/top_tf_hdmi_audio.v",
+      "sha256": "561394111CB599D811AA3408B25C6AABCC420D32111BC03D3B3EE87AB2D8E0E8"
+    },
+    {
+      "file": "best_result/lab_ex5_i2s_v1.0_logic_round3_20261003.bit",
+      "sha256": "94744392DEC4010D38261036AB360AB6E01BC4C718B34167E821302A15297C88"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_a/FIXED_UDP_HW_A_20261005.bit",
+      "sha256": "3F83C0B29B2C3EC57CD4277C77F02A7563D38B6B159B27FAB2044445C66CB5DF"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_b/FIXED_UDP_HW_B_20261005.bit",
+      "sha256": "287BF4137665356519B2A47A4868FDEDBB86C0B4A4CFAAA370A6239488055DED"
+    }
+  ]
+}

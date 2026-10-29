@@ -1,0 +1,160 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vbmp_bilinear_stream
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790944242
+!i10b 1
+!s100 6MNNcVX=]omcAl9nk@lQ_2
+I:QN_6AKf]A_PInkHGk6oX2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 bmp_bilinear_stream_v_unit
+S1
+R0
+w1790937106
+8src/user_source/hdl_source/SD/bmp_bilinear_stream.v
+Fsrc/user_source/hdl_source/SD/bmp_bilinear_stream.v
+L0 7
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1790944241.000000
+Z6 !s107 sim/tb_resize_cache_pcm.sv|src/user_source/hdl_source/SD/sd_card_bmp.v|src/user_source/hdl_source/SD/bmp_read.v|src/user_source/hdl_source/SD/bmp_bilinear_stream.v|
+Z7 !s90 -sv|+define+BILINEAR_FAST_SIM|-work|sim/bmp_resize_20261002/cache_pcm|src/user_source/hdl_source/SD/bmp_bilinear_stream.v|src/user_source/hdl_source/SD/bmp_read.v|src/user_source/hdl_source/SD/sd_card_bmp.v|sim/tb_resize_cache_pcm.sv|
+!i113 1
+Z8 o-sv -work sim/bmp_resize_20261002/cache_pcm
+Z9 !s92 -sv +define+BILINEAR_FAST_SIM -work sim/bmp_resize_20261002/cache_pcm
+Z10 tCvgOpt 0
+vbmp_read
+R1
+R2
+!i10b 1
+!s100 i?fCbgU=G@1k9PYDBcGHd1
+I3W[B3ZW1abkL`3kkVSJmd0
+R3
+!s105 bmp_read_v_unit
+S1
+R0
+w1790944158
+8src/user_source/hdl_source/SD/bmp_read.v
+Fsrc/user_source/hdl_source/SD/bmp_read.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vkey_press_debounce
+R1
+R2
+!i10b 1
+!s100 IBMigQ4hGTKn9oDKMO6]S0
+Ij[ZE0;4ZEYd<;a`RfBIFE2
+R3
+Z11 !s105 sd_card_bmp_v_unit
+S1
+R0
+Z12 w1790943793
+Z13 8src/user_source/hdl_source/SD/sd_card_bmp.v
+Z14 Fsrc/user_source/hdl_source/SD/sd_card_bmp.v
+L0 602
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vsd_card_bmp
+R1
+R2
+!i10b 1
+!s100 P;RLVE:ARYbIIIHeJn_GE1
+IF8?;?05;lEZI`0?^F;?aT3
+R3
+R11
+S1
+R0
+R12
+R13
+R14
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vsd_card_top
+R1
+R2
+!i10b 1
+!s100 dBJAf?]l1ocH=d_<aFP@g3
+I@IKZI0^fF^X^[jDzdFb=N3
+R3
+Z15 !s105 tb_resize_cache_pcm_sv_unit
+S1
+R0
+Z16 w1790936261
+Z17 8sim/tb_resize_cache_pcm.sv
+Z18 Fsim/tb_resize_cache_pcm.sv
+L0 86
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vtb_resize_cache_pcm
+R1
+R2
+!i10b 1
+!s100 ]=^1_F=d=n_;Z@aJ?]XlB1
+IoVa<kaUhgE<M]8kmn3Lmd1
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10

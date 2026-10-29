@@ -1,0 +1,96 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+T_opt
+VaK;C8zfRz54DQT^OzZiK]3
+04 21 4 work tb_audio_visual_guard fast 0
+=1-04bf1b05a8bd-6ad83f73-104-654
+o-quiet -auto_acc_if_foreign -work w_av_fix
+n@_opt
+OL;O;10.1c;51
+vaudio_visual_cdc
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IbI@@2YIki=KDHC^i1ma3<1
+Vj7Va2@3SlTLOdFdkcCeQU0
+Z2 !s105 audio_visual_packet_hw_v_unit
+S1
+Z3 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+Z4 w1792556900
+Z5 8../../rtl/hw_round4_20261005/audio_visual_packet_hw.v
+Z6 F../../rtl/hw_round4_20261005/audio_visual_packet_hw.v
+L0 140
+Z7 OL;L;10.1c;51
+r1
+31
+Z8 !s108 1792556913.495000
+Z9 !s107 ../tb_audio_visual_guard.v|../../rtl/hw_round4_20261005/audio_visual_packet_hw.v|
+Z10 !s90 -sv|-work|w_av_fix|../../rtl/hw_round4_20261005/audio_visual_packet_hw.v|../tb_audio_visual_guard.v|
+Z11 o-sv -work w_av_fix -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 ]MjgQFX]I7V^=dnKbJUCl3
+!s85 0
+vaudio_visual_rx
+R1
+I39ELe^F>3[fCDI1UBNg8R1
+V:c[kf:<LZNLZWQVc8H:4F2
+R2
+S1
+R3
+R4
+R5
+R6
+L0 78
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 UFKL;0@^oQIQ1EZ=a=M2`1
+!s85 0
+vaudio_visual_tx
+R1
+IZXDXAOH0<Vm?[elD_;OSG3
+VUoZ@TfE0b7@[4FEFXz:Va2
+R2
+S1
+R3
+R4
+R5
+R6
+L0 5
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 Cm2:BV?WXKWNFJmF789UU0
+!s85 0
+vtb_audio_visual_guard
+R1
+IX7dmh4CUKcLlzGP82GRDj1
+VHk1ZOU?4]nBSK[AD]j[ah3
+S1
+R3
+w1791083730
+8../tb_audio_visual_guard.v
+F../tb_audio_visual_guard.v
+L0 2
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!i10b 1
+!s100 NIz5?RI7oBc9C2H:LcGao1
+!s105 tb_audio_visual_guard_v_unit
+!s85 0

@@ -1,0 +1,14 @@
+== a3 bit=1 errors=0
+#lut 16349 out of 19600 83.41%;#reg 10372 out of 19600 52.92%;#bram 63 out of 64 98.44%;#bram32k 16 out of 16 100.00%;#dsp 14 out of 29 48.28%;
+   udp_clk -> udp_clk                 S -1.763ns, (69 viol)  H -0.020ns, (1 viol)
+   video_clk -> video_clk             S  0.488ns, (0 viol)  H -0.020ns, (3 viol)
+   mac_tx_clk -> mac_tx_clk           S  2.359ns, (0 viol)  H -0.012ns, (2 viol)
+   clk -> udp_clk                     S  0.770ns, (0 viol)  H -0.075ns, (1 viol)
+== b2 bit=0 errors=5
+
+== b5 bit=0 errors=3
+
+== a1 bit=1 errors=0
+#lut 16320 out of 19600 83.27%;#reg 10378 out of 19600 52.95%;#bram 63 out of 64 98.44%;#bram32k 16 out of 16 100.00%;#dsp 14 out of 29 48.28%;
+   udp_clk -> udp_clk                 S -0.069ns, (1 viol)  H -0.012ns, (2 viol)
+   video_clk -> video_clk             S -0.012ns, (1 viol)  H -0.004ns, (4 viol)

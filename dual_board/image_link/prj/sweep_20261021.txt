@@ -1,0 +1,33 @@
+== a3 bit=1 errors=0
+#lut 16165 out of 19600 82.47%;#reg 10361 out of 19600 52.86%;#bram 63 out of 64 98.44%;#bram32k 16 out of 16 100.00%;#dsp 14 out of 29 48.28%;
+   udp_clk -> udp_clk                 S  2.827ns, (0 viol)  H -0.011ns, (3 viol)
+== b2 bit=1 errors=0
+#lut 16433 out of 19600 83.84%;#reg 11602 out of 19600 59.19%;#bram 51 out of 64 79.69%;#bram32k 14 out of 16 87.50%;#dsp 21 out of 29 72.41%;
+   sd_clk -> sd_clk                   S  3.037ns, (0 viol)  H -0.044ns, (3 viol)
+   compute_clk -> compute_clk         S  2.540ns, (0 viol)  H -0.005ns, (1 viol)
+   udp_clk -> udp_clk                 S  3.875ns, (0 viol)  H -0.012ns, (2 viol)
+== a2 bit=1 errors=0
+#lut 16169 out of 19600 82.49%;#reg 10368 out of 19600 52.90%;#bram 63 out of 64 98.44%;#bram32k 16 out of 16 100.00%;#dsp 14 out of 29 48.28%;
+   udp_clk -> udp_clk                 S  2.508ns, (0 viol)  H -0.012ns, (4 viol)
+   video_clk -> video_clk             S  0.299ns, (0 viol)  H -0.038ns, (2 viol)
+   rgmii_rx_90 -> rgmii_rx_90         S  2.493ns, (0 viol)  H -0.020ns, (3 viol)
+   clk -> udp_clk                     S  0.923ns, (0 viol)  H -0.044ns, (1 viol)
+== b5 bit=1 errors=0
+#lut 16451 out of 19600 83.93%;#reg 11597 out of 19600 59.17%;#bram 51 out of 64 79.69%;#bram32k 14 out of 16 87.50%;#dsp 21 out of 29 72.41%;
+   sd_clk -> sd_clk                   S  3.194ns, (0 viol)  H -0.011ns, (3 viol)
+   compute_clk -> compute_clk         S  2.708ns, (0 viol)  H -0.020ns, (2 viol)
+   udp_clk -> udp_clk                 S  0.472ns, (0 viol)  H -0.005ns, (1 viol)
+   mem_clk -> mem_clk                 S -0.490ns, (2 viol)  H -0.004ns, (1 viol)
+   rgmii_rx_90 -> rgmii_rx_90         S  2.591ns, (0 viol)  H -0.020ns, (1 viol)
+== a1 bit=1 errors=0
+#lut 16157 out of 19600 82.43%;#reg 10368 out of 19600 52.90%;#bram 63 out of 64 98.44%;#bram32k 16 out of 16 100.00%;#dsp 14 out of 29 48.28%;
+   udp_clk -> udp_clk                 S  4.101ns, (0 viol)  H -0.011ns, (3 viol)
+   rgmii_rx_90 -> rgmii_rx_90         S  2.137ns, (0 viol)  H -0.011ns, (1 viol)
+   clk -> udp_clk                     S  1.131ns, (0 viol)  H -0.052ns, (1 viol)
+== b3 bit=1 errors=0
+#lut 16442 out of 19600 83.89%;#reg 11612 out of 19600 59.24%;#bram 51 out of 64 79.69%;#bram32k 14 out of 16 87.50%;#dsp 21 out of 29 72.41%;
+   sd_clk -> sd_clk                   S  2.139ns, (0 viol)  H -0.012ns, (4 viol)
+   compute_clk -> compute_clk         S  0.339ns, (0 viol)  H -0.005ns, (1 viol)
+   udp_clk -> udp_clk                 S  2.431ns, (0 viol)  H -0.012ns, (3 viol)
+   mac_tx_clk -> mac_tx_clk           S  2.276ns, (0 viol)  H -0.004ns, (1 viol)
+ALL DONE

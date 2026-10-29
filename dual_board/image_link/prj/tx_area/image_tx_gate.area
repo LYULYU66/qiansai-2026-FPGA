@@ -1,0 +1,38 @@
+standard
+***Report Model: image_packet_tx Device: EG4S20BG256***
+
+IO Statistics
+#IO                        77   out of    188   40.96%
+  #input                   33
+  #output                  44
+  #inout                    0
+
+LUT Statistics
+#Total_luts               203
+  #lut4                   162
+  #lut5                    41
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                      275   out of  19600    1.40%
+#reg                       96   out of  19600    0.49%
+#bram                       2   out of     64    3.12%
+  #bram9k                   2
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                        0   out of     29    0.00%
+#pad                       77   out of    188   40.96%
+  #ireg                     0
+  #oreg                    19
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------+
+|Instance |Module          |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------+
+|top      |image_packet_tx |239     |36      |115     |2       |0       |
++-----------------------------------------------------------------------+

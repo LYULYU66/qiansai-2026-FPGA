@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vaudio_visualizer_overlay
+Z1 !s110 1790583153
+!i10b 1
+!s100 DPMa;g4J4A1>gk?fc`6Kf1
+I0^iR8UJKm_o?bL32af8b60
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1790521889
+8src/user_source/hdl_source/audio_visualizer_overlay.v
+Fsrc/user_source/hdl_source/audio_visualizer_overlay.v
+L0 4
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1790583153.000000
+Z5 !s107 sim/tb_visualizer_sequencer_equivalence.sv|sim/resource_followup_20260927/baseline/audio_visualizer_overlay.v|src/user_source/hdl_source/audio_visualizer_overlay.v|
+Z6 !s90 -work|sim/resource_global_20260927/tb_visualizer_sequencer_equivalence|src/user_source/hdl_source/audio_visualizer_overlay.v|sim/resource_followup_20260927/baseline/audio_visualizer_overlay.v|sim/tb_visualizer_sequencer_equivalence.sv|
+!i113 1
+Z7 o-work sim/resource_global_20260927/tb_visualizer_sequencer_equivalence
+Z8 tCvgOpt 0
+vaudio_visualizer_overlay_resource2_reference
+R1
+!i10b 1
+!s100 lbfnVR9U1VfJ8d]=K9n990
+IjW]4cnX5]zQ4<ccBW;JEa3
+R2
+R0
+w1790521136
+8sim/resource_followup_20260927/baseline/audio_visualizer_overlay.v
+Fsim/resource_followup_20260927/baseline/audio_visualizer_overlay.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vtb_visualizer_sequencer_equivalence
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 dlaMbPbLk`j81;dE:4oA[0
+IH5oZK]Uz9DjH_A6PXHKo90
+R2
+!s105 tb_visualizer_sequencer_equivalence_sv_unit
+S1
+R0
+w1790522296
+8sim/tb_visualizer_sequencer_equivalence.sv
+Fsim/tb_visualizer_sequencer_equivalence.sv
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

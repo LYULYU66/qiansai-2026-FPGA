@@ -1,0 +1,48 @@
+{
+  "version": "sonic_topography_20261010",
+  "hardware_verified": false,
+  "timing_closed": false,
+  "a_bit": {
+    "file": "MEDIA_A_SONIC_TOPOGRAPHY_20261009.bit",
+    "sha256": "8EA84F9038352DC00A533469B24B5E010A06915E0C9983A4DEA097D7FF2E49D7",
+    "build_project": "dual_board/image_link/prj/sonic_topography_a_20261009"
+  },
+  "b_bit": {
+    "file": "MEDIA_B_CAR_ROTATE_20261009.bit",
+    "sha256": "7421D7CEA647A075F5F9C3D861F1E4EACDA6A74D16EC3124C7BB6C85A4EF9B48",
+    "unchanged_from": "board_test_20261009/car_rotate"
+  },
+  "page2": {
+    "background": "B TF image is still received into A SDRAM through the existing image link",
+    "visual": "A replaces page2 card/lyrics/spectrum/waveform with a 16x8 fixed-view audio terrain",
+    "terrain": "128 tiles; each tile is derived from the existing 16 VIZ2 bands, smoothed in blanking, spatially filtered and double-buffered",
+    "volume": "UART volume 0..8 applies visual gain; volume 0 collapses the terrain",
+    "meters": "Original left and right audio VU meters and labels remain",
+    "background_regions": "Outside the terrain and VU meters the TF background passes through",
+    "controls": "No new button, TF filename, PCM format or UDP packet"
+  },
+  "resources_a_routed": {
+    "lut": 14607,
+    "lut_percent": 74.53,
+    "registers": 9228,
+    "bram9k": 50,
+    "bram32k": 4,
+    "dsp": 3,
+    "pll": 4,
+    "global_setup_ns": -5.699,
+    "global_hold_ns": 0.003,
+    "video_self_setup_ns": 2.687,
+    "bram32k_note": "The removed page2 lyric/card path allows TD to pack fewer 32K blocks in this candidate."
+  },
+  "validation": {
+    "terrain": "PASS: 7 frames, 1,844,534 pixels, independent height/palette oracle, volume 0/1/4/8, atomic bank abort, page disable and reentry",
+    "chain": "PASS: 3 natural VGA frames, 921,600 AXIS pixels, SOF/TLAST and timing alignment, atlas index delay, page enable/disable",
+    "vu": "PASS: 934,143 pixel cycles, VU-only layout, bars/wave hidden, volume 0/4/8",
+    "baseline_overlay": "PASS: 6,918,688 cycle comparisons, 18 VGA frames, volumes 0..8, reset and VS restart cases",
+    "logs": [
+      "evidence/sonic_after_tune.log",
+      "evidence/ui_after_tune.log"
+    ]
+  },
+  "caveats": "Engineering PROGRAM_SRAM candidate. No flash erase or TF write was performed. The routed global timing remains negative, so verify image, sound, page switching and reset on hardware before using this bit as a release."
+}

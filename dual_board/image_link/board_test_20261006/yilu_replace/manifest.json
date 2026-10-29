@@ -1,0 +1,653 @@
+{
+  "version": "yilu_replace_20261006",
+  "created_at": "2026-10-06T04:35:51.828Z",
+  "hardware_verified": false,
+  "timing_closed": false,
+  "usage": "Paired A+B engineering candidate, PROGRAM_SRAM only, no automatic programming or TF overwrite",
+  "changes": [
+    "Full replacement song 2 PCM (48k s16le stereo)",
+    "34 user-supplied lyric rows newly aligned to replacement recording; 360 timed events; unchanged font and Gaobai bank",
+    "64x64 RGB565 antialiased circular supplied photograph, 549 distinct colors; 64 music/40 home native display",
+    "Cover lookahead corrected and tested against registered source, no RGB/DE latency"
+  ],
+  "preserved": "Baseline 122 source and 2 bit hashes verified unchanged. Third TF picture on B and audio-independent shared stars unchanged.",
+  "resources": {
+    "A": {
+      "lut": 14284,
+      "lut_percent": 72.88,
+      "registers": 9226,
+      "bram9k": 50,
+      "bram32k": 12,
+      "dsp": 3,
+      "pll": 4,
+      "setup_ns": -5.699,
+      "hold_ns": -0.052,
+      "udp_self_ns": -1.257,
+      "video_self_ns": 1.506
+    },
+    "B": {
+      "lut": 14601,
+      "lut_percent": 74.49,
+      "registers": 10356,
+      "bram9k": 43,
+      "bram32k": 9,
+      "dsp": 3,
+      "pll": 3,
+      "setup_ns": -5.565,
+      "hold_ns": -1.638,
+      "udp_self_ns": -1.3,
+      "video_self_ns": -0.212
+    }
+  },
+  "artifacts": [
+    {
+      "board": "A",
+      "file": "MEDIA_A_YILU_REPLACE_20261006.bit",
+      "bytes": 743707,
+      "sha256": "EE99682DFAFC532B28C29C9CF6826D12065D2A9794343577F287373076446F3E"
+    },
+    {
+      "board": "B",
+      "file": "MEDIA_B_YILU_REPLACE_20261006.bit",
+      "bytes": 721596,
+      "sha256": "47ECD98A2C1D808ECF4CDFAEE1AB68552968F49AC20570CDBB96246368C96743"
+    }
+  ],
+  "sources": [
+    {
+      "file": "src/user_source/hdl_source/video_source_test.v",
+      "sha256": "39CC05C9684A594D4254D11E66E97344053AB75BDB00F3F5A301643FD7AADBFC"
+    },
+    {
+      "file": "src/user_source/hdl_source/key_remove_shakes.v",
+      "sha256": "8832F59E7BA94BFB8CF31E4F5A772EF7177D5257A5A2532D53CBFA1D9B7F5CD9"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi_phy_warpper.v",
+      "sha256": "416B082B0987001BDBC0A7E20A557CB8FB1DCA34E25DC881E6D28A8CB3CF4300"
+    },
+    {
+      "file": "src/user_source/hdl_source/lane_lvds_10_1.v",
+      "sha256": "DE9529321354F04837E051D0EC1681CF44783D4BE3284703A788E081147500BC"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "sha256": "867E0B0BDD874BC383D00918C9E1BE3FE01EDF41F343B6A0D73E262776596A63"
+    },
+    {
+      "file": "dual_board/image_link/rtl/yilu_replace_20261006/top_dual_image_hw.v",
+      "sha256": "E1FDF02077421C3FB135E07FFDE6F887AC95C7F0C507713AD1E2CFFAF1CCEB15"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/ax_debounce.v",
+      "sha256": "93AA6DD38051250CC7F777C88466AC180AFE9BCDCE7838B9EA506455D8CBC9B8"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/bmp_read.v",
+      "sha256": "6A030FC4D80128CBF44BCFE0E197823BC267ED8FA868D65083B2A93166D405A8"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/color_bar.v",
+      "sha256": "AFE1F56714EC58D2477BA1717E5A36C5A0DA5FE5C07D70D11AA5ACE710C4B152"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/frame_fifo_read.v",
+      "sha256": "AA456AFB9C01F6BC4D976DF1F5D1A0DB39885FDECA2CFAAB71A5C6087C4B172C"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/frame_fifo_write.v",
+      "sha256": "2C0F735EBE0CC38D3C3E3B404A0D3121412254EE3AD1DAF6CE49573856837715"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round7_20261005/frame_read_write_hw.v",
+      "sha256": "8D5848E78350E0D304755E74EA7F5D3E0D7F4DD5D5AB02662CD03530E0FAB354"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_bmp.v",
+      "sha256": "BEBC7249B6D100C36335A915711F80CC407D790935BFAA69D4B585D3621D5DA6"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/video_define.v",
+      "sha256": "77748966850A8F5AF0D77F2CDB08006088BA5E1A31B98391FBA6CC61C5247DA2"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/video_delay.v",
+      "sha256": "F47C4B63F8BAA6D8874C87DCA5B72DFDADD19F4A107403DA98752BCE98936433"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/video_timing_data.v",
+      "sha256": "C6F75501E98DD5995F687AAFB40455BEFFE45B426137B5089A73AC3A036F7282"
+    },
+    {
+      "file": "src/user_source/hdl_source/startup_pulse.v",
+      "sha256": "396E1E56FEBB8028339E646BC2F06B83E07AB11EF840E447422FB941956741C9"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_rgb_to_axis_640x480.v",
+      "sha256": "82DA3DF6220842F072654800453ADB860DAF22126E81873F96E6769AE964E57F"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_cmd.v",
+      "sha256": "A1A50502AFD4E8B238B0627CD5F204C04738E761D49AB48F33DA35E22BA4A5FA"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_sec_read_write.v",
+      "sha256": "AA73E64F7A8EDF767BEF0D7205702BB697AB4080E3FF012DE0C29BE2EE0A9FCC"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sd_card_top.v",
+      "sha256": "00AC5EB15CE2D5B1D3FF87D6CB5BE44AF50106A96327FBC8A580B831274CB123"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/spi_master.v",
+      "sha256": "37F7A21144FA5CCA3CC5C3B5F68A5AD40B3108336B600E45A1367734AC61403C"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/sdram.v",
+      "sha256": "2D985C2477384E677C25714241E1A50206DEF8916AA03189A5B313B2D22DFC99"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/global_def.v",
+      "sha256": "433240EC48021DBB559D3532C67526F1338C6CC6CE15D26E1D987FE89E61DA42"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/sdr_as_ram.enc.v",
+      "sha256": "767DBDFBD83D42223B77DFA7DEAB42CE8216A8FD6F6CB41B7E7593D9A345BA57"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/sdr_init_ref.enc.v",
+      "sha256": "3DA1D34D3FB8A5108A74185EDF7FE6836B28807B31F47F74EAB87DE4F23186B8"
+    },
+    {
+      "file": "src/user_source/hdl_source/include/sdr_wrrd.enc.v",
+      "sha256": "C7D7FE07D75F66AA88D9F986B3006319C995162434F104F9990664B374CDFDD2"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/seg_decoder.v",
+      "sha256": "62A2664BE7DB6D0DACE31FC97A8FAEF0C43F44B639B1D5A6A2C49773812A3B5E"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/seg_scan.v",
+      "sha256": "C61D6B6808E06DD0EDC6DB2D8F214426A1FB96D546556ECD1F74EA9CA6889F52"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v",
+      "sha256": "1A946821E904C411F4DBF8F6D839B59622CBF9E5EA0844CCEC6769EBE07F769E"
+    },
+    {
+      "file": "src/user_source/hdl_source/I2S_receiver.v",
+      "sha256": "327271F25B3CE4348885569F544D33D8BD02C80CC2FD4524D2EEBEC814781416"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_arc_calculate.v",
+      "sha256": "81D282E3D8BCFC56567F252BD214866AC66FA30F0C0B126845C92E149C15933A"
+    },
+    {
+      "file": "src/td_project/al_ip/PLL_HDMI_AUDIO.v",
+      "sha256": "4152904C9FE0A01DFB9B5E47FDBE9FDF2F02EBCCEF66B9E81451D3E88D4AB5A2"
+    },
+    {
+      "file": "src/user_source/hdl_source/osd_alpha_overlay.v",
+      "sha256": "17AD2C2F3A7BA2601CA6173FCF73EDE9499A74701D43E877A8DB07971745A115"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_transition_effects.v",
+      "sha256": "654018C079E9EA252F01C5383E617CCDCE6DF6E98CB7BF6AF349C88E3D5AEE01"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_spectrum_analyzer.v",
+      "sha256": "4A5AB0CE23325CD9E9E60FC71F3BDEB105FC346877761A679191D956688D0D76"
+    },
+    {
+      "file": "dual_board/image_link/rtl/resource_round10_20261005/audio_visualizer_overlay.v",
+      "sha256": "3476CDD5BF35AB697AA41F56C23CBDE9EB1E30218B0DDA279B60C69ED31F62E4"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_home_overlay.v",
+      "sha256": "023FDD9B69EFA77C3331B6766BC1BABDCC4755DCCA908B74E2C212CE6F92A038"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/BUFGMUX.v",
+      "sha256": "3501C3AE93FC102FD547A30BF84AAF64521DDAEAD53F398E62DAFB8CF3E8ADBD"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/clk_gen_rst_gen.v",
+      "sha256": "1CF435B0D40E3850366F237C8BD8E0DDE34CE1974C8525457D0AD8F65F5C1837"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/div_clk_gen.v",
+      "sha256": "BB9CA78FEA2DEF93464B44641B32A2491316CF3DE55C361BC81801CFC280B367"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/IDDR.v",
+      "sha256": "0CB13720A17311E80812DE7B45B0A0BA4CF2ECDF1F60E1F8A4279FEE268C7B15"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/ODDR.v",
+      "sha256": "6442C1DD9F76329DDB5420110FD8236211EF7D002EC2A1C6295D062E353A8F4D"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/RAMB16_S9_S9.v",
+      "sha256": "9651FF21B7E76F097704ECDA17398B00F2618107B13E0768D4043E24CB649BCC"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/rgmii_interface.v",
+      "sha256": "358763A4C014AAC49A0C1A0EC96E6E0224C0341371740D1616F43766D14A1DCD"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/rx_client_fifo.v",
+      "sha256": "7DAE154FD14E6CE3431C1492777C1CEFB1E485D276F15DE8D287D7A0D6BA06A3"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/temac_block.v",
+      "sha256": "D013485435ABCD2188450120A9EF99A7A75C6E46FD8F186381E2E8FA3F3C5241"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/temac_clk_gen.v",
+      "sha256": "DFDDA666362A1372FFD07B361D1D52401AC479B244CE7AFB0C45F7DBE08996E8"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/tx_client_fifo.v",
+      "sha256": "B50FD509770C57C2EB683A6074F0F97704E048392A03472F1FDB3FA9965CFFA7"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/tx_clk_en_gen.v",
+      "sha256": "78690F2C03DD38077FB3E7A1B39DD520DA6ECA10CBF125BB57FD71E2D156082A"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/udp_ip_protocol_stack_merge.enc.v",
+      "sha256": "0D06B3D6F7B2947501CDD3128373585E38C70454938234FFA9DF325010BD4F74"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_board_eth_transport.v",
+      "sha256": "88BEDCF15C44A19D1103BA8514DCFF3EF5400FFC1A38EFFCBEE724604561AD40"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_packet_rx.v",
+      "sha256": "7DC4C31AF4A9D0341FEBF2ED51DDF234F258E1BF1BE890AC6444A8A763C676E4"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_receipt.v",
+      "sha256": "50DD6B5C718DD26DB6694923F5E42299C3CE588FB95107D4D45CEF91D37FC0FD"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_sdram_sink.v",
+      "sha256": "0D05C3C5F75B7C6B479DE42C97173555D50251AA37E6A0FF81A921A5EAA3D3D7"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_main_ingress.v",
+      "sha256": "59EB99C5603E93EE85BCCD3C3CE1C8DABBF3833ED4FF76C63B8D4278111BE7A2"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_remote_display_control.v",
+      "sha256": "D95E340189E81796A31E50A1CA28BA72C2148348F7ECBA7C1A1912E2C05C2104"
+    },
+    {
+      "file": "src/user_source/hdl_source/hdmi_audio_pcm_i2s_64fs.v",
+      "sha256": "2617E785BC8D6563C3AB1CE94431314FEBF6A11B7B00A1DE4942EF7AE4FFA199"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_waveform_analyzer.v",
+      "sha256": "F9AACDA9C73E47EE84E490E4C115ABD77845AFF3E8CDCC9898679773E6939BC4"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_frame_valid_gate.v",
+      "sha256": "AA4962A5B2339EC8691692DFF611B2F4E9474D9A6D7F95EF1273705F471403C6"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_stars_20261006/media_control_packet.v",
+      "sha256": "6DAD9A22ACE057712C3DA800A3617065E64772116CE0612A354BE1DC3A866402"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_image_adjust.v",
+      "sha256": "B59CD2088CA60D53DA532C7A5F6A59C5F3D7EC882F8CFD5E907D8133EACBD392"
+    },
+    {
+      "file": "dual_board/image_link/rtl/resource_round10_20261005/video_status_overlay.v",
+      "sha256": "283448FFCDF080B4EA0137B8ACD115AEC35D3F464AA5CB8EF3A289A1F051A96A"
+    },
+    {
+      "file": "src/user_source/hdl_source/alarm_switch_control.v",
+      "sha256": "4503863C7AACACC8F5B5489690C2185DF12E0B09275EF0FC25F38848D5C97E64"
+    },
+    {
+      "file": "src/user_source/hdl_source/audio_alarm_mixer.v",
+      "sha256": "73C2309D1434D291EB8661AF0B1CFA024BD48354314DB138E71FA148100C5542"
+    },
+    {
+      "file": "src/user_source/hdl_source/vehicle_hazard_overlay.v",
+      "sha256": "CDAFBC0AFF61000F72CF309769CBAEDD6A9A6DA61E292BA2FD65AC327BF63CF9"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_album_cover_rom.v",
+      "sha256": "3D7411B079B2CE5981ECDFD9ED7AE41E200A149ECA9583928F58E60473167FCF"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_app_icons_rom.v",
+      "sha256": "F1D460B691449680F492390CB021A8A3B0EAEA146C4FFD57F615205CDD95F6C9"
+    },
+    {
+      "file": "dual_board/image_link/rtl/yilu_replace_20261006/audio_lyric_timeline.v",
+      "sha256": "FAA028E03BABE709168A6EC6BB1F5970B5B02DDE2B778E1E4D373A502566A7FB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/video_lyric_overlay.v",
+      "sha256": "02F652529AF20D5D4C2C73616584F40CA52DABD39140FC9C13B0ED342C1FDE25"
+    },
+    {
+      "file": "dual_board/image_link/rtl/yilu_replace_20261006/dual_lyric_song_data.v",
+      "sha256": "350CDE6980C6BD94FDEF83DA6C03DF4952C7EFAB08A20638E0537631818A4850"
+    },
+    {
+      "file": "src/user_source/hdl_source/SD/bmp_bilinear_stream.v",
+      "sha256": "1F6EDA9ED18694FFD5E0E386B4A3A051364B422CD8C7288AD260CEE908D799EC"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_relax_overlay.v",
+      "sha256": "B05F8913D4A8ABA274AC74ED0B9212671EEBCF8ACFA748BA2855C5AD3959D7CF"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_unified_clock.v",
+      "sha256": "69830275BE314D3A3C2788346893BCD3CDB51D807E0C782DDFBB71FD49C90538"
+    },
+    {
+      "file": "src/user_source/hdl_source/video_clock_digit_rom.v",
+      "sha256": "65A51B56F113F30ED3B0336E18B79B3F6B14797101ACFD41C6C270C1FC97A1A8"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_packet_rx.v",
+      "sha256": "CAFE997C174422D786847D61E5FBC94308C495B09586F45524E5D359D330FA58"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/audio_receipt_a.v",
+      "sha256": "82697D8A1BF10C65FF21F9EA3E6AC55F1CAADEFCDB487C9AFB535B94B588FA94"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_udp_arbiter.v",
+      "sha256": "8FE149E0D80DFCAE220EEC8ADDB4226E5E984C62EB40A3A72F0F51014FD28FD6"
+    },
+    {
+      "file": "dual_board/image_link/rtl/fixed_peer_udp.v",
+      "sha256": "2919B55F8240E47058824CD20DE2FEEB02373A395EB3F9B47D4F2D414715E938"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_link_session.v",
+      "sha256": "18789CEE005FDE0340404D928239CD70D1939577433042DCDE088DA5D1FB61E1"
+    },
+    {
+      "file": "dual_board/image_link/rtl/media_audio_enable_cdc.v",
+      "sha256": "C641C3D8C3A114EEAC7B38535DA5C2B8D3A8E83A7F5FFDA1312261B5DE6ED765"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_visual_packet.v",
+      "sha256": "A76921C3F83C98C4ABB8FE71E6DC7E6DEFE182267E11C7A0F64F0192A968DEA5"
+    },
+    {
+      "file": "dual_board/image_link/rtl/video_remote_home_overlay.v",
+      "sha256": "D52B1EDFADFD3CBBDF2940436E7932EC106273632A5CB69C13F6166CF5050BEB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_palette_rom.v",
+      "sha256": "C62234D30000DB3CE2531A442F95B43A6688A2C3D7302136526BDEDD4EC10EBB"
+    },
+    {
+      "file": "dual_board/image_link/rtl/yilu_replace_20261006/video_song_cover_overlay.v",
+      "sha256": "754757AB6F62CAA7E510472A588C702D13AB2939ABC301D1808CA74D3BED010E"
+    },
+    {
+      "file": "dual_board/image_link/rtl/yilu_replace_20261006/song2_cover_rom.v",
+      "sha256": "48F5327ACCCD390CBBC04C635D0C8BA147254E371E85A2BAE84B8185B98311EC"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_stars_20261006/video_dual_star_overlay.v",
+      "sha256": "2F91BD1631282D30777614A2E0B64A50D384789DC4010C8743CD1D312D2A5F9D"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/media_a.adc",
+      "sha256": "380EF02D69A4467A269F5BC17BB2A471F06FF9E398A042B31A9AF76268BB393D"
+    },
+    {
+      "file": "dual_board/image_link/constraints/media_a.sdc",
+      "sha256": "CB2FD0E01B1D5FE3D250FFACFDBFE2B23AD3E2E52580F5DB5AE8F33D56BEA074"
+    },
+    {
+      "file": "src/user_source/constraints_source/edid_debug.cwc",
+      "sha256": "6716411E2346DE08976E0AD8ED2E09EB93BDC0F60EFC31BF75BA70E6CEBE1F95"
+    },
+    {
+      "file": "src/td_project/al_ip/PLL.ipc",
+      "sha256": "8CB6DF3A1BB99CF2F95F9A535D7F33213B837207B36E336848A6ED0DB29AB8B5"
+    },
+    {
+      "file": "src/user_source/hdl_source/ip/afifo_16_32_256.ipc",
+      "sha256": "9DF57C0B914F2F6222F88E356528947224FDDB866BE2468F1391C26D4E60D371"
+    },
+    {
+      "file": "src/user_source/hdl_source/ip/afifo_32_16_256.ipc",
+      "sha256": "A74955DC68A02BBFB36780127008C4737EC80E0888A4648E98E6EAC9F5D2C349"
+    },
+    {
+      "file": "src/user_source/hdl_source/ip/sys_pll.ipc",
+      "sha256": "B8ACD7534D7FD71E5922CD194DCED754AD462A805DC7B38574486DC3A963EF41"
+    },
+    {
+      "file": "src/user_source/hdl_source/ip/video_pll.ipc",
+      "sha256": "B717F646067025A69B4021ED85ADEEB6531FAD881BCE5A49FCB2171CCF401076"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/pll_gen.ipc",
+      "sha256": "4151BBA32CC66C9AA0C4B96EE76C57FFB78DBA2E4B448D746A1331CBE17D32AE"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/rx_pll.ipc",
+      "sha256": "3D7D676316F0E0C320CE5582B61ADAF9BDF1A2F0B13E31AF85588E6447E8ABA5"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/TEMAC_CORE/TEMAC_CORE.xml",
+      "sha256": "3182FD400CB0631BA3CB94A1739DA51150470DEA3E0EC23A16061BCB49E940D1"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round5_20261005/image_packet_tx_hw.v",
+      "sha256": "62D9A29319D04731C683C2BC7EFFCBC26B8E4FC245F7B5140E62EEE70B625D3E"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_stars_20261006/image_media_board_b_hw.v",
+      "sha256": "38952D6BE3924444FDA44DE504717E9058E88F11366A8ADE9A05043080A85D94"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_stars_20261006/image_tf_source_hw.v",
+      "sha256": "01544959DD713C9FD28B79F6338421FED3BC5D4DEE2C75DB22EA0DDFAE6A4278"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_pixel_cdc.v",
+      "sha256": "6198853A79080DDD1EA4FA77FF8356B8F7ABDF27B899F73B8C4FE5B98DEF061C"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/sd_card_bmp_remote.v",
+      "sha256": "EC4AF4AF816A09CB9EDEF409C632B6E0F98DB759406A42DE3D4C033B7001FCB4"
+    },
+    {
+      "file": "dual_board/image_link/rtl/audio_packet_tx.v",
+      "sha256": "AC313135E5FFF0ADE85C4C3AF14CF649CDA15B2FD7DD07628AA783113A442E63"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dualsong_20261005/audio_receipt_b.v",
+      "sha256": "EC2454A237C6FB48368638372DA911F463CC64A72BBFF1754329BD39AC28D428"
+    },
+    {
+      "file": "src/user_source/hdl_source/IP/afifo_32_16_256.v",
+      "sha256": "7C3EE41F30BE75AE686C9ABFF3A840FC5439209CDA077E4AA275EAC0DAB9F564"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round4_20261005/audio_visual_packet_hw.v",
+      "sha256": "199FFE7769CD8050BB58CF1610A1321DDA0585F3347B41744B416CF596384C07"
+    },
+    {
+      "file": "dual_board/image_link/rtl/yilu_replace_20261006/remote_audio_compute_hw.v",
+      "sha256": "E55AE108EAEDDBD6997AA529F769C1B87C1900B193FF2B31A8C5824318CF5069"
+    },
+    {
+      "file": "dual_board/image_link/rtl/resource_round10_20261005/audio_waveform_analyzer.v",
+      "sha256": "1CB7CCE6A6F07E2D0F479B271839FE77C28A87FFBF328D224E52977F1701BA92"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round2_20261005/home_index_stream_hw.v",
+      "sha256": "EF17E105BABA053CD767E4B76EDBB963CC3109A93B54173549F2FA5D81B8CA91"
+    },
+    {
+      "file": "dual_board/image_link/rtl/home_assets/home_atlas_rom.v",
+      "sha256": "71BF04D37659960F9CBE6877EDC8DB876FB4B495919DDB272F2F80EEB128666B"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_baud_tick.v",
+      "sha256": "86701937B016AB297B46BBBA8A7ACC00B03F7F9E636C3EFC34ED176E1FF2809F"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_rx.v",
+      "sha256": "D75F9978C9D55D8516DAA5BCD6C9102E670D7508FA113E8C31B5A85C59232ECB"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_tx.v",
+      "sha256": "6E607568AFBFE2CF1EC019CF7E5ECDE36DABA630F20568F5D8A5527A9B4B25B3"
+    },
+    {
+      "file": "src/user_source/hdl_source/uart_audio_control.v",
+      "sha256": "82F4BAE8C513B5B1B0C71419C38842191B3EBF795408A50B0E65BFFAEDEDB35F"
+    },
+    {
+      "file": "dual_board/image_link/rtl/hw_round4_20261005/player_domain_reset.v",
+      "sha256": "EA7EF6223F24A544ECB69200E8B93DF567B22B1DDBE94E4E7C525BED3EDDB435"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_stars_20261006/b_image_capture.v",
+      "sha256": "B9795B7AF5A1A9EBF87AA823D6C2F3CD3B3432348AD46F53008F381556398C92"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_stars_20261006/b_hdmi_preview.v",
+      "sha256": "DA155F013DC8D5FC44D9F404ADB40463AC5FADCF27B6A9C66343220C7EF8B8D9"
+    },
+    {
+      "file": "src/user_source/hdl_source/IP/afifo_16_32_256.v",
+      "sha256": "3D29B06655482184A9AD157B9BD71B79032DEBE3199168D3B4D9570FDAC31835"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_stars_20261006/media_b.adc",
+      "sha256": "F2F7C04D1A58AF58139183AB3D39251CBCAED05E03CD8F1CC66A6EAA551D5DA9"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_stars_20261006/media_b.sdc",
+      "sha256": "1C4048BA14E2B301E94AA1077D2D2EDCF342E232CBB12C35A0EF956D624F0D91"
+    },
+    {
+      "file": "src/user_source/hdl_source/IP/sys_pll.ipc",
+      "sha256": "B8ACD7534D7FD71E5922CD194DCED754AD462A805DC7B38574486DC3A963EF41"
+    }
+  ],
+  "regression": [
+    {
+      "name": "cover",
+      "passed": true,
+      "markers": [
+        "PASS RGB565 cover:"
+      ],
+      "sha256": "88DE812B932BD8020BF1EF6E97D2B1C5A353FF1CBFB039D6A8122FE95F56FD99",
+      "mtime": "2026-10-06T04:24:45.040Z"
+    },
+    {
+      "name": "features",
+      "passed": true,
+      "markers": [
+        "PASS dualsong control:",
+        "PASS dualsong timeline:"
+      ],
+      "sha256": "299C469C6D37AE8E3E04A69BFE8D3803138CC023B6E1DC7566568D4885B75D7D",
+      "mtime": "2026-10-06T04:27:09.619Z"
+    },
+    {
+      "name": "reader",
+      "passed": true,
+      "markers": [
+        "PASS two-song reader reverse=0",
+        "PASS two-song reader reverse=1"
+      ],
+      "sha256": "BE63DF3F500BCA562361100A50DCB61DEE9F6D0F0D4C0861A3E933E9371AFEF8",
+      "mtime": "2026-10-06T04:27:11.803Z"
+    },
+    {
+      "name": "boundary",
+      "passed": true,
+      "markers": [
+        "PASS player B boundary:",
+        "PASS B third-image source:"
+      ],
+      "sha256": "3FA2EC2227FECD84255B8037E6654EA5DA663D89CCC3D2928DAFBE127E9FDAE9",
+      "mtime": "2026-10-06T04:31:08.676Z"
+    },
+    {
+      "name": "audio",
+      "passed": true,
+      "markers": [
+        "PASS audio status:",
+        "PASS visual guard:",
+        "PASS remote compute:",
+        "PASS audio offload:"
+      ],
+      "sha256": "90031504528ADC2B57F29C66634F49C763594D6447C91AFEB83F5EA8A42FBA8B",
+      "mtime": "2026-10-06T04:34:36.714Z"
+    },
+    {
+      "name": "stars",
+      "passed": true,
+      "markers": [
+        "PASS star control:",
+        "PASS dual stars pixels:",
+        "PASS control guard:",
+        "PASS CTL3 guard:"
+      ],
+      "sha256": "F2878BC17D044D12264BD30ED025CCC97BCBCA37FA2D45D89BD1CCC3E3D74809",
+      "mtime": "2026-10-06T04:34:58.044Z"
+    },
+    {
+      "name": "selection",
+      "passed": true,
+      "markers": [
+        "PASS B third-image selection:"
+      ],
+      "sha256": "89F39580D95A299B23AB205459233161C80A54A615CAC65416655CFC16BC9884",
+      "mtime": "2026-10-06T04:34:59.054Z"
+    },
+    {
+      "name": "uart",
+      "passed": true,
+      "markers": [
+        "PASS CTL3 UART control:"
+      ],
+      "sha256": "054B0BBD7EB163D19065781F716B1B89E02923641DDBAFF9B8E265E8735244B9",
+      "mtime": "2026-10-06T04:35:36.267Z"
+    }
+  ],
+  "pcm": {
+    "source": "C:\\Users\\28492\\Desktop\\车载图片\\周杰伦 一路向北.mp3",
+    "source_sha256": "2cdda61fcdeb7b50a12c59d3f2886b3cb8c67ba07ed5969bd7b30a76014af0ed",
+    "output": "C:\\FPGA2026\\HX4S20_Contest_2026\\7_lab_ex_2026_nosoft\\qiansai\\lab_ex4_tf\\best_result\\yilu_replace_20261006\\TF_CARD\\MUSIC2.PCM",
+    "format": "raw signed 16-bit little-endian, 48000 Hz stereo interleaved, no header",
+    "decoded_sample_frames": 14122423,
+    "padding_sample_frames": 73,
+    "sample_frames": 14122496,
+    "bytes": 56489984,
+    "duration_seconds": 294.21866666666665,
+    "sha256": "876444391e3ebd28b61420e766e762c6e3bcab5fe67548abcdd6bf514c5c228d",
+    "gain": "unchanged",
+    "peak_dbfs": 0,
+    "rms_dbfs": -10.604387485667914,
+    "nonzero_samples": 28238465
+  },
+  "caveats": "Forced WORD timestamps with subdivided character spans are estimates, not verified syllables; needs audition. Existing negative routed timing persists. No physical hardware acceptance.",
+  "waveforms": [
+    "dual_board/image_link/sim/yilu_replace_20261006/cover.wlf",
+    "dual_board/image_link/sim/yilu_replace_20261006/timeline.wlf",
+    "dual_board/image_link/sim/yilu_replace_20261006/control.wlf",
+    "dual_board/image_link/sim/yilu_replace_20261006/b_boundary.wlf",
+    "dual_board/image_link/sim/yilu_replace_20261006/source.wlf"
+  ]
+}

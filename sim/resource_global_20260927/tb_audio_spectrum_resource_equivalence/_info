@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vaudio_spectrum_analyzer
+Z1 !s110 1790909469
+!i10b 1
+!s100 JnFin0ldOL2952]6iS=M^1
+IGdOX8?;9:ne3==HE_V0od3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1790909349
+8src/user_source/hdl_source/audio_spectrum_analyzer.v
+Fsrc/user_source/hdl_source/audio_spectrum_analyzer.v
+L0 7
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1790909469.000000
+Z5 !s107 sim/tb_audio_spectrum_resource_equivalence.sv|sim/resource_global_20260927/baseline/audio_spectrum_analyzer.v|src/user_source/hdl_source/audio_spectrum_analyzer.v|
+Z6 !s90 -work|sim/resource_global_20260927/tb_audio_spectrum_resource_equivalence|src/user_source/hdl_source/audio_spectrum_analyzer.v|sim/resource_global_20260927/baseline/audio_spectrum_analyzer.v|sim/tb_audio_spectrum_resource_equivalence.sv|
+!i113 1
+Z7 o-work sim/resource_global_20260927/tb_audio_spectrum_resource_equivalence
+Z8 tCvgOpt 0
+vaudio_spectrum_analyzer_resource_reference
+R1
+!i10b 1
+!s100 [S<8U?[hb^:EA1Znknz<G3
+IT`Ucm8ULHIK;GENA=BPl_0
+R2
+R0
+w1790491893
+8sim/resource_global_20260927/baseline/audio_spectrum_analyzer.v
+Fsim/resource_global_20260927/baseline/audio_spectrum_analyzer.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vtb_audio_spectrum_resource_equivalence
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 cNl4CMJdok4LLO;_1L=OV3
+I>GNfd:D8Rb4BK3NUG@N8H1
+R2
+!s105 tb_audio_spectrum_resource_equivalence_sv_unit
+S1
+R0
+w1790909465
+8sim/tb_audio_spectrum_resource_equivalence.sv
+Fsim/tb_audio_spectrum_resource_equivalence.sv
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

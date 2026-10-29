@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vtb_uart_audio_control
+Z1 !s110 1790854143
+!i10b 1
+!s100 n=1[[;RMfFTAQz=Xl77RO3
+IHbQjR417a7`U;3A1WfK]W2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1790594139
+8sim/tb_uart_audio_control.v
+Fsim/tb_uart_audio_control.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1790854143.000000
+Z5 !s107 sim/tb_uart_audio_control.v|src/user_source/hdl_source/uart_tx.v|src/user_source/hdl_source/uart_rx.v|src/user_source/hdl_source/uart_baud_tick.v|src/user_source/hdl_source/uart_audio_control.v|
+Z6 !s90 -work|sim/resource_global_20260927/tb_uart_audio_control|src/user_source/hdl_source/uart_audio_control.v|src/user_source/hdl_source/uart_baud_tick.v|src/user_source/hdl_source/uart_rx.v|src/user_source/hdl_source/uart_tx.v|sim/tb_uart_audio_control.v|
+!i113 1
+Z7 o-work sim/resource_global_20260927/tb_uart_audio_control
+Z8 tCvgOpt 0
+vuart_audio_control
+R1
+!i10b 1
+!s100 ]IoAi1OYQfl[[2>@41g2A1
+IR<1EVi=BLXDP[EPDKVFbA0
+R2
+R0
+w1790594064
+8src/user_source/hdl_source/uart_audio_control.v
+Fsrc/user_source/hdl_source/uart_audio_control.v
+L0 12
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vuart_baud_tick
+R1
+!i10b 1
+!s100 TKHK44D^3inf85BggVRB:1
+IcLQ@=@RNiAS^TCS_KjNGe3
+R2
+R0
+w1789554474
+8src/user_source/hdl_source/uart_baud_tick.v
+Fsrc/user_source/hdl_source/uart_baud_tick.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vuart_rx
+R1
+!i10b 1
+!s100 E=[^jWfJHKoMUnmcOnQ723
+I@>?mHb`F`OQ:E`3R<i^zS0
+R2
+R0
+w1789554477
+8src/user_source/hdl_source/uart_rx.v
+Fsrc/user_source/hdl_source/uart_rx.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vuart_tx
+R1
+!i10b 1
+!s100 7n@V[9RA<^JmdfA2U2eSf3
+I4nIe@;WAIN7NE^nWXiScD3
+R2
+R0
+w1789554476
+8src/user_source/hdl_source/uart_tx.v
+Fsrc/user_source/hdl_source/uart_tx.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

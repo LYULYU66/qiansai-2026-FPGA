@@ -1,0 +1,95 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vaudio_arc_calculate
+Z1 !s110 1790583113
+!i10b 1
+!s100 UUVFGmnm<n0iIecjSRDT:2
+I22bNR:Am^`XADUXLZPIXc3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1789127011
+8src/user_source/hdl_source/audio_arc_calculate.v
+Fsrc/user_source/hdl_source/audio_arc_calculate.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1790583113.000000
+Z5 !s107 sim/tb_hdmi_audio_chain.v|src/user_source/hdl_source/audio_arc_calculate.v|src/user_source/hdl_source/I2S_receiver.v|src/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v|
+Z6 !s90 -work|sim/resource_global_20260927/tb_hdmi_audio_chain|src/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v|src/user_source/hdl_source/I2S_receiver.v|src/user_source/hdl_source/audio_arc_calculate.v|sim/tb_hdmi_audio_chain.v|
+!i113 1
+Z7 o-work sim/resource_global_20260927/tb_hdmi_audio_chain
+Z8 tCvgOpt 0
+vhdmi_audio_tone_i2s_64fs
+R1
+!i10b 1
+!s100 OGSmPd=TP6IgQ?bbiA1oU1
+IA?:<MSCZNEV5:A9V@GmBK0
+R2
+R0
+w1789127010
+8src/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v
+Fsrc/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vI2S_receiver
+R1
+!i10b 1
+!s100 `iUDP=>[oBdA6BA7XCK5]2
+I^^izDT^PejPzBDjgMSMn^3
+R2
+R0
+w1789127046
+8src/user_source/hdl_source/I2S_receiver.v
+Fsrc/user_source/hdl_source/I2S_receiver.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+n@i2@s_receiver
+vtb_hdmi_audio_chain
+R1
+!i10b 1
+!s100 2d5S6TRI]Q;kjgOUK[2eV3
+IW=gO<S2=L^2AX?^aok1AG0
+R2
+R0
+w1789127182
+8sim/tb_hdmi_audio_chain.v
+Fsim/tb_hdmi_audio_chain.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

@@ -1,0 +1,24 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf
+vtb_sdram_refresh_timer
+!i10b 1
+!s100 Bjzo2@FPJU5_SeRhGHPVa1
+I?QD9IUQP3_l;<1kf7RClG2
+VLmH3kbIKK1]KSQ;Fef24m1
+Z1 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf
+w1789907465
+8sim\tb_sdram_refresh_timer.v
+Fsim\tb_sdram_refresh_timer.v
+L0 6
+Z2 OL;L;10.1c;51
+r1
+!s85 0
+31
+!s108 1789908989.510000
+!s107 src\td_project/../user_source/hdl_source/include/global_def.v|sim\tb_sdram_refresh_timer.v|src\user_source\hdl_source\include\sdr_init_ref.enc.v|
+!s90 -work|sim\refresh_work_se|+incdir+src\td_project|src\user_source\hdl_source\include\sdr_init_ref.enc.v|sim\tb_sdram_refresh_timer.v|
+o-work {sim\refresh_work_se} -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s92 -work {sim\refresh_work_se} {+incdir+src\td_project} -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF

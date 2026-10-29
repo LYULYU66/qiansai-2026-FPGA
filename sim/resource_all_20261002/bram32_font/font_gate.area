@@ -1,0 +1,42 @@
+standard
+***Report Model: lyric_font_bram32_rom Device: EG4S20BG256***
+
+IO Statistics
+#IO                        21   out of    188   11.17%
+  #input                   19
+  #output                   2
+  #inout                    0
+
+LUT Statistics
+#Total_luts                46
+  #lut4                    44
+  #lut5                     2
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                       78   out of  19600    0.40%
+#reg                        4   out of  19600    0.02%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    4   out of     16   25.00%
+#dsp                        0   out of     29    0.00%
+#pad                       21   out of    188   11.17%
+  #ireg                     1
+  #oreg                     0
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Report Hierarchy Area:
++-------------------------------------------------------------------------------------+
+|Instance        |Module                 |lut     |ripple  |seq     |bram    |dsp     |
++-------------------------------------------------------------------------------------+
+|top             |lyric_font_bram32_rom  |62      |16      |5       |4       |0       |
+|  banks[0]$bank |lyric_font_bram32_bank |0       |0       |0       |1       |0       |
+|  banks[1]$bank |lyric_font_bram32_bank |0       |0       |0       |1       |0       |
+|  banks[2]$bank |lyric_font_bram32_bank |0       |0       |0       |1       |0       |
+|  banks[3]$bank |lyric_font_bram32_bank |0       |0       |0       |1       |0       |
++-------------------------------------------------------------------------------------+

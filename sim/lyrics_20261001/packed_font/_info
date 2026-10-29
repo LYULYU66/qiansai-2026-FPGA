@@ -1,0 +1,285 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vlyric_boundary_map
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1790992794
+!i10b 1
+!s100 [>>nco<2jLaG8ZeZ4kQ962
+Ic7S8:GZ80eLzWK?j16S5W1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 lyric_song_data_v_unit
+S1
+R0
+Z5 w1790925506
+Z6 8src/user_source/hdl_source/lyric_song_data.v
+Z7 Fsrc/user_source/hdl_source/lyric_song_data.v
+L0 389
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1790992794.000000
+Z10 !s107 sim/tb_packed_font_equivalence.sv|src/user_source/hdl_source/lyric_song_data.v|
+Z11 !s90 -sv|+define+LYRIC_FAST_SIM|-work|sim/lyrics_20261001/packed_font|src/user_source/hdl_source/lyric_song_data.v|sim/tb_packed_font_equivalence.sv|
+!i113 1
+Z12 o-sv -work sim/lyrics_20261001/packed_font
+Z13 !s92 -sv +define+LYRIC_FAST_SIM -work sim/lyrics_20261001/packed_font
+Z14 tCvgOpt 0
+vlyric_char_bram32_rom
+R1
+R2
+!i10b 1
+!s100 WoR8]K<=2l_ci`8PZ238b0
+IZS2z2m@XRlD5R^4ck0]m;1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 14311
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_event_rom
+R1
+R2
+!i10b 1
+!s100 ?I01[Lh;]9=XoE=`aPOl31
+IS;BI<;HJ3`@?nRChAfFDV2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_font_bank
+R1
+R2
+!i10b 1
+!s100 7475RDd?cPMO;bXnEb<`C1
+I<_L_L5ZDR4YHSESdfaeh>0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 726
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_font_bram32_bank
+R1
+R2
+!i10b 1
+!s100 jGDeP<3AGdO0a73k7LiQC1
+IBPUo;=]Gl<XkDZO>ZC7SF0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 13747
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_font_packed9_reference
+R1
+R2
+!i10b 1
+!s100 T?QhQ17c]P9d?hl1<Yc]B3
+IdLlmH3X0P][e>K7egVSl_1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 7507
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_font_packed_rom
+R1
+R2
+!i10b 1
+!s100 @5T1=@^?=UiPlm<PEi8G<2
+I0;=C9d6X?7B2QD_WD_SK11
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 13732
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_font_rom
+R1
+R2
+!i10b 1
+!s100 1?^Da4PQVg_bi2[4LY0W@1
+IBkIKGKYI`8n=PmJZ=b?In0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 717
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_line_rom
+R1
+R2
+!i10b 1
+!s100 2<D@JN@UDdg;T5FMc]@SH2
+I@^<D0K5f5VbK`SZLWSC^U2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 440
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vlyric_packed_font_bank
+R1
+R2
+!i10b 1
+!s100 A7cbb1@zXLLOAHB73=mj81
+IO_ZZlm;f[XdeDSDzRX_TF1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 7553
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vtb_packed_font_equivalence
+R1
+R2
+!i10b 1
+!s100 RkeOCZ]Z^e04HIWgfKDWI3
+IRGQ^WB^?ah[[8TgfSRFDJ1
+R3
+!s105 tb_packed_font_equivalence_sv_unit
+S1
+R0
+w1790909465
+8sim/tb_packed_font_equivalence.sv
+Fsim/tb_packed_font_equivalence.sv
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14

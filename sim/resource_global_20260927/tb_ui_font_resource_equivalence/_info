@@ -1,0 +1,97 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vosd_alpha_overlay_resource2_reference
+Z1 !s110 1790521636
+!i10b 1
+!s100 3YETO]>h[CbX6ZTS0<a3h2
+IC=n;<z?<I2<;CLVD9j@5`2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1790521138
+8sim/resource_followup_20260927/baseline/osd_alpha_overlay.v
+Fsim/resource_followup_20260927/baseline/osd_alpha_overlay.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1790521636.000000
+Z6 !s107 sim/tb_ui_font_resource_equivalence.sv|sim/resource_followup_20260927/baseline/osd_alpha_overlay.v|sim/resource_followup_20260927/baseline/video_status_overlay.v|sim/resource_followup_20260927/baseline/video_home_overlay.v|src/user_source/hdl_source/osd_alpha_overlay.v|src/user_source/hdl_source/video_status_overlay.v|src/user_source/hdl_source/video_home_overlay.v|
+Z7 !s90 -work|sim/resource_global_20260927/tb_ui_font_resource_equivalence|src/user_source/hdl_source/video_home_overlay.v|src/user_source/hdl_source/video_status_overlay.v|src/user_source/hdl_source/osd_alpha_overlay.v|sim/resource_followup_20260927/baseline/video_home_overlay.v|sim/resource_followup_20260927/baseline/video_status_overlay.v|sim/resource_followup_20260927/baseline/osd_alpha_overlay.v|sim/tb_ui_font_resource_equivalence.sv|
+!i113 1
+Z8 o-work sim/resource_global_20260927/tb_ui_font_resource_equivalence
+Z9 tCvgOpt 0
+vtb_ui_font_resource_equivalence
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 kdSS19NJWJ_ZXabzz=Pb[1
+Il6_<CIOcJAg1gGXJV`]CG0
+R2
+!s105 video_home_overlay_v_unit
+S1
+R0
+w1790521596
+8sim/tb_ui_font_resource_equivalence.sv
+Fsim/tb_ui_font_resource_equivalence.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vvideo_home_overlay_resource2_reference
+R1
+!i10b 1
+!s100 l6;QbghPzKT4lHAXamRW60
+I@P<=GZP0H5H47R[A8O1E`0
+R2
+R0
+w1790521137
+8sim/resource_followup_20260927/baseline/video_home_overlay.v
+Fsim/resource_followup_20260927/baseline/video_home_overlay.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vvideo_status_overlay_resource2_reference
+R1
+!i10b 1
+!s100 AJWzFE^fM2L?[@OeXY8gc0
+IJf5ZmHIDKzRhOTn]@Q0AD2
+R2
+R0
+R3
+8sim/resource_followup_20260927/baseline/video_status_overlay.v
+Fsim/resource_followup_20260927/baseline/video_status_overlay.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

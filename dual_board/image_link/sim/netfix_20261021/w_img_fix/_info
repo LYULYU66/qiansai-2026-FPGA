@@ -1,0 +1,280 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+T_opt
+VnDCAM>Kj3HY^Le8CUFoQ31
+04 22 4 work tb_image_reliable_full fast 0
+=1-04bf1b05a8bd-6ad83f18-280-7b1c
+Z1 o-quiet -auto_acc_if_foreign -work w_img_fix
+n@_opt
+Z2 OL;O;10.1c;51
+Z3 dC:\FPGA2026\HX4S20_Contest_2026\7_lab_ex_2026_nosoft\qiansai\lab_ex4_tf\dual_board\image_link\sim\netfix_20261021
+T_opt1
+VECO^CboGBi`mPR@n0ZF990
+04 20 4 work tb_image_tagged_full fast 0
+=1-04bf1b05a8bd-6ad83f1c-3d4-348c
+R1
+n@_opt1
+R2
+R3
+T_opt2
+VTa=5Gj]LJVP]k]JOaC=[02
+04 19 4 work tb_image_resolution fast 0
+=1-04bf1b05a8bd-6ad83f21-52-3e38
+R1
+n@_opt2
+R2
+vimage_main_ingress
+Z4 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I>71k7GURJOoYelFc`SVUB0
+V6@z3_lNbL^b=?C`YhlaUc0
+S1
+R3
+w1791115320
+8../../rtl/image_main_ingress.v
+F../../rtl/image_main_ingress.v
+L0 5
+Z5 OL;L;10.1c;51
+r1
+31
+Z6 !s108 1792556811.364000
+Z7 !s107 ../tb_image_reliable.v|../tb_cache_reuse.v|../../rtl/hw_round5_20261005/image_packet_tx_hw.v|../../rtl/image_main_ingress.v|../../rtl/image_sdram_sink.v|../../rtl/image_packet_rx.v|../../rtl/image_receipt.v|
+Z8 !s90 -sv|-work|w_img_fix|../../rtl/image_receipt.v|../../rtl/image_packet_rx.v|../../rtl/image_sdram_sink.v|../../rtl/image_main_ingress.v|../../rtl/hw_round5_20261005/image_packet_tx_hw.v|../tb_cache_reuse.v|../tb_image_reliable.v|
+Z9 o-sv -work w_img_fix -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 C:OFW45bMSkINL]Go39j<3
+!s105 image_main_ingress_v_unit
+!s85 0
+vimage_packet_rx
+R4
+I8<Oidj^SfX^FRJYO>KjLI0
+VKn5TH=e;:TQDTjo?[@i@Y0
+S1
+R3
+w1792421568
+8../../rtl/image_packet_rx.v
+F../../rtl/image_packet_rx.v
+L0 7
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 ]PnW1mSn4X1=M>fC2WIB<3
+!s105 image_packet_rx_v_unit
+!s85 0
+vimage_packet_tx
+R4
+IJ5z_nkCdaZe@:[=6_G9_H2
+VGaBA3:i_R8dkQVEHG^I[G2
+S1
+R3
+w1792556673
+8../../rtl/hw_round5_20261005/image_packet_tx_hw.v
+F../../rtl/hw_round5_20261005/image_packet_tx_hw.v
+L0 6
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 >eQdKXB`L18d0Xkc76W@70
+!s105 image_packet_tx_hw_v_unit
+!s85 0
+vimage_receipt_rx
+R4
+I3@z6eSfNdkimYQSOaS:bU3
+V`h^6kbFfHS:B]^a=HHhJm1
+Z10 !s105 image_receipt_v_unit
+S1
+R3
+Z11 w1792545872
+Z12 8../../rtl/image_receipt.v
+Z13 F../../rtl/image_receipt.v
+L0 54
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 8P^mP`>UT`h[SINIV1CfK0
+!s85 0
+vimage_receipt_tx
+R4
+I:1nIfBJM0L6b5;X5[ofk_3
+Vb5E^eDRDA;8P>XefVQmV41
+R10
+S1
+R3
+R11
+R12
+R13
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 >R1J1[NhzAB>]PTLOb5UL2
+!s85 0
+vimage_sdram_sink
+R4
+IDX`ARSW4[TU2_njoFm[Vf3
+V_8dV^K@[R40UazdMjkX^F0
+S1
+R3
+w1792556653
+8../../rtl/image_sdram_sink.v
+F../../rtl/image_sdram_sink.v
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 j_UQdXg08@B_]0WT4;>_b3
+!s105 image_sdram_sink_v_unit
+!s85 0
+vtb_cache_reuse
+R4
+IFPWeYBfHFz@hFJBba0=5<1
+VD[7=Q2>8NUc29PRnbWNH]1
+Z14 !s105 tb_cache_reuse_v_unit
+S1
+R3
+Z15 w1791115682
+Z16 8../tb_cache_reuse.v
+Z17 F../tb_cache_reuse.v
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 LTZ1=D@8RcIXO`UA5d60I0
+!s85 0
+vtb_cache_reuse_full
+R4
+IRA@0GG3l8m:BhiMJ8DQ>;1
+V>E0K[^aML<m>n5Egb1FHn1
+R14
+S1
+R3
+R15
+R16
+R17
+L0 156
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 YHNZQaY_z3h1jgYWjW_DK1
+!s85 0
+vtb_image_reliable
+R4
+I1FVOoDeHnfdEC6Qn<6nIF3
+VVcfUWa<l7CFR[eUEYFd2V1
+Z18 !s105 tb_image_reliable_v_unit
+S1
+R3
+Z19 w1791103147
+Z20 8../tb_image_reliable.v
+Z21 F../tb_image_reliable.v
+L0 2
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 _Cd;5[TzVD>eJjEg4QK>@3
+!s85 0
+vtb_image_reliable_full
+R4
+IMRon79nW:hB`CeZCKX48G2
+V6j>BF1???A:cC1NSClzLO0
+R18
+S1
+R3
+R19
+R20
+R21
+L0 107
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 fYVP1fmD<?9U^5UDYRmmb2
+!s85 0
+vtb_image_resolution
+R4
+IV9OaRFghhFzfgbh[moolZ0
+VnngUfbmhlNPn<oXVijC=01
+R18
+S1
+R3
+R19
+R20
+R21
+L0 115
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 UD8T?JZkZZzMN>AnFNJd33
+!s85 0
+vtb_image_tagged_full
+R4
+IQi8PFW3PCSo4aZh^XSQMo0
+V3bE]X<QmjkMA0gO?1oY`:1
+R18
+S1
+R3
+R19
+R20
+R21
+L0 111
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 _WeI^H4DRX]d`Fg^Vl4NY1
+!s85 0

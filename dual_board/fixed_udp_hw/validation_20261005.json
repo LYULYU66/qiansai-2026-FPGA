@@ -1,0 +1,335 @@
+{
+  "date": "2026-10-05",
+  "generatedAt": "2026-10-05T04:29:28.613Z",
+  "diagnostic_only": true,
+  "formal_player_bit": false,
+  "hardware_verified": false,
+  "boards": {
+    "a": {
+      "bit": "dual_board/fixed_udp_hw/prj/board_a/FIXED_UDP_HW_A_20261005.bit",
+      "sha256": "3F83C0B29B2C3EC57CD4277C77F02A7563D38B6B159B27FAB2044445C66CB5DF",
+      "bytes": 644767,
+      "modified": "2026-10-05T04:19:08.199Z",
+      "placement_seed": 7,
+      "resources": {
+        "lut": 2263,
+        "registers": 1506,
+        "bram9k": 13,
+        "bram32k": 0,
+        "dsp": 0,
+        "pll": 2
+      },
+      "resource_stage": "placed and routed diagnostic, NOT multimedia player",
+      "setup_wns_ns": 0.136,
+      "hold_wns_ns": 0.002,
+      "sta_coverage_percent": 99.71,
+      "pin_map": {
+        "clk_50": "R7",
+        "sys_rst_n": "A2",
+        "led[0]": "A4",
+        "led[1]": "A3",
+        "led[2]": "C10",
+        "led[3]": "B12",
+        "phy1_rgmii_rx_clk": "T14",
+        "phy1_rgmii_rx_ctl": "T13",
+        "phy1_rgmii_rx_data[0]": "P6",
+        "phy1_rgmii_rx_data[1]": "M6",
+        "phy1_rgmii_rx_data[2]": "T9",
+        "phy1_rgmii_rx_data[3]": "N9",
+        "phy1_rgmii_tx_clk": "T12",
+        "phy1_rgmii_tx_ctl": "T7",
+        "phy1_rgmii_tx_data[0]": "T4",
+        "phy1_rgmii_tx_data[1]": "T6",
+        "phy1_rgmii_tx_data[2]": "M7",
+        "phy1_rgmii_tx_data[3]": "T8"
+      },
+      "build_log": "dual_board/fixed_udp_hw/prj/board_a/td_20261005_121832.log"
+    },
+    "b": {
+      "bit": "dual_board/fixed_udp_hw/prj/board_b/FIXED_UDP_HW_B_20261005.bit",
+      "sha256": "287BF4137665356519B2A47A4868FDEDBB86C0B4A4CFAAA370A6239488055DED",
+      "bytes": 642439,
+      "modified": "2026-10-05T04:16:55.097Z",
+      "placement_seed": 1,
+      "resources": {
+        "lut": 1933,
+        "registers": 1298,
+        "bram9k": 11,
+        "bram32k": 0,
+        "dsp": 0,
+        "pll": 2
+      },
+      "resource_stage": "placed and routed diagnostic, NOT multimedia player",
+      "setup_wns_ns": 0.143,
+      "hold_wns_ns": 0.003,
+      "sta_coverage_percent": 99.68,
+      "pin_map": {
+        "clk_50": "R7",
+        "sys_rst_n": "A2",
+        "led[0]": "A4",
+        "led[1]": "A3",
+        "led[2]": "C10",
+        "led[3]": "B12",
+        "phy1_rgmii_rx_clk": "T14",
+        "phy1_rgmii_rx_ctl": "T13",
+        "phy1_rgmii_rx_data[0]": "P6",
+        "phy1_rgmii_rx_data[1]": "M6",
+        "phy1_rgmii_rx_data[2]": "T9",
+        "phy1_rgmii_rx_data[3]": "N9",
+        "phy1_rgmii_tx_clk": "T12",
+        "phy1_rgmii_tx_ctl": "T7",
+        "phy1_rgmii_tx_data[0]": "T4",
+        "phy1_rgmii_tx_data[1]": "T6",
+        "phy1_rgmii_tx_data[2]": "M7",
+        "phy1_rgmii_tx_data[3]": "T8",
+        "key_send_n": "B2"
+      },
+      "build_log": "dual_board/fixed_udp_hw/prj/board_b/td_20261005_121624.log"
+    }
+  },
+  "modelsim": {
+    "errors": 0,
+    "warnings": 0,
+    "pass": "PASS fixed UDP hardware tops: actual A/B checker and key source, two 1200-packet IMG4 RGB/tag frames, lost-ACK retry, 12-byte reverse ACK, LED meaning and reset",
+    "frames": 2,
+    "pixels_per_frame": 307200,
+    "packets_per_frame": 1200,
+    "lost_reverse_ack_retry_verified": true,
+    "duplicate_pixels_not_republished": true,
+    "reset_and_key_led_verified": true,
+    "actual_hw_tops": true,
+    "test_transport_bridge": true,
+    "encrypted_mac_phy_wire_simulated": false,
+    "log": "dual_board/fixed_udp_hw/sim/modelsim_hw.log"
+  },
+  "checksum_predicate_proof": {
+    "all_20_bit_sums": 1048576,
+    "accepted_folded_ffff_values": 16,
+    "log": "dual_board/fixed_udp_hw/sim/ipv4_checksum_proof_20261005.log"
+  },
+  "protocol": {
+    "forward": "IMG4",
+    "payload_bytes": 1042,
+    "reverse": "IAK2",
+    "reverse_bytes": 12,
+    "udp_port": 20482,
+    "retry_ms": 100
+  },
+  "timing_scope": "Inherited smoke clock plus TEMAC IP constraints; no clock relaxation. External RGMII IO delay and full IO/CDC coverage are not fully audited. Positive reported slack does not certify physical wire timing.",
+  "production_tx_unchanged": true,
+  "diagnostic_pattern_source_not_tf_tx": true,
+  "single_board_baseline_unchanged": true,
+  "formal_player": {
+    "phase_validation": "dual_board/image_link/phase10_validation_20261004.json",
+    "cases_passed": 40,
+    "simulation_warnings": 108,
+    "resource_stage": "gate synthesis",
+    "a_lut": 13453,
+    "b_lut": 10932,
+    "bit_generated": false
+  },
+  "instructions": "dual_board/fixed_udp_hw/README.md",
+  "next": "User burns paired SRAM bits and verifies B K2 whole-frame/return-ACK LED results over cable before formal player pin/timing/P&R integration.",
+  "files": [
+    {
+      "file": "best_result/lab_ex5_i2s_v1.0_logic_round3_20261003.bit",
+      "sha256": "94744392DEC4010D38261036AB360AB6E01BC4C718B34167E821302A15297C88"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/TEMAC_CORE/TEMAC_CORE.sdc",
+      "sha256": "21D79C91CB65BE3094F8941DA04ECAD6E47F97CAE4B6C3A749539E2631658F60"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/TEMAC_CORE/TEMAC_CORE.xml",
+      "sha256": "3182FD400CB0631BA3CB94A1739DA51150470DEA3E0EC23A16061BCB49E940D1"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/pll_gen.ipc",
+      "sha256": "4151BBA32CC66C9AA0C4B96EE76C57FFB78DBA2E4B448D746A1331CBE17D32AE"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/prj/board_a/al_ip/rx_pll.ipc",
+      "sha256": "3D7D676316F0E0C320CE5582B61ADAF9BDF1A2F0B13E31AF85588E6447E8ABA5"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/constraints/smoke.sdc",
+      "sha256": "23CEB2DB719F966770FB766E513545479AE9AFDC29A72F21D3C9168195161882"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/BUFGMUX.v",
+      "sha256": "3501C3AE93FC102FD547A30BF84AAF64521DDAEAD53F398E62DAFB8CF3E8ADBD"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/IDDR.v",
+      "sha256": "0CB13720A17311E80812DE7B45B0A0BA4CF2ECDF1F60E1F8A4279FEE268C7B15"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/ODDR.v",
+      "sha256": "6442C1DD9F76329DDB5420110FD8236211EF7D002EC2A1C6295D062E353A8F4D"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/RAMB16_S9_S9.v",
+      "sha256": "9651FF21B7E76F097704ECDA17398B00F2618107B13E0768D4043E24CB649BCC"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/clk_gen_rst_gen.v",
+      "sha256": "1CF435B0D40E3850366F237C8BD8E0DDE34CE1974C8525457D0AD8F65F5C1837"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/div_clk_gen.v",
+      "sha256": "BB9CA78FEA2DEF93464B44641B32A2491316CF3DE55C361BC81801CFC280B367"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/rgmii_interface.v",
+      "sha256": "358763A4C014AAC49A0C1A0EC96E6E0224C0341371740D1616F43766D14A1DCD"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/rx_client_fifo.v",
+      "sha256": "7DAE154FD14E6CE3431C1492777C1CEFB1E485D276F15DE8D287D7A0D6BA06A3"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/temac_block.v",
+      "sha256": "D013485435ABCD2188450120A9EF99A7A75C6E46FD8F186381E2E8FA3F3C5241"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/temac_clk_gen.v",
+      "sha256": "DFDDA666362A1372FFD07B361D1D52401AC479B244CE7AFB0C45F7DBE08996E8"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/tx_client_fifo.v",
+      "sha256": "B50FD509770C57C2EB683A6074F0F97704E048392A03472F1FDB3FA9965CFFA7"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/tx_clk_en_gen.v",
+      "sha256": "78690F2C03DD38077FB3E7A1B39DD520DA6ECA10CBF125BB57FD71E2D156082A"
+    },
+    {
+      "file": "dual_board/ethernet_smoke/source_code/rtl/udp_ip_protocol_stack_merge.enc.v",
+      "sha256": "0D06B3D6F7B2947501CDD3128373585E38C70454938234FFA9DF325010BD4F74"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/README.md",
+      "sha256": "D104CA6F4F0E4F57F4DDEE482F9A87FEC553D4B29EDDE0AFAF68458AA62C8150"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/constraints/board_a.adc",
+      "sha256": "A24AFBFEB045A6037FBF9850AE2E14191BA227AD6360EF1FECF9FD3BB81E77B1"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/constraints/board_b.adc",
+      "sha256": "6B0025E2114545FF533A066090B62FD3016E418A7FC5B7C0C78719F13698280F"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_a/FIXED_UDP_HW_A.al",
+      "sha256": "69D40E4B2D53702D1338A48C1C943CB4C53EAF1D96EB8C7EE360C951EC002543"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_a/FIXED_UDP_HW_A_20261005.bit",
+      "sha256": "3F83C0B29B2C3EC57CD4277C77F02A7563D38B6B159B27FAB2044445C66CB5DF"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_a/FIXED_UDP_HW_A_phy.area",
+      "sha256": "9897B578A56F6167E15319E0637F70F4FDA3204F179C862CF7E7CB8605EA25D9"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_a/FIXED_UDP_HW_A_pr.timing",
+      "sha256": "8D90F97F0C5C171457EA28C84640A3997D63707EED755F57D6BE911AEB155110"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_a/build_bit.tcl",
+      "sha256": "29CC356C854489BD4A6F68E6CB73E5131AA219552C6FB60F484136C94F45E5E1"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_a/td_20261005_121832.log",
+      "sha256": "94EED46C4DEE6C36D9F8435C776BA29304E94134FCE9B020C4D2D0028C2F3189"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_b/FIXED_UDP_HW_B.al",
+      "sha256": "74AA6C30C581475B51EF40604541735C91322D86D02F6FE843C4946C5CACC21E"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_b/FIXED_UDP_HW_B_20261005.bit",
+      "sha256": "287BF4137665356519B2A47A4868FDEDBB86C0B4A4CFAAA370A6239488055DED"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_b/FIXED_UDP_HW_B_phy.area",
+      "sha256": "2EFD1F53B4EB2BB92508E2797A9EEC650B2994728B20EF2679CAD6B877F92964"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_b/FIXED_UDP_HW_B_pr.timing",
+      "sha256": "305DD253E8C3BA613C3A9B10A07426FF14869D615B28D31C8B065DF8A02B69F9"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_b/build_bit.tcl",
+      "sha256": "1DC079D861999FB9CBEA01B182BA3785CB855A5DE9A99AC1E127B78CBDCB87A3"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/prj/board_b/td_20261005_121624.log",
+      "sha256": "C621C9394F077699DB7CB1CA9BBC71F5B4CA73C3A79EFFED3C2F97AC34E63775"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/rtl/fixed_udp_hw_a.v",
+      "sha256": "05660F81D8DFE477C710C6C1CBA29FB6C5C3014B344F2504216B037E3F93012E"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/rtl/fixed_udp_hw_b.v",
+      "sha256": "D79DA4817A76401D4B289961DAB9D568111A1F5F159F1EA175E77BC52C1B47EF"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/rtl/fixed_udp_hw_pattern.v",
+      "sha256": "4DA9B6F5D3BEFD3CCA2F82EEA067388310042B671332106D3C32618CCCB570E7"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/sim/check_ipv4_sum.js",
+      "sha256": "A119EB00C035AB2D75F330A2FA573C5D12B9B7815F64EED5B4D6E74275873744"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/sim/ipv4_checksum_proof_20261005.log",
+      "sha256": "0A67C425DB1E96A3BF5FAD1DA0E2B708853B7025720F768B80C60075E83C28A1"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/sim/modelsim_hw.log",
+      "sha256": "DAFE472C1881D7D3283A230C278C4C6B8DF175ABFF11F50048625F0117DD0B35"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/sim/run_modelsim.do",
+      "sha256": "E11405EB6CB688E2418FACAFBAB444354B21007CB04DAF443F5A4E51600C10D8"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/sim/run_modelsim.ps1",
+      "sha256": "8BE86E09E1385179161093DC37443C717AB7C3D86FB5F2FB7594F42772019563"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/sim/snapshot_hw_validation.js",
+      "sha256": "9FE6A95AD522134AD7FE18E8E4A26ED007C6C533A5A4BBCD5F9EBE38854D45CC"
+    },
+    {
+      "file": "dual_board/fixed_udp_hw/sim/tb_fixed_udp_hw.v",
+      "sha256": "29BAD9632AB02A0F04CD503260357FBD82A082CFA0DBB47FFA04281DBB324CAF"
+    },
+    {
+      "file": "dual_board/image_link/phase10_validation_20261004.json",
+      "sha256": "F79080D8A2FE6D49699C7692E57F0C86047B8159534F4211F9D7D007944D7BB3"
+    },
+    {
+      "file": "dual_board/image_link/rtl/dual_board_eth_transport.v",
+      "sha256": "88BEDCF15C44A19D1103BA8514DCFF3EF5400FFC1A38EFFCBEE724604561AD40"
+    },
+    {
+      "file": "dual_board/image_link/rtl/fixed_peer_udp.v",
+      "sha256": "2919B55F8240E47058824CD20DE2FEEB02373A395EB3F9B47D4F2D414715E938"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_packet_rx.v",
+      "sha256": "7DC4C31AF4A9D0341FEBF2ED51DDF234F258E1BF1BE890AC6444A8A763C676E4"
+    },
+    {
+      "file": "dual_board/image_link/rtl/image_receipt.v",
+      "sha256": "50DD6B5C718DD26DB6694923F5E42299C3CE588FB95107D4D45CEF91D37FC0FD"
+    },
+    {
+      "file": "src/user_source/hdl_source/top_tf_hdmi_audio.v",
+      "sha256": "561394111CB599D811AA3408B25C6AABCC420D32111BC03D3B3EE87AB2D8E0E8"
+    }
+  ]
+}

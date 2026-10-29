@@ -1,0 +1,156 @@
+`timescale 1ns/1ps
+// Dashboard (TF5) top band, 20261021.
+//   Normal: "安路科技提醒您行车安全，祝您旅途愉快" scrolls right-to-left at
+//           1 px/frame in a 32 px band (y 22..53) between two thin light-blue
+//           rules that fade out towards the screen sides; text fades in/out
+//           over the outer 32 px and has a white -> sky-blue vertical gradient.
+//   Hazard: large bold "注意安全" (64 px, x 192..447, y 6..69) breathing
+//           between deep and bright red at ~0.9 Hz, with red bars on the
+//           band edges pulsing in step.
+// One clock of latency, matching video_car_intro_light: O_rgb/O_vs/O_de are
+// the inputs delayed by one clock with the text blended in.  Two BRAM32K.
+module video_dashboard_subtitle #(
+    parameter [9:0] SCROLL_INIT = 10'd384   // first character enters from the right
+) (
+    input  wire        I_clk,
+    input  wire        I_rst,
+    input  wire        I_enable,
+    input  wire        I_hazard_async,
+    input  wire        I_vs,
+    input  wire        I_de,
+    input  wire [23:0] I_rgb,
+    output wire [23:0] O_rgb,
+    output reg         O_vs,
+    output reg         O_de
+);
+localparam [9:0]  TICK_TOP = 10'd22;
+localparam [9:0]  RULE_TOP = 10'd12, RULE_BOTTOM = 10'd63;
+localparam [9:0]  WARN_TOP = 10'd6;
+localparam [10:0] WARN_LEFT = 11'd192;
+
+(* async_reg="true" *) reg [1:0] hazard_sync;
+reg hazard_frame;
+reg [10:0] x,nx;
+reg [9:0]  y,ny;
+reg seen,nseen,de_prev,vs_prev;
+reg [9:0] scroll;
+reg [5:0] pulse;
+wire frame_start=I_vs&&!vs_prev;
+
+always @* begin
+    nx=x; ny=y; nseen=seen;
+    if(frame_start) begin nx=0; ny=0; nseen=0; end
+    else if(I_de) begin
+        if(!de_prev) begin
+            nx=0;
+            if(!seen) begin ny=0; nseen=1; end
+            else if(y<479) ny=y+1'b1;
+        end else if(x<639) nx=x+1'b1;
+    end else nx=0;
+end
+
+always @(posedge I_clk or posedge I_rst) begin
+    if(I_rst) begin
+        x<=0; y<=0; seen<=0; de_prev<=0; vs_prev<=0;
+        hazard_sync<=0; hazard_frame<=0;
+        scroll<=SCROLL_INIT;
+        pulse<=0;
+    end else begin
+        x<=nx; y<=ny; seen<=nseen; de_prev<=I_de; vs_prev<=I_vs;
+        hazard_sync<={hazard_sync[0],I_hazard_async};
+        if(frame_start) begin
+            hazard_frame<=hazard_sync[1];
+            scroll<=scroll+1'b1;
+            pulse<=pulse+1'b1;
+        end
+    end
+end
+
+// ---- address stage (pixel nx,ny) ----
+wire [9:0] tick_col=nx[9:0]+scroll;
+wire [9:0] tick_row=ny-TICK_TOP;
+wire tick_band=ny>=TICK_TOP && ny<TICK_TOP+10'd32;
+wire [3:0] tick_glyph;
+wire tick_valid;
+subtitle_ticker_text u_text(.pos(tick_col[9:5]),.glyph(tick_glyph),.valid(tick_valid));
+wire [10:0] warn_x=nx-WARN_LEFT;
+wire [9:0]  warn_row=ny-WARN_TOP;
+wire warn_box=nx>=WARN_LEFT && nx<WARN_LEFT+11'd256 && ny>=WARN_TOP && ny<WARN_TOP+10'd64;
+wire tick_hit=I_enable && I_de && !hazard_frame && tick_band && tick_valid;
+wire warn_hit=I_enable && I_de && hazard_frame && warn_box;
+wire [15:0] tick_q,warn_q;
+subtitle_ticker_rom u_tick_rom(.clk(I_clk),.ce(tick_hit),
+    .addr({tick_glyph,tick_row[4:0],tick_col[4:3]}),.q(tick_q));
+subtitle_warning_rom u_warn_rom(.clk(I_clk),.ce(warn_hit),
+    .addr({warn_x[7:6],warn_row[5:0],warn_x[5:3]}),.q(warn_q));
+
+// Horizontal fade of the scrolling text: 0..4 quarters over the outer 32 px.
+wire [2:0] edge_fade=(nx<11'd32) ? {1'b0,nx[4:3]} :
+                     (nx>=11'd608) ? {1'b0,~nx[4:3]} : 3'd4;
+// Rules: weight peaks (12/16) in the middle, 0 at x=40 and x=600.
+wire [10:0] rule_d=(nx<11'd320) ? nx-11'd40 : 11'd600-nx;
+wire rule_span=nx>=11'd40 && nx<11'd600;
+wire [3:0] rule_w=(rule_d>=11'd192) ? 4'd12 : rule_d[7:4];
+wire rule_hit=I_enable && I_de && !hazard_frame && rule_span &&
+              (ny==RULE_TOP || ny==RULE_BOTTOM);
+wire bar_hit=I_enable && I_de && hazard_frame &&
+             (ny<10'd3 || (ny>=10'd73 && ny<10'd76));
+
+reg [23:0] bg_q;
+reg tick_q_hit,warn_q_hit,rule_q_hit,bar_q_hit;
+reg [2:0] lane_q,fade_q;
+reg [4:0] row_q;
+reg [3:0] rule_w_q;
+always @(posedge I_clk or posedge I_rst) begin
+    if(I_rst) begin
+        O_vs<=0; O_de<=0; bg_q<=0;
+        tick_q_hit<=0; warn_q_hit<=0; rule_q_hit<=0; bar_q_hit<=0;
+        lane_q<=0; fade_q<=0; row_q<=0; rule_w_q<=0;
+    end else begin
+        O_vs<=I_vs; O_de<=I_de; bg_q<=I_rgb;
+        tick_q_hit<=tick_hit; warn_q_hit<=warn_hit;
+        rule_q_hit<=rule_hit && !tick_hit; bar_q_hit<=bar_hit;
+        lane_q<=hazard_frame ? warn_x[2:0] : tick_col[2:0];
+        fade_q<=edge_fade;
+        row_q<=hazard_frame ? warn_row[5:1] : tick_row[4:0];
+        rule_w_q<=rule_w;
+    end
+end
+
+// ---- blend stage ----
+wire [15:0] glyph_word=warn_q_hit ? warn_q : tick_q;
+wire [1:0] level=glyph_word[{lane_q,1'b0} +: 2];
+// Coverage weights in 1/16: 0, 6, 11, 16.
+wire [4:0] level_w=(level==2'd3) ? 5'd16 : (level==2'd2) ? 5'd11 :
+                   (level==2'd1) ? 5'd6 : 5'd0;
+wire [7:0] tick_w_full={3'd0,level_w}*{5'd0,fade_q};
+wire [4:0] tick_w=tick_w_full[6:2];
+wire [4:0] breath={1'b0,pulse[5] ? ~pulse[4:0] : pulse[4:0]};   // 0..31
+wire [23:0] tick_fg={8'd255-{1'b0,row_q,2'b0}+{3'd0,row_q},  // 255 -> 162
+                     8'd255-{3'd0,row_q},                     // 255 -> 224
+                     8'd255};
+// Deep red (208,32,40) <-> bright red (255,94,102).
+wire [23:0] warn_fg={8'd208+{3'd0,breath}+{4'd0,breath[4:1]}, 8'd32+{2'd0,breath,1'b0}, 8'd40+{2'd0,breath,1'b0}};
+wire [23:0] rule_fg=24'h5CC4FF;
+wire [23:0] bar_fg=24'hE0121E;
+reg [23:0] fg;
+reg [4:0] w;
+always @* begin
+    fg=tick_fg; w=5'd0;
+    if(warn_q_hit) begin fg=warn_fg; w=level_w; end
+    else if(bar_q_hit) begin fg=bar_fg; w=5'd6+{2'd0,breath[4:2]}; end
+    else if(tick_q_hit) begin fg=tick_fg; w=tick_w; end
+    else if(rule_q_hit) begin fg=rule_fg; w={1'b0,rule_w_q}; end
+end
+function [7:0] mix;
+    input [7:0] b, f;
+    input [4:0] k;                     // 0..16
+    reg [13:0] s;
+    begin
+        s=f*k+b*(5'd16-k);
+        mix=s[11:4];
+    end
+endfunction
+assign O_rgb=(w==5'd0) ? bg_q :
+             {mix(bg_q[23:16],fg[23:16],w),mix(bg_q[15:8],fg[15:8],w),mix(bg_q[7:0],fg[7:0],w)};
+endmodule

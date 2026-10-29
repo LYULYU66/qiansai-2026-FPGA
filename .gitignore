@@ -1,0 +1,56 @@
+# ===== EDA(TD) 编译输出（保留 .al 工程、build.tcl、bit、面积报告；最新两轮 _s23_a4/_s23_b3 保留时序报告）=====
+*_Runs/
+src/td_project/log/
+*.dmp
+*.vcd
+transcript
+*.logw
+td_*.log
+route.db
+*.qdb
+*.qtl
+*.bid
+*.log
+*.timing
+*.rpt
+!dual_board/image_link/prj/_s23_a4/final_timing.rpt
+!dual_board/image_link/prj/_s23_a4/MEDIA_A_*_place.timing
+!dual_board/image_link/prj/_s23_a4/MEDIA_A_*_pr.timing
+!dual_board/image_link/prj/_s23_b3/final_timing.rpt
+!dual_board/image_link/prj/_s23_b3/MEDIA_B_*_place.timing
+!dual_board/image_link/prj/_s23_b3/MEDIA_B_*_pr.timing
+
+# ===== 仿真大文件转储（可再生）=====
+*.ppm
+dual_board/image_link/sim/**/*.hex
+sim/alignment_20260926/*.csv
+sim/alignment_probe_20260926/*.csv
+
+# ===== ModelSim 仿真产物（保留 testbench、脚本、说明文档）=====
+*.wlf
+*.vvp
+*.qpg
+work/
+work_*/
+*_work/
+__pycache__/
+
+# ===== 备份 / 临时 =====
+backup_*/
+tmp/
+*.tar.gz
+
+# ===== 音视频（PCM 可由脚本重新生成；版权文件不入库）=====
+audio_pcm_output/
+演示视频/
+*.pcm
+*.PCM
+*.wav
+*.mp3
+*.mp4
+
+# ===== Node =====
+node_modules/
+
+# ===== 办公临时文件 =====
+~$*

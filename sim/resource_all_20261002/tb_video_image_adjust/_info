@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA2026/HX4S20_Contest_2026/7_lab_ex_2026_nosoft/qiansai/lab_ex4_tf
+vtb_video_image_adjust
+Z1 !s110 1790992597
+!i10b 1
+!s100 :S1DJf7XLPAzGXMMgIk?T2
+I7k<50fD>=?<4lnnHF[E?;2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1789909761
+8sim/tb_video_image_adjust.v
+Fsim/tb_video_image_adjust.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1790992597.000000
+Z5 !s107 sim/tb_video_image_adjust.v|src/user_source/hdl_source/video_image_adjust.v|
+Z6 !s90 -work|sim/resource_all_20261002/tb_video_image_adjust|src/user_source/hdl_source/video_image_adjust.v|sim/tb_video_image_adjust.v|
+!i113 1
+Z7 o-work sim/resource_all_20261002/tb_video_image_adjust
+Z8 tCvgOpt 0
+vvideo_image_adjust
+R1
+!i10b 1
+!s100 idz?JkDYG[S47hTB>IfN@2
+I=1D5;1L988ESZ?MIVlIkZ3
+R2
+R0
+Z9 w1790951130
+Z10 8src/user_source/hdl_source/video_image_adjust.v
+Z11 Fsrc/user_source/hdl_source/video_image_adjust.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
+vvideo_image_adjust_lut_dp
+R1
+!i10b 1
+!s100 =T8g6E1<lR>G6LA`G=1;@0
+IdM2VFhET`RVVOY4FhWIQH3
+R2
+R0
+R9
+R10
+R11
+L0 168
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
